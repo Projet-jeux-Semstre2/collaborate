@@ -55,7 +55,7 @@ public class Entities_Manager : MonoBehaviour
 
         if (inMyGroup.Count > minCoreParticle -1 && !hasCore && _instCore == null) //toujours laisser -1 pour décompter le possèsseur
         {
-            _instCore = Instantiate(core, transform.position, Quaternion.identity);
+            _instCore = Instantiate(core, new Vector3(transform.position.x, 0.2f, transform.position.z), Quaternion.identity);
         }
 
         

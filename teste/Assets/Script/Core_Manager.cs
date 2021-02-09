@@ -17,11 +17,18 @@ public class Core_Manager : MonoBehaviour
     private GameObject _player;
 
     private NavMeshAgent _agent;
+    
+    private Rigidbody _rb;
+
+    public float timeToReactNavMesh;
+    private float t;
+    
 
     private void Start()
     {
         _player = GameObject.FindWithTag("Player");
         _agent = GetComponent<NavMeshAgent>();
+        _rb = GetComponent<Rigidbody>();
     }
 
     private void OnTriggerStay(Collider other)
@@ -81,9 +88,42 @@ public class Core_Manager : MonoBehaviour
             _agent.destination = _player.transform.position;
         }
         
+        if (!_agent.enabled)
+        {
+            t += Time.deltaTime;
+            if (t >= timeToReactNavMesh)
+            {
+                _agent.enabled = true;
+                print("je me reactive");
+                t = 0;
+            }
+            
+        }
+
+        if (_rb.velocity.magnitude >= 4.8f)
+        {
+            print("parachute");
+            _rb.drag = 5;
+        }
+
+        if (_rb.velocity.magnitude < 0.5f)
+        {
+            _rb.drag = 0;
+            _rb.velocity = Vector3.zero;
+        }
+
+
+
+
         
-        
-        
+
+
+
+
+
+
+
+
         _moyennePos = Vector3.zero;
         for (int i = 0; i < myEntities.Count; i++)
         {

@@ -24,11 +24,9 @@ public class RepulseWeapon : MonoBehaviour
         {
             if (other.GetComponentInParent<NavMeshAgent>() && other.gameObject.CompareTag("collider"))
             {
-                other.GetComponentInParent<NavMeshAgent>().enabled = false;
+                //other.GetComponentInParent<NavMeshAgent>().enabled = true;
             }
             objectsInRepulse.Remove(other.gameObject);
-            
-            
         }
     }
 
@@ -49,6 +47,7 @@ public class RepulseWeapon : MonoBehaviour
                 if (cube.tag == "collider")
                 {
                     Rigidbody rb = cube.GetComponentInParent<Rigidbody>();
+                    
 
                     if (cube.GetComponentInParent<NavMeshAgent>())
                     {
@@ -57,8 +56,18 @@ public class RepulseWeapon : MonoBehaviour
 
                     rb.AddForce(player.transform.forward * force, ForceMode.Impulse);
                 }
-                
+
             }
+
+            for (int i = 0; i < objectsInRepulse.Count; i++)
+            {
+                if (objectsInRepulse[i] == null)
+                {
+                    objectsInRepulse.RemoveAt(i);
+                }
+            }
+            
+            
         }
         
 
@@ -70,19 +79,21 @@ public class RepulseWeapon : MonoBehaviour
         {
             force = 1.75f;
         }
+        
+        
 
     }
 
 
     private void OnDisable()
     {
-        foreach (var i in objectsInRepulse)
+        /*foreach (var i in objectsInRepulse)
         {
             if (i.GetComponentInParent<NavMeshAgent>() && i.CompareTag("collider"))
             {
                 i.GetComponentInParent<NavMeshAgent>().enabled = true;
             }
-        }
+        }*/
         objectsInRepulse.Clear();
         
     }

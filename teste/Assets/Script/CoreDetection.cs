@@ -7,6 +7,8 @@ public class CoreDetection : MonoBehaviour
 {
     public GameObject _myParent;
 
+    public float radiusDivide;
+
     private void Start()
     {
         
@@ -22,5 +24,20 @@ public class CoreDetection : MonoBehaviour
             }
             Destroy(_myParent);
         }
+    }
+
+    private void Update()
+    {
+        //permet d'avoir la zone de détéction avec une taille en rapport aux nombre d'entités que comporte le corps. Le radius ne peut pas etre inferieur à 6.5f;
+        if (_myParent.GetComponent<Core_Manager>().myEntities.Count / radiusDivide >= 6.5f)
+        {
+            GetComponent<SphereCollider>().radius = _myParent.GetComponent<Core_Manager>().myEntities.Count / radiusDivide;
+        }
+        else
+        {
+            GetComponent<SphereCollider>().radius = 6.5f;
+        }
+        
+        //Faire des paliers pour réduire le radius qui augmente de facon exponentielle avce le nb d'entité
     }
 }

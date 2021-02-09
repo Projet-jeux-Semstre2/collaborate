@@ -29,6 +29,4 @@ public class PlayerWeapons_Manager : MonoBehaviour
         }
         
     }
-
-
 }
