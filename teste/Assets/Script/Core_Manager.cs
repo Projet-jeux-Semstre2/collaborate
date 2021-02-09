@@ -16,14 +16,17 @@ public class Core_Manager : MonoBehaviour
 
     private GameObject _player;
 
+    private NavMeshAgent _agent;
+
     private void Start()
     {
         _player = GameObject.FindWithTag("Player");
+        _agent = GetComponent<NavMeshAgent>();
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("ennemis") && !other.GetComponent<Entities_Manager>().hasCore)
+        if (other.CompareTag("ennemis") && !other.GetComponent<Entities_Manager>().hasCore && other.GetComponent<Entities_Manager>().myCore == null)
         {
             myEntities.Add(other.gameObject);
             other.GetComponent<Entities_Manager>().hasCore = true;
@@ -35,11 +38,12 @@ public class Core_Manager : MonoBehaviour
     
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("ennemis") && other.GetComponent<Entities_Manager>().hasCore)
+        if (other.CompareTag("ennemis") && other.GetComponent<Entities_Manager>().hasCore && other.GetComponent<Entities_Manager>().myCore == gameObject)
         {
             myEntities.Remove(other.gameObject);
             other.GetComponent<Entities_Manager>().hasCore = false;
             other.GetComponent<Entities_Manager>().isInGroups = false;
+            other.GetComponent<Entities_Manager>().myCore = null;
         }
     }
     
@@ -50,6 +54,7 @@ public class Core_Manager : MonoBehaviour
         {
             obj.GetComponent<Entities_Manager>().hasCore = false;
             obj.GetComponent<Entities_Manager>().isInGroups = false;
+            obj.GetComponent<Entities_Manager>().myCore = null;
         }
     }
 
@@ -60,7 +65,7 @@ public class Core_Manager : MonoBehaviour
         
         foreach (Collider collider in Physics.OverlapSphere(transform.position, pullRadius) )
         {
-            if (collider.gameObject.CompareTag("ennemis") && myEntities.Contains(collider.gameObject))
+            if (collider.gameObject.CompareTag("ennemis") && myEntities.Contains(collider.gameObject) && collider.GetComponent<Entities_Manager>().myCore == gameObject)
             {
                 // calculate direction from target to me
                 Vector3 forceDirection = transform.position - collider.transform.position;
@@ -71,13 +76,14 @@ public class Core_Manager : MonoBehaviour
             }
         }
 
-        GetComponent<NavMeshAgent>().destination = _player.transform.position;
+        if (_agent.enabled)
+        {
+            _agent.destination = _player.transform.position;
+        }
         
         
-        //core soit toujours au centre de tout les objt compris dans myEntities
-
-        //transform.position = (myEntities[0].transform.localPosition + myEntities[1].transform.localPosition + myEntities[2].transform.localPosition + myEntities[3].transform.localPosition)/4 ;
-
+        
+        
         _moyennePos = Vector3.zero;
         for (int i = 0; i < myEntities.Count; i++)
         {

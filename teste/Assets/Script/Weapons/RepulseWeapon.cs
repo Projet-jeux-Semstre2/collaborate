@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class RepulseWeapon : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class RepulseWeapon : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("ennemis"))
+        if (other.gameObject.CompareTag("ennemis") && !objectsInRepulse.Contains(other.gameObject) ||other.gameObject.CompareTag("collider")&& !objectsInRepulse.Contains(other.gameObject))
         {
             objectsInRepulse.Add(other.gameObject);
         }
@@ -19,9 +20,15 @@ public class RepulseWeapon : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("ennemis"))
+        if (other.gameObject.CompareTag("ennemis") && objectsInRepulse.Contains(other.gameObject)||other.gameObject.CompareTag("collider")&& objectsInRepulse.Contains(other.gameObject))
         {
+            if (other.GetComponentInParent<NavMeshAgent>() && other.gameObject.CompareTag("collider"))
+            {
+                other.GetComponentInParent<NavMeshAgent>().enabled = false;
+            }
             objectsInRepulse.Remove(other.gameObject);
+            
+            
         }
     }
 
@@ -31,11 +38,29 @@ public class RepulseWeapon : MonoBehaviour
         {
             foreach (GameObject cube in objectsInRepulse)
             {
-                Rigidbody rb = cube.GetComponent<Rigidbody>();
+                if (cube.tag == "ennemis")
+                {
+                    Rigidbody rb = cube.GetComponent<Rigidbody>();
+                    
 
-                rb.AddForce(player.transform.forward * force, ForceMode.Impulse);
+                    rb.AddForce(player.transform.forward * force, ForceMode.Impulse);
+                }
+
+                if (cube.tag == "collider")
+                {
+                    Rigidbody rb = cube.GetComponentInParent<Rigidbody>();
+
+                    if (cube.GetComponentInParent<NavMeshAgent>())
+                    {
+                        cube.GetComponentInParent<NavMeshAgent>().enabled = false;
+                    }
+
+                    rb.AddForce(player.transform.forward * force, ForceMode.Impulse);
+                }
+                
             }
         }
+        
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -46,6 +71,20 @@ public class RepulseWeapon : MonoBehaviour
             force = 1.75f;
         }
 
+    }
+
+
+    private void OnDisable()
+    {
+        foreach (var i in objectsInRepulse)
+        {
+            if (i.GetComponentInParent<NavMeshAgent>() && i.CompareTag("collider"))
+            {
+                i.GetComponentInParent<NavMeshAgent>().enabled = true;
+            }
+        }
+        objectsInRepulse.Clear();
+        
     }
 }
 

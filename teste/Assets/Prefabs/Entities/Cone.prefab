@@ -137,6 +137,9 @@ MonoBehaviour:
   hasCore: 0
   isInGroups: 0
   core: {fileID: 2794573410027793705, guid: 263f0483d7503a94a9f1c427a7187aec, type: 3}
+  myCore: {fileID: 0}
+  inMyGroup: []
+  minCoreParticle: 2
 --- !u!135 &2248554089806115193
 SphereCollider:
   m_ObjectHideFlags: 0

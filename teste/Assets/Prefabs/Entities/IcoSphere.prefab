@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349418581729182940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.81, y: 1.35, z: -5.96}
+  m_LocalPosition: {x: 0, y: 0, z: -5.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -137,6 +137,9 @@ MonoBehaviour:
   hasCore: 0
   isInGroups: 0
   core: {fileID: 2794573410027793705, guid: 263f0483d7503a94a9f1c427a7187aec, type: 3}
+  myCore: {fileID: 0}
+  inMyGroup: []
+  minCoreParticle: 2
 --- !u!135 &9175043594110434244
 SphereCollider:
   m_ObjectHideFlags: 0

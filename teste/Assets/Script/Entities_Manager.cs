@@ -76,6 +76,11 @@ public class Entities_Manager : MonoBehaviour
         {
             inMyGroup.Clear();
         }
+
+        if (myCore == null)
+        {
+            hasCore = false;
+        }
         
     }
 
