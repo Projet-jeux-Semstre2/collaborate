@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 public class Entities_Manager : MonoBehaviour
@@ -54,14 +55,14 @@ public class Entities_Manager : MonoBehaviour
     {
         //Changement forme
         ChoosingForme();
-        
-        
+
+        transform.position = Vector3.MoveTowards(transform.position, GameObject.FindWithTag("Player").transform.position, Time.deltaTime*10);
         
         
         if (!hasCore) //attirance des entités vers sois meme si je ne fais pas parti d'un groupe
         {
             GetComponentInChildren<SphereCollider>().enabled = true;
-            
+
             foreach (Collider collider in Physics.OverlapSphere(transform.position, pullRadius) )
             {
                 
@@ -105,6 +106,7 @@ public class Entities_Manager : MonoBehaviour
         {
             inMyGroup.Clear();
         }
+        
 
         if (myCore == null)
         {

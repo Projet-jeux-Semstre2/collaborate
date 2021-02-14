@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     public float currentStamina;
 
     CharacterController characterController;
-    Vector3 moveDirection = Vector3.zero;
+    [SerializeField] Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
 
     //[HideInInspector]
@@ -105,11 +105,7 @@ public class Player : MonoBehaviour
 
 
 
-        /*else if (!characterController.isGrounded && Dead)
-        {
-            gameObject.transform.position = new Vector3(6.67000008f, 17.3500004f, -42.6500015f);
-        }
-        */
+        
 
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
@@ -123,45 +119,11 @@ public class Player : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
 
-        /* //Shooting
-        if (Input.GetMouseButton(0))
-        {
-            //On instancie la balle à la position et la rotation du launchPoint
-            //On stocke cette instantiation dans une variable bulletInstance
-            GameObject bulletInstance = Instantiate(bulletPrefab, launchPoint.position, launchPoint.rotation);
-
-            //Pour appliquer une force par script, il va falloir faire appel à une méthode du RigidBody,
-            //on le récupère donc dans une variable :
-            Rigidbody bulletRB = bulletInstance.GetComponent<Rigidbody>();
-
-            //On ajoute la force a la variable Rigibody
-            bulletRB.AddForce(launchPoint.up * launchForce, ForceMode.Impulse);
-
-        }*/
+       
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Respawn"))
-        {
-            Dead = true;
-        }
-    }
+    
 
-    /*private void OnTriggerStay(Collider col)
-    {
-        if (col.CompareTag("RunningWall"))
-        {
-            StopJump = false;
-        }
-    }
-
-    private void OnTriggerExit(Collider col)
-    {
-        if (col.CompareTag("RunningWall") && !StopJump)
-        {
-            StopJump = false;
-        }
-    }*/
+    
 
 }

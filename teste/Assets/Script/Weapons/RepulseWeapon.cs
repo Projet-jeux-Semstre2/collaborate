@@ -34,6 +34,14 @@ public class RepulseWeapon : MonoBehaviour
     {
         if(objectsInRepulse.Count > 0)
         {
+            for (int i = 0; i < objectsInRepulse.Count; i++)
+            {
+                if (objectsInRepulse[i] == null)
+                {
+                    objectsInRepulse.RemoveAt(i);
+                }
+            }
+            
             foreach (GameObject cube in objectsInRepulse)
             {
                 if (cube.tag == "ennemis")
@@ -59,13 +67,7 @@ public class RepulseWeapon : MonoBehaviour
 
             }
 
-            for (int i = 0; i < objectsInRepulse.Count; i++)
-            {
-                if (objectsInRepulse[i] == null)
-                {
-                    objectsInRepulse.RemoveAt(i);
-                }
-            }
+            
             
             
         }

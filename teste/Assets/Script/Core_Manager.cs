@@ -22,6 +22,8 @@ public class Core_Manager : MonoBehaviour
 
     public float timeToReactNavMesh;
     private float t;
+
+    private bool _isOnGround;
     
 
     private void Start()
@@ -83,24 +85,26 @@ public class Core_Manager : MonoBehaviour
             }
         }
 
-        if (_agent.enabled)
+        if (_agent.enabled && _isOnGround)
         {
             _agent.destination = _player.transform.position;
         }
-        
-        if (!_agent.enabled)
+
+        if (Physics.Raycast(transform.position, Vector3.down * 2))
         {
-            t += Time.deltaTime;
-            if (t >= timeToReactNavMesh)
-            {
-                _agent.enabled = true;
-                print("je me reactive");
-                t = 0;
-            }
-            
+            _isOnGround = true;
+        }
+        else
+        {
+            _isOnGround = false;
         }
 
-        if (_rb.velocity.magnitude >= 4.8f)
+        if (_isOnGround && !_agent.enabled)
+        {
+            _agent.enabled = true;
+        }
+
+        /*if (_rb.velocity.magnitude >= 4.8f)
         {
             print("parachute");
             _rb.drag = 5;
@@ -110,7 +114,7 @@ public class Core_Manager : MonoBehaviour
         {
             _rb.drag = 0;
             _rb.velocity = Vector3.zero;
-        }
+        }*/
 
 
 
