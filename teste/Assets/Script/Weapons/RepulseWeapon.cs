@@ -10,11 +10,23 @@ public class RepulseWeapon : MonoBehaviour
     public GameObject player;
     public float force;
 
+    /// <summary>
+    /// ici c'est le sons 
+    public string fmodhurtEntities;
+    
+    ///
+    /// 
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("ennemis") && !objectsInRepulse.Contains(other.gameObject) ||other.gameObject.CompareTag("collider")&& !objectsInRepulse.Contains(other.gameObject))
         {
             objectsInRepulse.Add(other.gameObject);
+            ///
+            /// ici c'est le sons, c'est provisoire,
+            FMODUnity.RuntimeManager.PlayOneShot(fmodhurtEntities, other.GetComponent<Transform>().position);
+            ///
+            /// 
         }
     }
 

@@ -13,6 +13,13 @@ public class Player : MonoBehaviour
     public float lookXLimit = 90.0f;
 
     public float currentStamina;
+    
+    /// ici c'est le sound
+    /// </summary>
+    public string fmodWalkPlayer;
+    public string fmodjumpPlayer;
+    /// <summary>
+    /// </summary>
 
     CharacterController characterController;
     [SerializeField] Vector3 moveDirection = Vector3.zero;
@@ -76,6 +83,10 @@ public class Player : MonoBehaviour
         {
             moveDirection.y = jumpSpeed;
            // Stamina.instance.UseStamina(10);
+           ///
+           /// ici c'est le sound , provisoire,
+           FMODUnity.RuntimeManager.PlayOneShot(fmodjumpPlayer);
+           /// 
         }
         else
         {

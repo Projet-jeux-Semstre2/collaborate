@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="370cb4ce-1be2-4ab7-8340-8b963387c282" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Core.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entities.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entities.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CoreDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CoreDetection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Core_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Core_Manager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Entities_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entities_Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Weapons/PlayerWeapons_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapons/PlayerWeapons_Manager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Weapons/RepulseWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapons/RepulseWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/AudioManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AudioManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,22 +24,25 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Core_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/AudioManager.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapons/PlayerWeapons_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/TesteD'ame/CreateAme.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapons/RepulseWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/TesteD'ame/CreateAme.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapons/RepulseWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/TesteD'ame/Stateparticle.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/AttachCube.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/TesteD'ame/InsertGO.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapons/PlayerWeapons_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Core_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapons/PlayerWeapons_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapons/RepulseWeapon.cs" />
       </list>
     </option>
   </component>
@@ -94,6 +100,9 @@
       <workItem from="1612783999256" duration="2244000" />
       <workItem from="1612793744607" duration="9910000" />
       <workItem from="1612885355408" duration="5112000" />
+      <workItem from="1615320593642" duration="740000" />
+      <workItem from="1615671941071" duration="29000" />
+      <workItem from="1615751220645" duration="2519000" />
     </task>
     <servers />
   </component>

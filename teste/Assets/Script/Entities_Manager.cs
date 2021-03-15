@@ -13,7 +13,10 @@ public class Entities_Manager : MonoBehaviour
 
     public float pullForceMin;
     public float pullForceMax;
-    [Space(10)]
+    [Space(10)] 
+    public float speed;
+    [Space(25)]
+    
     [Tooltip("Materiaux changeant")]
     public Material[] ChangeMaterials;
     private Rigidbody _rb;
@@ -56,7 +59,7 @@ public class Entities_Manager : MonoBehaviour
         //Changement forme
         ChoosingForme();
 
-        transform.position = Vector3.MoveTowards(transform.position, GameObject.FindWithTag("Player").transform.position, Time.deltaTime*10);
+        transform.position = Vector3.MoveTowards(transform.position, GameObject.FindWithTag("Player").transform.position, Time.deltaTime*speed);
         
         
         if (!hasCore) //attirance des entités vers sois meme si je ne fais pas parti d'un groupe
