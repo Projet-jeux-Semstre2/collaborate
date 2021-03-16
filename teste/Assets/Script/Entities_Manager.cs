@@ -13,8 +13,6 @@ public class Entities_Manager : MonoBehaviour
 
     public float pullForceMin;
     public float pullForceMax;
-    [Space(10)] 
-    public float speed;
     [Space(25)]
     
     [Tooltip("Materiaux changeant")]
@@ -46,18 +44,63 @@ public class Entities_Manager : MonoBehaviour
     public Mesh icosphereMesh;
     
     private Mesh _myMesh;
+
+
+    [Header("Stats générale inGame")] 
+    public float speed;
+    public float attackDamage;
+    public float healh;
+
+    //Init stats
+    private float _initSpeed;
+    private float _initAD;
+    private float _initHealth;
+
+    [Header("Tank Stats")] 
+    [SerializeField]private float t_speed;
+    [SerializeField]private float t_attackDamage;
+    [SerializeField]private float t_healh;
+
+    [Header("Vif Stats")] 
+    [SerializeField]private float v_speed;
+    [SerializeField]private float v_attackDamage;
+    [SerializeField]private float v_healh;
+
+    [Header("Créateur Stats")] 
+    [SerializeField]private float c_speed;
+    [SerializeField]private float c_attackDamage;
+    [SerializeField]private float c_healh;
+
+    [Header("Aggresif Stats")] 
+    [SerializeField]private float a_speed;
+    [SerializeField]private float a_attackDamage;
+    [SerializeField]private float a_healh;
+
+
     private void Start()
     {
         pullRadius = Random.Range(1, 7);
         pullForce = Random.Range(pullForceMin, pullForceMax);
         GetComponent<MeshRenderer>().material = ChangeMaterials[0];
         _rb = GetComponent<Rigidbody>();
+        
+        
+        //Stats
+        
+        ChoosingForme();
+        healh = _initHealth;
+        speed = _initSpeed;
+        attackDamage = _initAD;
     }
+
+
+
+    
 
     public void FixedUpdate()
     {
         //Changement forme
-        ChoosingForme();
+        //ChoosingForme();
 
         transform.position = Vector3.MoveTowards(transform.position, GameObject.FindWithTag("Player").transform.position, Time.deltaTime*speed);
         
@@ -153,25 +196,48 @@ public class Entities_Manager : MonoBehaviour
 
     void ChoosingForme()
     {
-        if (forme == Forme.Cube)
+        if (forme == Forme.Cube)//Tank
         {
             _myMesh = cubeMesh;
             gameObject.name = "Cube";
+            
+            //Stats
+            _initHealth = t_healh;
+            _initSpeed = t_speed;
+            _initAD = t_attackDamage;
+
+
         }
-        if (forme == Forme.Cone)
+        if (forme == Forme.Cone)//Vif
         {
             _myMesh = coneMesh;
             gameObject.name = "Cone";
+            
+            //Stats
+            _initHealth = v_healh;
+            _initSpeed = v_speed;
+            _initAD = v_attackDamage;
+
         }
-        if (forme == Forme.Triangle)
+        if (forme == Forme.Triangle)//Aggressif
         {
             _myMesh = triangleMesh;
             gameObject.name = "Triangle";
+            
+            //Stats
+            _initHealth = a_healh;
+            _initSpeed = a_speed;
+            _initAD = a_attackDamage;
         }
-        if (forme == Forme.Icosphere)
+        if (forme == Forme.Icosphere)//Créateur
         {
             _myMesh = icosphereMesh;
             gameObject.name = "Icosphere";
+            
+            //Stats
+            _initHealth = c_healh;
+            _initSpeed = c_speed;
+            _initAD = c_attackDamage;
         }
         
         GetComponent<MeshFilter>().mesh = _myMesh;

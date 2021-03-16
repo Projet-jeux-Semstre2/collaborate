@@ -175,7 +175,6 @@ MonoBehaviour:
   pullForce: 1
   pullForceMin: 250
   pullForceMax: 650
-  speed: 2
   ChangeMaterials:
   - {fileID: 2100000, guid: cd0ceb1be28987c42833420fc54230cd, type: 2}
   - {fileID: 2100000, guid: f4cf061dfe869dd448e08c46c287f84c, type: 2}
@@ -190,3 +189,23 @@ MonoBehaviour:
   coneMesh: {fileID: 3613567641014311022, guid: 61a03ee8716ecb144b2cd31e7f11424b, type: 3}
   triangleMesh: {fileID: -5495902117074765545, guid: dcc33010c1524364ea787fe02e1890f0, type: 3}
   icosphereMesh: {fileID: 289301614986012343, guid: 98ee3eb9d93538a46b73077f6df70df8, type: 3}
+  speed: 0
+  attackDamage: 0
+  healh: 0
+  attackSpeed: 0
+  t_speed: 1
+  t_attackDamage: 1
+  t_healh: 2
+  t_attackSpeed: 1
+  v_speed: 1.5
+  v_attackDamage: 1
+  v_healh: 1
+  v_attackSpeed: 1.5
+  c_speed: 1
+  c_attackDamage: 1
+  c_healh: 1
+  c_attackSpeed: 1
+  a_speed: 1
+  a_attackDamage: 2
+  a_healh: 1
+  a_attackSpeed: 1

@@ -76,12 +76,7 @@ public class RepulseWeapon : MonoBehaviour
 
                     rb.AddForce(player.transform.forward * force, ForceMode.Impulse);
                 }
-
             }
-
-            
-            
-            
         }
         
 
@@ -93,9 +88,6 @@ public class RepulseWeapon : MonoBehaviour
         {
             force = 1.75f;
         }
-        
-        
-
     }
 
 

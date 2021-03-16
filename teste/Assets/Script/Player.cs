@@ -11,15 +11,14 @@ public class Player : MonoBehaviour
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 90.0f;
-
-    public float currentStamina;
     
-    /// ici c'est le sound
-    /// </summary>
+
+    
+    
+    
+    // ici c'est le sound
     public string fmodWalkPlayer;
     public string fmodjumpPlayer;
-    /// <summary>
-    /// </summary>
 
     CharacterController characterController;
     [SerializeField] Vector3 moveDirection = Vector3.zero;
@@ -35,7 +34,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-
+        
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -43,6 +42,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+        
+        
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
@@ -60,13 +62,7 @@ public class Player : MonoBehaviour
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
         
         
-
-        // Stamina Run
-        /*if (Input.GetKey(KeyCode.LeftShift))
-        {
-            Stamina.instance.UseStamina(0.05f);
-        }*/
-
+        
         //Jump
         if (characterController.isGrounded)
         {
@@ -80,13 +76,11 @@ public class Player : MonoBehaviour
         }
 
         if (Input.GetButtonDown("Jump") && canMove && characterController.isGrounded)
-        {
-            moveDirection.y = jumpSpeed;
-           // Stamina.instance.UseStamina(10);
-           ///
-           /// ici c'est le sound , provisoire,
+        { 
+            moveDirection.y = jumpSpeed; 
+            // ici c'est le sound , provisoire,
            FMODUnity.RuntimeManager.PlayOneShot(fmodjumpPlayer);
-           /// 
+           
         }
         else
         {
@@ -97,7 +91,9 @@ public class Player : MonoBehaviour
         {
             moveDirection.y = jumpSpeed;
             StopJump = true;
-            //Stamina.instance.UseStamina(15);
+            // ici c'est le sound , provisoire,
+            FMODUnity.RuntimeManager.PlayOneShot(fmodjumpPlayer);
+            
         }
 
 
@@ -113,6 +109,15 @@ public class Player : MonoBehaviour
         {
             moveDirection.y -= gravity * Time.deltaTime;
         }
+        
+        
+        //Clamp de la gravité
+        if (moveDirection.y <= -gravity)
+        {
+            moveDirection.y = -gravity;
+        }
+
+        
 
 
 
