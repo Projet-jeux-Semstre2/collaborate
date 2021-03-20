@@ -31,7 +31,6 @@ public class weaponGlock : Weapon
     {
         if (Time.time >= nextFireTime)
         {
-            Debug.Log("shootpompe");
             nextFireTime = Time.time + fireRate;
             fire(); // on tire selon le fire rate.
         }
@@ -47,7 +46,7 @@ public class weaponGlock : Weapon
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             
             
-            HealtEntitties target = hit.transform.GetComponent<HealtEntitties>();
+            Entities_Stats target = hit.transform.GetComponent<Entities_Stats>();
             if (target != null)
             {
                 target.TakeDamage(Degats);

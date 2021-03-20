@@ -55,7 +55,7 @@ public class weaponPompe : Weapon
         if (Physics.Raycast(mainCamera.transform.position, var, out hit, maxRange, touchingLayerMask))
         {
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-            HealtEntitties target = hit.transform.GetComponent<HealtEntitties>();
+            Entities_Stats target = hit.transform.GetComponent<Entities_Stats>();
             if (target != null)
             {
                 target.TakeDamage(Degats);

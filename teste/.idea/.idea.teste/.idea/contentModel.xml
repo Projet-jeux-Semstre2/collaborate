@@ -304,6 +304,7 @@
             </e>
           </e>
         </e>
+        <e p="SceneInitialize.cs" t="Include" />
         <e p="Script" t="Include">
           <e p="Arme" t="Include">
             <e p="Porjectiles" t="Include">

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8559157256093565302}
   m_Layer: 0
   m_Name: ManagerSETUp
-  m_TagString: Untagged
+  m_TagString: ManagerScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54585d9cca4e84d4496b5c3924cf95b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _challengeMenue: {fileID: 0}
   "NombreEntit\xE9s": 36
+  nombreFinale: 35
+  nrb: 35

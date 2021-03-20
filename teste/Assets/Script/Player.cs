@@ -30,8 +30,7 @@ public class Player : MonoBehaviour
     public bool canMove = true;
     public bool canDoubleJump = false;
     public bool StopJump = false;
-    public bool Dead = false;
-    
+
 
     void Start()
     {

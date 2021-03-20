@@ -9,12 +9,12 @@ public class Player_Health : MonoBehaviour
 {
     public float maxHealth = 100;
     public float health;
-
-    public float distDamage= 10f;
-    public float cacDamage = 2f;
+    
 
     public GameObject Damage_Fb;
     public float fb_time = 0.2f;
+
+    public GameObject coreRecup;
     
 
     private void Start()
@@ -26,7 +26,7 @@ public class Player_Health : MonoBehaviour
     {
         if (other.gameObject.CompareTag("ennemiProjectile"))
         {
-            health -= distDamage;
+            health -= coreRecup.GetComponent<Core_Attack>().distDamage;
             StartCoroutine(HurtFb());
             Destroy(other.gameObject);
         }

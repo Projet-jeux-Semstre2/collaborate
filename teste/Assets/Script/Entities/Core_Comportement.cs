@@ -12,20 +12,19 @@ public class Core_Comportement : MonoBehaviour
     private Core_Attack _coreAttack;
 
     public float patrolRadius;
-    public GameObject patrolTarget;
-    public GameObject fearTarget;
     private bool canDoTarget = true;
     
     public bool isFear;
     public bool canBeFear = true;
 
     public float fearCooldown;
+    
 
-    public Collider fearCollider;
-
-    public Vector3 closestPoint;
+    public Vector3 fearPoint;
 
     public bool canAttackDistance;
+
+    private Color _colorLine;
     
 
 
@@ -35,17 +34,12 @@ public class Core_Comportement : MonoBehaviour
         _coreAttack = GetComponent<Core_Attack>();
     }
 
-    private void Start()
-    {
-        fearCollider = _coreManager.player.GetComponentInChildren<SphereCollider>();
-    }
-
 
     private void Update()
     {
         ComportementPalier();
         
-        if (_coreManager.agent.remainingDistance < 5f && isFear)
+        if (_coreManager.agent.remainingDistance < 5f && isFear) //fin de la fuite
         {
             print("j'ai plus peur");
                 
@@ -59,6 +53,21 @@ public class Core_Comportement : MonoBehaviour
             StartCoroutine(_coreAttack.DistAttack());
 
         }
+
+        if (isFear) //apeuré
+        {
+            _colorLine = Color.cyan;
+        }
+        else if(_coreManager.target != _coreManager.player.transform.position) // patrol
+        {
+            _colorLine = Color.magenta;
+        }
+        else if (_coreManager.target == _coreManager.player.transform.position) // traque le joueur
+        {
+            _colorLine = Color.red;
+        }
+        
+        Debug.DrawLine(transform.position, _coreManager.target, _colorLine);
     }
 
     private void OnTriggerStay(Collider other)
@@ -69,7 +78,7 @@ public class Core_Comportement : MonoBehaviour
             {
                 if (canBeFear)
                 {
-                    StartCoroutine(fuite()); 
+                    StartCoroutine(fuite(other)); 
                 }
             }
 
@@ -107,7 +116,7 @@ public class Core_Comportement : MonoBehaviour
             canDoTarget = true;
         }
         
-        Debug.DrawLine(transform.position, _coreManager.target, Color.magenta);
+        
     }
 
 
@@ -119,22 +128,18 @@ public class Core_Comportement : MonoBehaviour
      
     
 
-    IEnumerator fuite()
+    IEnumerator fuite(Collider other)
     {
         isFear = true;
+        canBeFear = false;
         canDoTarget = false;
         
-            
-        closestPoint = fearCollider.ClosestPoint(transform.position);
-            
         
-        _coreManager.target = closestPoint;
-            
-        
-        Debug.DrawLine(transform.position, _coreManager.target, Color.yellow);
-        print("fearTarget pos " +  _coreManager.target + "ma pos "+ transform.position);
-        
+        fearPoint =  other.transform.forward * 150;//fearCollider.fearPoint(transform.position);
+        fearPoint.y = transform.position.y;
 
+        _coreManager.target = fearPoint;
+        
         yield return null;
     }
 
@@ -193,6 +198,6 @@ public class Core_Comportement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(closestPoint, 1f);
+        Gizmos.DrawWireSphere(fearPoint, 1f);
     }
 }

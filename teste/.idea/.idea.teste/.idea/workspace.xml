@@ -4,200 +4,13 @@
     <list default="true" id="370cb4ce-1be2-4ab7-8340-8b963387c282" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Core.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Core.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/CubeAttire.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/CubeAttire.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/NotAttire.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/NotAttire.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Obstacle.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Obstacle.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Pompe.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Pompe.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Sol.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Sol.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Wall.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/projectile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/projectile.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/Timeline/FMODEventPlayable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/Timeline/FMODEventPlayable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Core.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entities.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entities.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Mitraillette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Mitraillette.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Pompe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Pompe.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Projectile/ProjectilBasic.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Projectile/ProjectilBasic.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/Porjectiles.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/Porjectiles.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CoreDetection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CoreDetection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Core_Manager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Core_Manager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities_Manager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities_Manager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapons/PlayerWeapons_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapons/PlayerWeapons_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapons/RepulseWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapons/RepulseWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/fsbcache/Desktop/096FF90B.fobj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/fsbcache/Desktop/1A9C1124.fobj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/fsbcache/Desktop/4E705E39.fobj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/fsbcache/Desktop/D38D0E32.fobj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/fsbcache/Desktop/DB522BCC.fobj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/fsbcache/Desktop/F3A4F0E0.fobj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/fsbcache/Desktop/F4FD6810.fobj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/fsbcache/Desktop/F7140B7B.fobj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{05c4ad88-7ca3-4f26-a8e7-7b025c99c461}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{159c3ab7-a255-4fb3-842c-73aae667553c}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{43e36f73-3ae9-406b-a040-a618cd2bd041}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{4a5b93cf-2081-4f22-9c1d-7bb048d1e3fe}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{5a3ec47d-e5a1-4e18-b067-43ae6e76c047}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{5fd04143-cdd0-4870-ae59-cf3d965bbf9a}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{86a6612b-e69c-4a52-a57b-f1d6e2b360e2}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{c8bfde80-bd08-43a2-93a8-969cc329cfcf}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{cc001c01-0fc8-4455-9251-be24bedd0c80}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{cd967906-2d78-443e-a597-1e2af32c4edd}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{d4e80f75-b916-4ff6-9117-d0f87a53c1cf}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{e7d83c48-d361-421e-b074-e5f4fc1bc5af}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{f30a60d2-9565-4fd2-b514-47021290efaf}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/.cache/{f6a2890b-df9c-42ad-8a99-cf85fd934d88}.pdc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/01-210312_1840-01-glued-01.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/01-210312_1840-01-glued-01.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/01-210312_1840-glued.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/01-210312_1840-glued.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/01-210314_2022.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/01-210314_2022.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/01-210314_2023.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/01-210314_2023.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/LOOP 02_loop 02 .wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/LOOP 02_loop 02 .wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/LOOP01_loop 01 .wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/LOOP01_loop 01 .wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/hurt.01_hurt.01.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/hurt.01_hurt.01.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/hurt.02_hurt.02.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/hurt.02_hurt.02.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/hurt.03_hurt.03.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/placeholrder.rpp.link/hurt.03_hurt.03.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/player.placeholder.rpp.link.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/player.placeholder.rpp.link.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/player.placeholder.rpp.link/01-210314_2023-glued.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/player.placeholder.rpp.link/01-210314_2023-glued.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/player.placeholder.rpp.link/jump_jump-player.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/player.placeholder.rpp.link/jump_jump-player.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/player.placeholder.rpp.link/spray _spray_player.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/player.placeholder.rpp.link/spray _spray_player.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/player.placeholder.rpp.link/walk _walk_player.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Assets/player.placeholder.rpp.link/walk _walk_player.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Placeholder.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Placeholder.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Placeholder.bank.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Placeholder.bank.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Bank/{7f68cd35-53b5-4a33-b859-5f51d50d8ffd}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Bank/{7f68cd35-53b5-4a33-b859-5f51d50d8ffd}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{05c4ad88-7ca3-4f26-a8e7-7b025c99c461}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{05c4ad88-7ca3-4f26-a8e7-7b025c99c461}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{159c3ab7-a255-4fb3-842c-73aae667553c}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{159c3ab7-a255-4fb3-842c-73aae667553c}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{43e36f73-3ae9-406b-a040-a618cd2bd041}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{43e36f73-3ae9-406b-a040-a618cd2bd041}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{4a5b93cf-2081-4f22-9c1d-7bb048d1e3fe}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{4a5b93cf-2081-4f22-9c1d-7bb048d1e3fe}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{5a3ec47d-e5a1-4e18-b067-43ae6e76c047}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{5a3ec47d-e5a1-4e18-b067-43ae6e76c047}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{5fd04143-cdd0-4870-ae59-cf3d965bbf9a}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{5fd04143-cdd0-4870-ae59-cf3d965bbf9a}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{a0227f34-25f9-461a-a371-c8d9e0419f74}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{a0227f34-25f9-461a-a371-c8d9e0419f74}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{cc001c01-0fc8-4455-9251-be24bedd0c80}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{cc001c01-0fc8-4455-9251-be24bedd0c80}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{d4e80f75-b916-4ff6-9117-d0f87a53c1cf}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{d4e80f75-b916-4ff6-9117-d0f87a53c1cf}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{d85811d1-71be-40d8-93c0-97826aed9e7e}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{d85811d1-71be-40d8-93c0-97826aed9e7e}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{e7d83c48-d361-421e-b074-e5f4fc1bc5af}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{e7d83c48-d361-421e-b074-e5f4fc1bc5af}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{f30a60d2-9565-4fd2-b514-47021290efaf}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{f30a60d2-9565-4fd2-b514-47021290efaf}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{fb8e9663-4238-4e9e-9589-77d9d02b9aaf}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWAsset/{fb8e9663-4238-4e9e-9589-77d9d02b9aaf}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWProject.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWProject/{6dfb1d4d-4bbb-4d10-9b3b-b61f335005e6}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWProject/{6dfb1d4d-4bbb-4d10-9b3b-b61f335005e6}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWProject/{b0a8fa60-fb5c-4da1-80c9-d5a067b62359}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/DAWProject/{b0a8fa60-fb5c-4da1-80c9-d5a067b62359}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{02d1dca2-a082-4b8d-8633-bfa5361ffc92}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{02d1dca2-a082-4b8d-8633-bfa5361ffc92}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{05a90c9f-57b7-4be3-b784-96e0f7507b9c}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{05a90c9f-57b7-4be3-b784-96e0f7507b9c}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{24a507c0-c027-41fc-886a-f179153dc0d4}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{24a507c0-c027-41fc-886a-f179153dc0d4}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{2f9a3c9f-6a83-4369-a77b-bc9ef152e61f}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{2f9a3c9f-6a83-4369-a77b-bc9ef152e61f}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{378a9dd1-ef10-4d3c-aead-b11f09ae5f47}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{378a9dd1-ef10-4d3c-aead-b11f09ae5f47}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{45db3200-4ec5-4126-a15b-ef651da93f73}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{45db3200-4ec5-4126-a15b-ef651da93f73}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{48cb4e6c-2400-48b7-a0ec-9bbe5cc691a5}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{48cb4e6c-2400-48b7-a0ec-9bbe5cc691a5}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{5b4c69f5-39f0-4f96-a4d2-0786320be2a8}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{5b4c69f5-39f0-4f96-a4d2-0786320be2a8}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{609afd7f-9596-4bd1-8e77-7449e64520a2}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{609afd7f-9596-4bd1-8e77-7449e64520a2}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{6b7eb7c0-ea8a-467e-9c65-236abd09c642}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{6b7eb7c0-ea8a-467e-9c65-236abd09c642}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{6c76f0a8-f235-4622-9c6b-719692aaad0a}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{6c76f0a8-f235-4622-9c6b-719692aaad0a}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{7d39c9dd-a34e-412f-ba26-77c8f9aa32e2}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{7d39c9dd-a34e-412f-ba26-77c8f9aa32e2}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{86612fb3-6d83-4405-86c3-76f0bffc708f}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{86612fb3-6d83-4405-86c3-76f0bffc708f}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{92c22ed1-001a-4b80-8bbd-9afff14566a6}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{92c22ed1-001a-4b80-8bbd-9afff14566a6}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{9fcea24b-7670-4232-9c89-fc6dfb382ea2}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{9fcea24b-7670-4232-9c89-fc6dfb382ea2}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{a18bf834-8cf6-49fc-aa30-fd8730185e8b}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{a18bf834-8cf6-49fc-aa30-fd8730185e8b}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{a4b1530a-5e9d-44ba-a2e7-925f4610db1a}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{a4b1530a-5e9d-44ba-a2e7-925f4610db1a}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{a4c683d1-7b66-4c43-8479-8edca120fbfc}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{a4c683d1-7b66-4c43-8479-8edca120fbfc}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{aff7ea96-ecb4-40a0-a5a9-e43c0b5f6a83}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{aff7ea96-ecb4-40a0-a5a9-e43c0b5f6a83}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{b483bf8f-7f9e-41da-9922-da81f3c3fe0e}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{b483bf8f-7f9e-41da-9922-da81f3c3fe0e}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{bfbe404e-ec18-4217-98d4-2595c6146c66}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{bfbe404e-ec18-4217-98d4-2595c6146c66}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{c2392405-691d-45d1-aa81-f9abcd615143}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{c2392405-691d-45d1-aa81-f9abcd615143}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{c2caf5bc-9217-4bc1-975b-15140fc19cc2}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{c2caf5bc-9217-4bc1-975b-15140fc19cc2}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{d75b48a8-9470-4448-8a88-17fec89f8c96}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{d75b48a8-9470-4448-8a88-17fec89f8c96}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{dd333d4a-4cf7-419f-9563-1fcf8fdf076d}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{dd333d4a-4cf7-419f-9563-1fcf8fdf076d}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{de730bd3-144c-4fda-a43f-f555fe44027d}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{de730bd3-144c-4fda-a43f-f555fe44027d}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{e2dfc749-b597-4ade-b4c6-828aa8062f0f}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{e2dfc749-b597-4ade-b4c6-828aa8062f0f}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{e978a10a-52a0-4a4e-8007-a4bfe96e3621}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{e978a10a-52a0-4a4e-8007-a4bfe96e3621}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{eace715e-0f39-4a26-bc6b-950ea6a51e94}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{eace715e-0f39-4a26-bc6b-950ea6a51e94}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{eaeba95b-33bc-4fc5-a792-dccd9031771d}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{eaeba95b-33bc-4fc5-a792-dccd9031771d}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{f884c495-e77f-4062-b1c6-07b3aef721b8}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{f884c495-e77f-4062-b1c6-07b3aef721b8}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{06b576fd-be6d-4006-b27f-27a08f267941}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{06b576fd-be6d-4006-b27f-27a08f267941}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{3459a5b0-0a67-46a6-8362-299615f8541f}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{3459a5b0-0a67-46a6-8362-299615f8541f}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{6b7e4b24-b0a4-4f81-acff-bf85a06326e2}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{6b7e4b24-b0a4-4f81-acff-bf85a06326e2}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{775a43d4-ab0e-4d5c-84e6-12b1a8090622}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{775a43d4-ab0e-4d5c-84e6-12b1a8090622}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{7841ab2c-3380-44d9-bd60-692a25644eee}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{7841ab2c-3380-44d9-bd60-692a25644eee}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{9fc12426-bed8-4178-a46a-f850bd3837d9}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{9fc12426-bed8-4178-a46a-f850bd3837d9}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{c5db081e-6cfe-4a69-80fc-f030ab70ac34}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{c5db081e-6cfe-4a69-80fc-f030ab70ac34}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{c8f196ca-6dc0-40ac-99d8-8db352c22519}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{c8f196ca-6dc0-40ac-99d8-8db352c22519}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{fa93bb47-e286-4542-9a56-d587630c1d96}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/EventFolder/{fa93bb47-e286-4542-9a56-d587630c1d96}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/ParameterPreset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/ParameterPreset/{93729600-e08a-4aa4-a531-f60f19a4c33a}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/ParameterPreset/{93729600-e08a-4aa4-a531-f60f19a4c33a}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1ERLVL.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1ERLVL.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menue.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menue.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Interfaces/ManagerSETUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interfaces/ManagerSETUp.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Interfaces/SetUPScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interfaces/SetUPScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpawnArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SpawnArea.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Arme/Porjectiles/scheduledDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SetUPScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SceneInitialize.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponGlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" root0="FORCE_HIGHLIGHTING" />
@@ -259,10 +73,11 @@
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerFootstep.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/SpawnArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/SetUPScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/SpawnArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/SceneInitialize.cs" />
       </list>
     </option>
   </component>
@@ -330,7 +145,7 @@
       <workItem from="1616092931250" duration="10098000" />
       <workItem from="1616140223017" duration="13620000" />
       <workItem from="1616173705866" duration="837000" />
-      <workItem from="1616248001454" duration="6551000" />
+      <workItem from="1616248001454" duration="9598000" />
     </task>
     <servers />
   </component>

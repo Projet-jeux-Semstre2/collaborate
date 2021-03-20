@@ -10,6 +10,8 @@ public class Core_Manager : MonoBehaviour
 {
     public List<GameObject> myEntities;
 
+    private Core_Stats _coreStats;
+
     public float pullRadius;
     public float pullForce;
 
@@ -33,24 +35,20 @@ public class Core_Manager : MonoBehaviour
 
     private bool haveRender = false;
 
+    public float minimumEntities = 2;
 
     private void OnEnable()
     {
+        player = GameObject.FindWithTag("Player");
+        agent = GetComponent<NavMeshAgent>();
+        _coreStats = GetComponent<Core_Stats>();
         if (!haveRender)
         {
             _instRenderer = Instantiate(renderer, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), Quaternion.identity);
             _instRenderer.GetComponent<Core_renderer>().core = transform;
             haveRender = true;
         }
-        
     }
-
-    private void Start()
-    {
-        player = GameObject.FindWithTag("Player");
-        agent = GetComponent<NavMeshAgent>();
-    }
-
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("ennemis") && !other.GetComponent<Entities_Manager>().hasCore && other.GetComponent<Entities_Manager>().myCore == null)
@@ -59,6 +57,7 @@ public class Core_Manager : MonoBehaviour
             other.GetComponent<Entities_Manager>().hasCore = true;
             other.GetComponent<Entities_Manager>().isInGroups = true;
             other.GetComponent<Entities_Manager>().myCore = gameObject;
+            _coreStats.UpStats(other.gameObject);
         }
         
 
@@ -70,6 +69,7 @@ public class Core_Manager : MonoBehaviour
     {
         if (other.CompareTag("ennemis") && other.GetComponent<Entities_Manager>().hasCore && other.GetComponent<Entities_Manager>().myCore == gameObject)
         {
+            _coreStats.SuppStats(other.gameObject);
             myEntities.Remove(other.gameObject);
             other.GetComponent<Entities_Manager>().hasCore = false;
             other.GetComponent<Entities_Manager>().isInGroups = false;
@@ -133,6 +133,7 @@ public class Core_Manager : MonoBehaviour
             if (myEntities[i] == null)
             {
                 myEntities.RemoveAt(i);
+                _coreStats.SuppStats(myEntities[i]);
             }
         }
         
@@ -155,13 +156,11 @@ public class Core_Manager : MonoBehaviour
             palier = "grand";
         }
     }
-
-    
     
 
     private void LateUpdate()
     {
-        if (myEntities.Count <= 2)
+        if (myEntities.Count <= minimumEntities)
         {
             Destroy(gameObject);
         }

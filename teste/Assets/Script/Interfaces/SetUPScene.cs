@@ -5,14 +5,19 @@ using UnityEngine;
 
 public class SetUPScene : MonoBehaviour
 {
-    public ChallengeMenue _challengeMenue;
     
     public float NombreEntités;
-    // Start is called before the first frame update
+    public float nombreFinale;
+    public float nrb;
+   
+    
+    
     
 
-    private void Update()
+    public void dificutynumber (float dificultyNombre)
     {
-        NombreEntités = _challengeMenue.GetComponent<ChallengeMenue>().nombreFinale;
+        nombreFinale = dificultyNombre;
+        nrb = nombreFinale;
     }
+    
 }

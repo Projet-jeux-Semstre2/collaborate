@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SpawnArea : MonoBehaviour
 {
@@ -10,12 +12,18 @@ public class SpawnArea : MonoBehaviour
     
     private float intSPawn;
     private Vector3 rd;
-
+    private GameObject[] spawnPoint;
     
+
     // Start is called before the first frame update
     void Start()
     {
-        intSPawn = _setUpScene.GetComponent<SetUPScene>().NombreEntités;
+
+        spawnPoint = GameObject.FindGameObjectsWithTag("SpawnPoint");
+        
+        
+        _setUpScene = GameObject.FindWithTag("ManagerScene").GetComponent<SetUPScene>();
+        intSPawn = _setUpScene.GetComponent<SetUPScene>().nrb / spawnPoint.Length;
        for (int i = 0; i < intSPawn; i++)
        {
            rd = Random.insideUnitSphere * rangeSpawn + transform.position;

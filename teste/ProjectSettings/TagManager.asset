@@ -11,6 +11,8 @@ TagManager:
   - coreCacAttack
   - coreDistAttack
   - ennemiProjectile
+  - ManagerScene
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

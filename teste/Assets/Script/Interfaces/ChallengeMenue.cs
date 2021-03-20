@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,10 +8,13 @@ public class ChallengeMenue : MonoBehaviour
     public int facileNombre = 30;
     public int dificileNombre = 90;
     public float nombreFinale;
-
-
-    public void dificutynumber (float dificultyNombre)
+    public SetUPScene _setUpScene;
+    public float nrb;
+    private void Start()
     {
-        nombreFinale = dificultyNombre;
+         nrb = _setUpScene.GetComponent<SetUPScene>().NombreEntités;
     }
+
+   
+    
 }

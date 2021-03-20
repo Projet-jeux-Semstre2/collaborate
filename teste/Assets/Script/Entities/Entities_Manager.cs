@@ -34,48 +34,7 @@ public class Entities_Manager : MonoBehaviour
     
     
     
-    public enum Forme {Cube, Cone, Triangle, Icosphere}
-    [Header("Choix de la forme")]
-    [Tooltip("Choisis la forme que tu veut pour cette entité")]
-    public Forme forme;
-    public Mesh cubeMesh;
-    public Mesh coneMesh;
-    public Mesh triangleMesh;
-    public Mesh icosphereMesh;
     
-    private Mesh _myMesh;
-
-
-    [Header("Stats générale inGame")] 
-    public float speed;
-    public float attackDamage;
-    public float health = 1.0f;
-
-    //Init stats
-    private float _initSpeed;
-    private float _initAD;
-    private float _initHealth;
-
-    [Header("Tank Stats")] 
-    [SerializeField]private float t_speed;
-    [SerializeField]private float t_attackDamage;
-    [SerializeField]private float t_health;
-
-    [Header("Vif Stats")] 
-    [SerializeField]private float v_speed;
-    [SerializeField]private float v_attackDamage;
-    [SerializeField]private float v_health;
-
-    [Header("Créateur Stats")] 
-    [SerializeField]private float c_speed;
-    [SerializeField]private float c_attackDamage;
-    [SerializeField]private float c_health;
-
-    [Header("Aggresif Stats")] 
-    [SerializeField]private float a_speed;
-    [SerializeField]private float a_attackDamage;
-    [SerializeField]private float a_health;
-
 
     private void OnEnable()
     {
@@ -83,14 +42,6 @@ public class Entities_Manager : MonoBehaviour
         pullForce = Random.Range(pullForceMin, pullForceMax);
         GetComponent<MeshRenderer>().material = ChangeMaterials[0];
         _rb = GetComponent<Rigidbody>();
-        
-        
-        //Stats
-        
-        ChoosingForme();
-        health = _initHealth;
-        speed = _initSpeed;
-        attackDamage = _initAD;
     }
 
 
@@ -100,7 +51,6 @@ public class Entities_Manager : MonoBehaviour
     public void FixedUpdate()
     {
         //transform.position = Vector3.MoveTowards(transform.position, GameObject.FindWithTag("Player").transform.position, Time.deltaTime*speed);
-        
         
         if (!hasCore) //attirance des entités vers sois meme si je ne fais pas parti d'un groupe
         {
@@ -126,7 +76,7 @@ public class Entities_Manager : MonoBehaviour
         
 
 
-        if (inMyGroup.Count > minCoreParticle -1 && !hasCore && _instCore == null) //toujours laisser -1 pour décompter le possèsseur
+        if (inMyGroup.Count >= minCoreParticle -1 && !hasCore && _instCore == null) //toujours laisser -1 pour décompter le possèsseur
         {
             _instCore = Instantiate(core, new Vector3(transform.position.x, 0.2f, transform.position.z), Quaternion.identity);
         }
@@ -157,9 +107,7 @@ public class Entities_Manager : MonoBehaviour
         }
         
     }
-    
-    
-    
+
     private void OnDrawGizmos()
     {
         if (!hasCore || !isInGroups)
@@ -190,57 +138,7 @@ public class Entities_Manager : MonoBehaviour
             
         }
     }
-
-    void ChoosingForme()
-    {
-        if (forme == Forme.Cube)//Tank
-        {
-            _myMesh = cubeMesh;
-            gameObject.name = "Cube";
-            
-            //Stats
-            _initHealth = t_health;
-            _initSpeed = t_speed;
-            _initAD = t_attackDamage;
-
-
-        }
-        if (forme == Forme.Cone)//Vif
-        {
-            _myMesh = coneMesh;
-            gameObject.name = "Cone";
-            
-            //Stats
-            _initHealth = v_health;
-            _initSpeed = v_speed;
-            _initAD = v_attackDamage;
-
-        }
-        if (forme == Forme.Triangle)//Aggressif
-        {
-            _myMesh = triangleMesh;
-            gameObject.name = "Triangle";
-            
-            //Stats
-            _initHealth = a_health;
-            _initSpeed = a_speed;
-            _initAD = a_attackDamage;
-        }
-        if (forme == Forme.Icosphere)//Créateur
-        {
-            _myMesh = icosphereMesh;
-            gameObject.name = "Icosphere";
-            
-            //Stats
-            _initHealth = c_health;
-            _initSpeed = c_speed;
-            _initAD = c_attackDamage;
-        }
-        
-        GetComponent<MeshFilter>().mesh = _myMesh;
-        GetComponent<MeshCollider>().sharedMesh = _myMesh;
-        
-    }
+    
 
     
 }

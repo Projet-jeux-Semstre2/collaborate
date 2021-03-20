@@ -22,7 +22,9 @@ public class Core_Attack : MonoBehaviour
     private GameObject _player;
     private Player_Health _playerHealth;
 
-    public GameObject FB;
+    public float cacDamage = 2f;
+    public float distDamage = 10f;
+    
 
 
 
@@ -58,7 +60,7 @@ public class Core_Attack : MonoBehaviour
 
     public IEnumerator CaCAttack()
     {
-        _playerHealth.health -= _playerHealth.cacDamage;
+        _playerHealth.health -= cacDamage;
         isCaCAttack = true;
         print("cac attack");
 
