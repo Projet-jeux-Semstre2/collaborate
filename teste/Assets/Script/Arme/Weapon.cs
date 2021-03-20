@@ -5,8 +5,16 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public Transform launchPoint;
-    public float damage = 1.0f;
-        
+    public Camera mainCamera;
+    
+    public ParticleSystem muzzleFlash;
+    public GameObject impactEffect;
+
+    public LayerMask touchingLayerMask;
+
+    public GameObject[] viseur;
+
+
     public  virtual void Engage()
     {
         

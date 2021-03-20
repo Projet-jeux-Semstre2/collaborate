@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4150962290683856086}
   - component: {fileID: 1271180404235548821}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TriggerGroups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,8 @@ GameObject:
   - component: {fileID: 7531843799789443385}
   - component: {fileID: 8708893377061288999}
   - component: {fileID: 8409084760672736293}
-  m_Layer: 0
+  - component: {fileID: -3337011618861631108}
+  m_Layer: 9
   m_Name: Entities
   m_TagString: ennemis
   m_Icon: {fileID: 0}
@@ -74,7 +75,7 @@ Transform:
   m_GameObject: {fileID: 4448553007369930569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4150962290683856086}
   m_Father: {fileID: 0}
@@ -191,21 +192,29 @@ MonoBehaviour:
   icosphereMesh: {fileID: 289301614986012343, guid: 98ee3eb9d93538a46b73077f6df70df8, type: 3}
   speed: 0
   attackDamage: 0
-  healh: 0
-  attackSpeed: 0
+  health: 0
   t_speed: 1
   t_attackDamage: 1
-  t_healh: 2
-  t_attackSpeed: 1
+  t_health: 8
   v_speed: 1.5
   v_attackDamage: 1
-  v_healh: 1
-  v_attackSpeed: 1.5
+  v_health: 1
   c_speed: 1
   c_attackDamage: 1
-  c_healh: 1
-  c_attackSpeed: 1
+  c_health: 1
   a_speed: 1
   a_attackDamage: 2
-  a_healh: 1
-  a_attackSpeed: 1
+  a_health: 1
+--- !u!114 &-3337011618861631108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448553007369930569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda65b1df5ad035479a519f847d95cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FmodHurt: event:/Ennemies/Solo/Hurt

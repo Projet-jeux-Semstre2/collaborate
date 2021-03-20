@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 90.0f;
+
+    public GameObject Groupe;
     
 
     
@@ -42,9 +44,14 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Vector3 rd = Random.insideUnitSphere * 50;
+            rd.y = 0;
+            Instantiate(Groupe, rd, Quaternion.identity);
+        }
 
-        
-        
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);

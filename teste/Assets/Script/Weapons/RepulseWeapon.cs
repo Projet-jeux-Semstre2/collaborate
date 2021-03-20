@@ -61,7 +61,7 @@ public class RepulseWeapon : MonoBehaviour
                     Rigidbody rb = cube.GetComponent<Rigidbody>();
                     
 
-                    rb.AddForce(player.transform.forward * force, ForceMode.Impulse);
+                    rb.AddForce(transform.forward * force, ForceMode.Impulse);
                 }
 
                 if (cube.tag == "collider")
@@ -74,7 +74,7 @@ public class RepulseWeapon : MonoBehaviour
                         cube.GetComponentInParent<NavMeshAgent>().enabled = false;
                     }
 
-                    rb.AddForce(player.transform.forward * force, ForceMode.Impulse);
+                    rb.AddForce(transform.forward * force, ForceMode.Impulse);
                 }
             }
         }

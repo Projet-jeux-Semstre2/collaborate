@@ -277,6 +277,7 @@ MonoBehaviour:
   objectsInRepulse: []
   player: {fileID: 6005217042060613799}
   force: 2
+  fmodhurtEntities: 
 --- !u!1 &6005217041806617621
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +365,8 @@ MonoBehaviour:
   playerCamera: {fileID: 6005217041439488965}
   lookSpeed: 2
   lookXLimit: 90
-  currentStamina: 0
+  fmodWalkPlayer: 
+  fmodjumpPlayer: event:/Player/Player_Body/Jump
   moveDirection: {x: 0, y: 0, z: 0}
   canMove: 1
   canDoubleJump: 0
@@ -382,6 +384,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b2432f31896b540a03be9f75aeacd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchPoint: {fileID: 0}
+  mainCamera: {fileID: 0}
+  muzzleFlash: {fileID: 0}
+  impactEffect: {fileID: 0}
   weaponActif: Repulseur
   repulseWeapon: {fileID: 6005217041558426881}
 --- !u!54 &6005217042060613816

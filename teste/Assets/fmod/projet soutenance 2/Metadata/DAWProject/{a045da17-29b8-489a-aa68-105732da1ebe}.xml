@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="DAWProject" id="{a045da17-29b8-489a-aa68-105732da1ebe}">
+		<property name="assetPath">
+			<value>placeholrder.rpp.link/</value>
+		</property>
+		<property name="dawProjectPath">
+			<value>D:/COURS/2GDA Ican 2020-2021/Projet semestriel/sem 2jeux/SD/Placeholder/placeholrder/placeholrder.rpp</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6ec572c6-f630-4a91-b2a8-c7ebe101729a}</destination>
+		</relationship>
+	</object>
+</objects>

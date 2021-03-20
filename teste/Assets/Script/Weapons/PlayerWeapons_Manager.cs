@@ -12,7 +12,7 @@ public class PlayerWeapons_Manager : Weapon
 
     //repulse
     public GameObject repulseWeapon;
-    private bool _canRepulse;
+    private bool _auto;
 
     public override void Engage()
     {
@@ -21,13 +21,13 @@ public class PlayerWeapons_Manager : Weapon
 
     private void Fire()
     {
-        _canRepulse = true;
+        _auto = true;
         repulseWeapon.SetActive(true);
     }
 
     public override void DisEngage()
     {
-        _canRepulse = false;
+        _auto = false;
         repulseWeapon.SetActive(false);
     }
     

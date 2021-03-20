@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="DAWAsset" id="{3ae291d3-2f80-4c1e-b853-63515a740513}">
+		<property name="assetPath">
+			<value>placeholrder.rpp.link/01-210314_2023.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>6.698666666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6ec572c6-f630-4a91-b2a8-c7ebe101729a}</destination>
+		</relationship>
+		<relationship name="project">
+			<destination>{a045da17-29b8-489a-aa68-105732da1ebe}</destination>
+		</relationship>
+	</object>
+</objects>
