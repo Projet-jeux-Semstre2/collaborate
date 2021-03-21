@@ -23,10 +23,12 @@ public class weaponPompe : Weapon
 
     private Animator _animator;
 
-    private void OnEnable()
+    public override void AfterEnable()
     {
         _animator = GetComponent<Animator>();
-        
+
+        player.walkingSpeed -= 3;
+        player.runningSpeed -= 5;
         
         foreach (var reticule in viseur)
         {
@@ -34,6 +36,14 @@ public class weaponPompe : Weapon
         }
         viseur[0].SetActive(true);
 
+    }
+    
+    
+
+    private void OnDisable()
+    {
+        player.runningSpeed = player.initRunSpeed;
+        player.walkingSpeed = player.initWalkSpeed;
     }
 
     public override void Engage() // c'est override pour pouvoir réecrire la méthode du script dont elle hérite.

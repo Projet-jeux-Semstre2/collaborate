@@ -15,8 +15,8 @@ public class Player_Health : MonoBehaviour
     public float fb_time = 0.2f;
 
     public GameObject coreRecup;
-    
 
+    public GameManager _gameManager;
     private void Start()
     {
         health = maxHealth;
@@ -52,6 +52,6 @@ public class Player_Health : MonoBehaviour
 
     void Die()
     {
-        SceneManager.LoadScene(0);
+        _gameManager.GetComponent<GameManager>().GameOver();
     }
 }

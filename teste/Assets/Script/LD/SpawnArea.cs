@@ -10,25 +10,25 @@ public class SpawnArea : MonoBehaviour
     public GameObject[] allEntitites;
     public SetUPScene _setUpScene;
     
-    private float intSPawn;
-    private Vector3 rd;
-    private GameObject[] spawnPoint;
+    private float _instSpawn;
+    private Vector3 _rd;
+    private GameObject[] _spawnPoint;
     
 
     // Start is called before the first frame update
     void Start()
     {
 
-        spawnPoint = GameObject.FindGameObjectsWithTag("SpawnPoint");
+        _spawnPoint = GameObject.FindGameObjectsWithTag("SpawnPoint");
         
         
         _setUpScene = GameObject.FindWithTag("ManagerScene").GetComponent<SetUPScene>();
-        intSPawn = _setUpScene.GetComponent<SetUPScene>().nrb / spawnPoint.Length;
-       for (int i = 0; i < intSPawn; i++)
+        _instSpawn = _setUpScene.GetComponent<SetUPScene>().nrb / _spawnPoint.Length;
+       for (int i = 0; i < _instSpawn; i++)
        {
-           rd = Random.insideUnitSphere * rangeSpawn + transform.position;
-           rd.y = transform.position.y;
-          RandomCreate(rd);
+           _rd = Random.insideUnitSphere * rangeSpawn + transform.position;
+           _rd.y = transform.position.y;
+           RandomCreate(_rd);
        }
     }
 

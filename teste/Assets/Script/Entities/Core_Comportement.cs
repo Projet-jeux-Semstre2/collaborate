@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
-using UnityEditorInternal;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -70,7 +68,7 @@ public class Core_Comportement : MonoBehaviour
         Debug.DrawLine(transform.position, _coreManager.target, _colorLine);
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {

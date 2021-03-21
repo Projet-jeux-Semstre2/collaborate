@@ -55,10 +55,10 @@ GameObject:
   - component: {fileID: 8508052970475930951}
   - component: {fileID: 393297515589280873}
   - component: {fileID: 5775634947890781404}
-  - component: {fileID: 7531843799789443385}
   - component: {fileID: 8708893377061288999}
   - component: {fileID: -5424370402776813150}
   - component: {fileID: -2284289399556064807}
+  - component: {fileID: 327268566516673752}
   m_Layer: 9
   m_Name: Entitie_Createur
   m_TagString: ennemis
@@ -130,20 +130,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7531843799789443385
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4448553007369930569}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 289301614986012343, guid: 98ee3eb9d93538a46b73077f6df70df8, type: 3}
 --- !u!54 &8708893377061288999
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -152,7 +138,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4448553007369930569}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 18
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -185,6 +171,7 @@ MonoBehaviour:
   myCore: {fileID: 0}
   minCoreParticle: 2
   inMyGroup: []
+  colliderAttirance: {fileID: 1271180404235548821}
 --- !u!114 &-2284289399556064807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,3 +188,16 @@ MonoBehaviour:
   damage: 1
   speed: 1
   FmodHurt: event:/Ennemies/Solo/Hurt
+--- !u!135 &327268566516673752
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448553007369930569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.48
+  m_Center: {x: 0, y: 0, z: 0}

@@ -18,9 +18,8 @@ public class Core_Manager : MonoBehaviour
     private Vector3 _moyennePos;
     public GameObject player;
     public NavMeshAgent agent;
-    
-    
-    
+
+    public SphereCollider sphereColliderPull;
     
     private float t;
 
@@ -60,9 +59,6 @@ public class Core_Manager : MonoBehaviour
             _coreStats.UpStats(other.gameObject);
         }
         
-
-
-
     }
     
     private void OnTriggerExit(Collider other)
@@ -78,21 +74,25 @@ public class Core_Manager : MonoBehaviour
     }
     
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         Destroy(_instRenderer);
         foreach (var obj in myEntities)
         {
-            obj.GetComponent<Entities_Manager>().hasCore = false;
-            obj.GetComponent<Entities_Manager>().isInGroups = false;
-            obj.GetComponent<Entities_Manager>().myCore = null;
+            if (obj)
+            {
+                obj.GetComponent<Entities_Manager>().hasCore = false;
+                obj.GetComponent<Entities_Manager>().isInGroups = false;
+                obj.GetComponent<Entities_Manager>().myCore = null;
+            }
+            
         }
     }
 
 
     private void FixedUpdate()
     {
-        GetComponent<SphereCollider>().radius = pullRadius * 3.33f;
+        sphereColliderPull.radius = pullRadius * 3.33f;
         
         
         foreach (Collider collider in Physics.OverlapSphere(transform.position, pullRadius) )

@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float walkingSpeed = 7.5f;
-    public float runningSpeed = 11.5f;
+    [Header("Speed à changé")]
+    public float initWalkSpeed = 9;
+    public float initRunSpeed = 15;
+    [Header("Speed in Real Time")]
+    public float walkingSpeed;
+    public float runningSpeed;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
     public Camera playerCamera;
@@ -13,6 +17,9 @@ public class Player : MonoBehaviour
     public float lookXLimit = 90.0f;
 
     public GameObject Groupe;
+
+
+    
     
 
     
@@ -39,6 +46,9 @@ public class Player : MonoBehaviour
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        walkingSpeed = initWalkSpeed;
+        runningSpeed = initRunSpeed;
     }
 
     void Update()
@@ -46,9 +56,10 @@ public class Player : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.P))
         {
-            Vector3 rd = Random.insideUnitSphere * 50;
+            Vector3 rd = Random.insideUnitSphere * 50 + transform.position;
             rd.y = 0;
             Instantiate(Groupe, rd, Quaternion.identity);
+            
         }
 
         // We are grounded, so recalculate move direction based on axes
@@ -109,7 +120,6 @@ public class Player : MonoBehaviour
         if (!characterController.isGrounded && Input.GetKeyDown(KeyCode.A))
         {
             moveDirection.y -= (gravity*5) * Time.deltaTime;
-            Debug.Log("Down");
         }
         else
         {

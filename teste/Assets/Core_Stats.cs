@@ -7,6 +7,8 @@ public class Core_Stats : MonoBehaviour
 {
     private Core_Manager _coreManager;
     private Core_Attack _coreAttack;
+
+    private Entities_Stats _entitiesStats;
     
 
     [Tooltip("la speed de chaque entités est divisé par ce nombre avant d'être ajouter au core")]
@@ -20,6 +22,7 @@ public class Core_Stats : MonoBehaviour
         _coreAttack = GetComponent<Core_Attack>();
         _coreManager = GetComponent<Core_Manager>();
     }
+    
     
     public void UpStats(GameObject obj)
     {

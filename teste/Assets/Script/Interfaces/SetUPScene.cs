@@ -18,6 +18,7 @@ public class SetUPScene : MonoBehaviour
     {
         nombreFinale = dificultyNombre;
         nrb = nombreFinale;
+        
     }
     
 }

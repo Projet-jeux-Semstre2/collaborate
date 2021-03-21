@@ -24,6 +24,8 @@ public class weaponGlock : Weapon
             reticule.SetActive(false);
         }
         viseur[0].SetActive(true);
+        
+        
     }
 
 

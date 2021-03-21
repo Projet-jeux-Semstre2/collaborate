@@ -55,10 +55,10 @@ GameObject:
   - component: {fileID: 8508052970475930951}
   - component: {fileID: 393297515589280873}
   - component: {fileID: 5775634947890781404}
-  - component: {fileID: 7531843799789443385}
   - component: {fileID: 8708893377061288999}
   - component: {fileID: -4078423653274146267}
   - component: {fileID: -8466842639839115360}
+  - component: {fileID: 3905321256222153193}
   m_Layer: 9
   m_Name: Entitie_Vif
   m_TagString: ennemis
@@ -130,20 +130,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7531843799789443385
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4448553007369930569}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3613567641014311022, guid: 61a03ee8716ecb144b2cd31e7f11424b, type: 3}
 --- !u!54 &8708893377061288999
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -152,7 +138,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4448553007369930569}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -185,6 +171,7 @@ MonoBehaviour:
   myCore: {fileID: 0}
   minCoreParticle: 2
   inMyGroup: []
+  colliderAttirance: {fileID: 1271180404235548821}
 --- !u!114 &-8466842639839115360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,3 +188,16 @@ MonoBehaviour:
   damage: 1
   speed: 2
   FmodHurt: event:/Ennemies/Solo/Hurt
+--- !u!135 &3905321256222153193
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448553007369930569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.03}

@@ -30,10 +30,14 @@ public class Entities_Manager : MonoBehaviour
     public int minCoreParticle = 2;
     [Space(2)]
     public List<GameObject> inMyGroup;
+
+    public SphereCollider colliderAttirance;
+    private MeshRenderer _meshRenderer;
     
     
     
     
+   
     
 
     private void OnEnable()
@@ -42,19 +46,23 @@ public class Entities_Manager : MonoBehaviour
         pullForce = Random.Range(pullForceMin, pullForceMax);
         GetComponent<MeshRenderer>().material = ChangeMaterials[0];
         _rb = GetComponent<Rigidbody>();
+        _meshRenderer = GetComponent<MeshRenderer>();
+    }
+
+    public void Start()
+    {
+        // count nrb entités
+        ObjectifExtermination.nrbTotal++;
+
     }
 
 
-
-    
-
     public void FixedUpdate()
     {
-        //transform.position = Vector3.MoveTowards(transform.position, GameObject.FindWithTag("Player").transform.position, Time.deltaTime*speed);
-        
+
         if (!hasCore) //attirance des entités vers sois meme si je ne fais pas parti d'un groupe
         {
-            GetComponentInChildren<SphereCollider>().enabled = true;
+            colliderAttirance.enabled = true;
 
             foreach (Collider collider in Physics.OverlapSphere(transform.position, pullRadius) )
             {
@@ -71,7 +79,7 @@ public class Entities_Manager : MonoBehaviour
         }
         else
         {
-            GetComponentInChildren<SphereCollider>().enabled = false;
+            colliderAttirance.enabled = false;
         }
         
 
@@ -85,13 +93,12 @@ public class Entities_Manager : MonoBehaviour
         if (_rb.velocity == Vector3.zero)
         {
             pullForce = 0;
-            GetComponent<MeshRenderer>().material = ChangeMaterials[1];
+            _meshRenderer.material = ChangeMaterials[1];
         }
         
         if (_rb.velocity != Vector3.zero)
         {
-            pullForce = Random.Range(pullForceMin, pullForceMax);
-            GetComponent<MeshRenderer>().material = ChangeMaterials[0];
+            _meshRenderer.material = ChangeMaterials[0];
         }
 
 

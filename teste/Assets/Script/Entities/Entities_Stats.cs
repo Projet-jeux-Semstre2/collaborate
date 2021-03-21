@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,6 +21,10 @@ public class Entities_Stats : MonoBehaviour
      
       
         health -= amount;
+    }
+
+    private void Update()
+    {
         if ((health <= 0f))
         {
             Die();
@@ -28,6 +33,7 @@ public class Entities_Stats : MonoBehaviour
 
     private void Die()
     {
+        ObjectifExtermination.nrbTotal--;
         Destroy(gameObject);
     }
 }

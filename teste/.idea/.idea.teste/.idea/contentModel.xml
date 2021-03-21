@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Core_Stats.cs" t="Include" />
         <e p="Fmod" t="Include">
           <e p="projet soutenance 2" t="Include">
             <e p="Metadata" t="Include">
@@ -304,7 +305,6 @@
             </e>
           </e>
         </e>
-        <e p="SceneInitialize.cs" t="Include" />
         <e p="Script" t="Include">
           <e p="Arme" t="Include">
             <e p="Porjectiles" t="Include">
@@ -328,13 +328,23 @@
             <e p="Core_renderer.cs" t="Include" />
             <e p="CoreDetection.cs" t="Include" />
             <e p="Entities_Manager.cs" t="Include" />
-            <e p="HealtEntitties.cs" t="Include" />
+            <e p="Entities_Stats.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
             <e p="ChallengeMenue.cs" t="Include" />
+            <e p="Objectifs" t="Include">
+              <e p="GameManager.cs" t="Include" />
+              <e p="ObjectifExtermination.cs" t="Include" />
+              <e p="TimerPlay.cs" t="Include" />
+            </e>
             <e p="SceneChange.cs" t="Include" />
+            <e p="SceneInitialize.cs" t="Include" />
             <e p="SetUPScene.cs" t="Include" />
             <e p="ShowCursor.cs" t="Include" />
+          </e>
+          <e p="LD" t="Include">
+            <e p="SpawnArea.cs" t="Include" />
+            <e p="SpawnPlayer.cs" t="Include" />
           </e>
           <e p="Movement.cs" t="Include" />
           <e p="Player.cs" t="Include" />
@@ -345,7 +355,6 @@
             <e p="RepulseWeapon.cs" t="Include" />
           </e>
         </e>
-        <e p="SpawnArea.cs" t="Include" />
       </e>
       <e p="FMODUnity.csproj" t="IncludeRecursive" />
       <e p="FMODUnityEditor.csproj" t="IncludeRecursive" />

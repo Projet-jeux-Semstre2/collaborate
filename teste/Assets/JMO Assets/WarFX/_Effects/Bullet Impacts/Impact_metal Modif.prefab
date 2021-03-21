@@ -9445,7 +9445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1
-  force: 5
+  force: 90
   upwardModifier: 2
   time: 1
   layerMaskExplosion:
