@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{d5f33957-7e68-4b32-9711-4803882c9b08}">
+		<property name="name">
+			<value>Musique Contiue END</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ed492a8d-c8cf-4bb0-951b-8b6b8db0560b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{087a2a89-ed80-49eb-b5a3-e3c3c89721f0}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{087a2a89-ed80-49eb-b5a3-e3c3c89721f0}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

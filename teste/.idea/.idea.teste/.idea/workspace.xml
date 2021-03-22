@@ -5,72 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core_Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core_Stats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Bullet Impacts/Impact_metal Modif.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/WarFX/_Effects/Bullet Impacts/Impact_metal Modif.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/ArmeWeapon 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/ArmeWeapon 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/ArmeWeapon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/ArmeWeapon.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Commando.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Commando.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Core.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Core.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/CubeAttire.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/CubeAttire.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/NotAttire.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/NotAttire.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Obstacle.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Obstacle.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Player.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Player.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Pompe.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Pompe.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/RayGun.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/RayGun.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/RepulseMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/RepulseMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Sol.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Sol.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/TemporaryFb.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/TemporaryFb.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Wall.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/projectile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/projectile.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/lib/win/x86/fmodstudioL.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/lib/win/x86/fmodstudioL.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Core/Core.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Core/RenderCore.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Core/RenderCore.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Aggresif.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Aggresif.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Createur.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Createur.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Tank.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Tank.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Vif.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Vif.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Blanc.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Blanc.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Gris.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Gris.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Gris2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Gris2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Gris3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Gris3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/GrisHard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/GrisHard.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Noir.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Noir.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Surchauffe.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Surchauffe.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Viseur.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Test/ShotGun1/Material/Viseur.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneInitialize.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneInitialize.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/1ERLVL.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1ERLVL.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menue.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menue.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponGlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponGlock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities/CoreDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entities/CoreDetection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interfaces/SetUPScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interfaces/SetUPScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player_Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player_Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpawnArea.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpawnArea.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP/PostFx.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP/PostFx.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP/UniversalRenderPipelineAsset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP/UniversalRenderPipelineAsset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP/UniversalRenderPipelineAsset_Renderer.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Master.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Placeholder.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Placeholder.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{2d54c9aa-a303-4773-a34f-a337b2516e0c}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{2d54c9aa-a303-4773-a34f-a337b2516e0c}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,6 +50,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FmodSonsDeOrely.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Arme/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -148,6 +91,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player_Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/FmodSonsDeOrely.cs" />
       </list>
     </option>
   </component>
@@ -217,7 +161,8 @@
       <workItem from="1616173705866" duration="837000" />
       <workItem from="1616248001454" duration="9598000" />
       <workItem from="1616269074576" duration="179000" />
-      <workItem from="1616316776180" duration="9120000" />
+      <workItem from="1616316776180" duration="9735000" />
+      <workItem from="1616339628622" duration="1535000" />
     </task>
     <servers />
   </component>

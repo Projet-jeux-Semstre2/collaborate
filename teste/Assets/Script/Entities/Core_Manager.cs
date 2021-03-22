@@ -23,7 +23,7 @@ public class Core_Manager : MonoBehaviour
     
     private float t;
 
-    private bool _isOnGround;
+    public bool _isOnGround;
 
     public string palier;
 
@@ -33,6 +33,7 @@ public class Core_Manager : MonoBehaviour
     private GameObject _instRenderer;
 
     private bool haveRender = false;
+    public LayerMask layerMask;
 
     public float minimumEntities = 2;
 
@@ -47,6 +48,8 @@ public class Core_Manager : MonoBehaviour
             _instRenderer.GetComponent<Core_renderer>().core = transform;
             haveRender = true;
         }
+
+        target = transform.position;
     }
     private void OnTriggerStay(Collider other)
     {
@@ -111,22 +114,30 @@ public class Core_Manager : MonoBehaviour
         if (agent.enabled && _isOnGround && target != null)
         {
             agent.destination = target;
-
         }
 
-        if (Physics.Raycast(transform.position, Vector3.down * 2))
+        if(Physics.Raycast(transform.position,Vector3.down, 2, layerMask))
         {
+            
             _isOnGround = true;
         }
         else
         {
             _isOnGround = false;
         }
+        
+        Debug.DrawRay(transform.position, Vector3.down * 2, Color.cyan);
 
-        if (_isOnGround && !agent.enabled)
+        if (_isOnGround)
         {
             agent.enabled = true;
         }
+
+        if (!_isOnGround )
+        {
+            agent.enabled = false;
+        }
+        
 
         for (int i = myEntities.Count - 1; i > -1 ; i--)
         {
@@ -143,15 +154,11 @@ public class Core_Manager : MonoBehaviour
 
     void Palier()
     {
-        if (myEntities.Count <= 5)
-        {
-            palier = "petit";
-        }
-        if (myEntities.Count > 5 && myEntities.Count < 10)
+        if (myEntities.Count > minimumEntities && myEntities.Count < 15)
         {
             palier = "moyen";
         }
-        if (myEntities.Count >= 10)
+        if (myEntities.Count >= 15)
         {
             palier = "grand";
         }

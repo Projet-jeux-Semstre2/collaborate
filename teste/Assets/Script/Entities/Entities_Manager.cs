@@ -32,13 +32,12 @@ public class Entities_Manager : MonoBehaviour
     public List<GameObject> inMyGroup;
 
     public SphereCollider colliderAttirance;
-    private MeshRenderer _meshRenderer;
-    
-    
-    
-    
-   
-    
+
+
+
+
+
+
 
     private void OnEnable()
     {
@@ -46,15 +45,11 @@ public class Entities_Manager : MonoBehaviour
         pullForce = Random.Range(pullForceMin, pullForceMax);
         GetComponent<MeshRenderer>().material = ChangeMaterials[0];
         _rb = GetComponent<Rigidbody>();
-        _meshRenderer = GetComponent<MeshRenderer>();
-    }
 
-    public void Start()
-    {
-        // count nrb entités
-        ObjectifExtermination.nrbTotal++;
-
+        ObjectifExtermination.nrbEntités.Add(gameObject);
+        
     }
+    
 
 
     public void FixedUpdate()
@@ -86,20 +81,10 @@ public class Entities_Manager : MonoBehaviour
 
         if (inMyGroup.Count >= minCoreParticle -1 && !hasCore && _instCore == null) //toujours laisser -1 pour décompter le possèsseur
         {
-            _instCore = Instantiate(core, new Vector3(transform.position.x, 0.2f, transform.position.z), Quaternion.identity);
+            _instCore = Instantiate(core, new Vector3(transform.position.x, transform.position.y , transform.position.z), Quaternion.identity);
         }
 
         
-        if (_rb.velocity == Vector3.zero)
-        {
-            pullForce = 0;
-            _meshRenderer.material = ChangeMaterials[1];
-        }
-        
-        if (_rb.velocity != Vector3.zero)
-        {
-            _meshRenderer.material = ChangeMaterials[0];
-        }
 
 
         if (!isInGroups)
@@ -145,7 +130,9 @@ public class Entities_Manager : MonoBehaviour
             
         }
     }
-    
 
-    
+    private void OnDestroy()
+    {
+        ObjectifExtermination.nrbEntités.Remove(gameObject);
+    }
 }

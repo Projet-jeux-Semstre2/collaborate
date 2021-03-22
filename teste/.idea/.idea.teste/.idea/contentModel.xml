@@ -18,6 +18,7 @@
                 <e p="{2e829591-7899-4b4f-8f71-7a3ba924f0a3}.xml" t="Include" />
                 <e p="{31591dd5-c8d1-4f70-a245-b3d5f629bffe}.xml" t="Include" />
                 <e p="{4c3731d2-6b1a-47ac-8974-f31aa803a7e0}.xml" t="Include" />
+                <e p="{4fe8168a-a431-4254-900f-66dd9b611873}.xml" t="Include" />
                 <e p="{7f9f6e7e-682b-4ced-9534-713daf54cff2}.xml" t="Include" />
                 <e p="{8df7b590-239d-4210-9319-9f0dabfda70f}.xml" t="Include" />
                 <e p="{992a7bd6-8324-41c0-9ac2-c746f9cf1bf8}.xml" t="Include" />
@@ -72,6 +73,7 @@
                 <e p="{650bf746-ff95-4aad-aa75-42ea2b4733f0}.xml" t="Include" />
                 <e p="{70cf8a92-5e71-4f93-aa78-113e9eed65d9}.xml" t="Include" />
                 <e p="{74d11a37-8019-49f6-abd3-5d3e5ab66046}.xml" t="Include" />
+                <e p="{86fb41f6-0cb6-49a8-ad01-e943f2a03a96}.xml" t="Include" />
                 <e p="{8c560e07-c3ad-40c3-8ae0-bfd2bc545844}.xml" t="Include" />
                 <e p="{8de458b1-17d9-45b5-b1f9-fe22fff0a3f2}.xml" t="Include" />
                 <e p="{a1d8588d-24a3-4a61-a959-03c9e5f49eb7}.xml" t="Include" />
@@ -105,6 +107,7 @@
               <e p="Mixer.xml" t="Include" />
               <e p="ParameterPreset" t="Include">
                 <e p="{1273ed38-6ffb-458f-b377-1816cdc04d0f}.xml" t="Include" />
+                <e p="{d5f33957-7e68-4b32-9711-4803882c9b08}.xml" t="Include" />
               </e>
               <e p="ParameterPresetFolder" t="Include">
                 <e p="{ed492a8d-c8cf-4bb0-951b-8b6b8db0560b}.xml" t="Include" />
@@ -129,6 +132,7 @@
             </e>
           </e>
         </e>
+        <e p="FmodSonsDeOrely.cs" t="Include" />
         <e p="JMO Assets" t="Include">
           <e p="Cartoon FX Easy Editor" t="Include">
             <e p="CartoonFX Easy Editor Readme.txt" t="Include" />

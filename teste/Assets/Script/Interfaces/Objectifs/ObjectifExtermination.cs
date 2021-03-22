@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class ObjectifExtermination : MonoBehaviour
 {
     public Text textExtermination;
-    private List<GameObject> nrbEntités;
-    public static float nrbTotal;
+    public static List<GameObject> nrbEntités = new List<GameObject>();
 
     public GameManager _gameManager;
 
@@ -17,10 +16,10 @@ public class ObjectifExtermination : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textExtermination.text = "Nombre Entités = " + nrbTotal;
-        if (nrbTotal <= 0)
+        textExtermination.text = "Nombre Entités = " + nrbEntités.Count;
+        if (nrbEntités.Count <= 0)
         {
-            _gameManager.GetComponent<GameManager>().GameWin();
+            _gameManager.GameWin();
         }
     }
 }

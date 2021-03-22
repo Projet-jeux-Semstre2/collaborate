@@ -14,9 +14,16 @@ public class Player_Health : MonoBehaviour
     public GameObject Damage_Fb;
     public float fb_time = 0.2f;
 
+    
+    
+    [Space(50)]
+
     public GameObject coreRecup;
 
     public GameManager _gameManager;
+    public Camera_Shake cameraShake;
+
+    private bool debugSunnyLinvincible;
     private void Start()
     {
         health = maxHealth;
@@ -38,12 +45,31 @@ public class Player_Health : MonoBehaviour
         {
             Die();
         }
+
+        if (health >= maxHealth && !debugSunnyLinvincible)
+        {
+            health = maxHealth;
+        }
+        
+        
+        //Debug sunny
+        if (Input.GetKeyDown(KeyCode.I) && !debugSunnyLinvincible)
+        {
+            health = 100000000f;
+            debugSunnyLinvincible = true;
+        }
+        else if(Input.GetKeyDown(KeyCode.I) && debugSunnyLinvincible)
+        {
+            health = maxHealth;
+            debugSunnyLinvincible = false;
+        }
         
     }
 
     public IEnumerator HurtFb()
     {
         Damage_Fb.SetActive(true);
+        
         
         yield return new WaitForSeconds(0.2f);
         

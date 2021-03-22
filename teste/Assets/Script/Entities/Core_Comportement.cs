@@ -12,6 +12,7 @@ public class Core_Comportement : MonoBehaviour
     public float patrolRadius;
     private bool canDoTarget = true;
     
+    
     public bool isFear;
     public bool canBeFear = true;
 
@@ -23,6 +24,8 @@ public class Core_Comportement : MonoBehaviour
     public bool canAttackDistance;
 
     private Color _colorLine;
+    public LayerMask layerMaskRaycast;
+    public float raycastDist;
     
 
 
@@ -37,13 +40,13 @@ public class Core_Comportement : MonoBehaviour
     {
         ComportementPalier();
         
-        if (_coreManager.agent.remainingDistance < 5f && isFear) //fin de la fuite
+        /*if ( _coreManager.agent.enabled && _coreManager.agent.remainingDistance < 5f && isFear ) //fin de la fuite
         {
             print("j'ai plus peur");
                 
             StartCoroutine(fuiteCoolDown());
             isFear = false;
-        }
+        }*/
 
 
         if (canAttackDistance && !_coreAttack.isDIstAttack)
@@ -52,33 +55,37 @@ public class Core_Comportement : MonoBehaviour
 
         }
 
-        if (isFear) //apeuré
+        /*if (isFear) //apeuré
         {
             _colorLine = Color.cyan;
-        }
-        else if(_coreManager.target != _coreManager.player.transform.position) // patrol
+        }*/
+        if(_coreManager.target != _coreManager.player.transform.position) // patrol
         {
             _colorLine = Color.magenta;
         }
-        else if (_coreManager.target == _coreManager.player.transform.position) // traque le joueur
+        if (_coreManager.target == _coreManager.player.transform.position) // traque le joueur
         {
             _colorLine = Color.red;
         }
-        
-        Debug.DrawLine(transform.position, _coreManager.target, _colorLine);
+
+        if (_coreManager.target != null)
+        {
+            Debug.DrawLine(transform.position, _coreManager.target, _colorLine);
+        }
+       
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (_coreManager.palier == "petit")
+            /*if (_coreManager.palier == "petit")
             {
                 if (canBeFear)
                 {
                     StartCoroutine(fuite(other)); 
                 }
-            }
+            }*/
 
             if (_coreManager.palier == "moyen" || _coreManager.palier == "grand")
             {
@@ -98,18 +105,32 @@ public class Core_Comportement : MonoBehaviour
 
     void CreatePatrolTarget()
     {
-        Vector3 rdPosition = Random.insideUnitSphere * patrolRadius;
+        
+        Vector3 rdPosition = Random.insideUnitSphere * patrolRadius + transform.position;
         rdPosition.y = transform.position.y;
         
-
-        _coreManager.target = rdPosition;
-        
         canDoTarget = false;
+        
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(rdPosition, Vector3.down, out hit, raycastDist, layerMaskRaycast))
+        {
+            _coreManager.target = rdPosition;
+        }
+        else
+        {
+            //Destroy(instTarget);
+        }
+        
+        
+        Debug.DrawRay(rdPosition, Vector3.down, Color.green, raycastDist);
+        
     }
 
     void Patrol()
     {
-        if (_coreManager.agent.remainingDistance <= 2 && !canDoTarget)
+        if ( _coreManager.agent.enabled && _coreManager.agent.remainingDistance <= 1.2f && !canDoTarget )
         {
             canDoTarget = true;
         }
@@ -126,7 +147,7 @@ public class Core_Comportement : MonoBehaviour
      
     
 
-    IEnumerator fuite(Collider other)
+    /*IEnumerator fuite(Collider other)
     {
         isFear = true;
         canBeFear = false;
@@ -135,27 +156,28 @@ public class Core_Comportement : MonoBehaviour
         
         fearPoint =  other.transform.forward * 150;//fearCollider.fearPoint(transform.position);
         fearPoint.y = transform.position.y;
+        
 
         _coreManager.target = fearPoint;
         
         yield return null;
-    }
+    }*/
 
-    private IEnumerator fuiteCoolDown()
+    /*private IEnumerator fuiteCoolDown()
     {
         canBeFear = false;
         
         yield return new WaitForSeconds(fearCooldown);
 
         canBeFear = true;
-    }
+    }*/
     
     
     void ComportementPalier()
     {
         switch (_coreManager.palier)
         {
-            case "petit":
+            /*case "petit":
                 if(canDoTarget)
                 {
                     CreatePatrolTarget();
@@ -165,7 +187,7 @@ public class Core_Comportement : MonoBehaviour
                 {
                     Patrol();
                 }
-                break;
+                break;*/
             
             case "moyen":
                 if(canDoTarget)

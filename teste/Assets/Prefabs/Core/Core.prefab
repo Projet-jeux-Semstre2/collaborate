@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6077747853665274483}
   - component: {fileID: 7207284129646521891}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: BoxCollider
   m_TagString: collider
   m_Icon: {fileID: 0}
@@ -39,10 +39,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569434871421536719}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 0.76, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2794573410027793705
 GameObject:
@@ -114,10 +114,13 @@ MonoBehaviour:
   player: {fileID: 0}
   agent: {fileID: 0}
   sphereColliderPull: {fileID: 7946599287225773240}
+  _isOnGround: 0
   palier: 
-  target: {x: 0, y: 0, z: 0}
-  renderer: {fileID: 3686240263503659648, guid: 5b254a9f79115f5438af02b32e4dbaae,
-    type: 3}
+  target: {fileID: 0}
+  renderer: {fileID: 3686240263503659648, guid: 5b254a9f79115f5438af02b32e4dbaae, type: 3}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 2048
   minimumEntities: 2
 --- !u!135 &7946599287225773240
 SphereCollider:
@@ -139,7 +142,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2794573410027793705}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.49999997
   m_Speed: 5
@@ -165,7 +168,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0.5
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -205,12 +208,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f359f4a9dc94b5340a5ac8fc4e0e75e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolRadius: 75
+  patrolRadius: 50
+  patrolTarget: {fileID: 52971037421098776, guid: 41daaf6bc362dec47ae2024d400253ea, type: 3}
   isFear: 0
   canBeFear: 1
   fearCooldown: 5
   fearPoint: {x: 0, y: 0, z: 0}
   canAttackDistance: 0
+  layerMaskRaycast:
+    serializedVersion: 2
+    m_Bits: 2048
+  raycastDist: 1
 --- !u!114 &8093928320968083074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,8 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de796b23252de147addf222c194d5f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackProjectile: {fileID: 7172713201934465283, guid: 3bb8608837a93ea44b8a81d3e21797b4,
-    type: 3}
+  attackProjectile: {fileID: 7172713201934465283, guid: 3bb8608837a93ea44b8a81d3e21797b4, type: 3}
   Force: 35
   launchPoint: {fileID: 4206428978952185174}
   isDIstAttack: 0
@@ -246,8 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff90f08c85d45a41ad6e7080007c3c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedDiviseur: 3
-  damageDiviseur: 3
+  speedDiviseur: 5
+  damageDiviseur: 5
 --- !u!1 &4206428978952185174
 GameObject:
   m_ObjectHideFlags: 0

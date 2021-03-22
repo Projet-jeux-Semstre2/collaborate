@@ -37,4 +37,9 @@ public class SpawnArea : MonoBehaviour
         int random = Random.Range(0, allEntitites.Length);
         Instantiate(allEntitites[random],var,Quaternion.identity);
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, rangeSpawn);
+    }
 }
