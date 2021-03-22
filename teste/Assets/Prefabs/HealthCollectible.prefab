@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: -6592434028076142808}
   - component: {fileID: 4059187875712682703}
   - component: {fileID: 919132149571900619}
-  m_Layer: 0
-  m_Name: collectible
+  m_Layer: 11
+  m_Name: HealthCollectible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 1205221684641298652}
   - component: {fileID: 8096800362264671831}
   - component: {fileID: 5298199560119961343}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Haut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 8534903848202927961}
   - component: {fileID: 292348637167986571}
   - component: {fileID: 8600775042980000871}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Haut.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 8444079141908579106}
   - component: {fileID: 4571249858397377475}
   - component: {fileID: 5214414913082812245}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Gauche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 7533544602373348005}
   - component: {fileID: 9066850019326790858}
   - component: {fileID: 6971903791519128501}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Droite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

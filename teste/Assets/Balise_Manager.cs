@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Balise_Manager : MonoBehaviour
 {
@@ -16,14 +17,18 @@ public class Balise_Manager : MonoBehaviour
     private float t;
     public float timeObjectif = 10f;
 
-    private bool onCapture;
+    public bool onCapture;
     public bool isCapture;
+
+    public Text timer;
     
     
     // Start is called before the first frame update
     void Start()
     {
         _meshRenderer = GetComponent<MeshRenderer>();
+        t = timeObjectif;
+        timer.enabled = false;
     }
 
     // Update is called once per frame
@@ -43,25 +48,35 @@ public class Balise_Manager : MonoBehaviour
             _meshRenderer.material = materials[0];
             zone.SetActive(false);
         }
-
+        timer.text = "Temps de capture : " + t; 
 
         if (onCapture)
         {
-            t += Time.deltaTime;
+            t -= Time.deltaTime;
 
-            if (t >= timeObjectif)
+            timer.enabled = true;
+            
+
+            if (t <= 0)
             {
-                t = 0;
+                t = timeObjectif;
                 onCapture = false;
                 isCapture = true;
             }
         }
 
-        if (isCapture)
+        if (!onCapture)
+        {
+            t = timeObjectif;
+            timer.enabled = false;
+        }
+        
+        
+        if(isCapture)
         {
             isOn = true;
             onCapture = false;
-            t = 0;
+            t = timeObjectif;
             zone.SetActive(false);
             print("objectif capturé");
         }
@@ -75,7 +90,7 @@ public class Balise_Manager : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
@@ -85,11 +100,11 @@ public class Balise_Manager : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player") && onCapture)
+        if (other.CompareTag("Player")&& onCapture)
         {
-            t = 0;
             isOn = false;
             onCapture = false;
+            
             
         }
     }
