@@ -5,14 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Balise_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Balise_Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BaliseObjectif.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BaliseObjectif.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Pompe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Pompe.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/1ERLVL.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1ERLVL.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Master.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Placeholder.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Build/Desktop/Placeholder.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{2d54c9aa-a303-4773-a34f-a337b2516e0c}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 2/Metadata/Event/{2d54c9aa-a303-4773-a34f-a337b2516e0c}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/WeaponManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Entities/HealtEntitties.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponGlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Arme/ShhotSound.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerFootstep.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" />
@@ -92,6 +91,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/FmodSonsDeOrely.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" />
       </list>
     </option>
   </component>
@@ -163,6 +163,7 @@
       <workItem from="1616269074576" duration="179000" />
       <workItem from="1616316776180" duration="9735000" />
       <workItem from="1616339628622" duration="1535000" />
+      <workItem from="1616433345335" duration="1154000" />
     </task>
     <servers />
   </component>

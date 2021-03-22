@@ -42,16 +42,16 @@ MonoBehaviour:
   viseur:
   - {fileID: 0}
   - {fileID: 0}
+  timeBetweenChange: 2
   fireRate: 0.4
   maxRange: 30
   Degats: 1
   fmodShoot: event:/Weapons/FusilPompe/Shoot
+  vitessWalk: 3
+  vitesseSrint: 5
   Combo: {x: 0, y: 0, z: 0}
   tromblonNombre: 8
   sprayX: 125
-  surchauffe: 10
-  niveauSurchauffe: 0
-  t_forLooseSurchauffe: 0
 --- !u!1001 &423660789
 PrefabInstance:
   m_ObjectHideFlags: 0

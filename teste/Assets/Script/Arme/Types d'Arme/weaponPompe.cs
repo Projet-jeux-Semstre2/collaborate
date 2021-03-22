@@ -10,7 +10,8 @@ public class weaponPompe : Weapon
     public float maxRange = 10.0f;
     public float Degats = 1.0f;
     public string fmodShoot; // sons
-
+    public int vitessWalk = 3;
+    public int vitesseSrint = 5;
     public Vector3 Combo;
 
     private RaycastHit hit;
@@ -26,7 +27,8 @@ public class weaponPompe : Weapon
     private Surchauffe_Manager _surchauffeManager;
     
 
-    
+
+
 
     public override void AfterEnable()
     {
@@ -34,8 +36,8 @@ public class weaponPompe : Weapon
         _animator = GetComponent<Animator>();
         
 
-        player.walkingSpeed -= 3;
-        player.runningSpeed -= 5;
+        player.walkingSpeed -= vitessWalk;
+        player.runningSpeed -= vitesseSrint;
         
         foreach (var reticule in viseur)
         {

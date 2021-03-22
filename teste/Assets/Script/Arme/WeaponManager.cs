@@ -6,6 +6,7 @@ public class WeaponManager : MonoBehaviour
 {
     public Weapon[] weapons; // tableaux des armes enregistrés en component dans le player
     public int activeWeaponsID; // index des armes
+    private bool _canChangeWeapon = true;
     
     
     private void Start()
@@ -24,9 +25,10 @@ public class WeaponManager : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetButtonDown("ChangeWeapon"))
+        
+        if (Input.mouseScrollDelta.y > 0  && _canChangeWeapon ||Input.mouseScrollDelta.y < 0  && _canChangeWeapon)
         {
-            Changeweapon();
+            StartCoroutine(ChangingWeapon());
         }
         if (Input.GetButtonDown("Fire1"))
         {
@@ -37,11 +39,20 @@ public class WeaponManager : MonoBehaviour
         {
             weapons[activeWeaponsID].DisEngage();
         }
-        
+    }
+
+    IEnumerator ChangingWeapon()
+    {
+        _canChangeWeapon = false;
+        Changeweapon();
+        yield return new WaitForSeconds(weapons[activeWeaponsID].GetComponent<Weapon>().timeBetweenChange);
+        _canChangeWeapon = true;
+
+
     }
     
     
-    private void Changeweapon()
+    private void  Changeweapon()
     {
         weapons[activeWeaponsID].gameObject.SetActive(false);
         activeWeaponsID++;
@@ -50,6 +61,7 @@ public class WeaponManager : MonoBehaviour
             activeWeaponsID = 0;
         }
         weapons[activeWeaponsID].gameObject.SetActive(true);
+        
     }
     
 }

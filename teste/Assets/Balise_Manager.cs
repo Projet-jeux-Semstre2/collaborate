@@ -14,7 +14,7 @@ public class Balise_Manager : MonoBehaviour
 
     public GameObject zone;
 
-    private float t;
+    [SerializeField] private float t;
     public float timeObjectif = 10f;
 
     public bool onCapture;
@@ -48,12 +48,15 @@ public class Balise_Manager : MonoBehaviour
             _meshRenderer.material = materials[0];
             zone.SetActive(false);
         }
-        timer.text = "Temps de capture : " + t; 
 
-        if (onCapture)
+        
+        
+
+        if (onCapture && isOn)
         {
             t -= Time.deltaTime;
-
+            timer.text = "Temps de capture : " + t;
+            
             timer.enabled = true;
             
 
@@ -64,12 +67,7 @@ public class Balise_Manager : MonoBehaviour
                 isCapture = true;
             }
         }
-
-        if (!onCapture)
-        {
-            t = timeObjectif;
-            timer.enabled = false;
-        }
+        
         
         
         if(isCapture)
@@ -77,6 +75,7 @@ public class Balise_Manager : MonoBehaviour
             isOn = true;
             onCapture = false;
             t = timeObjectif;
+            timer.enabled = false;
             zone.SetActive(false);
             print("objectif capturé");
         }
@@ -103,6 +102,8 @@ public class Balise_Manager : MonoBehaviour
         if (other.CompareTag("Player")&& onCapture)
         {
             isOn = false;
+            t = timeObjectif;
+            timer.enabled = false;
             onCapture = false;
             
             

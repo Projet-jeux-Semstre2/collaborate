@@ -132,7 +132,9 @@ MonoBehaviour:
   isOn: 0
   zone: {fileID: 5994407718324687447}
   timeObjectif: 10
+  onCapture: 0
   isCapture: 0
+  timer: {fileID: 1654394666603706343, guid: ec73ba3fbfda49d428027036f8700e54, type: 3}
 --- !u!1 &5994407718324687447
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,8 +15,8 @@ public class Weapon : MonoBehaviour
     public LayerMask touchingLayerMask;
 
     public GameObject[] viseur;
-    
-    
+
+    public float timeBetweenChange;
 
     private void OnEnable()
     {
