@@ -44,9 +44,13 @@ public class Core_Manager : MonoBehaviour
         _coreStats = GetComponent<Core_Stats>();
         if (!haveRender)
         {
-            _instRenderer = Instantiate(renderer, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), Quaternion.identity);
-            _instRenderer.GetComponent<Core_renderer>().core = transform;
-            haveRender = true;
+            if (renderer)
+            {
+                _instRenderer = Instantiate(renderer, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), Quaternion.identity);
+                _instRenderer.GetComponent<Core_renderer>().core = transform;
+                haveRender = true;
+            }
+            
         }
 
         target = transform.position;

@@ -8,10 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 2055e711d89cb934582b819266444c11
-  - enabled: 0
-    path: Assets/Scenes/BackUp.unity
-    guid: 4cd68b19df2bce04d94b374bf1553cb7
   - enabled: 1
-    path: Assets/Scenes/1ERLVL.unity
-    guid: 7f6203ddc0afacf48a0ceeaa829dda4a
+    path: Assets/Scenes/TestForBuild.unity
+    guid: 313fe499bde1d2a458400d0640faf21a
   m_configObjects: {}
