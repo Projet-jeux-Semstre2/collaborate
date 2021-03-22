@@ -23,9 +23,16 @@ public class weaponPompe : Weapon
 
     private Animator _animator;
 
+    private Surchauffe_Manager _surchauffeManager;
+    
+
+    
+
     public override void AfterEnable()
     {
+        _surchauffeManager = GetComponentInParent<Surchauffe_Manager>();
         _animator = GetComponent<Animator>();
+        
 
         player.walkingSpeed -= 3;
         player.runningSpeed -= 5;
@@ -48,17 +55,21 @@ public class weaponPompe : Weapon
 
     public override void Engage() // c'est override pour pouvoir réecrire la méthode du script dont elle hérite.
     {
-        tromblonsDirection = new List<Quaternion>(tromblonNombre);
-        for (int i = 0; i < tromblonNombre; i++)
+        if (_surchauffeManager.niveauSurchauffe < _surchauffeManager.surchauffe)
         {
-            tromblonsDirection.Add(Quaternion.Euler(Vector3.zero));
-        }
+            tromblonsDirection = new List<Quaternion>(tromblonNombre);
+            for (int i = 0; i < tromblonNombre; i++)
+            {
+                tromblonsDirection.Add(Quaternion.Euler(Vector3.zero));
+            }
        
-        if (Time.time >= nextFireTime)
-        {
-            nextFireTime = Time.time + fireRate;
-            fire(); // on tire selon le fire rate.
+            if (Time.time >= nextFireTime)
+            {
+                nextFireTime = Time.time + fireRate;
+                fire(); // on tire selon le fire rate.
+            }
         }
+        
     }
     private void RayTromblonsShot(Vector3 var)
     {
@@ -82,6 +93,8 @@ public class weaponPompe : Weapon
         FMODUnity.RuntimeManager.PlayOneShot(fmodShoot);
         muzzleFlash.Play();
         
+        _surchauffeManager.niveauSurchauffe += 1;
+        
         int i = 0;
         foreach (var VARIABLE in tromblonsDirection)
         {
@@ -98,6 +111,6 @@ public class weaponPompe : Weapon
 
     private void Update()
     {
-        Debug.DrawLine(mainCamera.transform.position, new Vector3(0, 0, maxRange) + new Vector3(Combo.x,Combo.y,0));
+        Debug.DrawLine(mainCamera.transform.position, new Vector3(0, 0, maxRange) + new Vector3(Combo.x, Combo.y, 0));
     }
 }

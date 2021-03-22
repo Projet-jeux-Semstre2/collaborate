@@ -47,7 +47,11 @@ public class Entities_Manager : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
 
         ObjectifExtermination.nrbEntités.Add(gameObject);
+
+        float rdscale = Random.Range(transform.localScale.x - 1f, transform.localScale.x + 1f);
         
+        transform.localScale = new Vector3(rdscale,rdscale,rdscale);
+
     }
     
 
@@ -133,6 +137,11 @@ public class Entities_Manager : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (myCore)
+        {
+            myCore.GetComponent<Core_Stats>().SuppStats(gameObject);
+        }
+        
         ObjectifExtermination.nrbEntités.Remove(gameObject);
     }
 }

@@ -53,7 +53,6 @@ public class Entities_Stats : MonoBehaviour
         {
             t += Time.deltaTime;
             _meshRenderer.material.Lerp(_meshRenderer.material, hitMaterial, t * 2);
-            print("je lerpe");
             _canBeDamaged = false;
             yield return null;
         }
@@ -64,7 +63,6 @@ public class Entities_Stats : MonoBehaviour
         {
             t += Time.deltaTime;
             _meshRenderer.material.Lerp(_meshRenderer.material, fullLifeMaterial, t);
-            print("je reviens");
             _canBeDamaged = true;
             yield return null;
         }

@@ -14,7 +14,7 @@ public class Core_AttackCaC_Detector : MonoBehaviour
     }
 
 
-    private void OnTriggerStay(Collider player)
+    private void OnTriggerEnter(Collider player)
     {
         if (player.CompareTag("Player"))
         {

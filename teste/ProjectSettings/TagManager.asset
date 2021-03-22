@@ -13,6 +13,7 @@ TagManager:
   - ennemiProjectile
   - ManagerScene
   - SpawnPoint
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX

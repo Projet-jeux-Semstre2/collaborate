@@ -32,6 +32,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   launchPoint: {fileID: 3249556496694946566}
+  player: {fileID: 0}
   mainCamera: {fileID: 0}
   muzzleFlash: {fileID: 409899825}
   impactEffect: {fileID: 100002, guid: 3aa4b596cb5e1ad48a86000ebbf45088, type: 3}
@@ -48,6 +49,9 @@ MonoBehaviour:
   Combo: {x: 0, y: 0, z: 0}
   tromblonNombre: 8
   sprayX: 125
+  surchauffe: 10
+  niveauSurchauffe: 0
+  t_forLooseSurchauffe: 0
 --- !u!1001 &423660789
 PrefabInstance:
   m_ObjectHideFlags: 0

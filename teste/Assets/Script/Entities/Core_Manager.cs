@@ -144,7 +144,7 @@ public class Core_Manager : MonoBehaviour
             if (myEntities[i] == null)
             {
                 myEntities.RemoveAt(i);
-                _coreStats.SuppStats(myEntities[i]);
+                
             }
         }
         

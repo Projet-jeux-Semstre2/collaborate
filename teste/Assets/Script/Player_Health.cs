@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class Player_Health : MonoBehaviour
@@ -24,6 +25,8 @@ public class Player_Health : MonoBehaviour
     public Camera_Shake cameraShake;
 
     private bool debugSunnyLinvincible;
+
+    public Text healthText;
     private void Start()
     {
         health = maxHealth;
@@ -41,6 +44,8 @@ public class Player_Health : MonoBehaviour
 
     private void Update()
     {
+        healthText.text = "Health : " + health;
+        
         if (health <= 0)
         {
             Die();

@@ -4712,9 +4712,10 @@ GameObject:
   - component: {fileID: 19900002}
   - component: {fileID: 11400000}
   - component: {fileID: -148522509371554531}
+  - component: {fileID: 7105185907067053949}
   m_Layer: 0
   m_Name: Impact_metal Modif
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9451,3 +9452,16 @@ MonoBehaviour:
   layerMaskExplosion:
     serializedVersion: 2
     m_Bits: 2615
+--- !u!135 &7105185907067053949
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.001
+  m_Center: {x: 0, y: 0, z: 0}

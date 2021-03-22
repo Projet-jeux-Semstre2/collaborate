@@ -779,7 +779,7 @@ MonoBehaviour:
   "slideTextDficult\xE9": {fileID: 987101121}
   "sliderDificult\xE9": {fileID: 6028205691646064431}
   minDificulties: 3
-  maxDificulties: 400
+  maxDificulties: 700
 --- !u!1 &1840841681
 GameObject:
   m_ObjectHideFlags: 0
