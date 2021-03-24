@@ -37,6 +37,8 @@ public class Core_Manager : MonoBehaviour
 
     public float minimumEntities = 2;
 
+    private float nbEntitéForRadius = 5f;
+
     private void OnEnable()
     {
         player = GameObject.FindWithTag("Player");
@@ -55,6 +57,8 @@ public class Core_Manager : MonoBehaviour
 
         target = transform.position;
     }
+    
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("ennemis") && !other.GetComponent<Entities_Manager>().hasCore && other.GetComponent<Entities_Manager>().myCore == null)
@@ -99,7 +103,18 @@ public class Core_Manager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        sphereColliderPull.radius = pullRadius * 3.33f;
+
+        if (nbEntitéForRadius <= myEntities.Count)
+        {
+            float nbentitésbeforeup = nbEntitéForRadius;
+            pullRadius = pullRadius + 2;
+            nbEntitéForRadius += nbentitésbeforeup;
+        }
+        
+        sphereColliderPull.radius = pullRadius * 3.3f;
+        
+        
+        
         
         
         foreach (Collider collider in Physics.OverlapSphere(transform.position, pullRadius) )

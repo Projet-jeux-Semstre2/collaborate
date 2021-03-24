@@ -114,17 +114,15 @@ public class Core_Comportement : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(rdPosition, Vector3.down, out hit, raycastDist, layerMaskRaycast))
+        if (Physics.Raycast(rdPosition, Vector3.down, out hit, raycastDist, layerMaskRaycast) && !Physics.Raycast(rdPosition, Vector3.up, out hit, raycastDist, layerMaskRaycast))
         {
             _coreManager.target = rdPosition;
         }
-        else
-        {
-            //Destroy(instTarget);
-        }
+       
         
         
         Debug.DrawRay(rdPosition, Vector3.down, Color.green, raycastDist);
+        Debug.DrawRay(rdPosition, Vector3.up, Color.yellow, raycastDist);
         
     }
 

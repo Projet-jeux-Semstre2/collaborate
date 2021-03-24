@@ -14,6 +14,8 @@ TagManager:
   - ManagerScene
   - SpawnPoint
   - PlayerBullet
+  - HealthUi
+  - Balise
   layers:
   - Default
   - TransparentFX
@@ -28,7 +30,7 @@ TagManager:
   - Core
   - Ground
   - PostProcess
-  - 
+  - Weapon
   - 
   - 
   - 

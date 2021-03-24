@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Balise_Manager : MonoBehaviour
+public class Balise_Fonctionnement : MonoBehaviour
 {
 
     public Material[] materials;
@@ -13,6 +13,7 @@ public class Balise_Manager : MonoBehaviour
     private MeshRenderer _meshRenderer;
 
     public GameObject zone;
+    public bool isCount;
 
     [SerializeField] private float t;
     public float timeObjectif = 10f;

@@ -116,7 +116,7 @@ MonoBehaviour:
   sphereColliderPull: {fileID: 7946599287225773240}
   _isOnGround: 0
   palier: 
-  target: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
   renderer: {fileID: 3686240263503659648, guid: 5b254a9f79115f5438af02b32e4dbaae, type: 3}
   layerMask:
     serializedVersion: 2
@@ -133,7 +133,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 12.3
+  m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &4416429792902140812
 NavMeshAgent:
@@ -209,7 +209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolRadius: 50
-  patrolTarget: {fileID: 52971037421098776, guid: 41daaf6bc362dec47ae2024d400253ea, type: 3}
   isFear: 0
   canBeFear: 1
   fearCooldown: 5
@@ -232,15 +231,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackProjectile: {fileID: 7172713201934465283, guid: 3bb8608837a93ea44b8a81d3e21797b4, type: 3}
-  Force: 35
+  Force: 75
   launchPoint: {fileID: 4206428978952185174}
   isDIstAttack: 0
   canCacAttack: 0
   isCaCAttack: 0
-  distCoolDown: 5
-  cacCoolDown: 1
-  cacDamage: 2
-  distDamage: 10
+  distCoolDown: 6
+  cacCoolDown: 2
+  cacDamage: 2.5
+  distDamage: 8
 --- !u!114 &8014900507629044771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,13 +277,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4206428978952185174}
-  m_LocalRotation: {x: -0.17413618, y: -0, z: -0, w: 0.98472166}
+  m_LocalRotation: {x: -0.072692804, y: -0, z: -0, w: 0.99735445}
   m_LocalPosition: {x: 0, y: 0.65, z: 0.87999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4973448103378094044}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -20.057, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.337, y: 0, z: 0}
 --- !u!1 &6237605329645297741
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +327,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 30
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1761468644278538697
 MonoBehaviour:
@@ -460,5 +459,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 30
+  m_Radius: 60
   m_Center: {x: 0, y: 0, z: 0}

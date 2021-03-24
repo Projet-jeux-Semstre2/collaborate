@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1565741568}
   m_Layer: 11
   m_Name: BaliseObjectif
-  m_TagString: Untagged
+  m_TagString: Balise
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,6 +131,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 0b20c9e3be6a7fb49b7813cd3995e516, type: 2}
   isOn: 0
   zone: {fileID: 5994407718324687447}
+  t: 0
   timeObjectif: 10
   onCapture: 0
   isCapture: 0
@@ -147,7 +148,7 @@ GameObject:
   - component: {fileID: 3165015145904046913}
   - component: {fileID: 3785633732963168645}
   - component: {fileID: 7458454151537105586}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

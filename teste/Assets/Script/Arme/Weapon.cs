@@ -13,10 +13,19 @@ public class Weapon : MonoBehaviour
     public GameObject impactEffect;
 
     public LayerMask touchingLayerMask;
+    public LayerMask hitMarkerLayer;
 
     public GameObject[] viseur;
 
+    public GameObject hitMarker;
+    public float hitMarkerTime;
+
     public float timeBetweenChange;
+
+    [Header("Viseur")]
+    public float initialSize;
+    public float maxSize;
+    public bool viseurCanGrow= true;
 
     private void OnEnable()
     {
@@ -38,5 +47,44 @@ public class Weapon : MonoBehaviour
     public virtual void DisEngage()
     {
         
+    }
+
+    public virtual IEnumerator HitMarker()
+    {
+        hitMarker.SetActive(true);
+        
+        while (hitMarker.transform.localScale.x < .15f * 3f)
+        {
+            float lerp = Mathf.Lerp(hitMarker.transform.localScale.x, .15f * 4f, Time.deltaTime * 25);
+            hitMarker.transform.localScale = new Vector3(lerp,lerp,lerp);
+            yield return null;
+        }
+        
+        
+        yield return new WaitForSeconds(hitMarkerTime);
+        
+        hitMarker.transform.localScale = new Vector3(0.15f,.15f,.15f);
+        hitMarker.SetActive(false);
+    }
+
+    public virtual IEnumerator ViseurFB()
+    {
+        viseurCanGrow = false;
+        while (viseur[0].transform.localScale.x < maxSize)
+        {
+            float lerp = Mathf.Lerp(viseur[0].transform.localScale.x, maxSize*1.2f, Time.deltaTime * 10);
+            viseur[0].transform.localScale = new Vector3(lerp,lerp,lerp);
+            yield return null;
+        }
+
+        while (viseur[0].transform.localScale.x > initialSize)
+        {
+            float lerp = Mathf.Lerp(viseur[0].transform.localScale.x, initialSize/2, Time.deltaTime * 10);
+            viseur[0].transform.localScale = new Vector3(lerp,lerp,lerp);
+            yield return null;
+        }
+        
+        viseur[0].transform.localScale = new Vector3(initialSize,initialSize,initialSize);
+        viseurCanGrow = true;
     }
 }

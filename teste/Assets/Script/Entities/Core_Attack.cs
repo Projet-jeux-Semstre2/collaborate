@@ -47,10 +47,8 @@ public class Core_Attack : MonoBehaviour
     {
         GameObject projectile = Instantiate(attackProjectile, launchPoint.transform.position, Quaternion.identity);
         
-        
         projectile.GetComponent<Rigidbody>().AddForce(launchPoint.transform.forward * Force, ForceMode.Impulse) ;
-        
-        
+
         isDIstAttack = true;
         
         yield return new WaitForSeconds(distCoolDown);
@@ -62,7 +60,6 @@ public class Core_Attack : MonoBehaviour
     {
         _playerHealth.health -= cacDamage;
         isCaCAttack = true;
-        print("cac attack");
 
         StartCoroutine(_playerHealth.HurtFb());
 

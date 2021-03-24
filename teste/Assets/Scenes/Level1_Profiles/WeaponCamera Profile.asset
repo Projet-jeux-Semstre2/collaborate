@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
-  m_Name: FirstPersonCamera Profile
+  m_Name: WeaponCamera Profile
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: 4674968693196211315}
-  - {fileID: 7708630737849644004}
---- !u!114 &4674968693196211315
+  - {fileID: 2728338293934797973}
+  - {fileID: 63855544435016338}
+--- !u!114 &63855544435016338
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
   quality:
     overrideState: 0
     value: 2
---- !u!114 &7708630737849644004
+--- !u!114 &2728338293934797973
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,7 +82,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 8.68
+    value: 6.22
   threshold:
     overrideState: 1
     value: 1
@@ -94,9 +94,9 @@ MonoBehaviour:
     value: 65472
   diffusion:
     overrideState: 1
-    value: 6.4
+    value: 7
   anamorphicRatio:
-    overrideState: 1
+    overrideState: 0
     value: 0
   color:
     overrideState: 0

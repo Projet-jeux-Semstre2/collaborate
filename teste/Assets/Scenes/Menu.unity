@@ -480,7 +480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed517f1d24c69f4b80e0a1ffeca8453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameSceneToLoad: TestForBuild
+  nameSceneToLoad: Level1
 --- !u!1 &987101119
 GameObject:
   m_ObjectHideFlags: 0

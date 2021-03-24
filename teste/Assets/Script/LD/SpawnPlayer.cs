@@ -6,8 +6,8 @@ public class SpawnPlayer : MonoBehaviour
 {
     public Transform player;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        player.position = gameObject.transform.position;
+        Instantiate(player, transform.position, Quaternion.identity);
     }
 }

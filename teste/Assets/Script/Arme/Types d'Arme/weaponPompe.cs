@@ -32,6 +32,7 @@ public class weaponPompe : Weapon
 
     public override void AfterEnable()
     {
+        
         _surchauffeManager = GetComponentInParent<Surchauffe_Manager>();
         _animator = GetComponent<Animator>();
         
@@ -78,22 +79,35 @@ public class weaponPompe : Weapon
         if (Physics.Raycast(mainCamera.transform.position, var, out hit, maxRange, touchingLayerMask))
         {
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            
+            
+            
             Entities_Stats target = hit.transform.GetComponent<Entities_Stats>();
             if (target != null)
             {
                 target.TakeDamage(Degats);
             }
         }
+
+        if (Physics.Raycast(mainCamera.transform.position, var, out hit, maxRange, hitMarkerLayer))
+        {
+            StartCoroutine(HitMarker());
+        }
     }
 
     private void fire()
     {
        
-        
         // sons & FX 
         _animator.SetTrigger("Shoot");
         FMODUnity.RuntimeManager.PlayOneShot(fmodShoot);
         muzzleFlash.Play();
+
+        if (viseurCanGrow)
+        {
+            StartCoroutine(ViseurFB());
+        }
+        
         
         _surchauffeManager.niveauSurchauffe += 1;
         

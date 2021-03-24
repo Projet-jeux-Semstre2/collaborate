@@ -8,18 +8,17 @@ public class Core_AttackCaC_Detector : MonoBehaviour
     private Core_Attack _coreAttack;
 
 
-    private void Start()
+    private void OnEnable()
     {
         _coreAttack = GetComponentInParent<Core_Attack>();
     }
 
 
-    private void OnTriggerEnter(Collider player)
+    private void OnTriggerStay(Collider player)
     {
-        if (player.CompareTag("Player"))
+        if (!_coreAttack.canCacAttack && player.CompareTag("Player"))
         {
             _coreAttack.canCacAttack = true;
-            
         }
     }
 

@@ -43,16 +43,27 @@ public class weaponGlock : Weapon
         // sons & FX 
         FMODUnity.RuntimeManager.PlayOneShot(fmodShoot);
         muzzleFlash.Play();
+        
+        if (viseurCanGrow)
+        {
+            StartCoroutine(ViseurFB());
+        }
+        
+        
         if (Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit, maxRange, touchingLayerMask))
         {
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-            
-            
+
             Entities_Stats target = hit.transform.GetComponent<Entities_Stats>();
             if (target != null)
             {
                 target.TakeDamage(Degats);
             }
+        }
+        
+        if (Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit, maxRange, hitMarkerLayer))
+        {
+            StartCoroutine(HitMarker());
         }
     }
 }

@@ -5,14 +5,26 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Balise_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Balise_Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Balise_Manager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Balise_Manager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/projectile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/projectile.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BaliseObjectif.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BaliseObjectif.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Pompe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Pompe.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1ERLVL.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1ERLVL.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Arme/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Arme/WeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Core/Core.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Core/EnemiProjectil.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Core/EnemiProjectil.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LD/SpawnPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LD/SpawnPlayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1ERLVL_Profiles/FirstPersonCamera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1ERLVL_Profiles/FirstPersonCamera Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestForBuild.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestForBuild.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities/Core_AttackCaC_Detector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entities/Core_AttackCaC_Detector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player_Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player_Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +61,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Surchauffe_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FmodSonsDeOrely.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -163,7 +176,8 @@
       <workItem from="1616269074576" duration="179000" />
       <workItem from="1616316776180" duration="9735000" />
       <workItem from="1616339628622" duration="1535000" />
-      <workItem from="1616433345335" duration="1750000" />
+      <workItem from="1616433345335" duration="2368000" />
+      <workItem from="1616602888918" duration="308000" />
     </task>
     <servers />
   </component>

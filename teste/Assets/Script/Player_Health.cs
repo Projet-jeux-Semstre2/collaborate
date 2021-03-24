@@ -22,13 +22,13 @@ public class Player_Health : MonoBehaviour
     public GameObject coreRecup;
 
     public GameManager _gameManager;
-    public Camera_Shake cameraShake;
 
     private bool debugSunnyLinvincible;
 
     public Text healthText;
     private void Start()
     {
+        healthText = GameObject.FindWithTag("HealthUi").GetComponent<Text>();
         health = maxHealth;
     }
 
@@ -68,15 +68,14 @@ public class Player_Health : MonoBehaviour
             health = maxHealth;
             debugSunnyLinvincible = false;
         }
-        
+
     }
 
     public IEnumerator HurtFb()
     {
         Damage_Fb.SetActive(true);
         
-        
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(fb_time);
         
         Damage_Fb.SetActive(false);
     }
