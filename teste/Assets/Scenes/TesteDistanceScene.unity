@@ -3352,19 +3352,19 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   muzzleFlash: {fileID: 0}
   impactEffect: {fileID: 0}
+  hitMarker: {fileID: 0}
+  hitMarkerTime: 0
   touchingLayerMask:
     serializedVersion: 2
     m_Bits: 0
   hitMarkerLayer:
     serializedVersion: 2
     m_Bits: 0
-  viseur: []
-  hitMarker: {fileID: 0}
-  hitMarkerTime: 0
-  timeBetweenChange: 0
   initialSize: 0
   maxSize: 0
   viseurCanGrow: 1
+  viseur: []
+  timeBetweenChange: 0
   repulseWeapon: {fileID: 170323176}
 --- !u!1 &1003910585 stripped
 GameObject:
@@ -4554,7 +4554,6 @@ GameObject:
   - component: {fileID: 1268640338}
   - component: {fileID: 1268640341}
   - component: {fileID: 1268640342}
-  - component: {fileID: 1268640343}
   - component: {fileID: 1268640344}
   m_Layer: 0
   m_Name: EventSystem
@@ -4638,20 +4637,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 2097049932}
   timeTotal: 0
---- !u!114 &1268640343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268640337}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86ab4273bff41044ba4ddd09146c4c78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textExtermination: {fileID: 707055051}
-  _gameManager: {fileID: 7680463249597192846, guid: a903f2d8ce7e71c4b9d1a17e0dfd6157, type: 3}
 --- !u!114 &1268640344
 MonoBehaviour:
   m_ObjectHideFlags: 0

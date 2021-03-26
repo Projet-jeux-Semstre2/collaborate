@@ -132,7 +132,6 @@
             </e>
           </e>
         </e>
-        <e p="FmodSonsDeOrely.cs" t="Include" />
         <e p="JMO Assets" t="Include">
           <e p="Cartoon FX Easy Editor" t="Include">
             <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
@@ -309,6 +308,7 @@
             </e>
           </e>
         </e>
+        <e p="ReturnMenu.cs" t="Include" />
         <e p="Script" t="Include">
           <e p="Arme" t="Include">
             <e p="Porjectiles" t="Include">
@@ -338,6 +338,11 @@
             <e p="CoreDetection.cs" t="Include" />
             <e p="Entities_Manager.cs" t="Include" />
             <e p="Entities_Stats.cs" t="Include" />
+          </e>
+          <e p="FeedBack" t="Include">
+            <e p="Sons" t="Include">
+              <e p="FmodSonsDeOrely.cs" t="Include" />
+            </e>
           </e>
           <e p="FPSCounter.cs" t="Include" />
           <e p="Interfaces" t="Include">
