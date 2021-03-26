@@ -26,6 +26,7 @@ public class Core_Comportement : MonoBehaviour
     private Color _colorLine;
     public LayerMask layerMaskRaycast;
     public float raycastDist;
+    public bool canChase;
     
 
 
@@ -90,6 +91,7 @@ public class Core_Comportement : MonoBehaviour
             if (_coreManager.palier == "moyen" || _coreManager.palier == "grand")
             {
                 //canAttackDistance = true;
+                canChase = true;
             }
         }
     }
@@ -99,6 +101,7 @@ public class Core_Comportement : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             //canAttackDistance = false;
+            canChase = false;
         }
     }
 
@@ -193,12 +196,12 @@ public class Core_Comportement : MonoBehaviour
                     CreatePatrolTarget();
                 }
 
-                if (!canAttackDistance)
+                if (!canChase)
                 {
                     Patrol();
                 }
 
-                if (canAttackDistance)
+                if (canChase)
                 {
                     ChasePlayer();
                 }

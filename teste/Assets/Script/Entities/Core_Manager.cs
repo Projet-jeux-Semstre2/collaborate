@@ -172,11 +172,11 @@ public class Core_Manager : MonoBehaviour
 
     void Palier()
     {
-        if (myEntities.Count > minimumEntities && myEntities.Count < 15)
+        if (myEntities.Count > minimumEntities && myEntities.Count < 18)
         {
             palier = "moyen";
         }
-        if (myEntities.Count >= 15)
+        if (myEntities.Count >= 18)
         {
             palier = "grand";
         }
