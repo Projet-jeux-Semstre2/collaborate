@@ -36,7 +36,7 @@ public class Balise_Manager : MonoBehaviour
 
         if (allBaliseFinish)
         {
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("Win");
         }
     }
 }

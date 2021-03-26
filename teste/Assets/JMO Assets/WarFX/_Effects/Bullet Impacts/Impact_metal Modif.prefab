@@ -9445,9 +9445,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb3b4a8d9ac3b9045810f29204bc1390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
-  force: 90
-  upwardModifier: 2
+  radius: 0.4
+  force: 250
+  upwardModifier: 0.75
   time: 1
   layerMaskExplosion:
     serializedVersion: 2

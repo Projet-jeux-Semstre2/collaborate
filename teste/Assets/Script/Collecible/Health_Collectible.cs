@@ -12,8 +12,12 @@ public class Health_Collectible : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<Player_Health>().health += healthGive;
-            Destroy(gameObject);
+            if (other.GetComponent<Player_Health>().health < 100)
+            {
+                other.GetComponent<Player_Health>().health += healthGive;
+                Destroy(gameObject);
+            }
+            
         }
     }
 }

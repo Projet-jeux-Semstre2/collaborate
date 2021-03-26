@@ -5,27 +5,33 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    [Header("Principaux")]
     public Transform launchPoint;
     public Player player;
     public Camera mainCamera;
     
+    [Header("Feedback")]
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
-
+    public GameObject hitMarker;
+    [Tooltip("Temps viseul du hitMarker")]
+    public float hitMarkerTime;
+    [Header("LayerMask")]
     public LayerMask touchingLayerMask;
     public LayerMask hitMarkerLayer;
-
-    public GameObject[] viseur;
-
-    public GameObject hitMarker;
-    public float hitMarkerTime;
-
-    public float timeBetweenChange;
+    
+    
 
     [Header("Viseur")]
+    
     public float initialSize;
     public float maxSize;
     public bool viseurCanGrow= true;
+    [Tooltip("Celui de cette arme toujours = int[0]")]
+    public GameObject[] viseur;
+    
+    [Header("Temps Entre Changements D'Arme")]
+    public float timeBetweenChange;
 
     private void OnEnable()
     {

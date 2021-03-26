@@ -145,7 +145,6 @@ public class Core_Manager : MonoBehaviour
             _isOnGround = false;
         }
         
-        Debug.DrawRay(transform.position, Vector3.down * 2, Color.cyan);
 
         if (_isOnGround)
         {

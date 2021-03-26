@@ -6,24 +6,33 @@ using Random = UnityEngine.Random;
 
 public class weaponPompe : Weapon
 {
+    
+    
+    [Header("Stats de l'arme")]
     public float fireRate = 0.5f;
     public float maxRange = 10.0f;
     public float Degats = 1.0f;
+    [Tooltip("nombre de balle par tir")]
+    public int tromblonNombre = 10;
+    [Tooltip("Taille du cone de tir")]
+    public float sprayX = 0.2f;
+    
+    [Space (50)]
     public string fmodShoot; // sons
+    
+    [Header("Vitesse du joueur")]
     public int vitessWalk = 3;
     public int vitesseSrint = 5;
+    
+    [Space(35)]
     public Vector3 Combo;
-
     private RaycastHit hit;
     private float nextFireTime; // timer pour le fire Rate 
 
 
-    public int tromblonNombre = 10;
     private List<Quaternion> tromblonsDirection;
-    public float sprayX = 0.2f;
-
+    
     private Animator _animator;
-
     private Surchauffe_Manager _surchauffeManager;
     
 

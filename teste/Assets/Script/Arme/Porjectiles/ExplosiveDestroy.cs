@@ -12,7 +12,6 @@ public class ExplosiveDestroy : MonoBehaviour
     public LayerMask layerMaskExplosion;
     private void Start()
     {
-        Debug.Log("boom");
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius, layerMaskExplosion);
         foreach (Collider hit in colliders)
         {

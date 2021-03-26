@@ -82,7 +82,7 @@ public class Entities_Manager : MonoBehaviour
         
 
 
-        if (inMyGroup.Count >= minCoreParticle -1 && !hasCore && _instCore == null) //toujours laisser -1 pour décompter le possèsseur
+        if (inMyGroup.Count >= minCoreParticle -1 && !hasCore && !_instCore) //toujours laisser -1 pour décompter le possèsseur
         {
             _instCore = Instantiate(core, new Vector3(transform.position.x, transform.position.y , transform.position.z), Quaternion.identity);
         }
@@ -96,7 +96,7 @@ public class Entities_Manager : MonoBehaviour
         }
         
 
-        if (myCore == null)
+        if (!myCore)
         {
             hasCore = false;
         }

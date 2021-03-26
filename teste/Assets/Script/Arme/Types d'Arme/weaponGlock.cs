@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class weaponGlock : Weapon
 {
-    public GameObject projectilPrefab; // le types de bullet
+    [Header("Stats de l'arme")]
     public float fireRate = 0.5f;
     public float maxRange = 10.0f;
     public float Degats = 1.0f;
+    
+    [Space(50)]
     public string fmodShoot; // sons
     
     

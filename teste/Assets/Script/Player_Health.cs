@@ -84,4 +84,9 @@ public class Player_Health : MonoBehaviour
     {
         _gameManager.GetComponent<GameManager>().GameOver();
     }
+
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
+    }
 }

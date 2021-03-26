@@ -89,7 +89,7 @@ public class Core_Comportement : MonoBehaviour
 
             if (_coreManager.palier == "moyen" || _coreManager.palier == "grand")
             {
-                canAttackDistance = true;
+                //canAttackDistance = true;
             }
         }
     }
@@ -98,7 +98,7 @@ public class Core_Comportement : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            canAttackDistance = false;
+            //canAttackDistance = false;
         }
     }
 

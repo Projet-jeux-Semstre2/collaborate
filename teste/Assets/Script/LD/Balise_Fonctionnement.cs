@@ -37,9 +37,12 @@ public class Balise_Fonctionnement : MonoBehaviour
     {
         if (isOn)
         {
+            
             _meshRenderer.material = materials[1];
             if (!isCapture)
             {
+                timer.text = "Temps de capture : " + t;
+                timer.enabled = true;
                 zone.SetActive(true);
             }
             
@@ -60,6 +63,7 @@ public class Balise_Fonctionnement : MonoBehaviour
             
             timer.enabled = true;
             
+            
 
             if (t <= 0)
             {
@@ -73,12 +77,14 @@ public class Balise_Fonctionnement : MonoBehaviour
         
         if(isCapture)
         {
-            isOn = true;
-            onCapture = false;
             t = timeObjectif;
             timer.enabled = false;
+            isOn = true;
+            onCapture = false;
+            
             zone.SetActive(false);
             print("objectif capturé");
+            this.enabled = false;
         }
     }
 
