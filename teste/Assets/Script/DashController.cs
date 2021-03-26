@@ -50,7 +50,7 @@ public class DashController : MonoBehaviour
                 if (_playerController.moveDirection.x == 0 && _playerController.moveDirection.z == 0)
                 {
                     //just dash forward
-                    _characterController.Move(transform.forward * dashSpeed * Time.deltaTime);
+                    _characterController.Move(transform.forward * dashSpeed /7 * Time.deltaTime);
 
                 }
                 else

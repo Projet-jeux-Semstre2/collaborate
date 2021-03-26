@@ -583,7 +583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDashing: 0
-  dashSpeed: 45
+  dashSpeed: 500
   forwardDashParticleSystem: {fileID: 2574667034393160503}
   backwardDashParticleSystem: {fileID: 6945971143485431982}
   rightDashParticleSystem: {fileID: 353881485169974392}
@@ -15480,7 +15480,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 0
   useRigidbodyForVelocity: 1
