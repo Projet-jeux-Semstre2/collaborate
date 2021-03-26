@@ -112,18 +112,31 @@ public class Player : MonoBehaviour
         // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
         // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
         // as an acceleration (ms^-2)
-        if (!characterController.isGrounded && Input.GetKeyDown(KeyCode.A))
+        /*if (!characterController.isGrounded && Input.GetKeyDown(KeyCode.A))
         {
             moveDirection.y -= (gravity*5) * Time.deltaTime;
         }
         else
         {
             moveDirection.y -= gravity * Time.deltaTime;
+        }*/
+
+        
+
+        moveDirection.y -= gravity * Time.deltaTime;
+        if(!characterController.isGrounded)
+        {
+            //moveDirection.y -= gravity * Time.deltaTime;
+        }
+
+        if (characterController.isGrounded && moveDirection.y <= -5f)
+        {
+            moveDirection.y = 0;
         }
         
         
         //Clamp de la gravité
-        if (moveDirection.y <= -gravity)
+        if (moveDirection.y < -gravity)
         {
             moveDirection.y = -gravity;
         }

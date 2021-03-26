@@ -7,9 +7,12 @@ public class DashController : MonoBehaviour
 {
     public bool isDashing;
 
-    private int dashAttempts = 0;
+    [SerializeField] private int dashAttempts = 0;
     private float dashStartTime = 0;
+    public float coolDown;
+    private bool canDash = true;
 
+    
     public float dashSpeed = 30f;
 
     private Player _playerController;
@@ -37,9 +40,9 @@ public class DashController : MonoBehaviour
         bool isTryingToDash = Input.GetKeyDown(KeyCode.LeftAlt);
         if (isTryingToDash && !isDashing)
         {
-            if (dashAttempts <= 50)
+            if (dashAttempts <= Mathf.Infinity && canDash) //si on veut mettre un nb max de dash possible remplacer le infini par un nb
             {
-                OnStartDash();
+                StartCoroutine(OnStartDash());
             }
         }
 
@@ -66,12 +69,14 @@ public class DashController : MonoBehaviour
         }
     }
 
-    void OnStartDash()
+    IEnumerator OnStartDash()
     {
         isDashing = true;
         dashStartTime = Time.time;
         dashAttempts += 1;
+        StartCoroutine(CoolDown());
         PlayDashParticles();
+        yield return null;
     }
 
     void OnEndDash()
@@ -86,29 +91,43 @@ public class DashController : MonoBehaviour
 
         if (inputVector.z > 0 && Mathf.Abs(inputVector.x) <= inputVector.z)
         {
+            forwardDashParticleSystem.gameObject.SetActive(true);
             forwardDashParticleSystem.Play();
             return;
         }
 
         if (inputVector.z < 0 && Mathf.Abs(inputVector.x) <= Mathf.Abs(inputVector.z))
         {
+            backwardDashParticleSystem.gameObject.SetActive(true);
             backwardDashParticleSystem.Play();
             return;
         }
 
         if (inputVector.x > 0)
         {
+            rightDashParticleSystem.gameObject.SetActive(true);
             rightDashParticleSystem.Play();
             return;
         }
 
         if (inputVector.x < 0)
         {
+            leftDashParticleSystem.gameObject.SetActive(true);
             leftDashParticleSystem.Play();
             return;
         }
         
+        forwardDashParticleSystem.gameObject.SetActive(true);
         forwardDashParticleSystem.Play();
         
+    }
+
+    IEnumerator CoolDown()
+    {
+        canDash = false;
+        
+        yield return new WaitForSeconds(coolDown);
+
+        canDash = true;
     }
 }
