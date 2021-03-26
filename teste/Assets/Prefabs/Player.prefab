@@ -583,7 +583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDashing: 0
-  dashSpeed: 500
+  dashSpeed: 90
   forwardDashParticleSystem: {fileID: 2574667034393160503}
   backwardDashParticleSystem: {fileID: 6945971143485431982}
   rightDashParticleSystem: {fileID: 353881485169974392}

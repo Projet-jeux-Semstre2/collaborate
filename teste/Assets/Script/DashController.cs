@@ -50,12 +50,13 @@ public class DashController : MonoBehaviour
                 if (_playerController.moveDirection.x == 0 && _playerController.moveDirection.z == 0)
                 {
                     //just dash forward
-                    _characterController.Move(transform.forward * dashSpeed /7 * Time.deltaTime);
+                    _characterController.Move(transform.forward * dashSpeed  * Time.deltaTime);
 
                 }
                 else
                 {
-                    _characterController.Move(_playerController.moveDirection.normalized * dashSpeed  * Time.deltaTime);
+                    Vector3 vectornrmz = new Vector3(_playerController.moveDirection.x, 0, _playerController.moveDirection.z);
+                    _characterController.Move(vectornrmz.normalized * dashSpeed  * Time.deltaTime);
                 }
             }
             else
