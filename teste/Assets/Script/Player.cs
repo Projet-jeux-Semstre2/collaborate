@@ -32,7 +32,8 @@ public class Player : MonoBehaviour
     public string fmodjumpPlayer;
 
     CharacterController characterController;
-    [SerializeField] Vector3 moveDirection = Vector3.zero;
+    public Vector3 moveDirection = Vector3.zero;
+    public Vector3 inputVector = Vector3.zero;
     float rotationX = 0;
 
     //[HideInInspector]
@@ -56,13 +57,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            Vector3 rd = Random.insideUnitSphere * 50 + transform.position;
-            rd.y = 0;
-            Instantiate(Groupe, rd, Quaternion.identity);
-            
-        }
 
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
@@ -70,15 +64,14 @@ public class Player : MonoBehaviour
 
         // Press Left Shift to run
 
-        float curSpeedX;
-        float curSpeedY;
+        
         float movementDirectionY;
 
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
-        curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
-        curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
+        inputVector.z = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
+        inputVector.x = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         movementDirectionY = moveDirection.y;
-        moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+        moveDirection = (forward * inputVector.z) + (right * inputVector.x);
         
         
         

@@ -103,7 +103,7 @@ public class Entities_Manager : MonoBehaviour
         
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         if (!hasCore || !isInGroups)
         {

@@ -19,7 +19,7 @@ public class CoreDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("coredetection") && _myParent.GetComponent<Core_Manager>().myEntities.Count < other.transform.parent.GetComponent<Core_Manager>().myEntities.Count)
+        if (other.CompareTag("coredetection") && _myParent.GetComponent<Core_Manager>().myEntities.Count < other.transform.parent.GetComponent<Core_Manager>().myEntities.Count && other.transform.parent.GetComponent<Core_Manager>().myEntities.Count <= other.transform.parent.GetComponent<Core_Manager>().entitiesCap)
         {
             foreach (var test in _myParent.GetComponent<Core_Manager>().myEntities)
             {

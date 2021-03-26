@@ -217,7 +217,7 @@ public class Core_Comportement : MonoBehaviour
     }
 
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(fearPoint, 1f);
     }

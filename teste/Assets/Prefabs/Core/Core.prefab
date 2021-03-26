@@ -218,6 +218,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   raycastDist: 1
+  canChase: 0
 --- !u!114 &8093928320968083074
 MonoBehaviour:
   m_ObjectHideFlags: 0

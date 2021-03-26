@@ -9,6 +9,7 @@ using UnityEngine.PlayerLoop;
 public class Core_Manager : MonoBehaviour
 {
     public List<GameObject> myEntities;
+    
 
     private Core_Stats _coreStats;
 
@@ -36,6 +37,7 @@ public class Core_Manager : MonoBehaviour
     public LayerMask layerMask;
 
     public float minimumEntities = 2;
+    public float entitiesCap = 35;
 
     private float nbEntitéForRadius = 5f;
 
@@ -61,7 +63,7 @@ public class Core_Manager : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("ennemis") && !other.GetComponent<Entities_Manager>().hasCore && other.GetComponent<Entities_Manager>().myCore == null)
+        if (other.CompareTag("ennemis") && !other.GetComponent<Entities_Manager>().hasCore && other.GetComponent<Entities_Manager>().myCore == null && myEntities.Count <= entitiesCap)
         {
             myEntities.Add(other.gameObject);
             other.GetComponent<Entities_Manager>().hasCore = true;
@@ -192,7 +194,7 @@ public class Core_Manager : MonoBehaviour
     }
     
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, pullRadius);
     }
