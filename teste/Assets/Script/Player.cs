@@ -28,7 +28,6 @@ public class Player : MonoBehaviour
     
     
     // ici c'est le sound
-    public string fmodWalkPlayer;
     public string fmodjumpPlayer;
 
     CharacterController characterController;

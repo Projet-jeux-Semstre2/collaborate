@@ -267,8 +267,9 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/fmod/projet soutenance 2/projet soutenance 2.fspro
-  sourceBankPath: Assets\fmod\projet soutenance 2\Build
+  sourceProjectPath: Assets/fmod/projet soutenance 2/projet soutenance 2/projet soutenance
+    2.fspro
+  sourceBankPath: Assets\fmod\projet soutenance 2\projet soutenance 2\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -290,7 +291,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Placeholder
+  - 'Game '
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

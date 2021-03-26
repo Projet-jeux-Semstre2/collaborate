@@ -15,7 +15,8 @@ public class Player_Health : MonoBehaviour
     public GameObject Damage_Fb;
     public float fb_time = 0.2f;
 
-    
+    // SONS 
+    public string FmodHurt;
     
     [Space(50)]
 
@@ -75,9 +76,13 @@ public class Player_Health : MonoBehaviour
     {
         Damage_Fb.SetActive(true);
         
+        //sons de hurt
+        FMODUnity.RuntimeManager.PlayOneShot(FmodHurt, GetComponent<Transform>().position);
+        
         yield return new WaitForSeconds(fb_time);
         
         Damage_Fb.SetActive(false);
+       
     }
 
     void Die()

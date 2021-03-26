@@ -419,6 +419,7 @@ GameObject:
   - component: {fileID: 6640597514780848036}
   - component: {fileID: 7618754462737962441}
   - component: {fileID: 6404869740674850271}
+  - component: {fileID: 2127454546104209441}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -467,7 +468,6 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 90
   Groupe: {fileID: 1110691814879946601, guid: f4ea61b8a80e67f40be66807f35c9c3b, type: 3}
-  fmodWalkPlayer: 
   fmodjumpPlayer: event:/Player/Player_Body/Jump
   moveDirection: {x: 0, y: 0, z: 0}
   inputVector: {x: 0, y: 0, z: 0}
@@ -552,6 +552,7 @@ MonoBehaviour:
   health: 0
   Damage_Fb: {fileID: 9144429071798263444}
   fb_time: 0.2
+  FmodHurt: event:/Player/Player_Body/Hurt
   coreRecup: {fileID: 2794573410027793705, guid: 263f0483d7503a94a9f1c427a7187aec, type: 3}
   _gameManager: {fileID: 7680463249597192846, guid: a903f2d8ce7e71c4b9d1a17e0dfd6157, type: 3}
   healthText: {fileID: 0}
@@ -567,10 +568,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e944efd0673f46b458e086cf62970d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  surchauffe: 15
+  surchauffe: 6
   niveauSurchauffe: 0
   t_forLooseSurchauffe: 1.7
   surchauffeImage: {fileID: 4118484779443746836}
+  FmodSurchauffe: event:/Weapons/FusilPompe/BasicsStuff/Recharge
+  FmodCooling: event:/Weapons/FusilPompe/BasicsStuff/Surchauffe
 --- !u!114 &6404869740674850271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,6 +594,20 @@ MonoBehaviour:
   backwardDashParticleSystem: {fileID: 6945971143485431982}
   rightDashParticleSystem: {fileID: 353881485169974392}
   leftDashParticleSystem: {fileID: 3533665073650604384}
+--- !u!114 &2127454546104209441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796854421016402270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde8c22ea8e1e6243834404b1b071ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FmodFootStep: event:/Player/Player_Body/Walk
+  distanceStepSound: 4
 --- !u!1 &2477457350260718973
 GameObject:
   m_ObjectHideFlags: 0
@@ -21026,6 +21043,10 @@ PrefabInstance:
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: Degats
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
+      propertyPath: fmodShoot
+      value: event:/Weapons/FusilPompe/BasicsStuff/Shoot
       objectReference: {fileID: 0}
     - target: {fileID: 2466639445523774734, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: m_Layer

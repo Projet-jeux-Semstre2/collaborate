@@ -122,6 +122,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   minimumEntities: 2
+  entitiesCap: 35
 --- !u!135 &7946599287225773240
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -186,7 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Ennemies/Core/CoreGetClose
+  Event: event:/Ennemies/5To10/5To10_Movements
   PlayEvent: 11
   StopEvent: 2
   AllowFadeout: 1

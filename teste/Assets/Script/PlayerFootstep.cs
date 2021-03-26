@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerFootstep : MonoBehaviour
 {
     CharacterController characterController;
+    private DashController _dashController;
     public string FmodFootStep;
     public float distanceStepSound = 0.5f;
 
@@ -14,7 +15,7 @@ public class PlayerFootstep : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-   
+        _dashController = GetComponent<DashController>();
     }
 
     // Update is called once per frame

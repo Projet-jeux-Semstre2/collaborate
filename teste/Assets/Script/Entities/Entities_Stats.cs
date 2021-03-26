@@ -11,12 +11,15 @@ public class Entities_Stats : MonoBehaviour
     public float damage; 
     public float speed;
     
-    
+    // SONS
     public string FmodHurt;
+    public string FmodDie;
     public ParticleSystem dieExplosion;
 
     public Material hitMaterial;
     public Material fullLifeMaterial;
+    
+
 
     private MeshRenderer _meshRenderer;
 
@@ -31,7 +34,7 @@ public class Entities_Stats : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
-
+//sons
         FMODUnity.RuntimeManager.PlayOneShot(FmodHurt, GetComponent<Transform>().position);
      
         health -= amount;
@@ -74,7 +77,11 @@ public class Entities_Stats : MonoBehaviour
 
     void Die()
     {
+        // sons
+        FMODUnity.RuntimeManager.PlayOneShot(FmodDie, GetComponent<Transform>().position);
+        
         Instantiate(dieExplosion, transform.position, Quaternion.identity);
+        
         Destroy(gameObject);
     }
     
