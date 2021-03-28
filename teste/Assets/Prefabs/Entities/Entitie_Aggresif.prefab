@@ -187,7 +187,8 @@ MonoBehaviour:
   health: 1
   damage: 2
   speed: 1
-  FmodHurt: event:/Ennemies/Solo/Hurt
+  FmodHurt: event:/Ennemies/Solo/Death
+  FmodDie: event:/Ennemies/Solo/Death
   dieExplosion: {fileID: 401982039532589781, guid: bdc4123fbc835ba44907d6a334e98fc9, type: 3}
   hitMaterial: {fileID: 2100000, guid: 9d8d24075fda5844f9d23b8149c61a98, type: 2}
   fullLifeMaterial: {fileID: 2100000, guid: cd0ceb1be28987c42833420fc54230cd, type: 2}

@@ -13,30 +13,41 @@
             <e p="projet soutenance 2" t="Include">
               <e p="Metadata" t="Include">
                 <e p="Asset" t="Include">
+                  <e p="{5380ed65-0030-4b44-9524-6e62d3f42494}.xml" t="Include" />
+                  <e p="{6bb677e0-92f7-4382-a047-73f611a7c95b}.xml" t="Include" />
                   <e p="{6ec572c6-f630-4a91-b2a8-c7ebe101729a}.xml" t="Include" />
+                  <e p="{9e2e7c9f-7359-48f8-8006-07be6848ac63}.xml" t="Include" />
+                  <e p="{bd317a7f-8248-4c80-9f61-25ca23e4caf9}.xml" t="Include" />
+                  <e p="{d6545993-d821-4934-a728-524bd94dcfa7}.xml" t="Include" />
+                  <e p="{f0ccaae8-98f2-452a-a0d7-2def6effbab2}.xml" t="Include" />
+                  <e p="{fa6f0213-a51c-45cd-af37-584983fa8c8e}.xml" t="Include" />
                 </e>
                 <e p="AudioFile" t="Include">
-                  <e p="{06798bad-df7e-4875-b57f-75f394cbc288}.xml" t="Include" />
-                  <e p="{14fe9190-3e51-4086-993e-00c6b7fbb443}.xml" t="Include" />
-                  <e p="{225ef4e1-9149-43e3-9bb3-e71f126d84f1}.xml" t="Include" />
+                  <e p="{1c5857e9-88fb-4e46-b5e7-b9caa44d79cc}.xml" t="Include" />
+                  <e p="{243f1a34-e32d-4b60-8cde-fc29dab69bea}.xml" t="Include" />
+                  <e p="{2a904baa-7864-4395-a46a-c2ac7b6bc140}.xml" t="Include" />
                   <e p="{2e829591-7899-4b4f-8f71-7a3ba924f0a3}.xml" t="Include" />
-                  <e p="{31591dd5-c8d1-4f70-a245-b3d5f629bffe}.xml" t="Include" />
-                  <e p="{4211a443-23bf-467a-8fc2-3688f5f97a5f}.xml" t="Include" />
-                  <e p="{48805ed9-4507-439e-8340-c35986cfe912}.xml" t="Include" />
-                  <e p="{4c3731d2-6b1a-47ac-8974-f31aa803a7e0}.xml" t="Include" />
-                  <e p="{52967942-32d6-4065-a664-41875ab5a343}.xml" t="Include" />
+                  <e p="{3669f769-434a-4a83-9938-8e430354dc32}.xml" t="Include" />
+                  <e p="{410a5f38-fb06-4256-9d2e-7ef02fab568f}.xml" t="Include" />
+                  <e p="{4d12385f-a965-47ef-b1f0-0668cecc3a28}.xml" t="Include" />
+                  <e p="{6345ae65-dbf7-48f5-983f-cbb5d2f4868e}.xml" t="Include" />
                   <e p="{6deb4769-32db-478f-bda5-0d7f3ae8df8c}.xml" t="Include" />
+                  <e p="{752b58e0-f4d2-4cfd-aea1-30dd51dbc106}.xml" t="Include" />
+                  <e p="{77c260b4-3ee1-4859-86ba-ccf9aef7eaf3}.xml" t="Include" />
                   <e p="{7f9f6e7e-682b-4ced-9534-713daf54cff2}.xml" t="Include" />
+                  <e p="{81f96efc-765b-4528-bd99-89a90d281c83}.xml" t="Include" />
+                  <e p="{8989f37b-d29e-4c12-842c-4a8c184c8867}.xml" t="Include" />
                   <e p="{8df7b590-239d-4210-9319-9f0dabfda70f}.xml" t="Include" />
                   <e p="{992a7bd6-8324-41c0-9ac2-c746f9cf1bf8}.xml" t="Include" />
-                  <e p="{a0eae1d5-6539-4ec0-8342-0a6706e438ad}.xml" t="Include" />
-                  <e p="{b55558e8-c6db-4fd0-84b8-acd51ea275ef}.xml" t="Include" />
-                  <e p="{c2130b1a-a7ff-4694-b216-b530e8ebb9b2}.xml" t="Include" />
-                  <e p="{caaea6d4-f4e4-4e09-9b6b-f93af3214483}.xml" t="Include" />
+                  <e p="{9e7a78a4-915a-4126-9529-cfae83eceef1}.xml" t="Include" />
+                  <e p="{b70eee41-f623-402a-bff9-434250876e7b}.xml" t="Include" />
+                  <e p="{bbe11389-5d48-4edb-87f5-e8119b9a68da}.xml" t="Include" />
                   <e p="{cc231d89-1aaf-4356-a6a1-75d7d45d6611}.xml" t="Include" />
-                  <e p="{d1f1041f-7379-4bd5-8cfc-a65f3e5d94c0}.xml" t="Include" />
-                  <e p="{df2adcf1-18dd-4968-ac6f-84238a245689}.xml" t="Include" />
+                  <e p="{cdc2eccb-e5fe-43ff-a47e-85eb32462ba6}.xml" t="Include" />
                   <e p="{ed24ab11-78ba-45a3-860f-4115d48812ac}.xml" t="Include" />
+                  <e p="{f4468e13-a237-42e3-8f26-7a83ec180b66}.xml" t="Include" />
+                  <e p="{f7be7bcd-7406-4cdd-af0b-faf94f5a9c63}.xml" t="Include" />
+                  <e p="{fe05fd3a-befa-4cc0-aade-315eec107c15}.xml" t="Include" />
                 </e>
                 <e p="Bank" t="Include">
                   <e p="{9cf7a13e-884b-4b23-a2fd-0fad7f69ef28}.xml" t="Include" />
@@ -68,7 +79,6 @@
                   <e p="{70cf8a92-5e71-4f93-aa78-113e9eed65d9}.xml" t="Include" />
                   <e p="{8a26d8fb-013d-4c9b-b1d6-3c2d8c39dc73}.xml" t="Include" />
                   <e p="{8c560e07-c3ad-40c3-8ae0-bfd2bc545844}.xml" t="Include" />
-                  <e p="{8de458b1-17d9-45b5-b1f9-fe22fff0a3f2}.xml" t="Include" />
                   <e p="{a1d8588d-24a3-4a61-a959-03c9e5f49eb7}.xml" t="Include" />
                   <e p="{a7af7e7e-e91f-4815-9725-942b15ac37dc}.xml" t="Include" />
                   <e p="{a94720a3-6335-4de4-93f2-2655bb9aac26}.xml" t="Include" />
@@ -101,6 +111,9 @@
                 </e>
                 <e p="Master.xml" t="Include" />
                 <e p="Mixer.xml" t="Include" />
+                <e p="ParameterPreset" t="Include">
+                  <e p="{50a0a0d1-9f1f-46db-837d-df78f4560e98}.xml" t="Include" />
+                </e>
                 <e p="ParameterPresetFolder" t="Include">
                   <e p="{ed492a8d-c8cf-4bb0-951b-8b6b8db0560b}.xml" t="Include" />
                 </e>

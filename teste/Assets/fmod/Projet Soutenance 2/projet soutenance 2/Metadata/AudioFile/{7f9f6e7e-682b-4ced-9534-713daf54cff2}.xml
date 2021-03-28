@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{7f9f6e7e-682b-4ced-9534-713daf54cff2}">
 		<property name="assetPath">
-			<value>Aurelie demo jeu de shooter qui tue.wav</value>
+			<value>Music/Aurelie demo jeu de shooter qui tue.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

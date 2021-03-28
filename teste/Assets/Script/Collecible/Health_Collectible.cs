@@ -6,7 +6,8 @@ using UnityEngine;
 public class Health_Collectible : MonoBehaviour
 {
     public float healthGive;
-
+// sons 
+    public string FmodHealt;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,6 +15,7 @@ public class Health_Collectible : MonoBehaviour
         {
             if (other.GetComponent<Player_Health>().health < 100)
             {
+                FMODUnity.RuntimeManager.PlayOneShot(FmodHealt);
                 other.GetComponent<Player_Health>().health += healthGive;
                 Destroy(gameObject);
             }

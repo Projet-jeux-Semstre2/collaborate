@@ -368,7 +368,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 2/projet soutenance 2/Build/Desktop/Game .bank
   Name: 'Game '
   StudioPath: 'bank:/Game '
-  lastModified: 637523859211554129
+  lastModified: 637525264970976501
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -668,10 +668,10 @@ MonoBehaviour:
   - {fileID: 6166477758307246624}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 65
+  MaxDistance: 900
   Length: 6874
 --- !u!114 &-4670131462809003612
 MonoBehaviour:
@@ -774,11 +774,11 @@ MonoBehaviour:
   - {fileID: 6166477758307246624}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 172728
+  Length: 186000
 --- !u!114 &-2972330840961390416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,7 +999,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 480
+  Length: 0
 --- !u!114 &-1342232967328948335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1066,6 +1066,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-751631384559959309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/Solo/Death
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/Solo/Death
+  guid: ac3b58f233393845800b79a1fc3fa4c6
+  Banks:
+  - {fileID: 6166477758307246624}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 950
+  Length: 1000
 --- !u!114 &-605740959270201344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1088,7 +1111,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1920
+  Length: 1500
 --- !u!114 &-333530095048887437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,12 +1208,13 @@ MonoBehaviour:
   - {fileID: -7772024307771169093}
   - {fileID: -2995856878049238205}
   - {fileID: 4133629727726758056}
+  - {fileID: -751631384559959309}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6166477758307246624}
   StringsBanks:
   - {fileID: 2715384375965959937}
-  stringsBankWriteTime: 637523859221355968
+  stringsBankWriteTime: 637525264972111611
   cacheVersion: 6
 --- !u!114 &231331623831611053
 MonoBehaviour:
@@ -1450,11 +1474,11 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 2/projet soutenance 2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637523859221355968
+  lastModified: 637525264972111611
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1454
+    Value: 1508
   Exists: 1
 --- !u!114 &2795945237467883924
 MonoBehaviour:
@@ -1519,7 +1543,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1491
+  Length: 625
 --- !u!114 &3291849245930611810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1796,7 +1820,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 2/projet soutenance 2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637523859221258755
+  lastModified: 637525264972071633
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2016,7 +2040,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 3350
+  Length: 2675
 --- !u!114 &8658745035126666818
 MonoBehaviour:
   m_ObjectHideFlags: 0

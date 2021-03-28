@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FmodFootStep: event:/Player/Player_Body/Walk
-  distanceStepSound: 4
+  distanceStepSound: 6
 --- !u!1 &2477457350260718973
 GameObject:
   m_ObjectHideFlags: 0
