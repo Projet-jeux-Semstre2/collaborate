@@ -189,7 +189,7 @@ MonoBehaviour:
   Path: event:/Weapons/Glock/Recharge
   guid: 9083053c679d0c48a1d823177b2a019a
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -345,7 +345,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Body/Walk
   guid: 4e72631598239145b730f0ef89eda13d
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -473,7 +473,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Actions/Heal
   guid: 5a4780086a9732458c44e88f8d3069e8
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -665,7 +665,7 @@ MonoBehaviour:
   Path: event:/Ennemies/5To10/5To10_Movements
   guid: 2cb965cc2867d8408966260066322409
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -771,7 +771,7 @@ MonoBehaviour:
   Path: event:/MusiqueAmbiance/MusiqueEnJeu
   guid: aac9542d03a37347a34fa337b2516e0c
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -794,7 +794,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Body/Jump
   guid: 27be2e0d53977c49a9d4793a119a3740
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -992,7 +992,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Body/Hurt
   guid: 70d78647c0f19641a577e695a6597b03
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1081,7 +1081,7 @@ MonoBehaviour:
   Path: event:/Ennemies/Solo/Death
   guid: ac3b58f233393845800b79a1fc3fa4c6
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1104,7 +1104,7 @@ MonoBehaviour:
   Path: event:/Weapons/FusilPompe/BasicsStuff/Shoot
   guid: 098871b0ff245243ada2c1eb87adf3b9
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1192,9 +1192,9 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 2715384375965959937}
-  - {fileID: -6532620978193189850}
-  - {fileID: 6166477758307246624}
+  - {fileID: 5400130905239497925}
+  - {fileID: 82262812242267765}
+  - {fileID: 4970901591158441336}
   EditorEvents:
   - {fileID: -605740959270201344}
   - {fileID: -2972330840961390416}
@@ -1211,11 +1211,30 @@ MonoBehaviour:
   - {fileID: -751631384559959309}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   StringsBanks:
-  - {fileID: 2715384375965959937}
-  stringsBankWriteTime: 637525264972111611
+  - {fileID: 5400130905239497925}
+  stringsBankWriteTime: 637526417256202167
   cacheVersion: 6
+--- !u!114 &82262812242267765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Game .bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Game .bank
+  Name: 'Game '
+  StudioPath: 'bank:/Game '
+  lastModified: 637524351432230898
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &231331623831611053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1536,7 +1555,7 @@ MonoBehaviour:
   Path: event:/Weapons/FusilPompe/BasicsStuff/Surchauffe
   guid: 7c8e250b43357b4e8f76d79e08f32e07
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1602,7 +1621,7 @@ MonoBehaviour:
   Path: event:/Weapons/Glock/Surchauffe
   guid: ab9cb7b1742e01478c442ebfbdd4ac9d
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1677,6 +1696,25 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 343
+--- !u!114 &4970901591158441336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637526417256471450
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5226995325896688715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1714,7 +1752,7 @@ MonoBehaviour:
   Path: event:/Weapons/Glock/Shoot
   guid: 8d58d8a1a324614aa95903c9e5f49eb7
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1722,6 +1760,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 720
+--- !u!114 &5400130905239497925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637526417256202167
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1508
+  Exists: 1
 --- !u!114 &5737456427377180038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2033,7 +2092,7 @@ MonoBehaviour:
   Path: event:/Weapons/FusilPompe/BasicsStuff/Recharge
   guid: 45f43afa4755324d821449413044fec5
   Banks:
-  - {fileID: 6166477758307246624}
+  - {fileID: 4970901591158441336}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

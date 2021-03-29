@@ -267,9 +267,9 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/fmod/projet soutenance 2/projet soutenance 2/projet soutenance
+  sourceProjectPath: Assets/fmod/Projet Soutenance 2/projet soutenance 2/projet soutenance
     2.fspro
-  sourceBankPath: Assets\fmod\projet soutenance 2\projet soutenance 2\Build
+  sourceBankPath: Assets\fmod\Projet Soutenance 2\projet soutenance 2\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

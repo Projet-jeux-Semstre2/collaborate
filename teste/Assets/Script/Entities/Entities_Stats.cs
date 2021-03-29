@@ -78,7 +78,7 @@ public class Entities_Stats : MonoBehaviour
     void Die()
     {
         // sons
-        FMODUnity.RuntimeManager.PlayOneShot(FmodDie, GetComponent<Transform>().position);
+        //FMODUnity.RuntimeManager.PlayOneShot(FmodDie, transform.position);
         
         Instantiate(dieExplosion, transform.position, Quaternion.identity);
         
