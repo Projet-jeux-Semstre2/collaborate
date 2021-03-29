@@ -113,6 +113,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{a6fb8fae-1b5f-4964-bcd8-a04a0204dbae}">
+		<property name="overridingInputFormat">
+			<value>1</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -177,16 +180,16 @@
 			<value>9</value>
 		</property>
 		<property name="frequencyA">
-			<value>10876.3604</value>
+			<value>10653.3301</value>
 		</property>
 		<property name="frequencyB">
-			<value>56.355999</value>
+			<value>76.8976746</value>
 		</property>
 		<property name="qualityA">
-			<value>0.100000001</value>
+			<value>1.73248279</value>
 		</property>
 		<property name="gainB">
-			<value>-30</value>
+			<value>-7.24137878</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{b43d50a9-08a0-47bd-9eba-06a17026420a}" />
@@ -195,7 +198,7 @@
 			<value>0.24793388429752067</value>
 		</property>
 		<property name="value">
-			<value>10</value>
+			<value>0</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{e421948c-2900-4ded-8f62-86b12c05221d}">
@@ -203,7 +206,7 @@
 			<value>24</value>
 		</property>
 		<property name="value">
-			<value>1.99999619</value>
+			<value>-8.00000381</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{b7dafb62-ad45-4c85-9583-22108da085ac}">
@@ -211,7 +214,7 @@
 			<value>36</value>
 		</property>
 		<property name="value">
-			<value>-40.0000076</value>
+			<value>-80</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{2c1fcb32-5bb0-4e61-b81c-bebb2a513bb5}">
@@ -219,7 +222,7 @@
 			<value>15.041322314049587</value>
 		</property>
 		<property name="value">
-			<value>10</value>
+			<value>0</value>
 		</property>
 	</object>
 </objects>

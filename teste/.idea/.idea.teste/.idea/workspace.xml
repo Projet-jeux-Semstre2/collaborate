@@ -2,253 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="370cb4ce-1be2-4ab7-8340-8b963387c282" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Aggresif.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Aggresif.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Createur.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Createur.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Tank.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Tank.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Vif.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Entitie_Vif.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interface/SetUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interface/SetUp.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TesteDistanceScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TesteDistanceScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Collecible/Health_Collectible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Collecible/Health_Collectible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interfaces/ManagerSETUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interfaces/ManagerSETUp.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/366179__160033__glass-beer-bottle-breaking-with-rock.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/366179__160033__glass-beer-bottle-breaking-with-rock.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/366179__160033__glass-beer-bottle-breaking-with-rock.wav.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/366179__160033__glass-beer-bottle-breaking-with-rock.wav.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/402607__pappabert__shooting-with-airgun-indoor.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/402607__pappabert__shooting-with-airgun-indoor.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/402607__pappabert__shooting-with-airgun-indoor.wav.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/402607__pappabert__shooting-with-airgun-indoor.wav.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/416280__eflexmusic__shotgun-shot-blast-outdoors-close.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/416280__eflexmusic__shotgun-shot-blast-outdoors-close.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/452668__kyles__window-small-smash-with-axe-metal-grill-glass-shards-debris.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/452668__kyles__window-small-smash-with-axe-metal-grill-glass-shards-debris.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/452668__kyles__window-small-smash-with-axe-metal-grill-glass-shards-debris.wav.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/452668__kyles__window-small-smash-with-axe-metal-grill-glass-shards-debris.wav.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/540272__zepurple__land-a-jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/540272__zepurple__land-a-jump.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/540272__zepurple__land-a-jump.wav.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/540272__zepurple__land-a-jump.wav.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/Robot maquette voice.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/Robot maquette voice.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/Son.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/Son/foosteps dirt.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/Son/foosteps dirt.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/Voix_061.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/Voix_061.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/aie.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/aie.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/aie.wav.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/aie.wav.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/amas 10 .wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/amas 10 .wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/balloon-pop-sound-effect.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/balloon-pop-sound-effect.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/balloon-pop-sound-effect.mp3.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/balloon-pop-sound-effect.mp3.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/bullet-impact-in-body-sound-efefct-bullet-hit-in-human-body-sfx-hd.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/bullet-impact-in-body-sound-efefct-bullet-hit-in-human-body-sfx-hd.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/bullet-impact-in-body-sound-efefct-bullet-hit-in-human-body-sfx-hd.mp3.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/bullet-impact-in-body-sound-efefct-bullet-hit-in-human-body-sfx-hd.mp3.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/crowd-scream-run-sound-effect-hd-quality.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/crowd-scream-run-sound-effect-hd-quality.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/crowd-scream-run-sound-effect-hd-quality.mp3.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/crowd-scream-run-sound-effect-hd-quality.mp3.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/cv aurel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/cv aurel.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/footsteps true one.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/footsteps true one.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/futuristic-hud-sound-design-blake-sanchez.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/futuristic-hud-sound-design-blake-sanchez.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/futuristic-hud-sound-design-blake-sanchez.mp3.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/futuristic-hud-sound-design-blake-sanchez.mp3.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/heal.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/heal.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/horses-racing-sound-effect-a.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/horses-racing-sound-effect-a.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/horses-racing-sound-effect-a.mp3.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/horses-racing-sound-effect-a.mp3.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/hurted.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/hurted.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/hurted.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/hurted.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/hurted.wav.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/hurted.wav.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/jump 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/jump 1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/jump 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/jump 2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/jump 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/jump 3.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/jump 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/jump 4.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/jump 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/jump 5.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/monster-sound-effects.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/monster-sound-effects.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/monster-sound-effects.mp3.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/monster-sound-effects.mp3.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/20210319_110727.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/20210319_110727.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/20210319_110823.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/20210319_110823.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/20210319_110947.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/20210319_110947.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/20210319_111011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/20210319_111011.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/Cv_Pautrat_Sunny (1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/Cv_Pautrat_Sunny (1).pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/Cv_Pautrat_Sunny.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/Cv_Pautrat_Sunny.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/Snapchat-1969860985.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/Snapchat-1969860985.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/landscape-Snapchat-1969860985-1616165219274.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/landscape-Snapchat-1969860985-1616165219274.zip.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/twitter-profile-photo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/pp/twitter-profile-photo.jpeg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/Aurelie demo jeu de shooter qui tue.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/Aurelie demo jeu de shooter qui tue.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/Demo Shooter Game.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/Demo Shooter Game.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/Doors_OpenClose.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/Doors_OpenClose.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/MUSIC JEU AMAS.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/MUSIC JEU AMAS.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/Shotguuun.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/Shotguuun.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/aie.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/aie.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/amas_10_.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/amas_10_.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/foosteps dirt.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/foosteps dirt.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/footsteps true one.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/footsteps true one.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/ghost deplacement.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/ghost deplacement.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/ghost repère joueur.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/ghost repère joueur.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/heal.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/heal.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/jump 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/jump 1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/jump 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/jump 2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/jump 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/jump 3.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/jump 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/jump 4.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/jump 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/jump 5.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/monster-growl-sound-effect.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/monster-growl-sound-effect.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/recharge.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/recharge.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/shoot.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/shoot.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/sprint.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Assets/sprint.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{06798bad-df7e-4875-b57f-75f394cbc288}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{06798bad-df7e-4875-b57f-75f394cbc288}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{14fe9190-3e51-4086-993e-00c6b7fbb443}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{14fe9190-3e51-4086-993e-00c6b7fbb443}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{225ef4e1-9149-43e3-9bb3-e71f126d84f1}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{225ef4e1-9149-43e3-9bb3-e71f126d84f1}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{2e829591-7899-4b4f-8f71-7a3ba924f0a3}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{2e829591-7899-4b4f-8f71-7a3ba924f0a3}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{31591dd5-c8d1-4f70-a245-b3d5f629bffe}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{31591dd5-c8d1-4f70-a245-b3d5f629bffe}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{4211a443-23bf-467a-8fc2-3688f5f97a5f}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{4211a443-23bf-467a-8fc2-3688f5f97a5f}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{48805ed9-4507-439e-8340-c35986cfe912}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{48805ed9-4507-439e-8340-c35986cfe912}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{4c3731d2-6b1a-47ac-8974-f31aa803a7e0}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{4c3731d2-6b1a-47ac-8974-f31aa803a7e0}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{52967942-32d6-4065-a664-41875ab5a343}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{52967942-32d6-4065-a664-41875ab5a343}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{6deb4769-32db-478f-bda5-0d7f3ae8df8c}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{6deb4769-32db-478f-bda5-0d7f3ae8df8c}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{7f9f6e7e-682b-4ced-9534-713daf54cff2}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{7f9f6e7e-682b-4ced-9534-713daf54cff2}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{8df7b590-239d-4210-9319-9f0dabfda70f}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{8df7b590-239d-4210-9319-9f0dabfda70f}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{992a7bd6-8324-41c0-9ac2-c746f9cf1bf8}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{992a7bd6-8324-41c0-9ac2-c746f9cf1bf8}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{a0eae1d5-6539-4ec0-8342-0a6706e438ad}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{a0eae1d5-6539-4ec0-8342-0a6706e438ad}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{b55558e8-c6db-4fd0-84b8-acd51ea275ef}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{b55558e8-c6db-4fd0-84b8-acd51ea275ef}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{c2130b1a-a7ff-4694-b216-b530e8ebb9b2}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{c2130b1a-a7ff-4694-b216-b530e8ebb9b2}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{caaea6d4-f4e4-4e09-9b6b-f93af3214483}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{caaea6d4-f4e4-4e09-9b6b-f93af3214483}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{cc231d89-1aaf-4356-a6a1-75d7d45d6611}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{cc231d89-1aaf-4356-a6a1-75d7d45d6611}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{d1f1041f-7379-4bd5-8cfc-a65f3e5d94c0}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{d1f1041f-7379-4bd5-8cfc-a65f3e5d94c0}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{df2adcf1-18dd-4968-ac6f-84238a245689}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{df2adcf1-18dd-4968-ac6f-84238a245689}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{ed24ab11-78ba-45a3-860f-4115d48812ac}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/AudioFile/{ed24ab11-78ba-45a3-860f-4115d48812ac}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{0880475a-976a-4532-8c44-e88f8d3069e8}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{0880475a-976a-4532-8c44-e88f8d3069e8}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{0b258e7c-3543-4e7b-8f76-d79e08f32e07}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{0b258e7c-3543-4e7b-8f76-d79e08f32e07}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{0d2ebe27-9753-497c-a9d4-793a119a3740}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{0d2ebe27-9753-497c-a9d4-793a119a3740}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{1563724e-2398-4591-b730-f0ef89eda13d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{1563724e-2398-4591-b730-f0ef89eda13d}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{2d54c9aa-a303-4773-a34f-a337b2516e0c}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{2d54c9aa-a303-4773-a34f-a337b2516e0c}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{4786d770-f1c0-4196-a577-e695a6597b03}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{4786d770-f1c0-4196-a577-e695a6597b03}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{8c560e07-c3ad-40c3-8ae0-bfd2bc545844}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{8c560e07-c3ad-40c3-8ae0-bfd2bc545844}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{8de458b1-17d9-45b5-b1f9-fe22fff0a3f2}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{8de458b1-17d9-45b5-b1f9-fe22fff0a3f2}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{a1d8588d-24a3-4a61-a959-03c9e5f49eb7}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{a1d8588d-24a3-4a61-a959-03c9e5f49eb7}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{b0718809-24ff-4352-ada2-c1eb87adf3b9}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{b0718809-24ff-4352-ada2-c1eb87adf3b9}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{cc65b92c-6728-40d8-8966-260066322409}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{cc65b92c-6728-40d8-8966-260066322409}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{f2583bac-3933-4538-800b-79a1fc3fa4c6}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{f2583bac-3933-4538-800b-79a1fc3fa4c6}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{fa3af445-5547-4d32-8214-49413044fec5}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/Event/{fa3af445-5547-4d32-8214-49413044fec5}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/ParameterPreset/{50a0a0d1-9f1f-46db-837d-df78f4560e98}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/projet soutenance 2/Metadata/ParameterPreset/{50a0a0d1-9f1f-46db-837d-df78f4560e98}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/rain-sound-effects-for-editing.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/rain-sound-effects-for-editing.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/rain-sound-effects-for-editing.mp3.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/rain-sound-effects-for-editing.mp3.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/robot maquette.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/robot maquette.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/540272__zepurple__land-a-jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/540272__zepurple__land-a-jump.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/540272__zepurple__land-a-jump.wav.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/540272__zepurple__land-a-jump.wav.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/saut sun.rpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/saut sun.rpp-bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/saut sun.rpp-bak.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/saut sun.rpp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/saut sunny.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/saut sunny.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/saut sunny.wav.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/saut sunny.wav.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/tir.rpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sun/tir.rpp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sunny.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sunny.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sunny.wav.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/saut sunny.wav.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/sd tableau [Récupéré].ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/sd tableau [Récupéré].ai.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/sd tableau.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/sd tableau.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/shootshotgun 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/shootshotgun 1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/shootshotgun 1.wav.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/shootshotgun 1.wav.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/shootshotgun 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/shootshotgun 2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/soutenance moodboard.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/soutenance moodboard.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/sprint.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/sprint.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/twister-sound-effects.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/twister-sound-effects.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/twister-sound-effects.mp3.reapeaks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/Projet Soutenance 2/twister-sound-effects.mp3.reapeaks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,13 +82,13 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/FmodSonsDeOrely.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Surchauffe_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player_Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerFootstep.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Collecible/Health_Collectible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponPompe.cs" />
       </list>
     </option>
   </component>
@@ -410,7 +165,9 @@
       <workItem from="1616752687364" duration="590000" />
       <workItem from="1616780606965" duration="5147000" />
       <workItem from="1616881712101" duration="589000" />
-      <workItem from="1616923369797" duration="65000" />
+      <workItem from="1616923369797" duration="659000" />
+      <workItem from="1616939580418" duration="3173000" />
+      <workItem from="1617006667248" duration="4019000" />
     </task>
     <servers />
   </component>
