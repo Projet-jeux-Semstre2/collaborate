@@ -18,6 +18,8 @@ public class Entities_Stats : MonoBehaviour
 
     public Material hitMaterial;
     public Material fullLifeMaterial;
+
+    private ShotGun_Manager _shotGunManager;
     
 
 
@@ -30,6 +32,7 @@ public class Entities_Stats : MonoBehaviour
     private void Start()
     {
         _meshRenderer = GetComponent<MeshRenderer>();
+        _shotGunManager = GameObject.FindWithTag("Player").GetComponent<ShotGun_Manager>();
     }
 
     public void TakeDamage(float amount)
@@ -81,8 +84,16 @@ public class Entities_Stats : MonoBehaviour
         //FMODUnity.RuntimeManager.PlayOneShot(FmodDie, transform.position);
         
         Instantiate(dieExplosion, transform.position, Quaternion.identity);
-        
+
         Destroy(gameObject);
     }
-    
+
+    private void OnDestroy()
+    {
+        if (_shotGunManager.palierJauge < 6)
+        {
+            _shotGunManager.niveauJauge++;
+        }
+        
+    }
 }

@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class weaponPompe : Weapon
 {
-    
+    private ExplosiveDestroy _explosion;
     
     [Header("Stats de l'arme")]
     public float fireRate = 0.5f;
@@ -16,6 +16,8 @@ public class weaponPompe : Weapon
     public int tromblonNombre = 10;
     [Tooltip("Taille du cone de tir")]
     public float sprayX = 0.2f;
+
+    public float explosionForce;
     
     [Space (50)]
     public string fmodShoot; // sons
@@ -33,7 +35,7 @@ public class weaponPompe : Weapon
     private List<Quaternion> tromblonsDirection;
     
     private Animator _animator;
-    private Surchauffe_Manager _surchauffeManager;
+    private ShotGun_Manager _shotgunManager;
     
 
 
@@ -42,8 +44,9 @@ public class weaponPompe : Weapon
     public override void AfterEnable()
     {
         
-        _surchauffeManager = GetComponentInParent<Surchauffe_Manager>();
+        _shotgunManager = GetComponentInParent<ShotGun_Manager>();
         _animator = GetComponent<Animator>();
+        _explosion = impactEffect.GetComponent<ExplosiveDestroy>();
         
 
         player.walkingSpeed -= vitessWalk;
@@ -67,7 +70,7 @@ public class weaponPompe : Weapon
 
     public override void Engage() // c'est override pour pouvoir réecrire la méthode du script dont elle hérite.
     {
-        if (_surchauffeManager.niveauSurchauffe < _surchauffeManager.surchauffe)
+        if (_shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe)
         {
             tromblonsDirection = new List<Quaternion>(tromblonNombre);
             for (int i = 0; i < tromblonNombre; i++)
@@ -118,7 +121,7 @@ public class weaponPompe : Weapon
         }
         
         
-        _surchauffeManager.niveauSurchauffe += 1;
+        _shotgunManager.niveauSurchauffe += 1;
         
         int i = 0;
         foreach (var VARIABLE in tromblonsDirection)
@@ -136,6 +139,7 @@ public class weaponPompe : Weapon
 
     private void Update()
     {
+        _explosion.force = explosionForce;
         Debug.DrawLine(mainCamera.transform.position, new Vector3(0, 0, maxRange) + new Vector3(Combo.x, Combo.y, 0));
     }
 }

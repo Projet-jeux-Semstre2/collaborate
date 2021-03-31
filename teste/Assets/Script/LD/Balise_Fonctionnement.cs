@@ -22,6 +22,10 @@ public class Balise_Fonctionnement : MonoBehaviour
     public bool isCapture;
 
     public Text timer;
+
+    public float t_beforeshutDown = 5;
+    private float t_exit;
+    
     
     
     // Start is called before the first frame update
@@ -30,6 +34,7 @@ public class Balise_Fonctionnement : MonoBehaviour
         _meshRenderer = GetComponent<MeshRenderer>();
         t = timeObjectif;
         timer.enabled = false;
+        zone.SetActive(false);
     }
 
     // Update is called once per frame
@@ -72,6 +77,11 @@ public class Balise_Fonctionnement : MonoBehaviour
                 isCapture = true;
             }
         }
+
+        if (!onCapture && isOn)
+        {
+            ExitOnCpature();
+        }
         
         
         
@@ -84,7 +94,7 @@ public class Balise_Fonctionnement : MonoBehaviour
             
             zone.SetActive(false);
             print("objectif capturé");
-            this.enabled = false;
+            enabled = false;
         }
     }
 
@@ -98,7 +108,7 @@ public class Balise_Fonctionnement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && isOn)
         {
             onCapture = true;
         }
@@ -108,12 +118,26 @@ public class Balise_Fonctionnement : MonoBehaviour
     {
         if (other.CompareTag("Player")&& onCapture)
         {
-            isOn = false;
-            t = timeObjectif;
-            timer.enabled = false;
             onCapture = false;
-            
-            
+            t_exit = 0;
+        }
+    }
+
+    void shutDownZone()
+    {
+        t_exit = 0;
+        t = timeObjectif;
+        timer.enabled = false;
+        onCapture = false;
+        isOn = false;
+    }
+
+    void ExitOnCpature()
+    {
+        t_exit += Time.deltaTime;
+        if (t_exit >= t_beforeshutDown)
+        {
+            shutDownZone();
         }
     }
 }

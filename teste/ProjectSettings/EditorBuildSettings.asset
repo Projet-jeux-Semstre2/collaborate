@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TesteDistanceScene.unity
     guid: d8dc5ecf7b577fa4289b408fbeb1728f
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: ae8f0fbb65348f34ea0a6a9cfced7bfc
   m_configObjects: {}

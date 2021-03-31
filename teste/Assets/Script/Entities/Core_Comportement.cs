@@ -98,7 +98,7 @@ public class Core_Comportement : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && _coreManager.palier == "moyen")
         {
             //canAttackDistance = false;
             canChase = false;
