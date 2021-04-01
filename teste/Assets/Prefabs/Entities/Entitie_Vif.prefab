@@ -160,8 +160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pullRadius: 4
   pullForce: 1
-  pullForceMin: 250
-  pullForceMax: 650
+  pullForceMin: 8000
+  pullForceMax: 12000
   ChangeMaterials:
   - {fileID: 2100000, guid: cd0ceb1be28987c42833420fc54230cd, type: 2}
   - {fileID: 2100000, guid: f4cf061dfe869dd448e08c46c287f84c, type: 2}

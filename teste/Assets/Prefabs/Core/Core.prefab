@@ -429,7 +429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3972857452828451962}
   - component: {fileID: 869440999064337289}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: AttackDistanceZone/DetectionChase
   m_TagString: coreDistAttack
   m_Icon: {fileID: 0}
