@@ -35,6 +35,11 @@ public class WeaponManager : MonoBehaviour
             weapons[activeWeaponsID].Engage();
         }
 
+        if (Input.GetButtonDown("Fire2"))
+        {
+            weapons[activeWeaponsID].Engage2nd();
+        }
+
         if (Input.GetButtonUp("Fire1"))
         {
             weapons[activeWeaponsID].DisEngage();

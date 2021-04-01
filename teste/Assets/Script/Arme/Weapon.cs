@@ -50,6 +50,11 @@ public class Weapon : MonoBehaviour
         
     }
 
+    public virtual void Engage2nd()
+    {
+        
+    }
+
     public virtual void DisEngage()
     {
         

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\poule\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\poule\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_teste.-1792669913.00" t="ExcludeRecursive" />
-    <e p="D:\COURS\2GDA Ican 2020-2021\Projet semestriel\sem 2jeux\ProtoTest\collaborate\teste" t="IncludeRecursive">
+    <e p="C:\GitHub\collaborate\teste" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Balise_ActiveChase.cs" t="Include" />
+        <e p="Bounce.cs" t="Include" />
         <e p="Camera_Shake.cs" t="Include" />
         <e p="Fmod" t="Include">
           <e p="projet soutenance 2" t="Include">
@@ -138,6 +138,7 @@
             </e>
           </e>
         </e>
+        <e p="Grenade_Explosion.cs" t="Include" />
         <e p="JMO Assets" t="Include">
           <e p="Cartoon FX Easy Editor" t="Include">
             <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
@@ -197,6 +198,7 @@
             </e>
           </e>
         </e>
+        <e p="Particule_ZoneCapture.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Fmod" t="Include">
             <e p="addons" t="Include">
@@ -379,6 +381,7 @@
             <e p="RepulseWeapon.cs" t="Include" />
           </e>
         </e>
+        <e p="ShotGun_Manager.cs" t="Include" />
         <e p="Surchauffe_Manager.cs" t="Include" />
       </e>
       <e p="FMODUnity.csproj" t="IncludeRecursive" />
@@ -390,5 +393,7 @@
       <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="teste.sln" t="IncludeFlat" />
     </e>
+    <e p="C:\Users\Paul\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Paul\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_teste.325905264.00" t="ExcludeRecursive" />
   </component>
 </project>

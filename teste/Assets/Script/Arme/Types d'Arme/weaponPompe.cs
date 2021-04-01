@@ -36,7 +36,19 @@ public class weaponPompe : Weapon
     
     private Animator _animator;
     private ShotGun_Manager _shotgunManager;
-    
+
+    [Header("Lance-Grenade")]
+    public GameObject grenade;
+    public float fireRateGrenade;
+    private float _nextFireTimeGrenade;
+    public ParticleSystem muzzleFlashgrenade;
+    public float shootForce;
+    public RaycastHit hitGrenade;
+    public LayerMask LayerMaskGrenade;
+    public float _yAddHit;
+    private float _distance;
+    public float surchauffeAdd;
+
 
 
 
@@ -141,5 +153,40 @@ public class weaponPompe : Weapon
     {
         _explosion.force = explosionForce;
         Debug.DrawLine(mainCamera.transform.position, new Vector3(0, 0, maxRange) + new Vector3(Combo.x, Combo.y, 0));
+        Debug.DrawRay(mainCamera.transform.position, mainCamera.transform.forward, Color.blue, 0.5f);
     }
+    
+    public override void Engage2nd()
+    {
+        if (_shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe)
+        {
+            if (Time.time >= _nextFireTimeGrenade)
+            {
+                _nextFireTimeGrenade = Time.time + fireRateGrenade;
+                fireGrenade();
+            }
+        }
+    }
+
+    void fireGrenade()
+    {
+        muzzleFlash.Play();
+
+        if (viseurCanGrow)
+        {
+            StartCoroutine(ViseurFB());
+        }
+        
+        _shotgunManager.niveauSurchauffe += surchauffeAdd;
+
+        Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hitGrenade, Mathf.Infinity, LayerMaskGrenade );
+        _distance= Vector3.Distance(hitGrenade.point, mainCamera.transform.position);
+        _yAddHit = 0.08295799f * _distance; //Permet d'avoir la balle qui touche le centre du cross air (si c'est possible avec la gravité)
+        GameObject grenadeInst = Instantiate(grenade, launchPoint.position, Quaternion.identity);
+        grenadeInst.transform.LookAt(new Vector3(hitGrenade.point.x , hitGrenade.point.y + _yAddHit, hitGrenade.point.z));
+        grenadeInst.GetComponent<Rigidbody>().AddForce(grenadeInst.transform.forward * shootForce, ForceMode.Impulse);
+
+
+    }
+    
 }

@@ -16,6 +16,7 @@ TagManager:
   - PlayerBullet
   - HealthUi
   - Balise
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - Ground
   - PostProcess
   - Weapon
-  - 
+  - Player
   - 
   - 
   - 
