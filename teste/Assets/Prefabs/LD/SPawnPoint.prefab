@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3630861036006105465}
   - component: {fileID: 3630861036006105464}
   m_Layer: 0
-  m_Name: SPawnPoint
+  m_Name: SpawnPoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -50,3 +50,4 @@ MonoBehaviour:
   - {fileID: 4448553007369930569, guid: c832ddc3048ac674aaf2a8b3bba88d03, type: 3}
   - {fileID: 4448553007369930569, guid: a1b92e1b3e3664a409f12a1c9ca7d59f, type: 3}
   _setUpScene: {fileID: 8559157256093565302, guid: 27986d31eb2169743ab81024a1b32e4e, type: 3}
+  t_beforeRespawn: 30

@@ -125,11 +125,12 @@ public class Balise_Fonctionnement : MonoBehaviour
 
     void shutDownZone()
     {
-        t_exit = 0;
+        
         t = timeObjectif;
         timer.enabled = false;
         onCapture = false;
         isOn = false;
+        t_exit = 0;
     }
 
     void ExitOnCpature()

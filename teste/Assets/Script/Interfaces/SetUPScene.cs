@@ -7,18 +7,13 @@ public class SetUPScene : MonoBehaviour
 {
     
     public float NombreEntités;
-    public float nombreFinale;
-    public float nrb;
-   
     
-    
+    public float numberEntitiesAtStart;
     
 
     public void dificutynumber (float dificultyNombre)
     {
-        nombreFinale = dificultyNombre;
-        nrb = nombreFinale;
-        
+        numberEntitiesAtStart = dificultyNombre;
     }
     
 }
