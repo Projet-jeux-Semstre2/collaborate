@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4129839786377034411}
   - component: {fileID: 2212626612260163169}
   - component: {fileID: 2839171479544077119}
-  - component: {fileID: -6592434028076142808}
   - component: {fileID: 4059187875712682703}
   - component: {fileID: 919132149571900619}
   m_Layer: 11
@@ -31,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 410997852252696500}
   m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: -52.00937, y: 4.14, z: 0.57}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1205221684641298652}
   - {fileID: 8534903848202927961}
@@ -102,20 +101,6 @@ CapsuleCollider:
   m_Height: 3.75
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-6592434028076142808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410997852252696500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82e776962622e7a4f8fff6f16f73f0cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthGive: 15
-  FmodHealt: 
 --- !u!114 &4059187875712682703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82e776962622e7a4f8fff6f16f73f0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthGive: 15
+  healthGive: 30
   FmodHealt: event:/Player/Player_Actions/Heal
 --- !u!1 &665999509434211033
 GameObject:
