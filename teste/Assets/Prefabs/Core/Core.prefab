@@ -387,7 +387,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 35
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5307878294741073114
 MonoBehaviour:
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 3972857452828451962}
   - component: {fileID: 869440999064337289}
   m_Layer: 10
-  m_Name: AttackDistanceZone
+  m_Name: AttackDistanceZone/DetectionChase
   m_TagString: coreDistAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -461,5 +461,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 60
+  m_Radius: 180
   m_Center: {x: 0, y: 0, z: 0}

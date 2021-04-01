@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class ShotGun_Manager : MonoBehaviour
@@ -33,6 +34,7 @@ public class ShotGun_Manager : MonoBehaviour
 
     [Space(25)]
     public bool lanceGrenadeUnlock;
+    public GameObject textLanceGrenadeUnlock;
     
     [Header("Sons")]
     // LE SONS
@@ -137,7 +139,7 @@ public class ShotGun_Manager : MonoBehaviour
         
         
         t += Time.deltaTime;
-        if (niveauSurchauffe > 0 && t >= t_forLooseSurchauffe)
+        if (niveauSurchauffe > 0 && t >= t_forLooseSurchauffe && !_weaponPompe.Reloading)
         {
             FMODUnity.RuntimeManager.PlayOneShot(FmodCooling, transform.position);
             niveauSurchauffe--;
@@ -194,6 +196,7 @@ public class ShotGun_Manager : MonoBehaviour
     void Palier4()
     {
         lanceGrenadeUnlock = true;
+        StartCoroutine(UnlockCompétenceTxt(textLanceGrenadeUnlock));
         _palier4Finish = true;
     }
     
@@ -212,6 +215,24 @@ public class ShotGun_Manager : MonoBehaviour
         _weaponPompe.vitesseSrint -= speedManiementStats[2];
         _weaponPompe.vitessWalk -= speedManiementStats[2];
         _palier6Finish = true;
+    }
+
+
+    IEnumerator UnlockCompétenceTxt(GameObject objectText)
+    {
+        objectText.SetActive(true);
+        yield return new WaitForSeconds(0.8f);
+
+        Color colorwithoutA = objectText.GetComponent<Text>().color;
+        colorwithoutA.a = 0;
+        while (objectText.GetComponent<Text>().color != colorwithoutA)
+        {
+            Color lerp = Color.Lerp(objectText.GetComponent<Text>().color, colorwithoutA, Time.deltaTime * 2.5f);
+            objectText.GetComponent<Text>().color = lerp;
+            yield return null;
+        }
+        
+        objectText.SetActive(false);
     }
     
     

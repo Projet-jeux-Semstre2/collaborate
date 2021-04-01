@@ -17,6 +17,11 @@ public class weaponPompe : Weapon
     [Tooltip("Taille du cone de tir")]
     public float sprayX = 0.2f;
 
+    [Header("Reload")]
+    [Tooltip("Vitesse multiplicateur de la reload")]
+    public float reloadSpeed;
+    public bool Reloading;
+
     public float explosionForce;
     
     [Space (50)]
@@ -82,7 +87,7 @@ public class weaponPompe : Weapon
 
     public override void Engage() // c'est override pour pouvoir réecrire la méthode du script dont elle hérite.
     {
-        if (_shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe)
+        if (_shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe && !Reloading)
         {
             tromblonsDirection = new List<Quaternion>(tromblonNombre);
             for (int i = 0; i < tromblonNombre; i++)
@@ -154,6 +159,16 @@ public class weaponPompe : Weapon
         _explosion.force = explosionForce;
         Debug.DrawLine(mainCamera.transform.position, new Vector3(0, 0, maxRange) + new Vector3(Combo.x, Combo.y, 0));
         Debug.DrawRay(mainCamera.transform.position, mainCamera.transform.forward, Color.blue, 0.5f);
+
+        if (Input.GetButton("Reload"))
+        {
+            Reload();
+        }
+        else if(Reloading)
+        {
+            Reloading = false;
+            _animator.SetBool("Reloading", false);
+        }
     }
     
     public override void Engage2nd()
@@ -185,8 +200,17 @@ public class weaponPompe : Weapon
         GameObject grenadeInst = Instantiate(grenade, launchPoint.position, Quaternion.identity);
         grenadeInst.transform.LookAt(new Vector3(hitGrenade.point.x , hitGrenade.point.y + _yAddHit, hitGrenade.point.z));
         grenadeInst.GetComponent<Rigidbody>().AddForce(grenadeInst.transform.forward * shootForce, ForceMode.Impulse);
+    }
 
-
+    void Reload()
+    {
+        if (_shotgunManager.niveauSurchauffe > 0)
+        {
+            _animator.SetBool("Reloading", true);
+            Reloading = true;
+            _shotgunManager.niveauSurchauffe -= reloadSpeed * Time.deltaTime;
+        }
+        
     }
     
 }
