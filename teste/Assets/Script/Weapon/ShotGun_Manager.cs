@@ -30,6 +30,9 @@ public class ShotGun_Manager : MonoBehaviour
     
     public float[] rangeStats, damageStats, surchauffeStats, explosionStats;
     public int[] speedManiementStats;
+
+    [Space(25)]
+    public bool lanceGrenadeUnlock;
     
     [Header("Sons")]
     // LE SONS
@@ -168,7 +171,6 @@ public class ShotGun_Manager : MonoBehaviour
         //range lvl 1 & surchauffe lvl 1
         _weaponPompe.maxRange = rangeStats[1];
         surchauffe = surchauffeStats[1];
-        print("je suis palier 1");
         _palier1Finish = true;
     }
     
@@ -178,7 +180,6 @@ public class ShotGun_Manager : MonoBehaviour
         _weaponPompe.Degats = damageStats[1];
         _weaponPompe.vitesseSrint -= speedManiementStats[1];
         _weaponPompe.vitessWalk -= speedManiementStats[1];
-        print("je suis palier 2");
         _palier2Finish = true;
     }
     
@@ -187,15 +188,12 @@ public class ShotGun_Manager : MonoBehaviour
         //explosion lvl 1 + affect le joueur & surchauffe lvl 2
         _weaponPompe.explosionForce = explosionStats[1];
         surchauffe = surchauffeStats[2];
-        print("je suis palier 3");
         _palier3Finish = true;
     }
     
     void Palier4()
     {
-        //Nouveau tire unlock lance grenade (chackal/fuze)
-        print("lance grenade unlock");
-        print("je suis palier 4");
+        lanceGrenadeUnlock = true;
         _palier4Finish = true;
     }
     
@@ -204,7 +202,6 @@ public class ShotGun_Manager : MonoBehaviour
         //explosion lvl 2 && damage lvl 2
         _weaponPompe.Degats = damageStats[2];
         _weaponPompe.explosionForce = explosionStats[2];
-        print("je suis palier 5");
         _palier5Finish = true;
     }
     
@@ -214,7 +211,6 @@ public class ShotGun_Manager : MonoBehaviour
         _weaponPompe.maxRange = rangeStats[2];
         _weaponPompe.vitesseSrint -= speedManiementStats[2];
         _weaponPompe.vitessWalk -= speedManiementStats[2];
-        print("je suis palier 6");
         _palier6Finish = true;
     }
     

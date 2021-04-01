@@ -158,7 +158,7 @@ public class weaponPompe : Weapon
     
     public override void Engage2nd()
     {
-        if (_shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe)
+        if (_shotgunManager.lanceGrenadeUnlock && _shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe)
         {
             if (Time.time >= _nextFireTimeGrenade)
             {
