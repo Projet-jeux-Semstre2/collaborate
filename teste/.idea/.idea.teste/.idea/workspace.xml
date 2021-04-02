@@ -25,6 +25,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnArea.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PointMarker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CompasManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/AudioManager.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" root0="FORCE_HIGHLIGHTING" />
@@ -69,7 +71,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/ObjectifExtermination.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/FmodSonsDeOrely.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Surchauffe_Manager.cs" />
@@ -89,6 +90,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnArea.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/PointMarker.cs" />
+        <option value="$PROJECT_DIR$/Assets/CompasManager.cs" />
       </list>
     </option>
   </component>
@@ -172,7 +176,8 @@
       <workItem from="1617206282630" duration="13605000" />
       <workItem from="1617268688566" duration="11266000" />
       <workItem from="1617297277100" duration="2963000" />
-      <workItem from="1617310937302" duration="448000" />
+      <workItem from="1617310937302" duration="3849000" />
+      <workItem from="1617349034509" duration="3220000" />
     </task>
     <servers />
   </component>
@@ -199,5 +204,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1617207595793" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617314447837">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1617314447837" />
   </component>
 </project>
