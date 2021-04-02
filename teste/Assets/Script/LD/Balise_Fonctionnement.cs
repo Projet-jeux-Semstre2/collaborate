@@ -34,12 +34,14 @@ public class Balise_Fonctionnement : MonoBehaviour
         _meshRenderer = GetComponent<MeshRenderer>();
         t = timeObjectif;
         timer.enabled = false;
+        onCapture = false;
         zone.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        print(onCapture);
         if (isOn)
         {
             
@@ -103,11 +105,13 @@ public class Balise_Fonctionnement : MonoBehaviour
         if (other.gameObject.CompareTag("PlayerBullet")&& !isOn)
         {
             isOn = true;
+            onCapture = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.CompareTag("Player") && isOn)
         {
             onCapture = true;

@@ -43,10 +43,7 @@ public class Entities_Stats : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(FmodHurt, GetComponent<Transform>().position);
      
         health -= amount;
-        if ((health <= 0f))
-        {
-            Die();
-        }
+        
 
         if (_canBeDamaged)
         {
@@ -78,6 +75,14 @@ public class Entities_Stats : MonoBehaviour
         t = 0;
         _canBeDamaged = true;
         yield return null;
+    }
+
+    private void Update()
+    {
+        if ((health <= 0f))
+        {
+            Die();
+        }
     }
 
     void Die()

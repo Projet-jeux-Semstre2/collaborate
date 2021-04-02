@@ -25,7 +25,7 @@ public class Glock_Manager : MonoBehaviour
     public bool canRafal;
     public bool explosifBullet;
 
-    public GameObject unlockText;
+    public Text unlockText;
 
 
     private void Start()
@@ -110,21 +110,21 @@ public class Glock_Manager : MonoBehaviour
     
     
     
-    IEnumerator UnlockCompétenceTxt(GameObject objectText, string phrase)
+    IEnumerator UnlockCompétenceTxt(Text objectText, string phrase)
     {
-        objectText.SetActive(true);
-        objectText.GetComponent<Text>().text = phrase;
+        objectText.gameObject.SetActive(true);
+        objectText.text = phrase;
         yield return new WaitForSeconds(0.8f);
 
-        Color colorwithoutA = objectText.GetComponent<Text>().color;
+        Color colorwithoutA = objectText.color;
         colorwithoutA.a = 0;
-        while (objectText.GetComponent<Text>().color != colorwithoutA)
+        while (objectText.color != colorwithoutA)
         {
-            Color lerp = Color.Lerp(objectText.GetComponent<Text>().color, colorwithoutA, Time.deltaTime * 2.5f);
-            objectText.GetComponent<Text>().color = lerp;
+            Color lerp = Color.Lerp(objectText.color, colorwithoutA, Time.deltaTime * 2.5f);
+            objectText.color = lerp;
             yield return null;
         }
         
-        objectText.SetActive(false);
+        objectText.gameObject.SetActive(false);
     }
 }
