@@ -56,23 +56,18 @@ MonoBehaviour:
   Degats: 1
   tromblonNombre: 8
   sprayX: 125
-  reloadSpeed: 1.5
-  Reloading: 0
   explosionForce: 0
   fmodShoot: event:/Weapons/FusilPompe/BasicsStuff/Shoot
   vitessWalk: 3
   vitesseSrint: 5
   Combo: {x: 0, y: 0, z: 0}
-  bulletExplosePlayer: {fileID: 7172713201934465283, guid: 033128a574ce333439df72392613507a, type: 3}
   grenade: {fileID: 2275876850204097937, guid: 49536f8b98229714bb49a237cc20f3bd, type: 3}
-  fireRateGrenade: 0.6
+  fireRateGrenade: 0
   muzzleFlashgrenade: {fileID: 409899825}
-  shootForce: 55
+  shootForce: 40
   LayerMaskGrenade:
     serializedVersion: 2
     m_Bits: 2871
-  _yAddHit: 0
-  surchauffeAdd: 2
 --- !u!1001 &423660789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -268,35 +263,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8172359681741888161, guid: a2a33ba6e870ab34095328969bb189f6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.8340007
+      value: 1.79
       objectReference: {fileID: 0}
     - target: {fileID: 8172359681741888161, guid: a2a33ba6e870ab34095328969bb189f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.23900096
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 8172359681741888161, guid: a2a33ba6e870ab34095328969bb189f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000000053218436
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8172359681741888161, guid: a2a33ba6e870ab34095328969bb189f6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.052074354
       objectReference: {fileID: 0}
     - target: {fileID: 8172359681741888161, guid: a2a33ba6e870ab34095328969bb189f6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.000000007450581
       objectReference: {fileID: 0}
     - target: {fileID: 8172359681741888161, guid: a2a33ba6e870ab34095328969bb189f6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.0000000013969839
       objectReference: {fileID: 0}
     - target: {fileID: 8172359681741888161, guid: a2a33ba6e870ab34095328969bb189f6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9986433
       objectReference: {fileID: 0}
     - target: {fileID: 8172359681741888161, guid: a2a33ba6e870ab34095328969bb189f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -5.97
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -4924429316392376217, guid: a2a33ba6e870ab34095328969bb189f6, type: 3}

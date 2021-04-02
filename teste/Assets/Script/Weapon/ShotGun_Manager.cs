@@ -26,16 +26,15 @@ public class ShotGun_Manager : MonoBehaviour
     public RectTransform barreNiveau;
 
     private bool _palier0Finish, _palier1Finish,_palier2Finish,_palier3Finish,_palier4Finish,_palier5Finish,_palier6Finish;
-
-    public bool canExplosePlayer;
     
     
-    public float[] rangeStats, damageStats, surchauffeStats, explosionStats, jumpForceStats;
+    
+    public float[] rangeStats, damageStats, surchauffeStats, explosionStats;
     public int[] speedManiementStats;
 
     [Space(25)]
     public bool lanceGrenadeUnlock;
-    public GameObject unlockText;
+    public GameObject textLanceGrenadeUnlock;
     
     [Header("Sons")]
     // LE SONS
@@ -166,7 +165,6 @@ public class ShotGun_Manager : MonoBehaviour
         weaponPompe.vitesseSrint -= speedManiementStats[0];
         weaponPompe.vitessWalk -= speedManiementStats[0];
         weaponPompe.explosionForce = explosionStats[0];
-        weaponPompe.explosionForce = jumpForceStats[0];
         _palier0Finish = true;
     }
 
@@ -191,9 +189,6 @@ public class ShotGun_Manager : MonoBehaviour
     {
         //explosion lvl 1 + affect le joueur & surchauffe lvl 2
         weaponPompe.explosionForce = explosionStats[1];
-        StartCoroutine(UnlockCompétenceTxt(unlockText, "Tire sous tes pieds pour sauter"));
-        canExplosePlayer = true;
-        weaponPompe.explosionForce = jumpForceStats[1];
         surchauffe = surchauffeStats[2];
         _palier3Finish = true;
     }
@@ -201,7 +196,7 @@ public class ShotGun_Manager : MonoBehaviour
     void Palier4()
     {
         lanceGrenadeUnlock = true;
-        StartCoroutine(UnlockCompétenceTxt(unlockText, "Lance-Grenade débloqué, bouton droit de la souris pour l'utiliser"));
+        StartCoroutine(UnlockCompétenceTxt(textLanceGrenadeUnlock));
         _palier4Finish = true;
     }
     
@@ -210,7 +205,6 @@ public class ShotGun_Manager : MonoBehaviour
         //explosion lvl 2 && damage lvl 2
         weaponPompe.Degats = damageStats[2];
         weaponPompe.explosionForce = explosionStats[2];
-        weaponPompe.explosionForce = jumpForceStats[2];
         _palier5Finish = true;
     }
     
@@ -224,10 +218,9 @@ public class ShotGun_Manager : MonoBehaviour
     }
 
 
-    IEnumerator UnlockCompétenceTxt(GameObject objectText, string phrase)
+    IEnumerator UnlockCompétenceTxt(GameObject objectText)
     {
         objectText.SetActive(true);
-        objectText.GetComponent<Text>().text = phrase;
         yield return new WaitForSeconds(0.8f);
 
         Color colorwithoutA = objectText.GetComponent<Text>().color;

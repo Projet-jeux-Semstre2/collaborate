@@ -51,4 +51,3 @@ MonoBehaviour:
   - {fileID: 4448553007369930569, guid: a1b92e1b3e3664a409f12a1c9ca7d59f, type: 3}
   _setUpScene: {fileID: 8559157256093565302, guid: 27986d31eb2169743ab81024a1b32e4e, type: 3}
   t_beforeRespawn: 30
-  entitiesRespawnNumber: 30

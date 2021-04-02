@@ -38,8 +38,6 @@ public class weaponPompe : Weapon
 
 
     private List<Quaternion> tromblonsDirection;
-    public GameObject bulletExplosePlayer;
-    public float bulletExplosionForce;
     
     private Animator _animator;
     private ShotGun_Manager _shotgunManager;
@@ -62,6 +60,7 @@ public class weaponPompe : Weapon
 
     public override void AfterEnable()
     {
+        
         _shotgunManager = GetComponentInParent<ShotGun_Manager>();
         _animator = GetComponent<Animator>();
         _explosion = impactEffect.GetComponent<ExplosiveDestroy>();
@@ -109,15 +108,6 @@ public class weaponPompe : Weapon
         if (Physics.Raycast(mainCamera.transform.position, var, out hit, maxRange, touchingLayerMask))
         {
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-            if (_shotgunManager.canExplosePlayer)
-            {
-               GameObject explo= Instantiate(bulletExplosePlayer, hit.point, Quaternion.identity);
-               explo.GetComponent<ExplosionJumpPlayer>().force = explosionForce;
-            }
-            
-            
-            
-            
             
             
             
@@ -183,7 +173,7 @@ public class weaponPompe : Weapon
     
     public override void Engage2nd()
     {
-        if ( !Reloading&& _shotgunManager.lanceGrenadeUnlock && _shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe)
+        if (_shotgunManager.lanceGrenadeUnlock && _shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe)
         {
             if (Time.time >= _nextFireTimeGrenade)
             {
