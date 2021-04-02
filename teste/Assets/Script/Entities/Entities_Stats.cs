@@ -20,6 +20,7 @@ public class Entities_Stats : MonoBehaviour
     public Material fullLifeMaterial;
 
     private ShotGun_Manager _shotGunManager;
+    private Glock_Manager _glockManager;
     
 
 
@@ -33,11 +34,12 @@ public class Entities_Stats : MonoBehaviour
     {
         _meshRenderer = GetComponent<MeshRenderer>();
         _shotGunManager = GameObject.FindWithTag("Player").GetComponent<ShotGun_Manager>();
+        _glockManager = GameObject.FindWithTag("Player").GetComponent<Glock_Manager>();
     }
 
     public void TakeDamage(float amount)
     {
-//sons
+        //sons
         FMODUnity.RuntimeManager.PlayOneShot(FmodHurt, GetComponent<Transform>().position);
      
         health -= amount;
@@ -84,16 +86,27 @@ public class Entities_Stats : MonoBehaviour
         //FMODUnity.RuntimeManager.PlayOneShot(FmodDie, transform.position);
         
         Instantiate(dieExplosion, transform.position, Quaternion.identity);
-
-        Destroy(gameObject);
-    }
-
-    private void OnDestroy()
-    {
-        if (_shotGunManager.palierJauge < 6)
+        
+        
+        if (_shotGunManager.weaponPompe.gameObject.activeInHierarchy)
         {
-            _shotGunManager.niveauJauge++;
+            if (_shotGunManager.palierJauge < _shotGunManager.niveauBetweenPalier.Length)
+            {
+                _shotGunManager.niveauJauge++;
+            }
+            
         }
         
+        if(_glockManager.weaponGlock.gameObject.activeInHierarchy)
+        {
+            if (_glockManager.palierJauge < _glockManager.niveauBetweenPalier.Length)
+            {
+                _glockManager.niveauJauge++;
+            }
+            
+        }
+        
+        Destroy(gameObject);
     }
+    
 }

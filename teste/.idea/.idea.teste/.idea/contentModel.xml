@@ -365,6 +365,7 @@
             <e p="PlayerFootstep.cs" t="Include" />
           </e>
           <e p="Weapon" t="Include">
+            <e p="Glock_Manager.cs" t="Include" />
             <e p="Projectiles" t="Include">
               <e p="Bounce.cs" t="Include" />
               <e p="ExplosiveDestroy.cs" t="Include" />

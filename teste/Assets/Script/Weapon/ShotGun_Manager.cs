@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class ShotGun_Manager : MonoBehaviour
 {
-    private weaponPompe _weaponPompe;
+    public weaponPompe weaponPompe;
     private Player _player;
     
     [Header("Surchauffe")]
@@ -46,7 +46,7 @@ public class ShotGun_Manager : MonoBehaviour
 
     private void Start()
     {
-        _weaponPompe = GetComponentInChildren<weaponPompe>();
+        weaponPompe = GetComponentInChildren<weaponPompe>();
         _player = GetComponent<Player>();
     }
 
@@ -139,7 +139,7 @@ public class ShotGun_Manager : MonoBehaviour
         
         
         t += Time.deltaTime;
-        if (niveauSurchauffe > 0 && t >= t_forLooseSurchauffe && !_weaponPompe.Reloading)
+        if (niveauSurchauffe > 0 && t >= t_forLooseSurchauffe && !weaponPompe.Reloading)
         {
             FMODUnity.RuntimeManager.PlayOneShot(FmodCooling, transform.position);
             niveauSurchauffe--;
@@ -159,19 +159,19 @@ public class ShotGun_Manager : MonoBehaviour
     void Palier0()
     {
         //tout lvl 0 (stats de base)
-        _weaponPompe.maxRange = rangeStats[0];
-        _weaponPompe.Degats = damageStats[0];
+        weaponPompe.maxRange = rangeStats[0];
+        weaponPompe.Degats = damageStats[0];
         surchauffe = surchauffeStats[0];
-        _weaponPompe.vitesseSrint -= speedManiementStats[0];
-        _weaponPompe.vitessWalk -= speedManiementStats[0];
-        _weaponPompe.explosionForce = explosionStats[0];
+        weaponPompe.vitesseSrint -= speedManiementStats[0];
+        weaponPompe.vitessWalk -= speedManiementStats[0];
+        weaponPompe.explosionForce = explosionStats[0];
         _palier0Finish = true;
     }
 
     void Palier1()
     {
         //range lvl 1 & surchauffe lvl 1
-        _weaponPompe.maxRange = rangeStats[1];
+        weaponPompe.maxRange = rangeStats[1];
         surchauffe = surchauffeStats[1];
         _palier1Finish = true;
     }
@@ -179,16 +179,16 @@ public class ShotGun_Manager : MonoBehaviour
     void Palier2()
     {
         //damage lvl 1 & speedManiement lvl 1
-        _weaponPompe.Degats = damageStats[1];
-        _weaponPompe.vitesseSrint -= speedManiementStats[1];
-        _weaponPompe.vitessWalk -= speedManiementStats[1];
+        weaponPompe.Degats = damageStats[1];
+        weaponPompe.vitesseSrint -= speedManiementStats[1];
+        weaponPompe.vitessWalk -= speedManiementStats[1];
         _palier2Finish = true;
     }
     
     void Palier3()
     {
         //explosion lvl 1 + affect le joueur & surchauffe lvl 2
-        _weaponPompe.explosionForce = explosionStats[1];
+        weaponPompe.explosionForce = explosionStats[1];
         surchauffe = surchauffeStats[2];
         _palier3Finish = true;
     }
@@ -203,17 +203,17 @@ public class ShotGun_Manager : MonoBehaviour
     void Palier5( )
     {
         //explosion lvl 2 && damage lvl 2
-        _weaponPompe.Degats = damageStats[2];
-        _weaponPompe.explosionForce = explosionStats[2];
+        weaponPompe.Degats = damageStats[2];
+        weaponPompe.explosionForce = explosionStats[2];
         _palier5Finish = true;
     }
     
     void Palier6()
     {
         //range lvl 2 & speedManiement lvl 2 & unlock un nouveau tire
-        _weaponPompe.maxRange = rangeStats[2];
-        _weaponPompe.vitesseSrint -= speedManiementStats[2];
-        _weaponPompe.vitessWalk -= speedManiementStats[2];
+        weaponPompe.maxRange = rangeStats[2];
+        weaponPompe.vitesseSrint -= speedManiementStats[2];
+        weaponPompe.vitessWalk -= speedManiementStats[2];
         _palier6Finish = true;
     }
 

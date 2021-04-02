@@ -19,11 +19,6 @@ public class Player : MonoBehaviour
     public float lookXLimit = 90.0f;
 
     public GameObject Groupe;
-
-
-    
-    
-
     
     
     
@@ -39,6 +34,8 @@ public class Player : MonoBehaviour
     public bool canMove = true;
     public bool canDoubleJump = false;
     public bool StopJump = false;
+
+    public bool sonPlay= false;
 
 
     void Start()
@@ -139,6 +136,7 @@ public class Player : MonoBehaviour
         {
             moveDirection.y = -gravity;
         }
+        
 
         
 

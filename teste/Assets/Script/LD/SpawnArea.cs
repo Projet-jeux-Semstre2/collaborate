@@ -18,6 +18,7 @@ public class SpawnArea : MonoBehaviour
 
     public float t_beforeRespawn = 15f;
     private float _t;
+    public float entitiesRespawnNumber = 30;
     
 
     // Start is called before the first frame update
@@ -69,9 +70,9 @@ public class SpawnArea : MonoBehaviour
 
     void Respawn()
     {
-        if (ObjectifExtermination.nrbEntités.Count < _nbAtStart)
+        if (ObjectifExtermination.nrbEntités.Count < _nbAtStart - entitiesRespawnNumber )
         {
-            float nb = (_nbAtStart - ObjectifExtermination.nrbEntités.Count) / _spawnPoint.Length;
+            float nb = (entitiesRespawnNumber) / _spawnPoint.Length;
             Spawn(nb);
         }
     }
