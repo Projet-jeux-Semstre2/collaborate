@@ -25,7 +25,7 @@ public class Glock_Manager : MonoBehaviour
     public bool canRafal;
     public bool explosifBullet;
 
-    public GameObject unlockRafale;
+    public GameObject unlockText;
 
 
     private void Start()
@@ -104,15 +104,16 @@ public class Glock_Manager : MonoBehaviour
         canRafal = true;
         weaponGlock.fireRate = fireRateStats[1];
         weaponGlock.Degats = damageStats[1];
-        StartCoroutine(UnlockCompétenceTxt(unlockRafale));
+        StartCoroutine(UnlockCompétenceTxt(unlockText, "Tire en rafale débloqué"));
         _palier3Finish = true;
     }
     
     
     
-    IEnumerator UnlockCompétenceTxt(GameObject objectText)
+    IEnumerator UnlockCompétenceTxt(GameObject objectText, string phrase)
     {
         objectText.SetActive(true);
+        objectText.GetComponent<Text>().text = phrase;
         yield return new WaitForSeconds(0.8f);
 
         Color colorwithoutA = objectText.GetComponent<Text>().color;
