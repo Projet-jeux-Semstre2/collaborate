@@ -26,15 +26,21 @@ public class Balise_Fonctionnement : MonoBehaviour
     public float t_beforeshutDown = 5;
     private float t_exit;
     
-    
+    //SONS
+    public string fmodMusicCapture;
+    public string fmodTshutdown;
+    public string fmodRenterthezone;
+    public string fmodisCature;
+    public string fmodIsShutdown;
+    private bool JingleWin;
     
     // Start is called before the first frame update
     void Start()
     {
+        JingleWin = true;
         _meshRenderer = GetComponent<MeshRenderer>();
         t = timeObjectif;
         timer.enabled = false;
-        onCapture = false;
         zone.SetActive(false);
     }
 
@@ -94,39 +100,56 @@ public class Balise_Fonctionnement : MonoBehaviour
             onCapture = false;
             
             zone.SetActive(false);
+            print("objectif capturé");
             enabled = false;
+            
+            if (JingleWin) // pour le sons c'est un OS, jingle de win
+            {
+                Debug.Log("jingle win actif )= ");
+                FMODUnity.RuntimeManager.PlayOneShot(fmodisCature);
+                JingleWin = false;
+            }
         }
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter(Collision other) /// ici on active la balsie avec le tir, is on true
     {
         if (other.gameObject.CompareTag("PlayerBullet")&& !isOn)
         {
+            /// son 
+            FMODUnity.RuntimeManager.PlayOneShot(fmodMusicCapture);
+            
             isOn = true;
-            onCapture = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        
-        if (other.CompareTag("Player") && isOn)
+        if (other.CompareTag("Player") && isOn) /// ici le joueur capture 
         {
+            /// son 
+            FMODUnity.RuntimeManager.PlayOneShot(fmodRenterthezone);
+            
             onCapture = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other) // ici le joueur sort de la capture
     {
         if (other.CompareTag("Player")&& onCapture)
         {
+            /// son 
+            FMODUnity.RuntimeManager.PlayOneShot(fmodTshutdown); 
+            
             onCapture = false;
             t_exit = 0;
         }
     }
 
-    void shutDownZone()
+    void shutDownZone() //// fonction qui reboot la balise si il ya echec de capture
     {
+        /// son 
+        FMODUnity.RuntimeManager.PlayOneShot(fmodIsShutdown);
         
         t = timeObjectif;
         timer.enabled = false;
@@ -135,7 +158,7 @@ public class Balise_Fonctionnement : MonoBehaviour
         t_exit = 0;
     }
 
-    void ExitOnCpature()
+    void ExitOnCpature() /// méthode qui compte le temps si il ya echec de la capture
     {
         t_exit += Time.deltaTime;
         if (t_exit >= t_beforeshutDown)

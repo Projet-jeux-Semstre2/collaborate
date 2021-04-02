@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{84300290-3ffc-4898-b610-3365960f4d96}">
+		<property name="name">
+			<value>TShutDown</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ed492a8d-c8cf-4bb0-951b-8b6b8db0560b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a3320d73-f25b-412b-8b41-fc2dae9230b0}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a3320d73-f25b-412b-8b41-fc2dae9230b0}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

@@ -10,13 +10,19 @@ public class SceneChange : MonoBehaviour
 
   
     // called via button
-    public void changeScene()
+    public void changeScene(float waitTime)
     {
-        SceneManager.LoadScene(nameSceneToLoad);
+        StartCoroutine(goToScene(waitTime));
     }
 
     public void LoadLevel(string levelName)
     {
         nameSceneToLoad = levelName;
+    }
+
+    IEnumerator goToScene(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene(nameSceneToLoad);
     }
 }

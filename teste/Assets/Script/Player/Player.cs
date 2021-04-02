@@ -75,8 +75,9 @@ public class Player : MonoBehaviour
         if (characterController.isGrounded)
         {
             canDoubleJump = false;
-            StopJump = false;               
+            StopJump = false;
         }
+
 
         if (!characterController.isGrounded && !StopJump)
         {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{880898c6-a46a-424c-837e-c6cf0f2a4197}">
+		<property name="name">
+			<value>IsShutDown</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ed492a8d-c8cf-4bb0-951b-8b6b8db0560b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{3b1ee944-4af2-4f1b-8900-bd4a2bddb0b1}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{3b1ee944-4af2-4f1b-8900-bd4a2bddb0b1}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

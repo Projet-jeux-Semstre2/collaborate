@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/MenuBuild.unity
+    guid: c047ca849dc6b4e44bb183d406a8b2bd
+  - enabled: 1
+    path: Assets/Scenes/Menu_Test.unity
     guid: 2055e711d89cb934582b819266444c11
   - enabled: 1
     path: Assets/Scenes/Level1.unity
@@ -15,21 +18,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2.unity
     guid: 8c31a764ed4f26e4483960eefa56a6a7
   - enabled: 1
-    path: Assets/Scenes/Win.unity
-    guid: 77ac65cc0a299a146b2c4ddbecd4455e
-  - enabled: 1
-    path: Assets/Scenes/Level5.unity
-    guid: 6fb9ce5b51fa12b4997cff03640c883c
+    path: Assets/Scenes/Level 3.unity
+    guid: d29430721c51cb34395834f517b33990
   - enabled: 1
     path: Assets/Scenes/Level4.unity
     guid: b23dd65948c7a6c4385c30b34d5670af
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
-    guid: d29430721c51cb34395834f517b33990
-  - enabled: 0
-    path: Assets/Scenes/TesteDistanceScene.unity
-    guid: d8dc5ecf7b577fa4289b408fbeb1728f
+    path: Assets/Scenes/Level5.unity
+    guid: 6fb9ce5b51fa12b4997cff03640c883c
   - enabled: 1
     path: Assets/Scenes/Level6.unity
     guid: ae8f0fbb65348f34ea0a6a9cfced7bfc
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 77ac65cc0a299a146b2c4ddbecd4455e
+  - enabled: 0
+    path: Assets/Scenes/TesteDistanceScene.unity
+    guid: d8dc5ecf7b577fa4289b408fbeb1728f
   m_configObjects: {}

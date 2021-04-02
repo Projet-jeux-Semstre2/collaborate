@@ -25,7 +25,9 @@ public class weaponPompe : Weapon
     public float explosionForce;
     
     [Space (50)]
-    public string fmodShoot; // sons
+    // sons
+    public string fmodShoot; 
+    public string fmodLaunchGrenade;
     
     [Header("Vitesse du joueur")]
     public int vitessWalk = 3;
@@ -196,7 +198,8 @@ public class weaponPompe : Weapon
     void fireGrenade()
     {
         muzzleFlash.Play();
-
+// sons
+        FMODUnity.RuntimeManager.PlayOneShot(fmodLaunchGrenade);
         if (viseurCanGrow)
         {
             StartCoroutine(ViseurFB());

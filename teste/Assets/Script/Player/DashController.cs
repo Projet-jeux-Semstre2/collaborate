@@ -11,6 +11,9 @@ public class DashController : MonoBehaviour
     private float dashStartTime = 0;
     public float coolDown;
     private bool canDash = true;
+    
+    // sons
+    public string FmodDash;
 
     
     public float dashSpeed = 30f;
@@ -71,6 +74,9 @@ public class DashController : MonoBehaviour
 
     IEnumerator OnStartDash()
     {
+        // sons
+        FMODUnity.RuntimeManager.PlayOneShot(FmodDash);
+        
         isDashing = true;
         dashStartTime = Time.time;
         dashAttempts += 1;

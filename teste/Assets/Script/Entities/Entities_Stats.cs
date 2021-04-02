@@ -79,7 +79,7 @@ public class Entities_Stats : MonoBehaviour
 
     private void Update()
     {
-        if ((health <= 0f))
+        if (health <= 0f)
         {
             Die();
         }
@@ -97,6 +97,7 @@ public class Entities_Stats : MonoBehaviour
         {
             if (_shotGunManager.palierJauge < _shotGunManager.niveauBetweenPalier.Length)
             {
+                print("shotgun ++");
                 _shotGunManager.niveauJauge++;
             }
             
