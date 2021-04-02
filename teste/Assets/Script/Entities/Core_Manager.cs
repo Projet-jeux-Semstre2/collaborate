@@ -116,9 +116,6 @@ public class Core_Manager : MonoBehaviour
         sphereColliderPull.radius = pullRadius * 3.3f;
         
         
-        
-        
-        
         foreach (Collider collider in Physics.OverlapSphere(transform.position, pullRadius) )
         {
             if (collider.gameObject.CompareTag("ennemis") && myEntities.Contains(collider.gameObject) && collider.GetComponent<Entities_Manager>().myCore == gameObject)

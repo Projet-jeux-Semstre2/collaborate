@@ -1040,9 +1040,9 @@ MonoBehaviour:
   barreNiveau: {fileID: 8149357412068055350}
   canExplosePlayer: 0
   rangeStats:
-  - 150
-  - 40
+  - 30
   - 50
+  - 70
   damageStats:
   - 1
   - 1.5
@@ -1059,7 +1059,12 @@ MonoBehaviour:
   - 0
   - 50
   - 75
+  sprayStats:
+  - 125
+  - 150
+  - 195
   speedManiementStats: 000000000300000006000000
+  nbBulletStats: 080000000a0000000c0000000e000000
   lanceGrenadeUnlock: 0
   unlockText: {fileID: 1932112145144527020}
   FmodSurchauffe: event:/Weapons/FusilPompe/BasicsStuff/Recharge

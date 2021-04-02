@@ -37,7 +37,7 @@ public class CompasManager : MonoBehaviour
     {
         float uvX = player.localEulerAngles.y / 360f;
         compas.uvRect = new Rect(uvX,0,1,1);
-        
+
         foreach (PointMarker marker in pointMarkers)
         {
             marker.image.rectTransform.anchoredPosition = GetPosOnCompas(marker);
@@ -51,7 +51,14 @@ public class CompasManager : MonoBehaviour
             }
             
             marker.image.rectTransform.localScale = Vector3.one * scale;
+
+            if (marker.GetComponent<Balise_Fonctionnement>().isCapture)
+            {
+                marker.image.enabled = false;
+                pointMarkers.Remove(marker);
+            }
         }
+        
         
         
     }

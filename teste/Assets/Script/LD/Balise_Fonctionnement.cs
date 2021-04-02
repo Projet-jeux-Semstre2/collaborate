@@ -41,7 +41,6 @@ public class Balise_Fonctionnement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(onCapture);
         if (isOn)
         {
             
@@ -95,7 +94,6 @@ public class Balise_Fonctionnement : MonoBehaviour
             onCapture = false;
             
             zone.SetActive(false);
-            print("objectif capturé");
             enabled = false;
         }
     }

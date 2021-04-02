@@ -30,8 +30,8 @@ public class ShotGun_Manager : MonoBehaviour
     public bool canExplosePlayer;
     
     
-    public float[] rangeStats, damageStats, surchauffeStats, explosionStats, jumpForceStats;
-    public int[] speedManiementStats;
+    public float[] rangeStats, damageStats, surchauffeStats, explosionStats, jumpForceStats, sprayStats;
+    public int[] speedManiementStats, nbBulletStats;
 
     [Space(25)]
     public bool lanceGrenadeUnlock;
@@ -167,6 +167,8 @@ public class ShotGun_Manager : MonoBehaviour
         weaponPompe.vitessWalk -= speedManiementStats[0];
         weaponPompe.explosionForce = explosionStats[0];
         weaponPompe.explosionForce = jumpForceStats[0];
+        weaponPompe.sprayX = sprayStats[0]; // a voir 
+        weaponPompe.tromblonNombre = nbBulletStats[0]; // a voir
         _palier0Finish = true;
     }
 
@@ -175,6 +177,7 @@ public class ShotGun_Manager : MonoBehaviour
         //range lvl 1 & surchauffe lvl 1
         weaponPompe.maxRange = rangeStats[1];
         surchauffe = surchauffeStats[1];
+        weaponPompe.sprayX = sprayStats[1]; // a voir
         _palier1Finish = true;
     }
     
@@ -184,6 +187,7 @@ public class ShotGun_Manager : MonoBehaviour
         weaponPompe.Degats = damageStats[1];
         weaponPompe.vitesseSrint -= speedManiementStats[1];
         weaponPompe.vitessWalk -= speedManiementStats[1];
+        weaponPompe.tromblonNombre = nbBulletStats[1]; // a voir
         _palier2Finish = true;
     }
     
@@ -201,6 +205,7 @@ public class ShotGun_Manager : MonoBehaviour
     void Palier4()
     {
         lanceGrenadeUnlock = true;
+        weaponPompe.sprayX = sprayStats[2];
         StartCoroutine(UnlockCompétenceTxt(unlockText, "Lance-Grenade débloqué, bouton droit de la souris pour l'utiliser"));
         _palier4Finish = true;
     }
@@ -211,6 +216,7 @@ public class ShotGun_Manager : MonoBehaviour
         weaponPompe.Degats = damageStats[2];
         weaponPompe.explosionForce = explosionStats[2];
         weaponPompe.explosionForce = jumpForceStats[2];
+        weaponPompe.tromblonNombre = nbBulletStats[2]; //a voir
         _palier5Finish = true;
     }
     
@@ -220,6 +226,7 @@ public class ShotGun_Manager : MonoBehaviour
         weaponPompe.maxRange = rangeStats[2];
         weaponPompe.vitesseSrint -= speedManiementStats[2];
         weaponPompe.vitessWalk -= speedManiementStats[2];
+        weaponPompe.tromblonNombre = nbBulletStats[3]; //a voir
         _palier6Finish = true;
     }
 

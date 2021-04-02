@@ -23,7 +23,6 @@ public class Glock_Manager : MonoBehaviour
     public float[] penetrationStats, damageStats, explosifBulletStats, fireRateStats;
     public float rafaleLength, timeBetweenShoot;
     public bool canRafal;
-    public bool explosifBullet;
 
     public Text unlockText;
 
@@ -94,7 +93,6 @@ public class Glock_Manager : MonoBehaviour
     
     void Palier2()
     {
-        explosifBullet = true;
         weaponGlock.penetrationNumber = penetrationStats[2];
         _palier2Finish = true;
     }
