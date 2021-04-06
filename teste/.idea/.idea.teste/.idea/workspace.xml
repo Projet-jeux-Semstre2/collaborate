@@ -79,7 +79,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/ObjectifExtermination.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/FmodSonsDeOrely.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Surchauffe_Manager.cs" />
@@ -109,6 +108,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Menu_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -194,7 +194,7 @@
       <workItem from="1617297277100" duration="2963000" />
       <workItem from="1617310937302" duration="3849000" />
       <workItem from="1617349034509" duration="15641000" />
-      <workItem from="1617378237483" duration="7276000" />
+      <workItem from="1617378237483" duration="7853000" />
     </task>
     <servers />
   </component>

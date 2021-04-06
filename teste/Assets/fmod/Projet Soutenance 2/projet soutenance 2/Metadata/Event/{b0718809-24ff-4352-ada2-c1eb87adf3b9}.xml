@@ -123,11 +123,17 @@
 		<property name="length">
 			<value>0.42458333333333331</value>
 		</property>
+		<property name="volume">
+			<value>1.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{5b6d36b1-dd61-4323-a4e3-99b1927302cc}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{5cdb080e-7218-4f42-9815-04452c1bce8e}">
+		<property name="volume">
+			<value>7</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -142,9 +148,6 @@
 		</relationship>
 	</object>
 	<object class="SnapshotModule" id="{746fbc73-092f-492f-adad-73223a89ac6e}">
-		<property name="length">
-			<value>1.71875</value>
-		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{a93bffe3-c1f3-4128-b82b-09a770d734f0}</destination>
 		</relationship>
@@ -215,6 +218,7 @@
 	<object class="MixerBusEffectChain" id="{de7e2702-0b3f-409b-9c35-0e3d4a1ed6f5}">
 		<relationship name="effects">
 			<destination>{812c10fc-c97b-4d9f-a766-a8b94b42c3bd}</destination>
+			<destination>{854a7f71-1046-407b-9fa8-fba3f39b38a3}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{469322de-bcb2-4808-bd70-a82bab884f54}" />
@@ -246,9 +250,14 @@
 	<object class="MixerBusPanner" id="{71283f10-3144-4d72-b2e7-e44923cf6ad4}" />
 	<object class="MixerBusFader" id="{00cb95a6-7fa7-4404-83ec-3c50cde9a3c4}" />
 	<object class="MixerBusFader" id="{812c10fc-c97b-4d9f-a766-a8b94b42c3bd}" />
+	<object class="GainEffect" id="{854a7f71-1046-407b-9fa8-fba3f39b38a3}">
+		<property name="gain">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{533b4168-750e-4223-92d9-8a0eb27ed0fb}">
 		<property name="position">
-			<value>0.84375</value>
+			<value>0.15625</value>
 		</property>
 		<property name="value">
 			<value>100</value>
@@ -259,7 +268,7 @@
 	</object>
 	<object class="AutomationPoint" id="{9c4e579a-d715-4ca4-bba2-0dd70c6adff4}">
 		<property name="position">
-			<value>1.71875</value>
+			<value>1</value>
 		</property>
 		<property name="value">
 			<value>0</value>

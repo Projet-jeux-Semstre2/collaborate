@@ -5,7 +5,7 @@
 			<value>sosn pour la surchauffe atteinte. se lance une seule fois, la meca de cooling max devrait etre approfondie</value>
 		</property>
 		<property name="color">
-			<value>Red Light 1</value>
+			<value>Green</value>
 		</property>
 		<property name="name">
 			<value>Recharge</value>

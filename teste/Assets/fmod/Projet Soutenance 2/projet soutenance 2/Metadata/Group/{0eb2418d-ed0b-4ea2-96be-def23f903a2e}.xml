@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="MixerGroup" id="{0eb2418d-ed0b-4ea2-96be-def23f903a2e}">
 		<property name="volume">
-			<value>-2</value>
+			<value>-32</value>
 		</property>
 		<property name="name">
 			<value>Musique</value>
@@ -36,13 +36,16 @@
 			<value>highGain</value>
 		</property>
 		<property name="amount">
-			<value>80</value>
+			<value>20.5</value>
+		</property>
+		<property name="releaseTime">
+			<value>420</value>
 		</property>
 		<property name="minimumThreshold">
-			<value>-49</value>
+			<value>-27.5</value>
 		</property>
 		<property name="maximumThreshold">
-			<value>-18.7000008</value>
+			<value>-8.40000057</value>
 		</property>
 		<relationship name="sidechains">
 			<destination>{f7ad8aaa-9267-4682-beb2-500f8aad3dca}</destination>
@@ -53,13 +56,16 @@
 			<value>midGain</value>
 		</property>
 		<property name="amount">
-			<value>80</value>
+			<value>19.5</value>
+		</property>
+		<property name="releaseTime">
+			<value>500</value>
 		</property>
 		<property name="minimumThreshold">
-			<value>-80</value>
+			<value>-44</value>
 		</property>
 		<property name="maximumThreshold">
-			<value>-27.3999996</value>
+			<value>-16.5</value>
 		</property>
 		<relationship name="sidechains">
 			<destination>{f7ad8aaa-9267-4682-beb2-500f8aad3dca}</destination>

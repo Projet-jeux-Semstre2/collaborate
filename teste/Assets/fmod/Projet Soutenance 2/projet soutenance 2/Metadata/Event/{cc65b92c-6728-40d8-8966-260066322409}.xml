@@ -62,7 +62,14 @@
 			<destination>{8367da70-a55a-4fdb-94ab-033671609515}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{7f406f87-fd31-4379-8a5d-fe4a760ae00e}" />
+	<object class="EventAutomatableProperties" id="{7f406f87-fd31-4379-8a5d-fe4a760ae00e}">
+		<property name="maxVoices">
+			<value>6</value>
+		</property>
+		<property name="voiceStealing">
+			<value>3</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{72e75e60-ce1b-44c0-994e-8d2e545e7385}" />
 	<object class="GroupTrack" id="{d0651402-b051-49c5-ba77-b56ed9e0dcb7}">
 		<relationship name="automationTracks">
@@ -89,6 +96,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{8220d00b-7850-4786-a2ef-472f93c60be0}">
+		<property name="volume">
+			<value>-4</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{14d7b669-866e-4cd2-aaf8-b056cbbbc864}</destination>
 		</relationship>
@@ -116,6 +126,9 @@
 		</property>
 		<property name="length">
 			<value>6.8747845804988659</value>
+		</property>
+		<property name="volume">
+			<value>10</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -174,6 +187,7 @@
 	<object class="MixerBusEffectChain" id="{7965a562-df7c-4446-8d87-451f51df4600}">
 		<relationship name="effects">
 			<destination>{b4dd3ba7-1ad8-46c3-a6df-72830777a7ef}</destination>
+			<destination>{27449071-08b9-4305-b146-603d5ee02b94}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f2372d1d-ba5d-41bd-ac23-f6e1c02b9a3f}" />
@@ -191,31 +205,66 @@
 			<destination>{8ce72094-64a4-4d2a-a108-d71f2829be57}</destination>
 			<destination>{8fdfaadf-c709-4f12-a5b8-b485153033cf}</destination>
 			<destination>{32d0fa63-6085-4a3c-be26-479f4503bc2b}</destination>
+			<destination>{b36e7f0b-5814-4252-b142-6b10a4b96d6f}</destination>
+			<destination>{9d64fd4d-a62d-4a34-b7a6-91c56ae1a730}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{b4dd3ba7-1ad8-46c3-a6df-72830777a7ef}" />
+	<object class="CompressorEffect" id="{27449071-08b9-4305-b146-603d5ee02b94}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+		<property name="threshold">
+			<value>-11.5</value>
+		</property>
+		<property name="ratio">
+			<value>2.20000005</value>
+		</property>
+		<property name="attackTime">
+			<value>3.4000001</value>
+		</property>
+		<property name="releaseTime">
+			<value>82</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{8ce72094-64a4-4d2a-a108-d71f2829be57}">
 		<property name="position">
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-4</value>
+			<value>0</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{8fdfaadf-c709-4f12-a5b8-b485153033cf}">
 		<property name="position">
-			<value>50</value>
+			<value>70</value>
 		</property>
 		<property name="value">
-			<value>-21</value>
+			<value>-14</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{32d0fa63-6085-4a3c-be26-479f4503bc2b}">
 		<property name="position">
-			<value>59</value>
+			<value>80</value>
 		</property>
 		<property name="value">
 			<value>-80</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{b36e7f0b-5814-4252-b142-6b10a4b96d6f}">
+		<property name="position">
+			<value>15</value>
+		</property>
+		<property name="value">
+			<value>-5.20770836</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{9d64fd4d-a62d-4a34-b7a6-91c56ae1a730}">
+		<property name="position">
+			<value>40</value>
+		</property>
+		<property name="value">
+			<value>-9</value>
 		</property>
 	</object>
 </objects>

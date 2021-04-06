@@ -60,10 +60,12 @@ MonoBehaviour:
   Reloading: 0
   explosionForce: 0
   fmodShoot: event:/Weapons/FusilPompe/BasicsStuff/Shoot
+  fmodLaunchGrenade: event:/Weapons/FusilPompe/Weapon_Up/LaunchGrenade
   vitessWalk: 3
   vitesseSrint: 5
   Combo: {x: 0, y: 0, z: 0}
   bulletExplosePlayer: {fileID: 7172713201934465283, guid: 033128a574ce333439df72392613507a, type: 3}
+  bulletExplosionForce: 0
   grenade: {fileID: 2275876850204097937, guid: 49536f8b98229714bb49a237cc20f3bd, type: 3}
   fireRateGrenade: 0.6
   muzzleFlashgrenade: {fileID: 409899825}
