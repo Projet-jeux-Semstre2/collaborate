@@ -50,7 +50,9 @@ public class AmeliorationManager : MonoBehaviour
     public void Desac()
     {
         gameObject.SetActive(false);
-        CursorManager.canLock = true;
+        PauseMenu.canLock = true;
+        PauseMenu.pauseTime = false;
+
     }
     
 
@@ -209,6 +211,6 @@ public class AmeliorationManager : MonoBehaviour
 
     private void OnDisable()
     {
-        CursorManager.cursorLock = true;
+        PauseMenu.cursorLock = true;
     }
 }

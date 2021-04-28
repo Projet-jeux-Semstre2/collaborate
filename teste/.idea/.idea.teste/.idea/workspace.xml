@@ -111,9 +111,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/UI_Menu_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
       </list>
     </option>
@@ -209,7 +209,7 @@
       <workItem from="1619432400286" duration="362000" />
       <workItem from="1619432811268" duration="9717000" />
       <workItem from="1619510216176" duration="5864000" />
-      <workItem from="1619610095692" duration="4881000" />
+      <workItem from="1619610095692" duration="7542000" />
     </task>
     <servers />
   </component>

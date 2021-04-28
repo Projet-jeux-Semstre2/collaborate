@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         
         // Lock cursor
-        CursorManager.cursorLock = true;
+        PauseMenu.cursorLock = true;
 
         walkingSpeed = initWalkSpeed;
         runningSpeed = initRunSpeed;

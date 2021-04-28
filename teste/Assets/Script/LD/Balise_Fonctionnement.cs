@@ -115,8 +115,9 @@ public class Balise_Fonctionnement : MonoBehaviour
                 isCapture = true;
                 _AmeliorationManager.SetActive(true);
                 StartCoroutine(_AmeliorationManager.GetComponent<AmeliorationManager>().chooseUpgradeRandom());
-                CursorManager.cursorLock = false;
-                CursorManager.canLock = false;
+                PauseMenu.cursorLock = false;
+                PauseMenu.canLock = false;
+                PauseMenu.pauseTime = true;
 
             }
         }
