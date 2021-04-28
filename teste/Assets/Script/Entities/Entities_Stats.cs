@@ -97,7 +97,6 @@ public class Entities_Stats : MonoBehaviour
         {
             if (_shotGunManager.palierJauge < _shotGunManager.niveauBetweenPalier.Length)
             {
-                print("shotgun ++");
                 _shotGunManager.niveauJauge++;
             }
             

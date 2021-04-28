@@ -89,14 +89,11 @@ public class weaponGlock : Weapon
         {
             if (Hits.Contains(Hits[i]) && penetration > 0)
             {
-                print("ici");
                 Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
 
                 Entities_Stats target = Hits[i].transform.GetComponent<Entities_Stats>();
-                print(target);
                 if (target != null)
                 {
-                    print("degat");
                     target.TakeDamage(Degats);
                     penetration--;
                 }

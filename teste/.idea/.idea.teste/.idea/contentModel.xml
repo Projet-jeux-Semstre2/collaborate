@@ -31,6 +31,7 @@
                   <e p="{2327f24b-c684-4156-9259-3889c13f6b69}.xml" t="Include" />
                   <e p="{243f1a34-e32d-4b60-8cde-fc29dab69bea}.xml" t="Include" />
                   <e p="{2e829591-7899-4b4f-8f71-7a3ba924f0a3}.xml" t="Include" />
+                  <e p="{317488df-5c43-4f38-adae-056c24b10c5b}.xml" t="Include" />
                   <e p="{3669f769-434a-4a83-9938-8e430354dc32}.xml" t="Include" />
                   <e p="{3bad0507-8464-473e-94fe-1c9890c08fbf}.xml" t="Include" />
                   <e p="{410a5f38-fb06-4256-9d2e-7ef02fab568f}.xml" t="Include" />
@@ -97,12 +98,14 @@
                   <e p="{b0718809-24ff-4352-ada2-c1eb87adf3b9}.xml" t="Include" />
                   <e p="{b1b79cab-2e74-4701-8c44-2ebfbdd4ac9d}.xml" t="Include" />
                   <e p="{b6b64cf2-d39a-4f48-a2dd-2cff49f4bfd0}.xml" t="Include" />
+                  <e p="{bed20e00-114f-4166-be95-d74ace66dd95}.xml" t="Include" />
                   <e p="{ca700cdb-7900-47aa-ae2c-56795d4ea91e}.xml" t="Include" />
                   <e p="{cc034577-0936-43c0-b64e-19446ed4a947}.xml" t="Include" />
                   <e p="{cc65b92c-6728-40d8-8966-260066322409}.xml" t="Include" />
                   <e p="{de67ace9-1cd6-43fc-91d1-e5ffccc0f503}.xml" t="Include" />
                   <e p="{e1e576bb-25bf-4074-b11f-6272ccd31a17}.xml" t="Include" />
                   <e p="{e926ae41-cdf4-4eb0-b9cf-01b7fd3b777e}.xml" t="Include" />
+                  <e p="{eae34f0f-a32e-4124-9ccc-79678f1a7523}.xml" t="Include" />
                   <e p="{ed5fbcf6-4b98-4a06-965b-5acb10a618b1}.xml" t="Include" />
                   <e p="{f2583bac-3933-4538-800b-79a1fc3fa4c6}.xml" t="Include" />
                   <e p="{fa3af445-5547-4d32-8214-49413044fec5}.xml" t="Include" />
@@ -128,6 +131,8 @@
                   <e p="{0eb2418d-ed0b-4ea2-96be-def23f903a2e}.xml" t="Include" />
                   <e p="{36d2ffe5-0bcc-47ba-9052-e8ddd8bbb9d3}.xml" t="Include" />
                   <e p="{5267bd9c-bc48-4672-afbe-c67bf0020713}.xml" t="Include" />
+                  <e p="{5e57ef85-f2ed-4a20-88ec-80950cc99cfe}.xml" t="Include" />
+                  <e p="{805afe5a-608e-45cd-b810-3173f0df187c}.xml" t="Include" />
                   <e p="{8367da70-a55a-4fdb-94ab-033671609515}.xml" t="Include" />
                   <e p="{8951d4bc-55f6-41e8-aa06-9f899ccf46f5}.xml" t="Include" />
                 </e>
@@ -155,6 +160,8 @@
                 </e>
                 <e p="Snapshot" t="Include">
                   <e p="{52eab9e1-b4ce-4e47-bd64-f333abd02d50}.xml" t="Include" />
+                  <e p="{a60856ec-3470-4e25-97ba-2601f6672bce}.xml" t="Include" />
+                  <e p="{e4ca1899-d2d3-40ce-94cd-041ca49e99e4}.xml" t="Include" />
                 </e>
                 <e p="SnapshotGroup" t="Include">
                   <e p="{efd35820-7247-4233-94f5-263521fe51bc}.xml" t="Include" />
@@ -345,6 +352,10 @@
         <e p="PointMarker.cs" t="Include" />
         <e p="ReturnMenu.cs" t="Include" />
         <e p="Script" t="Include">
+          <e p="Ameliorations" t="Include">
+            <e p="AmeliorationManager.cs" t="Include" />
+            <e p="CheckUpgrade.cs" t="Include" />
+          </e>
           <e p="Collecible" t="Include">
             <e p="Collectible_Movement.cs" t="Include" />
             <e p="Health_Collectible.cs" t="Include" />
@@ -387,7 +398,10 @@
             <e p="SpawnPlayer.cs" t="Include" />
           </e>
           <e p="Movement.cs" t="Include" />
+          <e p="Option.cs" t="Include" />
+          <e p="PauseMenu.cs" t="Include" />
           <e p="Player" t="Include">
+            <e p="CursorManager.cs" t="Include" />
             <e p="DashController.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="Player_Health.cs" t="Include" />
@@ -411,6 +425,37 @@
             </e>
             <e p="Weapon.cs" t="Include" />
             <e p="WeaponManager.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
       </e>

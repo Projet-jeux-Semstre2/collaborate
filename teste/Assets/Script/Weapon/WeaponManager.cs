@@ -25,25 +25,30 @@ public class WeaponManager : MonoBehaviour
     
     void Update()
     {
+        if (!Cursor.visible)
+        {
+            if (Input.mouseScrollDelta.y > 0  && _canChangeWeapon ||Input.mouseScrollDelta.y < 0  && _canChangeWeapon)
+            {
+                StartCoroutine(ChangingWeapon());
+            }
+            if (Input.GetButtonDown("Fire1"))
+            {
+                weapons[activeWeaponsID].Engage();
+            }
+
+            if (Input.GetButtonDown("Fire2"))
+            {
+                weapons[activeWeaponsID].Engage2nd();
+            }
+
+            if (Input.GetButtonUp("Fire1"))
+            {
+                weapons[activeWeaponsID].DisEngage();
+            }
+        }
         
-        if (Input.mouseScrollDelta.y > 0  && _canChangeWeapon ||Input.mouseScrollDelta.y < 0  && _canChangeWeapon)
-        {
-            StartCoroutine(ChangingWeapon());
-        }
-        if (Input.GetButtonDown("Fire1"))
-        {
-            weapons[activeWeaponsID].Engage();
-        }
-
-        if (Input.GetButtonDown("Fire2"))
-        {
-            weapons[activeWeaponsID].Engage2nd();
-        }
-
-        if (Input.GetButtonUp("Fire1"))
-        {
-            weapons[activeWeaponsID].DisEngage();
-        }
+            
+        
     }
 
     IEnumerator ChangingWeapon()

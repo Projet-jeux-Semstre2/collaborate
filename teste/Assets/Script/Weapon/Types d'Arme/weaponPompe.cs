@@ -16,13 +16,20 @@ public class weaponPompe : Weapon
     public int tromblonNombre = 10;
     [Tooltip("Taille du cone de tir")]
     public float sprayX = 0.2f;
+    public float surchauffeAdd;
 
     [Header("Reload")]
     [Tooltip("Vitesse multiplicateur de la reload")]
     public float reloadSpeed;
     public bool Reloading;
 
+    [Header("Balles explosives")]
     public float explosionForce;
+    public float explosionRadius;
+    
+    [Header("Rocket Jump")]
+    public GameObject bulletExplosePlayer;
+    public float bulletExplosionForce;
     
     [Space (50)]
     // sons
@@ -40,8 +47,8 @@ public class weaponPompe : Weapon
 
 
     private List<Quaternion> tromblonsDirection;
-    public GameObject bulletExplosePlayer;
-    public float bulletExplosionForce;
+    
+    
     
     private Animator _animator;
     private ShotGun_Manager _shotgunManager;
@@ -56,7 +63,7 @@ public class weaponPompe : Weapon
     public LayerMask LayerMaskGrenade;
     public float _yAddHit;
     private float _distance;
-    public float surchauffeAdd;
+    public float surchauffeAddLanceGrenade;
 
 
 
@@ -110,11 +117,13 @@ public class weaponPompe : Weapon
     {
         if (Physics.Raycast(mainCamera.transform.position, var, out hit, maxRange, touchingLayerMask))
         {
-            Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            GameObject bullet = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            bullet.GetComponent<ExplosiveDestroy>().force = explosionForce;
+            bullet.GetComponent<ExplosiveDestroy>().radius = explosionRadius;
             if (_shotgunManager.canExplosePlayer)
             {
                GameObject explo= Instantiate(bulletExplosePlayer, hit.point, Quaternion.identity);
-               explo.GetComponent<ExplosionJumpPlayer>().force = explosionForce;
+               explo.GetComponent<ExplosionJumpPlayer>().force = bulletExplosionForce;
             }
             
             
@@ -205,7 +214,7 @@ public class weaponPompe : Weapon
             StartCoroutine(ViseurFB());
         }
         
-        _shotgunManager.niveauSurchauffe += surchauffeAdd;
+        _shotgunManager.niveauSurchauffe += surchauffeAddLanceGrenade;
 
         Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hitGrenade, Mathf.Infinity, LayerMaskGrenade );
         _distance= Vector3.Distance(hitGrenade.point, mainCamera.transform.position);

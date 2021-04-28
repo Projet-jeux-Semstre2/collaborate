@@ -37,14 +37,16 @@ public class Player : MonoBehaviour
 
     public bool sonPlay= false;
 
+    public GameObject useButton;
+    public bool useButtonOn;
+
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         
         // Lock cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        CursorManager.cursorLock = true;
 
         walkingSpeed = initWalkSpeed;
         runningSpeed = initRunSpeed;
@@ -52,6 +54,15 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+        if (useButtonOn)
+        {
+            useButton.SetActive(true);
+        }
+        else
+        {
+            useButton.SetActive(false);
+        }
         
 
         // We are grounded, so recalculate move direction based on axes
@@ -149,7 +160,7 @@ public class Player : MonoBehaviour
         characterController.Move(moveDirection * Time.deltaTime);
 
         // Player and Camera rotation
-        if (canMove)
+        if (canMove && !PauseMenu.GameIsPaused)
         {
             rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);

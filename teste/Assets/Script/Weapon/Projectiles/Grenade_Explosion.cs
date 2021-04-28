@@ -16,6 +16,9 @@ public class Grenade_Explosion : MonoBehaviour
     public ParticleSystem explosionParticle;
     public float timeBeforeExplose = 3;
     public LayerMask layerMaskExplosion;
+    
+    // sons
+    public string fmodExploG;
 
    
 
@@ -36,6 +39,9 @@ public class Grenade_Explosion : MonoBehaviour
 
     IEnumerator Explose()
     {
+        // sons 
+        FMODUnity.RuntimeManager.PlayOneShot(fmodExploG, GetComponent<Transform>().position);
+        
         Collider[] colliders = Physics.OverlapSphere(transform.position, exlosionRadius, layerMaskExplosion);
         foreach (Collider collide in colliders)
         {

@@ -186,11 +186,14 @@ MonoBehaviour:
   isCapture: 0
   timer: {fileID: 1654394666603706343, guid: ec73ba3fbfda49d428027036f8700e54, type: 3}
   t_beforeshutDown: 5
+  player: {fileID: 1796854421016402270, guid: 841448a74441c88468b1cb0bc05eeb3b, type: 3}
+  distanceActive: 5
   fmodMusicCapture: event:/MusiqueAmbiance/Balise/MusiqueCapture
   fmodTshutdown: event:/MusiqueAmbiance/Balise/TShutDown
   fmodRenterthezone: event:/MusiqueAmbiance/Balise/RenterTheZone
   fmodisCature: event:/MusiqueAmbiance/Balise/IsCapture
   fmodIsShutdown: event:/MusiqueAmbiance/Balise/IsShutDown
+  _AmeliorationManager: {fileID: 0}
 --- !u!114 &2353422915713141657
 MonoBehaviour:
   m_ObjectHideFlags: 0

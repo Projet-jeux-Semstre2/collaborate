@@ -25,7 +25,10 @@ public class Balise_Fonctionnement : MonoBehaviour
 
     public float t_beforeshutDown = 5;
     private float t_exit;
-    
+    [SerializeField] private GameObject _player;
+    private Player _playerCs;
+    public float distanceActive = 5f;
+
     //SONS
     public string fmodMusicCapture;
     public string fmodTshutdown;
@@ -33,15 +36,25 @@ public class Balise_Fonctionnement : MonoBehaviour
     public string fmodisCature;
     public string fmodIsShutdown;
     private bool JingleWin;
+    [SerializeField] private GameObject _AmeliorationManager;
     
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
+        _AmeliorationManager = GameObject.Find("AmeliorationManager");
         JingleWin = true;
         _meshRenderer = GetComponent<MeshRenderer>();
+        
+        
         t = timeObjectif;
         timer.enabled = false;
         zone.SetActive(false);
+    }
+
+    private void Start()
+    {
+        _player = GameObject.FindWithTag("Player");
+        _playerCs = _player.GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -63,6 +76,23 @@ public class Balise_Fonctionnement : MonoBehaviour
         {
             _meshRenderer.material = materials[0];
             zone.SetActive(false);
+            
+            if (Vector3.Distance(transform.position, _player.transform.position) <= distanceActive)
+            {
+                _playerCs.useButtonOn = true;
+                if (Input.GetButtonDown("Use"))
+                {
+                    
+                    FMODUnity.RuntimeManager.PlayOneShot(fmodMusicCapture);
+                    isOn = true;
+                    _playerCs.useButtonOn = false;
+                }
+            }
+            if(_playerCs.useButtonOn && Vector3.Distance(transform.position, _player.transform.position) > distanceActive && Vector3.Distance(transform.position, _player.transform.position) <= distanceActive * 2)
+            {
+                _playerCs.useButtonOn = false;
+                
+            }
         }
 
         
@@ -79,9 +109,15 @@ public class Balise_Fonctionnement : MonoBehaviour
 
             if (t <= 0)
             {
+                
                 t = timeObjectif;
                 onCapture = false;
                 isCapture = true;
+                _AmeliorationManager.SetActive(true);
+                StartCoroutine(_AmeliorationManager.GetComponent<AmeliorationManager>().chooseUpgradeRandom());
+                CursorManager.cursorLock = false;
+                CursorManager.canLock = false;
+
             }
         }
 
@@ -110,21 +146,15 @@ public class Balise_Fonctionnement : MonoBehaviour
                 JingleWin = false;
             }
         }
+
+        
     }
 
-    private void OnCollisionEnter(Collision other) /// ici on active la balsie avec le tir, is on true
-    {
-        if (other.gameObject.CompareTag("PlayerBullet")&& !isOn)
-        {
-            /// son 
-            FMODUnity.RuntimeManager.PlayOneShot(fmodMusicCapture);
-            
-            isOn = true;
-        }
-    }
+    
 
     private void OnTriggerEnter(Collider other)
     {
+       
         if (other.CompareTag("Player") && isOn) /// ici le joueur capture 
         {
             /// son 
@@ -132,7 +162,10 @@ public class Balise_Fonctionnement : MonoBehaviour
             
             onCapture = true;
         }
+        
     }
+
+    
 
     private void OnTriggerExit(Collider other) // ici le joueur sort de la capture
     {

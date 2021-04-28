@@ -28,9 +28,10 @@ public class ShotGun_Manager : MonoBehaviour
     private bool _palier0Finish, _palier1Finish,_palier2Finish,_palier3Finish,_palier4Finish,_palier5Finish,_palier6Finish;
 
     public bool canExplosePlayer;
-    
-    
-    public float[] rangeStats, damageStats, surchauffeStats, explosionStats, jumpForceStats, sprayStats;
+
+
+    public float[] rangeStats, damageStats, surchauffeStats, explosionStats, explosionRadiusStats, jumpForceStats, switchTimeStats;
+    public float[] sprayStats, relaodSpeedStats, surchauffeLanceGreStats, explosionForceLanceGreStats, radiusExplosionGre;
     public int[] speedManiementStats, nbBulletStats;
 
     [Space(25)]
@@ -49,12 +50,13 @@ public class ShotGun_Manager : MonoBehaviour
     {
         weaponPompe = GetComponentInChildren<weaponPompe>();
         _player = GetComponent<Player>();
+        Palier0();
     }
 
     private void Update()
     {
         
-        barreNiveau.sizeDelta = Vector2.Lerp(barreNiveau.sizeDelta, new Vector2(barreNiveau.sizeDelta.x, (310/niveauBetweenPalier[niveauBetweenPalier.Length -1]) * niveauJauge), Time.time);
+        /*barreNiveau.sizeDelta = Vector2.Lerp(barreNiveau.sizeDelta, new Vector2(barreNiveau.sizeDelta.x, (310/niveauBetweenPalier[niveauBetweenPalier.Length -1]) * niveauJauge), Time.time);
         
         if (palierJauge < niveauBetweenPalier.Length && niveauJauge >= niveauBetweenPalier[palierJauge] )
         {
@@ -112,7 +114,7 @@ public class ShotGun_Manager : MonoBehaviour
                 }
 
                 break;
-        }
+        }*/
         
         
         
@@ -166,13 +168,20 @@ public class ShotGun_Manager : MonoBehaviour
         weaponPompe.vitesseSrint -= speedManiementStats[0];
         weaponPompe.vitessWalk -= speedManiementStats[0];
         weaponPompe.explosionForce = explosionStats[0];
-        weaponPompe.explosionForce = jumpForceStats[0];
+        weaponPompe.explosionRadius = explosionRadiusStats[0];
+        weaponPompe.bulletExplosionForce = jumpForceStats[0];
+        weaponPompe.surchauffeAddLanceGrenade = surchauffeLanceGreStats[0];
+        weaponPompe.reloadSpeed = relaodSpeedStats[0];
         weaponPompe.sprayX = sprayStats[0]; // a voir 
         weaponPompe.tromblonNombre = nbBulletStats[0]; // a voir
+
+        weaponPompe.grenade.GetComponent<Grenade_Explosion>().force = explosionForceLanceGreStats[0];
+        weaponPompe.grenade.GetComponent<Grenade_Explosion>().radius += radiusExplosionGre[0];
+        weaponPompe.grenade.GetComponent<Grenade_Explosion>().exlosionRadius += radiusExplosionGre[0];
         _palier0Finish = true;
     }
 
-    void Palier1()
+    /*void Palier1()
     {
         //range lvl 1 & surchauffe lvl 1
         weaponPompe.maxRange = rangeStats[1];
@@ -228,10 +237,10 @@ public class ShotGun_Manager : MonoBehaviour
         weaponPompe.vitessWalk -= speedManiementStats[2];
         weaponPompe.tromblonNombre = nbBulletStats[3]; //a voir
         _palier6Finish = true;
-    }
+    }*/
 
 
-    IEnumerator UnlockCompétenceTxt(Text objectText, string phrase)
+    public IEnumerator UnlockCompétenceTxt(Text objectText, string phrase)
     {
         objectText.gameObject.SetActive(true);
         objectText.text = phrase;

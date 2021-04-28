@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Glock_Manager : MonoBehaviour
 {
     public weaponGlock weaponGlock;
+    public GameObject ameliorationManager;
     private Player _player;
     
     [Header("Amélioration")] 
@@ -27,15 +28,17 @@ public class Glock_Manager : MonoBehaviour
     public Text unlockText;
 
 
-    private void Start()
+    private void OnEnable()
     {
-        //weaponGlock = GetComponentInChildren<weaponGlock>();
+        ameliorationManager = GameObject.Find("AmeliorationManager");
+        ameliorationManager.GetComponent<AmeliorationManager>()._weaponGlock = weaponGlock;
         _player = GetComponent<Player>();
+        Palier0();
     }
     private void Update()
     {
         
-        barreNiveau.sizeDelta = Vector2.Lerp(barreNiveau.sizeDelta, new Vector2(barreNiveau.sizeDelta.x, (310/niveauBetweenPalier[niveauBetweenPalier.Length -1]) * niveauJauge), Time.time);
+        /*barreNiveau.sizeDelta = Vector2.Lerp(barreNiveau.sizeDelta, new Vector2(barreNiveau.sizeDelta.x, (310/niveauBetweenPalier[niveauBetweenPalier.Length -1]) * niveauJauge), Time.time);
         
         if (palierJauge < niveauBetweenPalier.Length && niveauJauge >= niveauBetweenPalier[palierJauge] )
         {
@@ -71,7 +74,7 @@ public class Glock_Manager : MonoBehaviour
                     Palier3();
                 }
                 break;
-        }
+        }*/
     }
     
     
@@ -85,7 +88,7 @@ public class Glock_Manager : MonoBehaviour
         _palier0Finish = true;
     }
 
-    void Palier1()
+    /*void Palier1()
     {
         weaponGlock.penetrationNumber = penetrationStats[1];
         _palier1Finish = true;
@@ -104,11 +107,11 @@ public class Glock_Manager : MonoBehaviour
         weaponGlock.Degats = damageStats[1];
         StartCoroutine(UnlockCompétenceTxt(unlockText, "Tire en rafale débloqué"));
         _palier3Finish = true;
-    }
+    }*/
     
     
     
-    IEnumerator UnlockCompétenceTxt(Text objectText, string phrase)
+    public IEnumerator UnlockCompétenceTxt(Text objectText, string phrase)
     {
         objectText.gameObject.SetActive(true);
         objectText.text = phrase;

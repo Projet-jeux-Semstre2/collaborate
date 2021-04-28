@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Body/Walk
   guid: 4e72631598239145b730f0ef89eda13d
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -118,7 +118,7 @@ MonoBehaviour:
   Path: event:/Weapons/FusilPompe/BasicsStuff/Shoot
   guid: 098871b0ff245243ada2c1eb87adf3b9
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -141,7 +141,7 @@ MonoBehaviour:
   Path: snapshot:/MusiqueShut
   guid: e1b9ea52ceb4474ebd64f333abd02d50
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Body/Jump
   guid: 27be2e0d53977c49a9d4793a119a3740
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -192,6 +192,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 437
+--- !u!114 &-5995145425658343502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637535816718447320
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2488
+  Exists: 1
 --- !u!114 &-5957490742804473628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +248,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Body/Hurt
   guid: 70d78647c0f19641a577e695a6597b03
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -235,6 +256,48 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-4566094901654933736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637535816719580853
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4408281835684614031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MuteSystem
+  m_EditorClassIdentifier: 
+  Path: event:/MuteSystem
+  guid: 000ed2be4f116641be95d74ace66dd95
+  Banks:
+  - {fileID: -4566094901654933736}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
 --- !u!114 &-4169450769681710588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +313,7 @@ MonoBehaviour:
   Path: event:/Ennemies/5To10/5To10_Movements
   guid: 2cb965cc2867d8408966260066322409
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -273,7 +336,7 @@ MonoBehaviour:
   Path: event:/MusiqueAmbiance/Balise/IsShutDown
   guid: 1588cd669015454c92bbdc1cb60334c1
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -296,7 +359,7 @@ MonoBehaviour:
   Path: event:/MusiqueAmbiance/Balise/IsCapture
   guid: 774503cc3609c043b64e19446ed4a947
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -322,7 +385,7 @@ MonoBehaviour:
   lastModified: 637530024244036677
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2099317927385614555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +461,7 @@ MonoBehaviour:
   Path: event:/Ennemies/Solo/Death
   guid: ac3b58f233393845800b79a1fc3fa4c6
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -419,9 +482,9 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 8274214338062774202}
-  - {fileID: -3033820161701691225}
-  - {fileID: 1475201522524963264}
+  - {fileID: -5995145425658343502}
+  - {fileID: 4762825572243118506}
+  - {fileID: -4566094901654933736}
   EditorEvents:
   - {fileID: -6850532185140326429}
   - {fileID: -6357480254166156227}
@@ -445,15 +508,41 @@ MonoBehaviour:
   - {fileID: -3082842767001134184}
   - {fileID: 4309661018995434812}
   - {fileID: 8031416751875009668}
+  - {fileID: -4408281835684614031}
+  - {fileID: 8121916534634105497}
+  - {fileID: 204757669320786009}
   EditorParameters:
   - {fileID: -7554605491244300939}
   - {fileID: 4358382510966874268}
   MasterBanks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   StringsBanks:
-  - {fileID: 8274214338062774202}
-  stringsBankWriteTime: 637530024260981426
+  - {fileID: -5995145425658343502}
+  stringsBankWriteTime: 637535816718447320
   cacheVersion: 6
+--- !u!114 &204757669320786009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/FusilPompe/Weapon_Up/ExploGrenade
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/FusilPompe/Weapon_Up/ExploGrenade
+  guid: 0f4fe3ea2ea324419ccc79678f1a7523
+  Banks:
+  - {fileID: -4566094901654933736}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 90
+  Length: 0
 --- !u!114 &206886312977151138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,7 +578,7 @@ MonoBehaviour:
   Path: event:/Weapons/Glock/Recharge
   guid: 9083053c679d0c48a1d823177b2a019a
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -512,7 +601,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Actions/Dash
   guid: 41ae26e9f4cdb04eb9cf01b7fd3b777e
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -538,7 +627,7 @@ MonoBehaviour:
   lastModified: 637530024260920432
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &1697434463232883514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,7 +643,7 @@ MonoBehaviour:
   Path: event:/Weapons/Glock/Surchauffe
   guid: ab9cb7b1742e01478c442ebfbdd4ac9d
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -577,7 +666,7 @@ MonoBehaviour:
   Path: event:/Weapons/Glock/Shoot
   guid: 8d58d8a1a324614aa95903c9e5f49eb7
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -620,7 +709,7 @@ MonoBehaviour:
   Path: event:/Weapons/FusilPompe/BasicsStuff/Recharge
   guid: 45f43afa4755324d821449413044fec5
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -643,7 +732,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Actions/Heal
   guid: 5a4780086a9732458c44e88f8d3069e8
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -666,7 +755,7 @@ MonoBehaviour:
   Path: event:/MusiqueAmbiance/Balise/TShutDown
   guid: bb76e5e1bf257440b11f6272ccd31a17
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -717,6 +806,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &4762825572243118506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Game .bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Game .bank
+  Name: 'Game '
+  StudioPath: 'bank:/Game '
+  lastModified: 637535751278707402
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4863326962864428915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,7 +860,7 @@ MonoBehaviour:
   Path: event:/MusiqueAmbiance/Balise/MusiqueCapture
   guid: 2ba7b6072ebb154380804dfc01136734
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -775,7 +883,7 @@ MonoBehaviour:
   Path: event:/MusiqueAmbiance/Balise/RenterTheZone
   guid: 4654ab1c96f54442b64aef62c9d32544
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -818,7 +926,7 @@ MonoBehaviour:
   Path: event:/Weapons/FusilPompe/Weapon_Up/LaunchGrenade
   guid: 0b8d8659f20cf14cb2f29576e00dd765
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -861,7 +969,7 @@ MonoBehaviour:
   Path: event:/Weapons/FusilPompe/BasicsStuff/Surchauffe
   guid: 7c8e250b43357b4e8f76d79e08f32e07
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -884,7 +992,7 @@ MonoBehaviour:
   Path: event:/MusiqueAmbiance/MusiqueEnJeu
   guid: aac9542d03a37347a34fa337b2516e0c
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -907,7 +1015,30 @@ MonoBehaviour:
   Path: snapshot:/BALISEON
   guid: ec5608a67034254e97ba2601f6672bce
   Banks:
-  - {fileID: 1475201522524963264}
+  - {fileID: -4566094901654933736}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8121916534634105497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/MuteSystem
+  m_EditorClassIdentifier: 
+  Path: snapshot:/MuteSystem
+  guid: 9918cae4d3d2ce4094cd041ca49e99e4
+  Banks:
+  - {fileID: -4566094901654933736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -935,4 +1066,4 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 2292
-  Exists: 1
+  Exists: 0

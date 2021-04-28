@@ -58,7 +58,5 @@ public class Menu_Manager : MonoBehaviour
         objectToGrow.transform.localScale = nativeSize;
         onGrow = false;
         yield return null;
-
-
     }
 }

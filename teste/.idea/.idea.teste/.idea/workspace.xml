@@ -18,8 +18,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SetUPScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Collecible/Collectible_Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Collecible/Health_Collectible.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,12 +36,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/CompasManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/AudioManager.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Menu_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/CoreDetection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Option.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/1ERLVL.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ExplosionJumpPlayer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,14 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/TesteD'ame/Stateparticle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/AttachCube.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/TesteD'ame/InsertGO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Core_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Prefabs/Arme/Weapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Prefabs/Arme/WeaponManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/ArmeBasics.cs" />
         <option value="$PROJECT_DIR$/Assets/scheduledDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapons/RepulseWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapons/PlayerWeapons_Manager.cs" />
@@ -94,21 +92,29 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/SetUPScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/PointMarker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponGlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnArea.cs" />
         <option value="$PROJECT_DIR$/Assets/ExplosionJumpPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/CompasManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerFootstep.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Menu_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Option.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponGlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/AmeliorationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/UI_Menu_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
       </list>
     </option>
   </component>
@@ -195,6 +201,15 @@
       <workItem from="1617310937302" duration="3849000" />
       <workItem from="1617349034509" duration="15641000" />
       <workItem from="1617378237483" duration="7853000" />
+      <workItem from="1617720078689" duration="915000" />
+      <workItem from="1617970682762" duration="1380000" />
+      <workItem from="1618787261016" duration="9000" />
+      <workItem from="1619363479086" duration="9622000" />
+      <workItem from="1619426131558" duration="5940000" />
+      <workItem from="1619432400286" duration="362000" />
+      <workItem from="1619432811268" duration="9717000" />
+      <workItem from="1619510216176" duration="5864000" />
+      <workItem from="1619610095692" duration="4881000" />
     </task>
     <servers />
   </component>
@@ -221,9 +236,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1617207595793" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617356449663">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1619371112188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1617356449663" />
+    <state x="616" y="240" key="run.anything.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619371112188" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619371741068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619371741068" />
   </component>
 </project>
