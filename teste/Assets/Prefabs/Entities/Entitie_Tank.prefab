@@ -172,6 +172,11 @@ MonoBehaviour:
   minCoreParticle: 2
   inMyGroup: []
   colliderAttirance: {fileID: 1271180404235548821}
+  EntitiesType:
+  - {fileID: 4448553007369930569}
+  - {fileID: 4448553007369930569, guid: a1b92e1b3e3664a409f12a1c9ca7d59f, type: 3}
+  - {fileID: 4448553007369930569, guid: f6e22c1e2017a7c4d9cd8c7ea1877b35, type: 3}
+  - {fileID: 4448553007369930569, guid: b843d729670f6614697caa7805640299, type: 3}
 --- !u!114 &-6211144574296501843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +197,13 @@ MonoBehaviour:
   dieExplosion: {fileID: 401982039532589781, guid: bdc4123fbc835ba44907d6a334e98fc9, type: 3}
   hitMaterial: {fileID: 2100000, guid: 9d8d24075fda5844f9d23b8149c61a98, type: 2}
   fullLifeMaterial: {fileID: 2100000, guid: cd0ceb1be28987c42833420fc54230cd, type: 2}
+  horlogeInterne: 0
+  horlogeTime: 0
+  maxTime: 45
+  minTime: 25
+  heatlh_augmented: 0.5
+  damage_augmented: 0.5
+  speed_augmented: 0.5
 --- !u!65 &-6862563294893529131
 BoxCollider:
   m_ObjectHideFlags: 0

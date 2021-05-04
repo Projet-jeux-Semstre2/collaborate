@@ -31,9 +31,10 @@ public class Entities_Manager : MonoBehaviour
     public List<GameObject> inMyGroup;
 
     public SphereCollider colliderAttirance;
-
-    private List<GameObject> _allCore = new List<GameObject>();
+    
     private GameObject _nearObj;
+
+    public GameObject[] EntitiesType;
     
 
 

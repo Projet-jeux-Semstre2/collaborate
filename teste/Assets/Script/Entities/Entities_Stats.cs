@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Messaging;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Entities_Stats : MonoBehaviour
 {
-    
+    private Entities_Manager _entitiesManager;
     [Header("Stats use")]
     public float health; 
     public float damage; 
@@ -22,7 +24,7 @@ public class Entities_Stats : MonoBehaviour
     private ShotGun_Manager _shotGunManager;
     private Glock_Manager _glockManager;
     
-
+    
 
     private MeshRenderer _meshRenderer;
 
@@ -30,11 +32,24 @@ public class Entities_Stats : MonoBehaviour
 
     private bool _canBeDamaged = true;
 
+    [Header("Horloge Interne")]
+    public float horlogeInterne;
+    public float horlogeTime;
+    public float maxTime;
+    public float minTime;
+    public float heatlh_augmented;
+    public float damage_augmented;
+    public float speed_augmented;
+    
+
     private void Start()
     {
+        _entitiesManager = GetComponent<Entities_Manager>();
         _meshRenderer = GetComponent<MeshRenderer>();
         _shotGunManager = GameObject.FindWithTag("Player").GetComponent<ShotGun_Manager>();
         _glockManager = GameObject.FindWithTag("Player").GetComponent<Glock_Manager>();
+
+        horlogeInterne = Random.Range(minTime, maxTime);
     }
 
     public void TakeDamage(float amount)
@@ -83,6 +98,12 @@ public class Entities_Stats : MonoBehaviour
         {
             Die();
         }
+
+        horlogeTime += Time.deltaTime;
+        if (horlogeTime >= horlogeInterne)
+        {
+            HorlogeInterne();
+        }
     }
 
     void Die()
@@ -99,7 +120,6 @@ public class Entities_Stats : MonoBehaviour
             {
                 _shotGunManager.niveauJauge++;
             }
-            
         }
         
         if(_glockManager.weaponGlock.gameObject.activeInHierarchy)
@@ -112,6 +132,40 @@ public class Entities_Stats : MonoBehaviour
         }
         
         Destroy(gameObject);
+    }
+
+
+
+    public void HorlogeInterne()
+    {
+        if (_entitiesManager.hasCore)
+        {
+            health += heatlh_augmented;
+            damage += damage_augmented;
+            speed += speed_augmented;
+        }
+        
+        if (!_entitiesManager.hasCore)
+        {
+            EntitiesCreate(5);
+        }
+        horlogeTime = 0;
+        horlogeInterne = Random.Range(minTime, maxTime);
+        
+    }
+
+    public void EntitiesCreate(float spawnRadius)
+    {
+        bool hasCreate = false;
+        if (!hasCreate)
+        {
+            Vector3 rdPosition = Random.insideUnitSphere * spawnRadius + transform.position;
+            rdPosition.y = transform.position.y;
+            int rdEntities = Random.Range(0, _entitiesManager.EntitiesType.Length);
+            GameObject instantiate = Instantiate(_entitiesManager.EntitiesType[rdEntities], rdPosition, Quaternion.identity);
+            hasCreate = true;
+        }
+        
     }
     
 }

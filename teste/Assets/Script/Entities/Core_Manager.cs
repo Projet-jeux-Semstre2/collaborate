@@ -41,6 +41,8 @@ public class Core_Manager : MonoBehaviour
 
     private float nbEntitéForRadius = 5f;
 
+    public float difficultyLevel = 1;
+
     private void OnEnable()
     {
         player = GameObject.FindWithTag("Player");
@@ -70,6 +72,7 @@ public class Core_Manager : MonoBehaviour
             other.GetComponent<Entities_Manager>().isInGroups = true;
             other.GetComponent<Entities_Manager>().myCore = gameObject;
             _coreStats.UpStats(other.gameObject);
+            _coreStats.BuffEntitesUp(other.gameObject, difficultyLevel);
         }
         
     }
@@ -83,6 +86,7 @@ public class Core_Manager : MonoBehaviour
             other.GetComponent<Entities_Manager>().hasCore = false;
             other.GetComponent<Entities_Manager>().isInGroups = false;
             other.GetComponent<Entities_Manager>().myCore = null;
+            _coreStats.BuffEntitesSupp(other.gameObject, difficultyLevel);
         }
     }
     
