@@ -123,6 +123,7 @@ MonoBehaviour:
     m_Bits: 2048
   minimumEntities: 2
   entitiesCap: 35
+  difficultyLevel: 0.5
 --- !u!135 &7946599287225773240
 SphereCollider:
   m_ObjectHideFlags: 0

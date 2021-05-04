@@ -32,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnArea.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PointMarker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerFootstep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CompasManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Weapons/PlayerWeapons_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Arme/Porjectiles/ExplosiveDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/HealtEntitties.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponGlock.cs" />
@@ -112,10 +112,11 @@
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
       </list>
     </option>
   </component>
@@ -212,7 +213,7 @@
       <workItem from="1619510216176" duration="5864000" />
       <workItem from="1619610095692" duration="7922000" />
       <workItem from="1620059311994" duration="7354000" />
-      <workItem from="1620135198391" duration="452000" />
+      <workItem from="1620135198391" duration="3589000" />
     </task>
     <servers />
   </component>

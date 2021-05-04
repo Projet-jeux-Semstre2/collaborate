@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: -5424370402776813150}
   - component: {fileID: -2284289399556064807}
   - component: {fileID: 327268566516673752}
+  - component: {fileID: 5123265514701056438}
   m_Layer: 9
   m_Name: Entitie_Createur
   m_TagString: ennemis
@@ -217,3 +218,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.48
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5123265514701056438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448553007369930569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ea7815d2c86b14cb32823e6fe3587d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBeforeCreate: 0
+  timeMin: 60
+  timeMax: 120
+  t: 0
+  spawnRadius: 3

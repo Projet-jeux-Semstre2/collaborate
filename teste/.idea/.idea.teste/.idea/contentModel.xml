@@ -49,6 +49,7 @@
                   <e p="{92411859-8a48-4789-b444-b1eef7241294}.xml" t="Include" />
                   <e p="{992a7bd6-8324-41c0-9ac2-c746f9cf1bf8}.xml" t="Include" />
                   <e p="{9ce3f6cb-b899-4ba1-a4ac-ef5badc1315b}.xml" t="Include" />
+                  <e p="{a3b0fcb5-1903-459f-9861-12e7b3b7f318}.xml" t="Include" />
                   <e p="{b70eee41-f623-402a-bff9-434250876e7b}.xml" t="Include" />
                   <e p="{b7f144de-5f41-484a-835b-7abfb4f32d54}.xml" t="Include" />
                   <e p="{b909c54f-a515-45da-aac7-fd6b6eb5b4f4}.xml" t="Include" />
@@ -56,6 +57,7 @@
                   <e p="{e1b736cf-b8df-404b-94c6-1f5cd9b4ccab}.xml" t="Include" />
                   <e p="{ed24ab11-78ba-45a3-860f-4115d48812ac}.xml" t="Include" />
                   <e p="{fb1ca4cd-6718-4b65-abe1-356346219914}.xml" t="Include" />
+                  <e p="{fd2b97d1-0a26-4f69-94f8-1abb1ce8f642}.xml" t="Include" />
                   <e p="{fe05fd3a-befa-4cc0-aade-315eec107c15}.xml" t="Include" />
                 </e>
                 <e p="Bank" t="Include">
@@ -368,6 +370,7 @@
             <e p="Core_renderer.cs" t="Include" />
             <e p="Core_Stats.cs" t="Include" />
             <e p="CoreDetection.cs" t="Include" />
+            <e p="Entities_Createur.cs" t="Include" />
             <e p="Entities_Manager.cs" t="Include" />
             <e p="Entities_Stats.cs" t="Include" />
           </e>

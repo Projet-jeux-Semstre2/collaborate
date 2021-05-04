@@ -154,7 +154,7 @@ public class Entities_Stats : MonoBehaviour
         
     }
 
-    public void EntitiesCreate(float spawnRadius)
+    void EntitiesCreate(float spawnRadius)
     {
         bool hasCreate = false;
         if (!hasCreate)
