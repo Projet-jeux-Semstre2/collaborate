@@ -24,6 +24,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnArea.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/FPSCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Menu_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" root0="FORCE_HIGHLIGHTING" />
@@ -68,7 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/HealtEntitties.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponGlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Arme/ShhotSound.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerFootstep.cs" />
@@ -101,7 +101,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Option.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponGlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
@@ -111,14 +110,16 @@
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Focus_Switch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
       </list>
     </option>
   </component>
@@ -217,7 +218,9 @@
       <workItem from="1620059311994" duration="7354000" />
       <workItem from="1620135198391" duration="4292000" />
       <workItem from="1620374544045" duration="8378000" />
-      <workItem from="1620998829063" duration="5240000" />
+      <workItem from="1620998829063" duration="5339000" />
+      <workItem from="1621006360459" duration="2737000" />
+      <workItem from="1621009558252" duration="1726000" />
     </task>
     <servers />
   </component>

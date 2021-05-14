@@ -164,7 +164,7 @@ MonoBehaviour:
   pullForceMax: 12000
   ChangeMaterials:
   - {fileID: 2100000, guid: cd0ceb1be28987c42833420fc54230cd, type: 2}
-  - {fileID: 2100000, guid: f4cf061dfe869dd448e08c46c287f84c, type: 2}
+  - {fileID: 2100000, guid: 88bc790a7a7dde548942c02d5c7c8583, type: 2}
   hasCore: 0
   isInGroups: 0
   core: {fileID: 2794573410027793705, guid: 263f0483d7503a94a9f1c427a7187aec, type: 3}
@@ -177,6 +177,7 @@ MonoBehaviour:
   - {fileID: 4448553007369930569, guid: a1b92e1b3e3664a409f12a1c9ca7d59f, type: 3}
   - {fileID: 4448553007369930569, guid: f6e22c1e2017a7c4d9cd8c7ea1877b35, type: 3}
   - {fileID: 4448553007369930569}
+  type: Agressif
 --- !u!114 &-4939150664898056229
 MonoBehaviour:
   m_ObjectHideFlags: 0

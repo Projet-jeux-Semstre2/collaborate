@@ -13,12 +13,14 @@ public class FPSCounter : MonoBehaviour
 
     private void OnEnable()
     {
-        loadScreen.SetActive(true);
-        StartCoroutine(Load());
+        //loadScreen.SetActive(true);
+        //StartCoroutine(Load());
     }
 
-    void Update () {
-        FPS = (int)(1f / Time.unscaledDeltaTime);
+    void Update ()
+    {
+        Application.targetFrameRate = 144;
+        //FPS = (int)(1f / Time.unscaledDeltaTime);
     }
 
     IEnumerator Load()

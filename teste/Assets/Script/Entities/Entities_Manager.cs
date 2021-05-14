@@ -16,6 +16,8 @@ public class Entities_Manager : MonoBehaviour
     
     [Tooltip("Materiaux changeant")]
     public Material[] ChangeMaterials;
+
+    public MeshRenderer renderer;
     private Rigidbody _rb;
 
     [Header("Rapport avec la formation d'un core")]
@@ -35,6 +37,8 @@ public class Entities_Manager : MonoBehaviour
     private GameObject _nearObj;
 
     public GameObject[] EntitiesType;
+
+    public string type;
     
 
 
@@ -47,7 +51,8 @@ public class Entities_Manager : MonoBehaviour
     {
         pullRadius = Random.Range(1, 7);
         pullForce = Random.Range(pullForceMin, pullForceMax);
-        GetComponent<MeshRenderer>().material = ChangeMaterials[0];
+        renderer = GetComponent<MeshRenderer>();
+        renderer.material = ChangeMaterials[0];
         _rb = GetComponent<Rigidbody>();
 
         ObjectifExtermination.nrbEntités.Add(gameObject);
@@ -62,10 +67,6 @@ public class Entities_Manager : MonoBehaviour
 
     public void FixedUpdate()
     {
-        
-        
-        
-        
 
         if (!hasCore) //attirance des entités vers sois meme si je ne fais pas parti d'un groupe
         {

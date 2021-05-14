@@ -144,6 +144,9 @@ public class ShotGun_Manager : MonoBehaviour
         
         objectText.gameObject.SetActive(false);
     }
+    
+    
+    
 
 
 

@@ -12,11 +12,11 @@ public class Focus_Switch : MonoBehaviour
     [Header("Type d'arme")] 
     private string typeArmeActive;
     private string typeArmeTank = "ArmeForTank";
-    private string typeArmeAggresif = "ArmeForAggresif";
+    private string typeArmeAgressif = "ArmeForAgressif";
     private string typeArmeVif = "ArmeForVif";
     private string typeArmeCreateur = "ArmeForCreateur";
 
-    public ColorGrading colorGrading;
+    private ColorGrading _colorGrading;
     public PostProcessVolume volume;
     public Color agressif_Color;
     public Color tank_Color;
@@ -26,14 +26,13 @@ public class Focus_Switch : MonoBehaviour
     public float switchTime;
     private float t_switch;
 
-    private void OnEnable()
-    {
-        typeArmeActive = typeArmeTank;
-    }
+    
 
     private void Start()
     {
-        volume.profile.TryGetSettings(out colorGrading);
+        typeArmeActive = typeArmeTank;
+        volume.profile.TryGetSettings(out _colorGrading);
+        _colorGrading.colorFilter.value = tank_Color;
     }
 
     private void Update()
@@ -45,6 +44,7 @@ public class Focus_Switch : MonoBehaviour
     public void changeFocus()
     {
         t_switch += Time.deltaTime;
+        t_switch = Mathf.Clamp(t_switch, 0, switchTime);
 
         if (Input.GetKeyDown(KeyCode.A) && t_switch >= switchTime)
         {
@@ -52,19 +52,75 @@ public class Focus_Switch : MonoBehaviour
             {
                 case "ArmeForAgressif":
                     typeArmeActive = typeArmeTank;
-                    colorGrading.colorFilter.value = tank_Color;
+                    _colorGrading.colorFilter.value = tank_Color;
+                    
+                    foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
+                    {
+                        Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
+                        if (entitiesManager.type == "Tank")
+                        {
+                            entitiesManager.renderer.material = entitiesManager.ChangeMaterials[1];
+                        }
+                        else
+                        {
+                            entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
+                        }
+                    }
+                    
                     break;
                 case "ArmeForTank":
                     typeArmeActive = typeArmeCreateur;
-                    colorGrading.colorFilter.value = createur_Color;
+                    _colorGrading.colorFilter.value = createur_Color;
+                    
+                    foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
+                    {
+                        Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
+                        if (entitiesManager.type == "Createur")
+                        {
+                            entitiesManager.renderer.material = entitiesManager.ChangeMaterials[1];
+                        }
+                        else
+                        {
+                            entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
+                        }
+                    }
+                    
                     break;
                 case "ArmeForCreateur":
                     typeArmeActive = typeArmeVif;
-                    colorGrading.colorFilter.value = vif_color;
+                    _colorGrading.colorFilter.value = vif_color;
+                    
+                    foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
+                    {
+                        Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
+                        if (entitiesManager.type == "Vif")
+                        {
+                            entitiesManager.renderer.material = entitiesManager.ChangeMaterials[1];
+                        }
+                        else
+                        {
+                            entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
+                        }
+                    }
+                    
                     break;
                 case "ArmeForVif":
-                    typeArmeActive = typeArmeAggresif;
-                    colorGrading.colorFilter.value = agressif_Color;
+                    typeArmeActive = typeArmeAgressif;
+                    _colorGrading.colorFilter.value = agressif_Color;
+                    
+                    foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
+                    {
+                        Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
+                        if (entitiesManager.type == "Agressif")
+                        {
+                            entitiesManager.renderer.material = entitiesManager.ChangeMaterials[1];
+                        }
+                        else
+                        {
+                            entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
+                        }
+                    }
+                    
                     break;
             }
 

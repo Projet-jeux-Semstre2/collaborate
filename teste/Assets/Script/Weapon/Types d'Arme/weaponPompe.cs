@@ -120,6 +120,7 @@ public class weaponPompe : Weapon
             GameObject bullet = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             bullet.GetComponent<ExplosiveDestroy>().force = explosionForce;
             bullet.GetComponent<ExplosiveDestroy>().radius = explosionRadius;
+            
             if (_shotgunManager.canExplosePlayer)
             {
                GameObject explo= Instantiate(bulletExplosePlayer, hit.point, Quaternion.identity);
@@ -127,15 +128,40 @@ public class weaponPompe : Weapon
             }
             
             
-            
-            
-            
-            
-            
             Entities_Stats target = hit.transform.GetComponent<Entities_Stats>();
             if (target != null)
             {
-                target.TakeDamage(Degats);
+                switch (_shotgunManager.typeArmeActive)
+                {
+                    case "ArmeForAgressif":
+                        if (target.GetComponent<Entities_Manager>().type == "Agressif")
+                        {
+                            target.TakeDamage(Degats);
+                        }
+                        break;
+                    
+                    case "ArmeForTank":
+                        if (target.GetComponent<Entities_Manager>().type == "Tank")
+                        {
+                            target.TakeDamage(Degats);
+                        }
+                        break;
+                    
+                    case "ArmeForCreateur":
+                        if (target.GetComponent<Entities_Manager>().type == "Createur")
+                        {
+                            target.TakeDamage(Degats);
+                        }
+                        break;
+                    
+                    case "ArmeForVif":
+                        if (target.GetComponent<Entities_Manager>().type == "Vif")
+                        {
+                            target.TakeDamage(Degats);
+                        }
+                        break;
+                }
+                
             }
         }
 
