@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
@@ -45,82 +46,25 @@ public class ShotGun_Manager : MonoBehaviour
 
     private float t;
     private bool isSurchauffeMax = false;
+    
+    
+    public string typeArmeActive;
 
+
+    
+        
+        
     private void Start()
     {
         weaponPompe = GetComponentInChildren<weaponPompe>();
         _player = GetComponent<Player>();
+        
         Palier0();
     }
 
     private void Update()
     {
-        
-        /*barreNiveau.sizeDelta = Vector2.Lerp(barreNiveau.sizeDelta, new Vector2(barreNiveau.sizeDelta.x, (310/niveauBetweenPalier[niveauBetweenPalier.Length -1]) * niveauJauge), Time.time);
-        
-        if (palierJauge < niveauBetweenPalier.Length && niveauJauge >= niveauBetweenPalier[palierJauge] )
-        {
-            palierJauge++;
-        }
 
-        switch (palierJauge)
-        {
-            case 0:
-                if (!_palier0Finish)
-                {
-                    Palier0();
-                }
-                
-                break;
-            case 1:
-                if (!_palier1Finish)
-                {
-                    Palier1();
-                }
-
-                break;
-            case 2:
-                if (!_palier2Finish)
-                {
-                    Palier2();
-                }
-
-                break;
-            case 3:
-                if (!_palier3Finish)
-                {
-                    Palier3();
-                }
-
-                break;
-            case 4:
-                if (!_palier4Finish)
-                {
-                    Palier4();
-                }
-
-                break;
-            case 5:
-                if (!_palier5Finish)
-                {
-                    Palier5();
-                }
-
-                break;
-            case 6:
-                if (!_palier6Finish)
-                {
-                    Palier6();
-                }
-
-                break;
-        }*/
-        
-        
-        
-        
-        
-        
         SurchauffeManager();
     }
     
@@ -180,64 +124,7 @@ public class ShotGun_Manager : MonoBehaviour
         weaponPompe.grenade.GetComponent<Grenade_Explosion>().exlosionRadius += radiusExplosionGre[0];
         _palier0Finish = true;
     }
-
-    /*void Palier1()
-    {
-        //range lvl 1 & surchauffe lvl 1
-        weaponPompe.maxRange = rangeStats[1];
-        surchauffe = surchauffeStats[1];
-        weaponPompe.sprayX = sprayStats[1]; // a voir
-        _palier1Finish = true;
-    }
     
-    void Palier2()
-    {
-        //damage lvl 1 & speedManiement lvl 1
-        weaponPompe.Degats = damageStats[1];
-        weaponPompe.vitesseSrint -= speedManiementStats[1];
-        weaponPompe.vitessWalk -= speedManiementStats[1];
-        weaponPompe.tromblonNombre = nbBulletStats[1]; // a voir
-        _palier2Finish = true;
-    }
-    
-    void Palier3()
-    {
-        //explosion lvl 1 + affect le joueur & surchauffe lvl 2
-        weaponPompe.explosionForce = explosionStats[1];
-        StartCoroutine(UnlockCompétenceTxt(unlockText, "Tire sous tes pieds pour sauter"));
-        canExplosePlayer = true;
-        weaponPompe.explosionForce = jumpForceStats[1];
-        surchauffe = surchauffeStats[2];
-        _palier3Finish = true;
-    }
-    
-    void Palier4()
-    {
-        lanceGrenadeUnlock = true;
-        weaponPompe.sprayX = sprayStats[2];
-        StartCoroutine(UnlockCompétenceTxt(unlockText, "Lance-Grenade débloqué, bouton droit de la souris pour l'utiliser"));
-        _palier4Finish = true;
-    }
-    
-    void Palier5( )
-    {
-        //explosion lvl 2 && damage lvl 2
-        weaponPompe.Degats = damageStats[2];
-        weaponPompe.explosionForce = explosionStats[2];
-        weaponPompe.explosionForce = jumpForceStats[2];
-        weaponPompe.tromblonNombre = nbBulletStats[2]; //a voir
-        _palier5Finish = true;
-    }
-    
-    void Palier6()
-    {
-        //range lvl 2 & speedManiement lvl 2 & unlock un nouveau tire
-        weaponPompe.maxRange = rangeStats[2];
-        weaponPompe.vitesseSrint -= speedManiementStats[2];
-        weaponPompe.vitessWalk -= speedManiementStats[2];
-        weaponPompe.tromblonNombre = nbBulletStats[3]; //a voir
-        _palier6Finish = true;
-    }*/
 
 
     public IEnumerator UnlockCompétenceTxt(Text objectText, string phrase)
@@ -257,6 +144,9 @@ public class ShotGun_Manager : MonoBehaviour
         
         objectText.gameObject.SetActive(false);
     }
+
+
+
     
     
     

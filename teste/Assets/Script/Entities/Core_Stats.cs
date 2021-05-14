@@ -7,8 +7,7 @@ public class Core_Stats : MonoBehaviour
 {
     private Core_Manager _coreManager;
     private Core_Attack _coreAttack;
-
-    private Entities_Stats _entitiesStats;
+    
     
 
     [Tooltip("la speed de chaque entités est divisé par ce nombre avant d'être ajouter au core")]
@@ -40,8 +39,8 @@ public class Core_Stats : MonoBehaviour
     public void BuffEntitesUp(GameObject obj, float difficulty)
     {
         float buffstats_Speed = obj.GetComponent<Entities_Stats>().speed / _coreManager.myEntities.Count * difficulty;
-        float buffstats_Damage = obj.GetComponent<Entities_Stats>().speed / _coreManager.myEntities.Count * difficulty;
-        float buffstats_Health = obj.GetComponent<Entities_Stats>().speed / _coreManager.myEntities.Count * difficulty;
+        float buffstats_Damage = obj.GetComponent<Entities_Stats>().damage / _coreManager.myEntities.Count * difficulty;
+        float buffstats_Health = obj.GetComponent<Entities_Stats>().health / _coreManager.myEntities.Count * difficulty;
 
         foreach (GameObject entities in _coreManager.myEntities)
         {
@@ -57,8 +56,8 @@ public class Core_Stats : MonoBehaviour
     public void BuffEntitesSupp(GameObject obj, float difficulty)
     {
         float buffstatsSupp_Speed = obj.GetComponent<Entities_Stats>().speed / _coreManager.myEntities.Count * difficulty;
-        float buffstatsSupp_Damage = obj.GetComponent<Entities_Stats>().speed / _coreManager.myEntities.Count * difficulty;
-        float buffstatsSupp_Health = obj.GetComponent<Entities_Stats>().speed / _coreManager.myEntities.Count * difficulty;
+        float buffstatsSupp_Damage = obj.GetComponent<Entities_Stats>().damage / _coreManager.myEntities.Count * difficulty;
+        float buffstatsSupp_Health = obj.GetComponent<Entities_Stats>().health / _coreManager.myEntities.Count * difficulty;
 
         foreach (GameObject entities in _coreManager.myEntities)
         {

@@ -56,7 +56,6 @@ public class Core_Manager : MonoBehaviour
                 _instRenderer.GetComponent<Core_renderer>().core = transform;
                 haveRender = true;
             }
-            
         }
 
         target = transform.position;
@@ -74,7 +73,6 @@ public class Core_Manager : MonoBehaviour
             _coreStats.UpStats(other.gameObject);
             _coreStats.BuffEntitesUp(other.gameObject, difficultyLevel);
         }
-        
     }
     
     private void OnTriggerExit(Collider other)

@@ -40,6 +40,10 @@ public class Entities_Stats : MonoBehaviour
     public float heatlh_augmented;
     public float damage_augmented;
     public float speed_augmented;
+
+    private float saveStatSpeed, saveStatDamage;
+
+    public bool horlogeFinish;
     
 
     private void Start()
@@ -50,6 +54,7 @@ public class Entities_Stats : MonoBehaviour
         _glockManager = GameObject.FindWithTag("Player").GetComponent<Glock_Manager>();
 
         horlogeInterne = Random.Range(minTime, maxTime);
+
     }
 
     public void TakeDamage(float amount)
@@ -100,10 +105,12 @@ public class Entities_Stats : MonoBehaviour
         }
 
         horlogeTime += Time.deltaTime;
-        if (horlogeTime >= horlogeInterne)
+        if (horlogeTime >= horlogeInterne || horlogeFinish)
         {
             HorlogeInterne();
         }
+
+        
     }
 
     void Die()
@@ -140,17 +147,32 @@ public class Entities_Stats : MonoBehaviour
     {
         if (_entitiesManager.hasCore)
         {
+            //Stockage anciennes stats
+            saveStatDamage = damage;
+            saveStatSpeed = speed;
+            
+            //Nouvelles stats
             health += heatlh_augmented;
             damage += damage_augmented;
             speed += speed_augmented;
+            
+            //Ajout au core
+            _entitiesManager.myCore.GetComponent<Core_Manager>().agent.speed += speed - saveStatSpeed;
+            print(speed - saveStatSpeed);
+            _entitiesManager.myCore.GetComponent<Core_Attack>().cacDamage += damage - saveStatDamage;
+            print(damage - saveStatDamage);
+            
         }
         
         if (!_entitiesManager.hasCore)
         {
             EntitiesCreate(5);
         }
+
+        
         horlogeTime = 0;
         horlogeInterne = Random.Range(minTime, maxTime);
+        horlogeFinish = false;
         
     }
 
@@ -165,7 +187,8 @@ public class Entities_Stats : MonoBehaviour
             GameObject instantiate = Instantiate(_entitiesManager.EntitiesType[rdEntities], rdPosition, Quaternion.identity);
             hasCreate = true;
         }
-        
     }
+
+    
     
 }

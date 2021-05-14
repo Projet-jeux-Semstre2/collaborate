@@ -138,6 +138,11 @@ public class Balise_Fonctionnement : MonoBehaviour
             
             zone.SetActive(false);
             print("objectif capturé");
+            GameObject[] entities = GameObject.FindGameObjectsWithTag("ennemis");
+            foreach (GameObject Entities in entities)
+            {
+                Entities.GetComponent<Entities_Stats>().horlogeFinish = true;
+            }
             enabled = false;
             
             if (JingleWin) // pour le sons c'est un OS, jingle de win
