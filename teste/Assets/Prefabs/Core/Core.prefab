@@ -144,7 +144,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2794573410027793705}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.49999997
   m_Speed: 5
@@ -240,7 +240,7 @@ MonoBehaviour:
   canCacAttack: 0
   isCaCAttack: 0
   distCoolDown: 6
-  cacCoolDown: 2
+  cacCoolDown: 6
   cacDamage: 2.5
   distDamage: 8
 --- !u!114 &8014900507629044771
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedDiviseur: 5
-  damageDiviseur: 5
+  damageDiviseur: 10
 --- !u!1 &4206428978952185174
 GameObject:
   m_ObjectHideFlags: 0

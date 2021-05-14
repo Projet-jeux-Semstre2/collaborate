@@ -6,7 +6,13 @@
 		</property>
 		<relationship name="items">
 			<destination>{e47d101c-93a4-4fdc-8de6-9ec1eeae1598}</destination>
+			<destination>{d17065da-1701-4fe6-aa83-efd3ad50a174}</destination>
 		</relationship>
 	</object>
 	<object class="Tag" id="{e47d101c-93a4-4fdc-8de6-9ec1eeae1598}" />
+	<object class="Tag" id="{d17065da-1701-4fe6-aa83-efd3ad50a174}">
+		<property name="name">
+			<value>marche</value>
+		</property>
+	</object>
 </objects>

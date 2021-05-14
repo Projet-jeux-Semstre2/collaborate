@@ -1797,7 +1797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1565741568, guid: fefe99bc616ce6a49aeeeb4e115a1a7e, type: 3}
       propertyPath: timeObjectif
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1495912312506109516, guid: fefe99bc616ce6a49aeeeb4e115a1a7e, type: 3}
       propertyPath: m_Name
@@ -2782,7 +2782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1565741568, guid: fefe99bc616ce6a49aeeeb4e115a1a7e, type: 3}
       propertyPath: timeObjectif
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1495912312506109516, guid: fefe99bc616ce6a49aeeeb4e115a1a7e, type: 3}
       propertyPath: m_Name
@@ -6355,7 +6355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1565741568, guid: fefe99bc616ce6a49aeeeb4e115a1a7e, type: 3}
       propertyPath: timeObjectif
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1495912312506109516, guid: fefe99bc616ce6a49aeeeb4e115a1a7e, type: 3}
       propertyPath: m_Name
@@ -7962,7 +7962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2792106381899344077, guid: 3e645180cb3438a4ea8a75af1b992bc6, type: 3}
       propertyPath: timeObjectif
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2792106382557162241, guid: 3e645180cb3438a4ea8a75af1b992bc6, type: 3}
       propertyPath: timer
@@ -7974,7 +7974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2792106382557162241, guid: 3e645180cb3438a4ea8a75af1b992bc6, type: 3}
       propertyPath: timeObjectif
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2792106382583581100, guid: 3e645180cb3438a4ea8a75af1b992bc6, type: 3}
       propertyPath: timer
@@ -7990,7 +7990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2792106382583581100, guid: 3e645180cb3438a4ea8a75af1b992bc6, type: 3}
       propertyPath: timeObjectif
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2792106382610756885, guid: 3e645180cb3438a4ea8a75af1b992bc6, type: 3}
       propertyPath: m_Name
@@ -8050,7 +8050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2792106383174381400, guid: 3e645180cb3438a4ea8a75af1b992bc6, type: 3}
       propertyPath: timeObjectif
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3638065880411779860, guid: 3e645180cb3438a4ea8a75af1b992bc6, type: 3}
       propertyPath: m_IsActive

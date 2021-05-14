@@ -149,6 +149,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-6619654103739127460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusiqueAmbiance/Balise/MusicCapture
+  m_EditorClassIdentifier: 
+  Path: event:/MusiqueAmbiance/Balise/MusicCapture
+  guid: a9dad17577d22c42aa9a07097a609710
+  Banks:
+  - {fileID: -4566094901654933736}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 19280
 --- !u!114 &-6529344180029721507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,11 +230,11 @@ MonoBehaviour:
   Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637557431885279817
+  lastModified: 637566286884593341
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2488
+    Value: 2474
   Exists: 1
 --- !u!114 &-5957490742804473628
 MonoBehaviour:
@@ -271,7 +294,7 @@ MonoBehaviour:
   Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637557431885229955
+  lastModified: 637566286884543358
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -501,9 +524,7 @@ MonoBehaviour:
   - {fileID: -70130106809606587}
   - {fileID: -6746974564077316890}
   - {fileID: 5311780916705209338}
-  - {fileID: 880096121975581426}
   - {fileID: -3495422791814141797}
-  - {fileID: 4949441883861777184}
   - {fileID: 5062158902249494952}
   - {fileID: -3082842767001134184}
   - {fileID: 4309661018995434812}
@@ -511,6 +532,8 @@ MonoBehaviour:
   - {fileID: -4408281835684614031}
   - {fileID: 8121916534634105497}
   - {fileID: 204757669320786009}
+  - {fileID: 4890012160701531742}
+  - {fileID: -6619654103739127460}
   EditorParameters:
   - {fileID: -7554605491244300939}
   - {fileID: 4358382510966874268}
@@ -518,7 +541,7 @@ MonoBehaviour:
   - {fileID: -4566094901654933736}
   StringsBanks:
   - {fileID: -5995145425658343502}
-  stringsBankWriteTime: 637557431885279817
+  stringsBankWriteTime: 637566286884593341
   cacheVersion: 6
 --- !u!114 &204757669320786009
 MonoBehaviour:
@@ -821,7 +844,7 @@ MonoBehaviour:
   Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Game .bank
   Name: 'Game '
   StudioPath: 'bank:/Game '
-  lastModified: 637557431883868490
+  lastModified: 637566286883443279
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -845,6 +868,29 @@ MonoBehaviour:
     data1: 4134968225
     data2: 4228856451
   Exists: 0
+--- !u!114 &4890012160701531742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player_Body/Dash
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player_Body/Dash
+  guid: 41ae26e9f4cdb04eb9cf01b7fd3b777e
+  Banks:
+  - {fileID: -4566094901654933736}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
 --- !u!114 &4949441883861777184
 MonoBehaviour:
   m_ObjectHideFlags: 0

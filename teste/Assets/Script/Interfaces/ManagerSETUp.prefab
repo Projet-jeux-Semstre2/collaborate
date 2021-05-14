@@ -44,9 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54585d9cca4e84d4496b5c3924cf95b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "NombreEntit\xE9s": 36
-  nombreFinale: 209
-  nrb: 209
+  "NombreEntit\xE9s": 2
+  numberEntitiesAtStart: 2
 --- !u!114 &4114822841788001844
 MonoBehaviour:
   m_ObjectHideFlags: 0
