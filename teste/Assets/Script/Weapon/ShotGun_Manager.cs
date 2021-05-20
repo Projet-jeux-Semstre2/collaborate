@@ -134,7 +134,7 @@ public class ShotGun_Manager : MonoBehaviour
 
     private void ChangeViseur()
     {
-        if (!UpgradeManager)
+        if (!UpgradeManager.activeSelf)
         {
             switch (typeArmeActive)
             {
@@ -171,7 +171,7 @@ public class ShotGun_Manager : MonoBehaviour
                     break;
             }
         }
-        else
+        if(UpgradeManager.activeInHierarchy)
         {
             weaponPompe.viseur[0].SetActive(false);
             weaponPompe.viseur[1].SetActive(false);
