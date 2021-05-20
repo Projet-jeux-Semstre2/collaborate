@@ -1,5 +1,340 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8402802974986281449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/MusiqueShut
+  m_EditorClassIdentifier: 
+  Path: snapshot:/MusiqueShut
+  guid: e1b9ea52ceb4474ebd64f333abd02d50
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-7595411524484791683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player_Body/Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player_Body/Hurt
+  guid: 70d78647c0f19641a577e695a6597b03
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-6186823337698578918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/FusilPompe/BasicsStuff/Surchauffe
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/FusilPompe/BasicsStuff/Surchauffe
+  guid: 7c8e250b43357b4e8f76d79e08f32e07
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 625
+--- !u!114 &-5548749794991864089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player_Actions/Heal
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player_Actions/Heal
+  guid: 5a4780086a9732458c44e88f8d3069e8
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-5396778591688516379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Glock/Shoot
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Glock/Shoot
+  guid: 8d58d8a1a324614aa95903c9e5f49eb7
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 720
+--- !u!114 &-5125585964757010265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusiqueAmbiance/Balise/IsCapture
+  m_EditorClassIdentifier: 
+  Path: event:/MusiqueAmbiance/Balise/IsCapture
+  guid: 774503cc3609c043b64e19446ed4a947
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-5077842199484197617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player_Actions/Dash
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player_Actions/Dash
+  guid: 41ae26e9f4cdb04eb9cf01b7fd3b777e
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
+--- !u!114 &-4862942784200189692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusiqueAmbiance/Balise/TShutDown
+  m_EditorClassIdentifier: 
+  Path: event:/MusiqueAmbiance/Balise/TShutDown
+  guid: bb76e5e1bf257440b11f6272ccd31a17
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-4722117170402175729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MuteSystem
+  m_EditorClassIdentifier: 
+  Path: event:/MuteSystem
+  guid: 000ed2be4f116641be95d74ace66dd95
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-3933243107151881779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/FusilPompe/BasicsStuff/Shoot
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/FusilPompe/BasicsStuff/Shoot
+  guid: 098871b0ff245243ada2c1eb87adf3b9
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
+--- !u!114 &-1929283353007655846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TShutDown
+  m_EditorClassIdentifier: 
+  Name: TShutDown
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2589385084
+    data2: 3348358899
+  Exists: 1
+--- !u!114 &-1472397449992093959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusiqueAmbiance/Balise/IsShutDown
+  m_EditorClassIdentifier: 
+  Path: event:/MusiqueAmbiance/Balise/IsShutDown
+  guid: 1588cd669015454c92bbdc1cb60334c1
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1144412628344326473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/IsShutDown
+  m_EditorClassIdentifier: 
+  Name: IsShutDown
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1268769261
+    data2: 3309854418
+  Exists: 1
+--- !u!114 &-611301085151698347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Game .bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Game .bank
+  Name: 'Game '
+  StudioPath: 'bank:/Game '
+  lastModified: 637566353541683400
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-48144491140414760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player_Body/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player_Body/Jump
+  guid: 27be2e0d53977c49a9d4793a119a3740
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 437
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +347,405 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
-  EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  stringsBankWriteTime: 0
+  EditorBanks:
+  - {fileID: 1832275434077071591}
+  - {fileID: -611301085151698347}
+  - {fileID: 4556140406364642610}
+  EditorEvents:
+  - {fileID: -4722117170402175729}
+  - {fileID: -3933243107151881779}
+  - {fileID: 8658741515767477822}
+  - {fileID: 2697543910028375152}
+  - {fileID: -1472397449992093959}
+  - {fileID: -48144491140414760}
+  - {fileID: 1983984462244168226}
+  - {fileID: 8270987131719277559}
+  - {fileID: -5077842199484197617}
+  - {fileID: 1338469826099900391}
+  - {fileID: 6283999733447970587}
+  - {fileID: 6668868094665250521}
+  - {fileID: -5548749794991864089}
+  - {fileID: -7595411524484791683}
+  - {fileID: -5125585964757010265}
+  - {fileID: -6186823337698578918}
+  - {fileID: -5396778591688516379}
+  - {fileID: 5395709407340994140}
+  - {fileID: 4271171591220785064}
+  - {fileID: 6194449108660689687}
+  - {fileID: 8147995089583427523}
+  - {fileID: 1818775060881375708}
+  - {fileID: -4862942784200189692}
+  - {fileID: 9162430101754117551}
+  - {fileID: -8402802974986281449}
+  - {fileID: 6841809179020858257}
+  EditorParameters:
+  - {fileID: -1144412628344326473}
+  - {fileID: -1929283353007655846}
+  MasterBanks:
+  - {fileID: 4556140406364642610}
+  StringsBanks:
+  - {fileID: 1832275434077071591}
+  stringsBankWriteTime: 637571159741481669
   cacheVersion: 6
+--- !u!114 &1338469826099900391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/FusilPompe/BasicsStuff/Recharge
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/FusilPompe/BasicsStuff/Recharge
+  guid: 45f43afa4755324d821449413044fec5
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2675
+--- !u!114 &1818775060881375708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/Solo/Death
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/Solo/Death
+  guid: ac3b58f233393845800b79a1fc3fa4c6
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 950
+  Length: 1000
+--- !u!114 &1832275434077071591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637571159741481669
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2542
+  Exists: 1
+--- !u!114 &1983984462244168226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusiqueAmbiance/Balise/MusiqueCapture_OLD
+  m_EditorClassIdentifier: 
+  Path: event:/MusiqueAmbiance/Balise/MusiqueCapture_OLD
+  guid: 2ba7b6072ebb154380804dfc01136734
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14078
+--- !u!114 &2697543910028375152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/FusilPompe/Weapon_Up/ExploGrenade
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/FusilPompe/Weapon_Up/ExploGrenade
+  guid: 0f4fe3ea2ea324419ccc79678f1a7523
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 500
+  Length: 0
+--- !u!114 &4271171591220785064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/MuteSystem
+  m_EditorClassIdentifier: 
+  Path: snapshot:/MuteSystem
+  guid: 9918cae4d3d2ce4094cd041ca49e99e4
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &4556140406364642610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637571159738975448
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5395709407340994140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Glock/Recharge
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Glock/Recharge
+  guid: 9083053c679d0c48a1d823177b2a019a
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
+--- !u!114 &6194449108660689687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusiqueAmbiance/MusiqueEnJeu
+  m_EditorClassIdentifier: 
+  Path: event:/MusiqueAmbiance/MusiqueEnJeu
+  guid: aac9542d03a37347a34fa337b2516e0c
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 186000
+--- !u!114 &6283999733447970587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusiqueAmbiance/Balise/RenterTheZone
+  m_EditorClassIdentifier: 
+  Path: event:/MusiqueAmbiance/Balise/RenterTheZone
+  guid: 4654ab1c96f54442b64aef62c9d32544
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &6668868094665250521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player_Body/Walk
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player_Body/Walk
+  guid: 4e72631598239145b730f0ef89eda13d
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &6841809179020858257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/BALISEON
+  m_EditorClassIdentifier: 
+  Path: snapshot:/BALISEON
+  guid: ec5608a67034254e97ba2601f6672bce
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8147995089583427523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Glock/Surchauffe
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Glock/Surchauffe
+  guid: ab9cb7b1742e01478c442ebfbdd4ac9d
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1158
+--- !u!114 &8270987131719277559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemies/5To10/5To10_Movements
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemies/5To10/5To10_Movements
+  guid: 2cb965cc2867d8408966260066322409
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 900
+  Length: 6874
+--- !u!114 &8658741515767477822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/FusilPompe/Weapon_Up/LaunchGrenade
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/FusilPompe/Weapon_Up/LaunchGrenade
+  guid: 0b8d8659f20cf14cb2f29576e00dd765
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &9162430101754117551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusiqueAmbiance/Balise/MusicCapture
+  m_EditorClassIdentifier: 
+  Path: event:/MusiqueAmbiance/Balise/MusicCapture
+  guid: d67e01cf5478444fb41ff37bb8e26abc
+  Banks:
+  - {fileID: 4556140406364642610}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 18000

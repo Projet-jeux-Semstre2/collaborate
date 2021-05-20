@@ -168,7 +168,7 @@ MonoBehaviour:
   renderer: {fileID: 0}
   hasCore: 0
   isInGroups: 0
-  core: {fileID: 2794573410027793705, guid: 263f0483d7503a94a9f1c427a7187aec, type: 3}
+  core: {fileID: 2794573410027793705, guid: 187c55e612ce97d43b7fe14005ee6807, type: 3}
   myCore: {fileID: 0}
   minCoreParticle: 2
   inMyGroup: []
