@@ -137,28 +137,28 @@ public class weaponPompe : Weapon
                     case "ArmeForAgressif":
                         if (target.GetComponent<Entities_Manager>().type == "Agressif")
                         {
-                            target.TakeDamage(Degats *100); //OneShot
+                            target.TakeDamage(Degats *Mathf.Infinity); //OneShot
                         }
                         break;
                     
                     case "ArmeForTank":
                         if (target.GetComponent<Entities_Manager>().type == "Tank")
                         {
-                            target.TakeDamage(Degats *100 );
+                            target.TakeDamage(Degats *Mathf.Infinity );
                         }
                         break;
                     
                     case "ArmeForCreateur":
                         if (target.GetComponent<Entities_Manager>().type == "Createur")
                         {
-                            target.TakeDamage(Degats *100);
+                            target.TakeDamage(Degats *Mathf.Infinity);
                         }
                         break;
                     
                     case "ArmeForVif":
                         if (target.GetComponent<Entities_Manager>().type == "Vif")
                         {
-                            target.TakeDamage(Degats *100);
+                            target.TakeDamage(Degats *Mathf.Infinity);
                         }
                         break;
                 }

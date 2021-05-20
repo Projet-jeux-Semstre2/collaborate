@@ -19,7 +19,7 @@ public class AmeliorationManager : MonoBehaviour
     
     
     
-    public GameObject range, surcharge, speedmaniement, explosiveBullet, lanceGre, glock;
+    public GameObject range, surcharge, speedmaniement, explosiveBullet, lanceGre;
 
     public GameObject UpgradeMenu;
 
@@ -34,7 +34,25 @@ public class AmeliorationManager : MonoBehaviour
     private void OnEnable()
     {
         UpgradeMenu.GetComponent<UpgradeAnimation>().myAnimator.SetTrigger("Open");
-        if (UpgradeMenu.GetComponent<UpgradeAnimation>().animationEnd)
+        foreach (var button in buttonsChoose)
+        {
+            if (button)
+            {
+                button.SetActive(false);
+            }
+        }
+        foreach (var placement in placementButton)
+        {
+            if (placement.gameObject)
+            {
+                placement.gameObject.SetActive(true);
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (UpgradeMenu.GetComponent<UpgradeAnimation>().close)
         {
             foreach (var button in buttonsChoose)
             {
@@ -43,18 +61,23 @@ public class AmeliorationManager : MonoBehaviour
                     button.SetActive(false);
                 }
             }
+
+            foreach (var placement in placementButton)
+            {
+                if (placement.gameObject)
+                {
+                    placement.gameObject.SetActive(false);
+                }
+            }
+            PauseMenu.canLock = true;
+            PauseMenu.pauseTime = false;
         }
-        
-        
-        
     }
 
 
     public void Desac()
     {
         UpgradeMenu.GetComponent<UpgradeAnimation>().myAnimator.SetTrigger("Close");
-        PauseMenu.canLock = true;
-        PauseMenu.pauseTime = false;
     }
 
     

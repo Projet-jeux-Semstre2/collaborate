@@ -69,28 +69,28 @@ public class Grenade_Explosion : MonoBehaviour
                     case "ArmeForAgressif":
                         if (destroyed.GetComponent<Entities_Manager>().type == "Agressif")
                         {
-                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *100); //OneShot
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *Mathf.Infinity); //OneShot
                         }
                         break;
                     
                     case "ArmeForTank":
                         if (destroyed.GetComponent<Entities_Manager>().type == "Tank")
                         {
-                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *100);
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *Mathf.Infinity);
                         }
                         break;
                     
                     case "ArmeForCreateur":
                         if (destroyed.GetComponent<Entities_Manager>().type == "Createur")
                         {
-                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *100);
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *Mathf.Infinity);
                         }
                         break;
                     
                     case "ArmeForVif":
                         if (destroyed.GetComponent<Entities_Manager>().type == "Vif")
                         {
-                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *100);
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *Mathf.Infinity);
                         }
                         break;
                 }

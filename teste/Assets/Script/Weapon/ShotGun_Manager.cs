@@ -50,6 +50,9 @@ public class ShotGun_Manager : MonoBehaviour
     
     public string typeArmeActive;
 
+    private GameObject UpgradeManager;
+    
+
 
     
         
@@ -60,6 +63,8 @@ public class ShotGun_Manager : MonoBehaviour
         _player = GetComponent<Player>();
         
         Palier0();
+        
+        UpgradeManager = GameObject.Find("AmeliorationManager");
     }
 
     private void Update()
@@ -129,40 +134,51 @@ public class ShotGun_Manager : MonoBehaviour
 
     private void ChangeViseur()
     {
-        switch (typeArmeActive)
+        if (!UpgradeManager)
         {
-            case "ArmeForAgressif":
-                weaponPompe.viseur[0].SetActive(false);
-                weaponPompe.viseur[1].SetActive(true);
-                weaponPompe.viseur[2].SetActive(false);
-                weaponPompe.viseur[3].SetActive(false);
-                weaponPompe.viseurActive = weaponPompe.viseur[1];
-                break;
+            switch (typeArmeActive)
+            {
+                case "ArmeForAgressif":
+                    weaponPompe.viseur[0].SetActive(false);
+                    weaponPompe.viseur[1].SetActive(true);
+                    weaponPompe.viseur[2].SetActive(false);
+                    weaponPompe.viseur[3].SetActive(false);
+                    weaponPompe.viseurActive = weaponPompe.viseur[1];
+                    break;
                             
-            case "ArmeForTank":
-                weaponPompe.viseur[0].SetActive(true);
-                weaponPompe.viseur[1].SetActive(false);
-                weaponPompe.viseur[2].SetActive(false);
-                weaponPompe.viseur[3].SetActive(false);
-                weaponPompe.viseurActive = weaponPompe.viseur[0];
-                break;
+                case "ArmeForTank":
+                    weaponPompe.viseur[0].SetActive(true);
+                    weaponPompe.viseur[1].SetActive(false);
+                    weaponPompe.viseur[2].SetActive(false);
+                    weaponPompe.viseur[3].SetActive(false);
+                    weaponPompe.viseurActive = weaponPompe.viseur[0];
+                    break;
                             
-            case "ArmeForCreateur":
-                weaponPompe.viseur[0].SetActive(false);
-                weaponPompe.viseur[1].SetActive(false);
-                weaponPompe.viseur[2].SetActive(false);
-                weaponPompe.viseur[3].SetActive(true);   
-                weaponPompe.viseurActive = weaponPompe.viseur[3];
-                break;
+                case "ArmeForCreateur":
+                    weaponPompe.viseur[0].SetActive(false);
+                    weaponPompe.viseur[1].SetActive(false);
+                    weaponPompe.viseur[2].SetActive(false);
+                    weaponPompe.viseur[3].SetActive(true);   
+                    weaponPompe.viseurActive = weaponPompe.viseur[3];
+                    break;
                             
-            case "ArmeForVif":
-                weaponPompe.viseur[0].SetActive(false);
-                weaponPompe.viseur[1].SetActive(false);
-                weaponPompe.viseur[2].SetActive(true);
-                weaponPompe.viseur[3].SetActive(false);
-                weaponPompe.viseurActive = weaponPompe.viseur[2];
-                break;
+                case "ArmeForVif":
+                    weaponPompe.viseur[0].SetActive(false);
+                    weaponPompe.viseur[1].SetActive(false);
+                    weaponPompe.viseur[2].SetActive(true);
+                    weaponPompe.viseur[3].SetActive(false);
+                    weaponPompe.viseurActive = weaponPompe.viseur[2];
+                    break;
+            }
         }
+        else
+        {
+            weaponPompe.viseur[0].SetActive(false);
+            weaponPompe.viseur[1].SetActive(false);
+            weaponPompe.viseur[2].SetActive(false);
+            weaponPompe.viseur[3].SetActive(false);
+        }
+        
     }
 
 

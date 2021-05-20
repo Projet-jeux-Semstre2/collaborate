@@ -5,25 +5,22 @@ using UnityEngine;
 
 public class UpgradeAnimation : MonoBehaviour
 {
-    public bool animationEnd;
+    public bool close;
 
     public Animator myAnimator;
 
     public GameObject Manager;
-    
-
-
-    public void animationEndChecker()
-    {
-        animationEnd = true;
-    }
 
     public void animationStart()
     {
-        animationEnd = false;
+        close = false;
     }
 
     public void Close()
+    {
+        close = true;
+    }
+    public void Desact()
     {
         Manager.SetActive(false);
     }
