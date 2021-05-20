@@ -109,6 +109,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myEntities: []
+  coreMaterials:
+  - {fileID: 2100000, guid: cd59a2dc1883dc9499cbb8e77732f65f, type: 2}
+  - {fileID: 2100000, guid: 88bc790a7a7dde548942c02d5c7c8583, type: 2}
+  - {fileID: 2100000, guid: 0638a21d89b8119479e87394d5e2f588, type: 2}
+  - {fileID: 2100000, guid: 335ae7a53072a1849b24678a7bd71959, type: 2}
+  tankNb: 0
+  agressifNb: 0
+  vifNb: 0
+  createurNb: 0
   pullRadius: 10
   pullForce: 30000
   player: {fileID: 0}
@@ -144,7 +153,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2794573410027793705}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.49999997
   m_Speed: 5
@@ -240,7 +249,7 @@ MonoBehaviour:
   canCacAttack: 0
   isCaCAttack: 0
   distCoolDown: 6
-  cacCoolDown: 2
+  cacCoolDown: 6
   cacDamage: 2.5
   distDamage: 8
 --- !u!114 &8014900507629044771
@@ -255,8 +264,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff90f08c85d45a41ad6e7080007c3c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  speedDiviseur: 7.5
+  damageDiviseur: 50
+=======
   speedDiviseur: 5
-  damageDiviseur: 5
+  damageDiviseur: 10
+>>>>>>> 9b67623439c78800093c4579ecc03b59915f27dd
 --- !u!1 &4206428978952185174
 GameObject:
   m_ObjectHideFlags: 0

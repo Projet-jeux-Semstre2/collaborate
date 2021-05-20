@@ -11,49 +11,52 @@ public class AmeliorationManager : MonoBehaviour
 {
 
     private ShotGun_Manager _shotGunManager;
-    private Glock_Manager _glockManager;
     private weaponPompe _weaponPompe;
-    public  weaponGlock _weaponGlock;
 
     public Transform[] placementButton;
     public GameObject[] upgradeButtons;
     public GameObject[] buttonsChoose;
+    
+    
+    
+    public GameObject range, surcharge, speedmaniement, explosiveBullet, lanceGre, glock;
 
-
-    public GameObject range, surcharge, speedmaniement, explosiveBullet, lanceGre, glock; 
+    public GameObject UpgradeMenu;
 
     private void Start()
     {
         _shotGunManager = GameObject.FindWithTag("Player").GetComponent<ShotGun_Manager>();
-        _glockManager = GameObject.FindWithTag("Player").GetComponent<Glock_Manager>();
         _weaponPompe = GameObject.FindWithTag("Player").GetComponentInChildren<weaponPompe>();
-        
         
         gameObject.SetActive(false);
     }
 
     private void OnEnable()
     {
-       
-        foreach (var VARIABLE in buttonsChoose)
+        UpgradeMenu.GetComponent<UpgradeAnimation>().myAnimator.SetTrigger("Open");
+        if (UpgradeMenu.GetComponent<UpgradeAnimation>().animationEnd)
         {
-            if (VARIABLE)
+            foreach (var button in buttonsChoose)
             {
-                VARIABLE.SetActive(false);
+                if (button)
+                {
+                    button.SetActive(false);
+                }
             }
         }
-
+        
+        
         
     }
 
 
     public void Desac()
     {
-        gameObject.SetActive(false);
+        UpgradeMenu.GetComponent<UpgradeAnimation>().myAnimator.SetTrigger("Close");
         PauseMenu.canLock = true;
         PauseMenu.pauseTime = false;
-
     }
+
     
 
 
@@ -185,7 +188,7 @@ public class AmeliorationManager : MonoBehaviour
     }
     
     //Glock
-    public void GlockUpgrade(int UpgradeLevel)
+    /*public void GlockUpgrade(int UpgradeLevel)
     {
         switch (UpgradeLevel)
         {
@@ -202,7 +205,7 @@ public class AmeliorationManager : MonoBehaviour
                 break;
         }
         glock.GetComponent<CheckUpgrade>().upgradeAlreadyHave = UpgradeLevel;
-    }
+    }*/
     
     
     

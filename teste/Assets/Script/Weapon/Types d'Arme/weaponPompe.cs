@@ -131,33 +131,34 @@ public class weaponPompe : Weapon
             Entities_Stats target = hit.transform.GetComponent<Entities_Stats>();
             if (target != null)
             {
+                target.TakeDamage(Degats);
                 switch (_shotgunManager.typeArmeActive)
                 {
                     case "ArmeForAgressif":
                         if (target.GetComponent<Entities_Manager>().type == "Agressif")
                         {
-                            target.TakeDamage(Degats);
+                            target.TakeDamage(Degats *100); //OneShot
                         }
                         break;
                     
                     case "ArmeForTank":
                         if (target.GetComponent<Entities_Manager>().type == "Tank")
                         {
-                            target.TakeDamage(Degats);
+                            target.TakeDamage(Degats *100 );
                         }
                         break;
                     
                     case "ArmeForCreateur":
                         if (target.GetComponent<Entities_Manager>().type == "Createur")
                         {
-                            target.TakeDamage(Degats);
+                            target.TakeDamage(Degats *100);
                         }
                         break;
                     
                     case "ArmeForVif":
                         if (target.GetComponent<Entities_Manager>().type == "Vif")
                         {
-                            target.TakeDamage(Degats);
+                            target.TakeDamage(Degats *100);
                         }
                         break;
                 }
@@ -247,6 +248,7 @@ public class weaponPompe : Weapon
         _yAddHit = 0.08295799f * _distance; //Permet d'avoir la balle qui touche le centre du cross air (si c'est possible avec la gravité)
         GameObject grenadeInst = Instantiate(grenade, launchPoint.position, Quaternion.identity);
         grenadeInst.transform.LookAt(new Vector3(hitGrenade.point.x , hitGrenade.point.y + _yAddHit, hitGrenade.point.z));
+        grenadeInst.GetComponent<Grenade_Explosion>().typeArmeActive = _shotgunManager.typeArmeActive;
         grenadeInst.GetComponent<Rigidbody>().AddForce(grenadeInst.transform.forward * shootForce, ForceMode.Impulse);
     }
 

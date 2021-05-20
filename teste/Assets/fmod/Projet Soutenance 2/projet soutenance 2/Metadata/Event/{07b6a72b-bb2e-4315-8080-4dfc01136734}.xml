@@ -2,7 +2,11 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{07b6a72b-bb2e-4315-8080-4dfc01136734}">
 		<property name="name">
-			<value>MusiqueCapture</value>
+<<<<<<< HEAD
+			<value>MusiqueCapture_OLD</value>
+=======
+			<value>MusiqueCaptureold</value>
+>>>>>>> 9b67623439c78800093c4579ecc03b59915f27dd
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -40,9 +44,6 @@
 		<relationship name="parameters">
 			<destination>{602df244-8dc7-4bf8-82c5-20a8428ccea1}</destination>
 			<destination>{c22a66fd-296e-4279-907b-fb50cb22728c}</destination>
-		</relationship>
-		<relationship name="banks">
-			<destination>{f7aad378-e41e-4306-8dcc-2bfda3d03336}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{bef4c018-09ac-40e3-8488-a8e5e3b804dc}">

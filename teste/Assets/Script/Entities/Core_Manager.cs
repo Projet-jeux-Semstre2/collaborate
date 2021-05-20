@@ -10,6 +10,8 @@ public class Core_Manager : MonoBehaviour
 {
     public List<GameObject> myEntities;
     
+    public float tankNb, agressifNb, vifNb, createurNb;
+    
 
     private Core_Stats _coreStats;
 
@@ -70,8 +72,13 @@ public class Core_Manager : MonoBehaviour
             other.GetComponent<Entities_Manager>().hasCore = true;
             other.GetComponent<Entities_Manager>().isInGroups = true;
             other.GetComponent<Entities_Manager>().myCore = gameObject;
+            
+            ColorTypeCount("Add", other.gameObject);
+            
             _coreStats.UpStats(other.gameObject);
             _coreStats.BuffEntitesUp(other.gameObject, difficultyLevel);
+            
+            
         }
     }
     
@@ -84,6 +91,9 @@ public class Core_Manager : MonoBehaviour
             other.GetComponent<Entities_Manager>().hasCore = false;
             other.GetComponent<Entities_Manager>().isInGroups = false;
             other.GetComponent<Entities_Manager>().myCore = null;
+            
+            ColorTypeCount("Remove", other.gameObject);
+            
             _coreStats.BuffEntitesSupp(other.gameObject, difficultyLevel);
         }
     }
@@ -181,6 +191,52 @@ public class Core_Manager : MonoBehaviour
             palier = "grand";
         }
     }
+
+    public void ColorTypeCount(string state, GameObject gameObject)
+    {
+        if (state == "Add")
+        {
+            switch (gameObject.GetComponent<Entities_Manager>().type)
+            {
+                case "Tank":
+                    tankNb ++;
+                    break;
+                case "Agressif":
+                    agressifNb++;
+                    break;
+                case "Vif":
+                    vifNb++;
+                    break;
+                case "Createur":
+                    createurNb++;
+                    break;
+            }
+        }
+
+        if (state == "Remove")
+        {
+            switch (gameObject.GetComponent<Entities_Manager>().type)
+            {
+                case "Tank":
+                    tankNb--;
+                    break;
+                case "Agressif":
+                    agressifNb--;
+                    break;
+                case "Vif":
+                    vifNb--;
+                    break;
+                case "Createur":
+                    createurNb--;
+                    break;
+            }
+        }
+    }
+
+    
+    
+    
+    
     
 
     private void LateUpdate()

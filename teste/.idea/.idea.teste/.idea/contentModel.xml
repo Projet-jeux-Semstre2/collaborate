@@ -37,6 +37,7 @@
                   <e p="{410a5f38-fb06-4256-9d2e-7ef02fab568f}.xml" t="Include" />
                   <e p="{416a2726-8217-4dd2-a911-097b845cb688}.xml" t="Include" />
                   <e p="{4d12385f-a965-47ef-b1f0-0668cecc3a28}.xml" t="Include" />
+                  <e p="{4d178c42-5635-41cc-8690-cb8b2bb1bce3}.xml" t="Include" />
                   <e p="{5b6d36b1-dd61-4323-a4e3-99b1927302cc}.xml" t="Include" />
                   <e p="{6345ae65-dbf7-48f5-983f-cbb5d2f4868e}.xml" t="Include" />
                   <e p="{664461df-d36b-4877-91ff-3ffb91158e72}.xml" t="Include" />
@@ -45,6 +46,7 @@
                   <e p="{7f9f6e7e-682b-4ced-9534-713daf54cff2}.xml" t="Include" />
                   <e p="{83ada15d-1709-4849-bb03-b2bea5efa93a}.xml" t="Include" />
                   <e p="{8bb165c4-da33-4c24-9d7e-7f28e7446b1b}.xml" t="Include" />
+                  <e p="{8c776e94-6a53-479d-91f7-da641794da45}.xml" t="Include" />
                   <e p="{8df7b590-239d-4210-9319-9f0dabfda70f}.xml" t="Include" />
                   <e p="{92411859-8a48-4789-b444-b1eef7241294}.xml" t="Include" />
                   <e p="{992a7bd6-8324-41c0-9ac2-c746f9cf1bf8}.xml" t="Include" />
@@ -78,6 +80,7 @@
                   <e p="{0880475a-976a-4532-8c44-e88f8d3069e8}.xml" t="Include" />
                   <e p="{0b258e7c-3543-4e7b-8f76-d79e08f32e07}.xml" t="Include" />
                   <e p="{0d2ebe27-9753-497c-a9d4-793a119a3740}.xml" t="Include" />
+                  <e p="{1548ecff-7d46-4d4f-b911-83a0cdd4058a}.xml" t="Include" />
                   <e p="{1563724e-2398-4591-b730-f0ef89eda13d}.xml" t="Include" />
                   <e p="{1cab5446-f596-4244-b64a-ef62c9d32544}.xml" t="Include" />
                   <e p="{1e3ced87-5fba-4272-8c1d-ac76aa9c6e1b}.xml" t="Include" />
@@ -92,6 +95,7 @@
                   <e p="{61ed7803-6020-4e7e-a182-12602aa6b2e8}.xml" t="Include" />
                   <e p="{66cd8815-1590-4c45-92bb-dc1cb60334c1}.xml" t="Include" />
                   <e p="{70cf8a92-5e71-4f93-aa78-113e9eed65d9}.xml" t="Include" />
+                  <e p="{75d1daa9-d277-422c-aa9a-07097a609710}.xml" t="Include" />
                   <e p="{8a26d8fb-013d-4c9b-b1d6-3c2d8c39dc73}.xml" t="Include" />
                   <e p="{8c560e07-c3ad-40c3-8ae0-bfd2bc545844}.xml" t="Include" />
                   <e p="{a1d8588d-24a3-4a61-a959-03c9e5f49eb7}.xml" t="Include" />
@@ -104,6 +108,7 @@
                   <e p="{ca700cdb-7900-47aa-ae2c-56795d4ea91e}.xml" t="Include" />
                   <e p="{cc034577-0936-43c0-b64e-19446ed4a947}.xml" t="Include" />
                   <e p="{cc65b92c-6728-40d8-8966-260066322409}.xml" t="Include" />
+                  <e p="{cf017ed6-7854-4f44-b41f-f37bb8e26abc}.xml" t="Include" />
                   <e p="{de67ace9-1cd6-43fc-91d1-e5ffccc0f503}.xml" t="Include" />
                   <e p="{e1e576bb-25bf-4074-b11f-6272ccd31a17}.xml" t="Include" />
                   <e p="{e926ae41-cdf4-4eb0-b9cf-01b7fd3b777e}.xml" t="Include" />
@@ -174,7 +179,6 @@
             </e>
           </e>
         </e>
-        <e p="Focus_Switch.cs" t="Include" />
         <e p="JMO Assets" t="Include">
           <e p="Cartoon FX Easy Editor" t="Include">
             <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
@@ -358,6 +362,7 @@
           <e p="Ameliorations" t="Include">
             <e p="AmeliorationManager.cs" t="Include" />
             <e p="CheckUpgrade.cs" t="Include" />
+            <e p="UpgradeAnimation.cs" t="Include" />
           </e>
           <e p="Collecible" t="Include">
             <e p="Collectible_Movement.cs" t="Include" />
@@ -407,6 +412,7 @@
           <e p="Player" t="Include">
             <e p="CursorManager.cs" t="Include" />
             <e p="DashController.cs" t="Include" />
+            <e p="Focus_Switch.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="Player_Health.cs" t="Include" />
             <e p="PlayerFootstep.cs" t="Include" />

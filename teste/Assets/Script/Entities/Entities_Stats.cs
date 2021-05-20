@@ -128,14 +128,6 @@ public class Entities_Stats : MonoBehaviour
             }
         }
         
-        if(_glockManager.weaponGlock.gameObject.activeInHierarchy)
-        {
-            if (_glockManager.palierJauge < _glockManager.niveauBetweenPalier.Length)
-            {
-                _glockManager.niveauJauge++;
-            }
-            
-        }
         
         Destroy(gameObject);
     }

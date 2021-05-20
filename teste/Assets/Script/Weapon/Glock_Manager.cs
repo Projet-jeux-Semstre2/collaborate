@@ -31,7 +31,7 @@ public class Glock_Manager : MonoBehaviour
     private void OnEnable()
     {
         ameliorationManager = GameObject.Find("AmeliorationManager");
-        ameliorationManager.GetComponent<AmeliorationManager>()._weaponGlock = weaponGlock;
+        //ameliorationManager.GetComponent<AmeliorationManager>()._weaponGlock = weaponGlock;
         _player = GetComponent<Player>();
         Palier0();
     }

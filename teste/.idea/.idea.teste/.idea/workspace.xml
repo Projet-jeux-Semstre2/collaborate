@@ -27,6 +27,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/FPSCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Menu_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/Balise_ActiveChase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -48,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CompasManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/AudioManager.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/DashController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" root0="FORCE_HIGHLIGHTING" />
@@ -60,20 +62,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/ExplosionJumpPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Focus_Switch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/ExplosiveDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Grenade_Explosion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponGlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Bounce.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Arme/Types d'Arme/weaponGlock.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Arme/ShhotSound.cs" />
-        <option value="$PROJECT_DIR$/Assets/PlayerFootstep.cs" />
-        <option value="$PROJECT_DIR$/Assets/SpawnArea.cs" />
-        <option value="$PROJECT_DIR$/Assets/SceneInitialize.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/ObjectifExtermination.cs" />
@@ -103,23 +101,28 @@
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/UI_Menu_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Focus_Switch.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_renderer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Grenade_Explosion.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
       </list>
     </option>
   </component>
@@ -221,6 +224,11 @@
       <workItem from="1620998829063" duration="5339000" />
       <workItem from="1621006360459" duration="2737000" />
       <workItem from="1621009558252" duration="1726000" />
+      <workItem from="1621029154529" duration="638000" />
+      <workItem from="1621372709015" duration="514000" />
+      <workItem from="1621378800151" duration="611000" />
+      <workItem from="1621416630724" duration="15014000" />
+      <workItem from="1621506218546" duration="2967000" />
     </task>
     <servers />
   </component>
@@ -243,6 +251,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621424156918">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1621424156918" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1617207595793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

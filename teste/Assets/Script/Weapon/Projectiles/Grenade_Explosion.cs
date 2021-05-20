@@ -16,6 +16,8 @@ public class Grenade_Explosion : MonoBehaviour
     public ParticleSystem explosionParticle;
     public float timeBeforeExplose = 3;
     public LayerMask layerMaskExplosion;
+
+    public string typeArmeActive;
     
     // sons
     public string fmodExploG;
@@ -61,6 +63,38 @@ public class Grenade_Explosion : MonoBehaviour
             if (destroyed.gameObject.CompareTag("ennemis"))
             {
                 destroyed.GetComponent<Entities_Stats>().TakeDamage(damage);
+                
+                switch (typeArmeActive)
+                {
+                    case "ArmeForAgressif":
+                        if (destroyed.GetComponent<Entities_Manager>().type == "Agressif")
+                        {
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *100); //OneShot
+                        }
+                        break;
+                    
+                    case "ArmeForTank":
+                        if (destroyed.GetComponent<Entities_Manager>().type == "Tank")
+                        {
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *100);
+                        }
+                        break;
+                    
+                    case "ArmeForCreateur":
+                        if (destroyed.GetComponent<Entities_Manager>().type == "Createur")
+                        {
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *100);
+                        }
+                        break;
+                    
+                    case "ArmeForVif":
+                        if (destroyed.GetComponent<Entities_Manager>().type == "Vif")
+                        {
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *100);
+                        }
+                        break;
+                }
+                
             }
         }
 

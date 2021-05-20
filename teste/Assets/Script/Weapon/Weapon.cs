@@ -27,8 +27,8 @@ public class Weapon : MonoBehaviour
     public float initialSize;
     public float maxSize;
     public bool viseurCanGrow= true;
-    [Tooltip("Celui de cette arme toujours = int[0]")]
     public GameObject[] viseur;
+    public GameObject viseurActive;
     
     [Header("Temps Entre Changements D'Arme")]
     public float timeBetweenChange;
@@ -81,21 +81,21 @@ public class Weapon : MonoBehaviour
     public virtual IEnumerator ViseurFB()
     {
         viseurCanGrow = false;
-        while (viseur[0].transform.localScale.x < maxSize)
+        while (viseurActive.transform.localScale.x < maxSize)
         {
-            float lerp = Mathf.Lerp(viseur[0].transform.localScale.x, maxSize*1.2f, Time.deltaTime * 10);
-            viseur[0].transform.localScale = new Vector3(lerp,lerp,lerp);
+            float lerp = Mathf.Lerp(viseurActive.transform.localScale.x, maxSize*1.2f, Time.deltaTime * 10);
+            viseurActive.transform.localScale = new Vector3(lerp,lerp,lerp);
             yield return null;
         }
 
-        while (viseur[0].transform.localScale.x > initialSize)
+        while (viseurActive.transform.localScale.x > initialSize)
         {
-            float lerp = Mathf.Lerp(viseur[0].transform.localScale.x, initialSize/2, Time.deltaTime * 10);
-            viseur[0].transform.localScale = new Vector3(lerp,lerp,lerp);
+            float lerp = Mathf.Lerp(viseurActive.transform.localScale.x, initialSize/2, Time.deltaTime * 10);
+            viseurActive.transform.localScale = new Vector3(lerp,lerp,lerp);
             yield return null;
         }
         
-        viseur[0].transform.localScale = new Vector3(initialSize,initialSize,initialSize);
+        viseurActive.transform.localScale = new Vector3(initialSize,initialSize,initialSize);
         viseurCanGrow = true;
     }
 }

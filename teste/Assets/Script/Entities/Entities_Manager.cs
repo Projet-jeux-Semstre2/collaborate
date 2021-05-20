@@ -183,6 +183,7 @@ public class Entities_Manager : MonoBehaviour
         if (myCore)
         {
             myCore.GetComponent<Core_Stats>().SuppStats(gameObject);
+            myCore.GetComponent<Core_Manager>().ColorTypeCount("Remove",gameObject);
         }
         
         ObjectifExtermination.nrbEntités.Remove(gameObject);
