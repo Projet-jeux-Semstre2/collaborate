@@ -26,14 +26,12 @@ public class Core_Stats : MonoBehaviour
     {
         _coreManager.agent.speed += obj.GetComponent<Entities_Stats>().speed / speedDiviseur;
         _coreAttack.cacDamage += obj.GetComponent<Entities_Stats>().damage / damageDiviseur;
-        _coreAttack.distDamage += obj.GetComponent<Entities_Stats>().damage / damageDiviseur;
     }
 
     public void SuppStats(GameObject obj)
     {
         _coreManager.agent.speed -= obj.GetComponent<Entities_Stats>().speed / speedDiviseur;
         _coreAttack.cacDamage -= obj.GetComponent<Entities_Stats>().damage / damageDiviseur;
-        _coreAttack.distDamage -= obj.GetComponent<Entities_Stats>().damage / damageDiviseur;
     }
 
     public void BuffEntitesUp(GameObject obj, float difficulty)

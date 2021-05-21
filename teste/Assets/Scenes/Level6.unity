@@ -1211,9 +1211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dda8f350b106404c9eb111ff2eba6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  close: 0
   myAnimator: {fileID: 307944595}
-  Manager: {fileID: 156739806}
+  Manager: {fileID: 0}
 --- !u!95 &307944595
 Animator:
   serializedVersion: 3
@@ -4145,9 +4144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dda8f350b106404c9eb111ff2eba6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  close: 0
   myAnimator: {fileID: 1349489117}
-  Manager: {fileID: 1954859381}
+  Manager: {fileID: 1954859382}
 --- !u!1 &1359248807
 GameObject:
   m_ObjectHideFlags: 0
@@ -4754,7 +4752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 35290c805bc262b4788a834deb6482ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 150ab56364f4f774a8e8d05cc374a295, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7598,7 +7596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 35290c805bc262b4788a834deb6482ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b80f3e1cdd71dcc40aa9e42ba3f06549, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

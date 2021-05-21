@@ -74,8 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/ObjectifExtermination.cs" />
-        <option value="$PROJECT_DIR$/Assets/FmodSonsDeOrely.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Surchauffe_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player_Health.cs" />
@@ -104,9 +102,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/UI_Menu_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Focus_Switch.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
@@ -116,15 +112,19 @@
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/ButtonRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Grenade_Explosion.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/FeedbackContactEntites.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" />
       </list>
     </option>
   </component>
@@ -233,6 +233,8 @@
       <workItem from="1621506218546" duration="11562000" />
       <workItem from="1621541794873" duration="11995000" />
       <workItem from="1621583502134" duration="943000" />
+      <workItem from="1621593067374" duration="864000" />
+      <workItem from="1621598198370" duration="2106000" />
     </task>
     <servers />
   </component>

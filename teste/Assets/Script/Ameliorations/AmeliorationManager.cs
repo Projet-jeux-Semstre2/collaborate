@@ -34,13 +34,7 @@ public class AmeliorationManager : MonoBehaviour
     private void OnEnable()
     {
         UpgradeMenu.GetComponent<UpgradeAnimation>().myAnimator.SetTrigger("Open");
-        foreach (var button in buttonsChoose)
-        {
-            if (button)
-            {
-                button.SetActive(false);
-            }
-        }
+
         foreach (var placement in placementButton)
         {
             if (placement.gameObject)
@@ -48,30 +42,38 @@ public class AmeliorationManager : MonoBehaviour
                 placement.gameObject.SetActive(true);
             }
         }
+        
     }
 
     private void Update()
     {
-        if (UpgradeMenu.GetComponent<UpgradeAnimation>().close)
-        {
-            foreach (var button in buttonsChoose)
-            {
-                if (button)
-                {
-                    button.SetActive(false);
-                }
-            }
+    }
 
-            foreach (var placement in placementButton)
+    public void close()
+    {
+        foreach (var button in buttonsChoose)
+        {
+            if (button)
             {
-                if (placement.gameObject)
-                {
-                    placement.gameObject.SetActive(false);
-                }
+                button.SetActive(false);
             }
-            PauseMenu.canLock = true;
-            PauseMenu.pauseTime = false;
         }
+
+        foreach (var placement in placementButton)
+        {
+            if (placement.gameObject)
+            {
+                placement.gameObject.SetActive(false);
+            }
+        }
+        
+    }
+
+    public void LastClose()
+    {
+        PauseMenu.canLock = true;
+        PauseMenu.pauseTime = false;
+        gameObject.SetActive(false);
     }
 
 

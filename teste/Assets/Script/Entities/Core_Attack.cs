@@ -8,23 +8,16 @@ public class Core_Attack : MonoBehaviour
 
     private Core_Manager _coreManager;
     
-    public GameObject attackProjectile;
-    public float Force;
-    public GameObject launchPoint;
-
-    public bool isDIstAttack;
     public bool canCacAttack = false;
     public bool isCaCAttack;
-
-    public float distCoolDown;
+    
     public float cacCoolDown;
 
     private GameObject _player;
     private Player_Health _playerHealth;
 
     public float cacDamage = 2f;
-    public float distDamage = 10f;
-    
+
 
 
 
@@ -43,18 +36,7 @@ public class Core_Attack : MonoBehaviour
         }
     }
 
-    public IEnumerator DistAttack()
-    {
-        GameObject projectile = Instantiate(attackProjectile, launchPoint.transform.position, Quaternion.identity);
-        
-        projectile.GetComponent<Rigidbody>().AddForce(launchPoint.transform.forward * Force, ForceMode.Impulse) ;
-
-        isDIstAttack = true;
-        
-        yield return new WaitForSeconds(distCoolDown);
-
-        isDIstAttack = false;
-    }
+   
 
     public IEnumerator CaCAttack()
     {

@@ -37,7 +37,6 @@ public class Player_Health : MonoBehaviour
     {
         if (other.gameObject.CompareTag("ennemiProjectile"))
         {
-            health -= coreRecup.GetComponent<Core_Attack>().distDamage;
             StartCoroutine(HurtFb());
             Destroy(other.gameObject);
         }
