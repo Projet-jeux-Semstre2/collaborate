@@ -58,14 +58,18 @@ public class Focus_Switch : MonoBehaviour
     {
         changeFocus();
         _shotGunManager.typeArmeActive = typeArmeActive;
+
+        
     }
+    
+    
 
     public void changeFocus()
     {
         t_switch += Time.deltaTime;
         t_switch = Mathf.Clamp(t_switch, 0, switchTime);
 
-        if (Input.GetKeyDown(KeyCode.A) && t_switch >= switchTime)
+        if (Input.mouseScrollDelta.y > 0 && t_switch >= switchTime || Input.mouseScrollDelta.y < 0 && t_switch >= switchTime)
         {
             StartCoroutine(SwitchFilter());
             

@@ -19,6 +19,7 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         camera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        pauseMenuUI.SetActive(false);
     }
 
     void CursorMode()

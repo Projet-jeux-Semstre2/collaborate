@@ -72,6 +72,8 @@ public class ShotGun_Manager : MonoBehaviour
 
         SurchauffeManager();
         ChangeViseur();
+
+        
         
     }
     
@@ -134,7 +136,7 @@ public class ShotGun_Manager : MonoBehaviour
 
     private void ChangeViseur()
     {
-        if (!UpgradeManager.activeSelf)
+        if (!PauseMenu.GameIsPaused)
         {
             switch (typeArmeActive)
             {
@@ -171,7 +173,7 @@ public class ShotGun_Manager : MonoBehaviour
                     break;
             }
         }
-        if(UpgradeManager.activeInHierarchy)
+        if(PauseMenu.GameIsPaused)
         {
             weaponPompe.viseur[0].SetActive(false);
             weaponPompe.viseur[1].SetActive(false);

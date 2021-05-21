@@ -111,7 +111,6 @@
         <option value="$PROJECT_DIR$/Assets/Focus_Switch.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_renderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
@@ -121,10 +120,11 @@
         <option value="$PROJECT_DIR$/Assets/ButtonRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Grenade_Explosion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/FeedbackContactEntites.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
       </list>
     </option>
   </component>
@@ -231,7 +231,8 @@
       <workItem from="1621378800151" duration="611000" />
       <workItem from="1621416630724" duration="15014000" />
       <workItem from="1621506218546" duration="11562000" />
-      <workItem from="1621541794873" duration="11345000" />
+      <workItem from="1621541794873" duration="11995000" />
+      <workItem from="1621583502134" duration="943000" />
     </task>
     <servers />
   </component>
