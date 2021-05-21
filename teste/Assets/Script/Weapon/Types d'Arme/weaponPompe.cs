@@ -77,8 +77,7 @@ public class weaponPompe : Weapon
         
 
         player.walkingSpeed -= vitessWalk;
-        player.runningSpeed -= vitesseSrint;
-        
+
         foreach (var reticule in viseur)
         {
             reticule.SetActive(false);
@@ -91,7 +90,6 @@ public class weaponPompe : Weapon
 
     private void OnDisable()
     {
-        player.runningSpeed = player.initRunSpeed;
         player.walkingSpeed = player.initWalkSpeed;
     }
 

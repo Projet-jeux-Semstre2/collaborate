@@ -8,10 +8,8 @@ public class Player : MonoBehaviour
 {
     [Header("Speed à changé")]
     public float initWalkSpeed = 9;
-    public float initRunSpeed = 15;
     [Header("Speed in Real Time")]
     public float walkingSpeed;
-    public float runningSpeed;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
     public Camera playerCamera;
@@ -49,7 +47,6 @@ public class Player : MonoBehaviour
         PauseMenu.cursorLock = true;
 
         walkingSpeed = initWalkSpeed;
-        runningSpeed = initRunSpeed;
     }
 
     void Update()
@@ -73,10 +70,9 @@ public class Player : MonoBehaviour
 
         
         float movementDirectionY;
-
-        bool isRunning = Input.GetKey(KeyCode.LeftShift);
-        inputVector.z = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
-        inputVector.x = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
+        
+        inputVector.z = canMove ?  walkingSpeed* Input.GetAxis("Vertical") : 0;
+        inputVector.x = canMove ? walkingSpeed* Input.GetAxis("Horizontal") : 0;
         movementDirectionY = moveDirection.y;
         moveDirection = (forward * inputVector.z) + (right * inputVector.x);
         

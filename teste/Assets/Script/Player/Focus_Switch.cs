@@ -96,14 +96,12 @@ public class Focus_Switch : MonoBehaviour
 
         if (Input.mouseScrollDelta.y > 0 && t_switch >= switchTime || Input.mouseScrollDelta.y < 0 && t_switch >= switchTime)
         {
-            StartCoroutine(SwitchFilter());
-            t_switch = 0;
+            
             switch (armeID)
             {
                 case 0:
                     typeArmeActive = typeArmeTank;
-                    _colorGrading.colorFilter.value = tank_Color;
-                    
+
                     foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
                     {
                         Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
@@ -120,8 +118,7 @@ public class Focus_Switch : MonoBehaviour
                     break;
                 case 1:
                     typeArmeActive = typeArmeCreateur;
-                    _colorGrading.colorFilter.value = createur_Color;
-                    
+
                     foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
                     {
                         Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
@@ -138,8 +135,7 @@ public class Focus_Switch : MonoBehaviour
                     break;
                 case 2:
                     typeArmeActive = typeArmeVif;
-                    _colorGrading.colorFilter.value = vif_color;
-                    
+
                     foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
                     {
                         Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
@@ -156,8 +152,7 @@ public class Focus_Switch : MonoBehaviour
                     break;
                 case 3:
                     typeArmeActive = typeArmeAgressif;
-                    _colorGrading.colorFilter.value = agressif_Color;
-                    
+
                     foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
                     {
                         Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
@@ -173,9 +168,93 @@ public class Focus_Switch : MonoBehaviour
                     
                     break;
             }
+
+            StartCoroutine(SwitchFilter());
         }
-        
-        
+
+        if (t_switch >= switchTime)
+        {
+            if (Input.GetKeyDown("1") && typeArmeActive != typeArmeTank)
+            {
+                typeArmeActive = typeArmeTank;
+
+                foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
+                {
+                    Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
+                    if (entitiesManager.type == "Tank")
+                    {
+                        entitiesManager.renderer.material = entitiesManager.ChangeMaterials[1];
+                    }
+                    else
+                    {
+                        entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
+                    }
+                }
+                StartCoroutine(SwitchFilter());
+                t_switch = 0;
+            }
+            
+            if (Input.GetKeyDown("2") && typeArmeActive != typeArmeCreateur)
+            {
+                typeArmeActive = typeArmeCreateur;
+
+                foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
+                {
+                    Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
+                    if (entitiesManager.type == "Createur")
+                    {
+                        entitiesManager.renderer.material = entitiesManager.ChangeMaterials[1];
+                    }
+                    else
+                    {
+                        entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
+                    }
+                }
+                StartCoroutine(SwitchFilter());
+                t_switch = 0;
+            }
+            
+            if (Input.GetKeyDown("3") && typeArmeActive != typeArmeVif)
+            {
+                typeArmeActive = typeArmeVif;
+
+                foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
+                {
+                    Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
+                    if (entitiesManager.type == "Vif")
+                    {
+                        entitiesManager.renderer.material = entitiesManager.ChangeMaterials[1];
+                    }
+                    else
+                    {
+                        entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
+                    }
+                }
+                StartCoroutine(SwitchFilter());
+                t_switch = 0;
+            }
+            
+            if (Input.GetKeyDown("4") && typeArmeActive != typeArmeAgressif)
+            {
+                typeArmeActive = typeArmeAgressif;
+                
+                    
+                foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
+                {
+                    Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
+                    if (entitiesManager.type == "Agressif")
+                    {
+                        entitiesManager.renderer.material = entitiesManager.ChangeMaterials[1];
+                    }
+                    else
+                    {
+                        entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
+                    }
+                }
+                StartCoroutine(SwitchFilter());
+                t_switch = 0;
+            }
+        }
         
         
         
@@ -188,16 +267,16 @@ public class Focus_Switch : MonoBehaviour
         
         switch (typeArmeActive)
         {
-            case "ArmeForAgressif":
+            case "ArmeForTank":
                 _colorGrading.colorFilter.value = tank_Color; 
                 break;
-            case "ArmeForTank": 
+            case "ArmeForCreateur": 
                 _colorGrading.colorFilter.value = createur_Color; 
                 break; 
-            case "ArmeForCreateur": 
+            case "ArmeForVif": 
                 _colorGrading.colorFilter.value = vif_color; 
                 break;
-            case "ArmeForVif": 
+            case "ArmeForAgressif": 
                 _colorGrading.colorFilter.value = agressif_Color; 
                 break;
         }

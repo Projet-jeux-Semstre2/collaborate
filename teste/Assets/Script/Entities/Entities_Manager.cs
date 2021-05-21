@@ -68,40 +68,9 @@ public class Entities_Manager : MonoBehaviour
     public void FixedUpdate()
     {
 
-        if (!hasCore) //attirance des entités vers sois meme si je ne fais pas parti d'un groupe
+        if (!hasCore) 
         {
-            /*_allCore.AddRange(GameObject.FindGameObjectsWithTag("core"));
-
-            if (_allCore.Count > 0)
-            {
-                _nearObj = _allCore[0];
-                for (int i = 0; i < _allCore.Count; i++)
-                {
-                    if (_allCore[i])
-                    {
-                        float distance = Vector3.Distance(_allCore[i].transform.position, transform.position);
-                        if (distance < Vector3.Distance(_nearObj.transform.position, transform.position))
-                        {
-                            _nearObj = _allCore[i];
-                        }
-                    }
-                    
-                }
-            }
             
-
-            if (_nearObj)
-            {
-                transform.Translate(_nearObj.transform.position, Space.Self);
-            }
-            
-            for (int i = _allCore.Count - 1; i > -1 ; i--)
-            {
-                if (_allCore[i] == null)
-                {
-                    _allCore.RemoveAt(i);
-                }
-            }*/
             
             
             colliderAttirance.enabled = true;

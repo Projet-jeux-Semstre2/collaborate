@@ -50,7 +50,6 @@ public class Entities_Stats : MonoBehaviour
         _entitiesManager = GetComponent<Entities_Manager>();
         _meshRenderer = GetComponent<MeshRenderer>();
         _shotGunManager = GameObject.FindWithTag("Player").GetComponent<ShotGun_Manager>();
-        _glockManager = GameObject.FindWithTag("Player").GetComponent<Glock_Manager>();
 
         horlogeInterne = Random.Range(minTime, maxTime);
 
@@ -76,7 +75,7 @@ public class Entities_Stats : MonoBehaviour
         while (t < 1)
         {
             t += Time.deltaTime;
-            _meshRenderer.material.Lerp(_meshRenderer.material, hitMaterial, t * 2);
+            _meshRenderer.material.SetColor("_EmissionColor", Color.Lerp(_meshRenderer.material.GetColor("_EmissionColor"), hitMaterial.GetColor("_EmissionColor"), t*2));
             _canBeDamaged = false;
             yield return null;
         }
@@ -86,7 +85,7 @@ public class Entities_Stats : MonoBehaviour
         while (t < .5f)
         {
             t += Time.deltaTime;
-            _meshRenderer.material.Lerp(_meshRenderer.material, fullLifeMaterial, t);
+            _meshRenderer.material.SetColor("_EmissionColor", Color.Lerp(_meshRenderer.material.GetColor("_EmissionColor"), fullLifeMaterial.GetColor("_EmissionColor"), t));
             _canBeDamaged = true;
             yield return null;
         }

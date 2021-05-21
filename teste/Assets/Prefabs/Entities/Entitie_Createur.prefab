@@ -109,7 +109,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cd0ceb1be28987c42833420fc54230cd, type: 2}
+  - {fileID: 2100000, guid: 335ae7a53072a1849b24678a7bd71959, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
   FmodDie: event:/Ennemies/Solo/Death
   dieExplosion: {fileID: 401982039532589781, guid: bdc4123fbc835ba44907d6a334e98fc9, type: 3}
   hitMaterial: {fileID: 2100000, guid: 9d8d24075fda5844f9d23b8149c61a98, type: 2}
-  fullLifeMaterial: {fileID: 2100000, guid: cd0ceb1be28987c42833420fc54230cd, type: 2}
+  fullLifeMaterial: {fileID: 2100000, guid: 335ae7a53072a1849b24678a7bd71959, type: 2}
   horlogeInterne: 0
   horlogeTime: 0
   maxTime: 45

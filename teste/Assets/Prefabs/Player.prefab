@@ -613,10 +613,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3910003e259ad2748b5f6541be555ccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initWalkSpeed: 14
-  initRunSpeed: 24
+  initWalkSpeed: 28
   walkingSpeed: 9
-  runningSpeed: 15
   jumpSpeed: 35
   gravity: 85
   playerCamera: {fileID: 6737755131319426060}
@@ -869,12 +867,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shotGunManager: {fileID: 7618754462737962441}
+  armeID: 0
   volume: {fileID: 1220565696747920127}
   agressif_Color: {r: 1, g: 0.3726415, b: 0.3726415, a: 0}
   tank_Color: {r: 0.2216981, g: 1, b: 0.45452338, a: 0}
   vif_color: {r: 1, g: 0.81769866, b: 0.3066038, a: 0}
   createur_Color: {r: 0.35978103, g: 0.990566, b: 0.990566, a: 0}
-  switchTime: 0.15
+  switchTime: 0.2
   timeEffect: 0.25
   lerpSpeed: 1.5
   lerp: 0
@@ -21593,6 +21592,10 @@ PrefabInstance:
     - target: {fileID: 424056435, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.852
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
+      propertyPath: Degats
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: player

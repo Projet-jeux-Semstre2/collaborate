@@ -40,7 +40,7 @@ public class DashController : MonoBehaviour
 
     void HandleDash()
     {
-        bool isTryingToDash = Input.GetKeyDown(KeyCode.LeftAlt);
+        bool isTryingToDash = Input.GetKeyDown(KeyCode.LeftShift);
         if (isTryingToDash && !isDashing)
         {
             if (dashAttempts <= Mathf.Infinity && canDash) //si on veut mettre un nb max de dash possible remplacer le infini par un nb
