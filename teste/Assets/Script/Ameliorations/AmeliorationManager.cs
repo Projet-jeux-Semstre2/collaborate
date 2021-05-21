@@ -80,6 +80,11 @@ public class AmeliorationManager : MonoBehaviour
         UpgradeMenu.GetComponent<UpgradeAnimation>().myAnimator.SetTrigger("Close");
     }
 
+    public void playMusic(string zik)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(zik);
+    }
+
     
 
 
@@ -100,12 +105,10 @@ public class AmeliorationManager : MonoBehaviour
                 buttonsChoose[i] = upgradeButtons[rd];
                 buttonsChoose[i].transform.position = placementButton[i].position;
                 buttonsChoose[i].SetActive(true);
-                print("nb : "+ i);
             }
             else
             {
                 i--;
-                print("recommence");
             }
             
         }

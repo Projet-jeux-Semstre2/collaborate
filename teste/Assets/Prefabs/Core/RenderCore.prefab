@@ -230,10 +230,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Test_CoreParticle
       objectReference: {fileID: 0}
-    - target: {fileID: 766777488649100233, guid: 03120f23c92129045a70c614ec0bfb72, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1298824227882119749, guid: 03120f23c92129045a70c614ec0bfb72, type: 3}
       propertyPath: m_RootOrder
       value: 1

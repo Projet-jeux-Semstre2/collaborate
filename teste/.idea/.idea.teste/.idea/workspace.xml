@@ -37,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SetUPScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Collecible/Collectible_Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/FeedbackContactEntites.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_renderer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -73,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/ObjectifExtermination.cs" />
         <option value="$PROJECT_DIR$/Assets/FmodSonsDeOrely.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
@@ -104,7 +104,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/UI_Menu_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
@@ -120,10 +119,12 @@
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/ButtonRotation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Grenade_Explosion.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/FeedbackContactEntites.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
       </list>
     </option>
   </component>
@@ -230,7 +231,7 @@
       <workItem from="1621378800151" duration="611000" />
       <workItem from="1621416630724" duration="15014000" />
       <workItem from="1621506218546" duration="11562000" />
-      <workItem from="1621541794873" duration="230000" />
+      <workItem from="1621541794873" duration="11345000" />
     </task>
     <servers />
   </component>
@@ -269,9 +270,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619371112188" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619371741068">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1621548992527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619371741068" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1621548992527" />
   </component>
 </project>

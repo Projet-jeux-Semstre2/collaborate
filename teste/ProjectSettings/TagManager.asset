@@ -17,6 +17,7 @@ TagManager:
   - HealthUi
   - Balise
   - Ground
+  - feedbackZone
   layers:
   - Default
   - TransparentFX

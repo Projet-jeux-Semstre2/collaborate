@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour
     public static bool cursorLock;
     public static bool canLock;
     public static bool pauseTime;
+    public Animator pauseAnimator;
 
     private void Start()
     {
@@ -69,6 +70,7 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 1f;
             GameIsPaused = false;
         }
+        
 
     }
     
@@ -77,9 +79,8 @@ public class PauseMenu : MonoBehaviour
     {
         canLock = true;
         cursorLock = true;
-        print("resume");
+        pauseAnimator.SetTrigger("Close");
         
-        pauseMenuUI.SetActive(false);
         pauseTime = false;
         GameIsPaused = false;
         
@@ -89,17 +90,13 @@ public class PauseMenu : MonoBehaviour
     {
         canLock = false;
         cursorLock = false;
-        print("pause");
-        
+
         pauseMenuUI.SetActive(true);
+        pauseAnimator.SetTrigger("Open");
         pauseTime = true;
         GameIsPaused = true;
     }
-
-    public void LoadMenu()
-    {
-        print("Loading Menu");
-    }
+    
 
     public void QuitGame()
     {

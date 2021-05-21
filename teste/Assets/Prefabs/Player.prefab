@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 12649f808ea11b24d92cdf7ce14c098d, type: 2}
+  sharedProfile: {fileID: 11400000, guid: fd03c06cc81354145aa1ce3038646413, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
@@ -574,6 +574,7 @@ GameObject:
   - component: {fileID: 8246251174559205307}
   - component: {fileID: 2525671434433549343}
   - component: {fileID: 4403047611650225749}
+  - component: {fileID: 1719511133}
   m_Layer: 14
   m_Name: Player
   m_TagString: Player
@@ -613,7 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initWalkSpeed: 14
-  initRunSpeed: 23
+  initRunSpeed: 24
   walkingSpeed: 9
   runningSpeed: 15
   jumpSpeed: 35
@@ -876,6 +877,36 @@ MonoBehaviour:
   switchTime: 0.25
   timeEffect: 0.25
   lerpSpeed: 1.5
+--- !u!114 &1719511133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796854421016402270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425dbbe7d7bea5b48914736cfac58ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: {fileID: 3089132348955681497}
+  autoExposure: 0
+  vignette: 0
+  focusDistance: 0
+  chromatic: 0
+  autoExposureMultiply: 5
+  vignetteMultply: 3
+  focusMultiply: 0.8
+  chromaMultiply: 2.5
+  distance: 1
+  maxautoExposure: 0.8
+  maxVignette: 0.4
+  maxChroma: 0.6
+  maxFocus: 2
+  InitAutoExposure: 0
+  InitVignette: 0
+  InitChroma: 0
+  InitFocus: 10
 --- !u!1 &2477457350260718973
 GameObject:
   m_ObjectHideFlags: 0

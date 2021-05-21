@@ -413,6 +413,7 @@
           <e p="Player" t="Include">
             <e p="CursorManager.cs" t="Include" />
             <e p="DashController.cs" t="Include" />
+            <e p="FeedbackContactEntites.cs" t="Include" />
             <e p="Focus_Switch.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="Player_Health.cs" t="Include" />
