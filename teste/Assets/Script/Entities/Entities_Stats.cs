@@ -149,9 +149,8 @@ public class Entities_Stats : MonoBehaviour
             
             //Ajout au core
             _entitiesManager.myCore.GetComponent<Core_Manager>().agent.speed += speed - saveStatSpeed;
-            print(speed - saveStatSpeed);
             _entitiesManager.myCore.GetComponent<Core_Attack>().cacDamage += damage - saveStatDamage;
-            print(damage - saveStatDamage);
+            
             
         }
         

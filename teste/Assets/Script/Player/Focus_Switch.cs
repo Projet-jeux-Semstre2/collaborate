@@ -15,6 +15,7 @@ public class Focus_Switch : MonoBehaviour
     private string typeArmeAgressif = "ArmeForAgressif";
     private string typeArmeVif = "ArmeForVif";
     private string typeArmeCreateur = "ArmeForCreateur";
+    public int armeID;
 
     private ColorGrading _colorGrading;
     public PostProcessVolume volume;
@@ -30,7 +31,7 @@ public class Focus_Switch : MonoBehaviour
     [Header("SwitchEffect")] 
     public float timeEffect;
     public float lerpSpeed;
-    private bool lerp;
+    public bool lerp;
     
     
     
@@ -69,13 +70,37 @@ public class Focus_Switch : MonoBehaviour
         t_switch += Time.deltaTime;
         t_switch = Mathf.Clamp(t_switch, 0, switchTime);
 
+        armeID = Mathf.Clamp(armeID, 0, 3);
+        
+        if (Input.mouseScrollDelta.y > 0 && t_switch >= switchTime)
+        {
+            armeID++;
+
+            if (armeID > 3)
+            {
+                armeID = 0;
+            }
+            
+            
+        }
+        if (Input.mouseScrollDelta.y < 0 && t_switch >= switchTime)
+        {
+            armeID--;
+
+            if (armeID <0)
+            {
+                armeID = 3;
+            }
+            
+        }
+
         if (Input.mouseScrollDelta.y > 0 && t_switch >= switchTime || Input.mouseScrollDelta.y < 0 && t_switch >= switchTime)
         {
             StartCoroutine(SwitchFilter());
-            
-            switch (typeArmeActive)
+            t_switch = 0;
+            switch (armeID)
             {
-                case "ArmeForAgressif":
+                case 0:
                     typeArmeActive = typeArmeTank;
                     _colorGrading.colorFilter.value = tank_Color;
                     
@@ -93,7 +118,7 @@ public class Focus_Switch : MonoBehaviour
                     }
                     
                     break;
-                case "ArmeForTank":
+                case 1:
                     typeArmeActive = typeArmeCreateur;
                     _colorGrading.colorFilter.value = createur_Color;
                     
@@ -111,7 +136,7 @@ public class Focus_Switch : MonoBehaviour
                     }
                     
                     break;
-                case "ArmeForCreateur":
+                case 2:
                     typeArmeActive = typeArmeVif;
                     _colorGrading.colorFilter.value = vif_color;
                     
@@ -129,7 +154,7 @@ public class Focus_Switch : MonoBehaviour
                     }
                     
                     break;
-                case "ArmeForVif":
+                case 3:
                     typeArmeActive = typeArmeAgressif;
                     _colorGrading.colorFilter.value = agressif_Color;
                     
@@ -148,9 +173,12 @@ public class Focus_Switch : MonoBehaviour
                     
                     break;
             }
-
-            t_switch = 0;
         }
+        
+        
+        
+        
+        
     }
 
 
@@ -180,6 +208,7 @@ public class Focus_Switch : MonoBehaviour
         while (_colorGrading.colorFilter.value != Color.white && lerp)
         {
             _colorGrading.colorFilter.value = Color.Lerp(_colorGrading.colorFilter.value, Color.white, Time.deltaTime * lerpSpeed);
+            
             yield return null;
         }
 
