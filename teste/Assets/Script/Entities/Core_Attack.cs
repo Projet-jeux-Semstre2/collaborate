@@ -16,6 +16,8 @@ public class Core_Attack : MonoBehaviour
     private GameObject _player;
     private Player_Health _playerHealth;
 
+    public float distance, distanceAttack;
+
     public float cacDamage = 2f;
 
 
@@ -30,7 +32,9 @@ public class Core_Attack : MonoBehaviour
 
     private void Update()
     {
-        if (canCacAttack && !isCaCAttack)
+        distance = Vector3.Distance(transform.position, _player.transform.position);
+        
+        if (distance <= distanceAttack && !isCaCAttack)
         {
             StartCoroutine(CaCAttack());
         }

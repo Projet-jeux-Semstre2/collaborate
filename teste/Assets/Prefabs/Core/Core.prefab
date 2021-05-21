@@ -216,11 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolRadius: 50
-  isFear: 0
-  canBeFear: 1
-  fearCooldown: 5
   fearPoint: {x: 0, y: 0, z: 0}
-  canAttackDistance: 0
   layerMaskRaycast:
     serializedVersion: 2
     m_Bits: 2048
@@ -238,16 +234,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de796b23252de147addf222c194d5f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackProjectile: {fileID: 7172713201934465283, guid: 3bb8608837a93ea44b8a81d3e21797b4, type: 3}
-  Force: 75
-  launchPoint: {fileID: 4206428978952185174}
-  isDIstAttack: 0
   canCacAttack: 0
   isCaCAttack: 0
-  distCoolDown: 6
   cacCoolDown: 10
+  distance: 0
+  distanceAttack: 7
   cacDamage: 2.5
-  distDamage: 8
 --- !u!114 &8014900507629044771
 MonoBehaviour:
   m_ObjectHideFlags: 0

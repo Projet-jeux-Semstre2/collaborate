@@ -74,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Surchauffe_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player_Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerFootstep.cs" />
@@ -122,9 +121,10 @@
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_AttackCaC_Detector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
       </list>
     </option>
   </component>
@@ -235,6 +235,7 @@
       <workItem from="1621583502134" duration="943000" />
       <workItem from="1621593067374" duration="864000" />
       <workItem from="1621598198370" duration="2106000" />
+      <workItem from="1621601330857" duration="530000" />
     </task>
     <servers />
   </component>

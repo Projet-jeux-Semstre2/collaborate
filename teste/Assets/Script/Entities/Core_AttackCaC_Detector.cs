@@ -18,7 +18,7 @@ public class Core_AttackCaC_Detector : MonoBehaviour
     {
         if (!_coreAttack.canCacAttack && player.CompareTag("Player"))
         {
-            _coreAttack.canCacAttack = true;
+            //_coreAttack.canCacAttack = true;
         }
     }
 
