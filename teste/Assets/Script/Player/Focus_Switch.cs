@@ -39,20 +39,7 @@ public class Focus_Switch : MonoBehaviour
     {
         typeArmeActive = typeArmeTank;
         volume.profile.TryGetSettings(out _colorGrading);
-        _colorGrading.colorFilter.value = tank_Color;
-        StartCoroutine(SwitchFilter());
-        foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
-        {
-            Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
-            if (entitiesManager.type == "Tank")
-            {
-                entitiesManager.renderer.material = entitiesManager.ChangeMaterials[1];
-            }
-            else
-            {
-                entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
-            }
-        }    
+        armeID = 0;
     }
 
     private void Update()

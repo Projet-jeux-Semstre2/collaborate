@@ -188,6 +188,7 @@ MonoBehaviour:
   t_beforeshutDown: 5
   _player: {fileID: 0}
   distanceActive: 5
+  pourcentageHealth: 35
   fmodMusicCapture: event:/MusiqueAmbiance/Balise/MusicCapture
   fmodTshutdown: event:/MusiqueAmbiance/Balise/TShutDown
   fmodRenterthezone: event:/MusiqueAmbiance/Balise/RenterTheZone

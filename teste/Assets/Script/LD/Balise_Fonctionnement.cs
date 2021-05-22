@@ -29,6 +29,10 @@ public class Balise_Fonctionnement : MonoBehaviour
     private Player _playerCs;
     public float distanceActive = 5f;
 
+    public float pourcentageHealth;
+    
+    
+
     //SONS
     public string fmodMusicCapture;
     public string fmodTshutdown;
@@ -143,6 +147,8 @@ public class Balise_Fonctionnement : MonoBehaviour
             {
                 Entities.GetComponent<Entities_Stats>().horlogeFinish = true;
             }
+
+            _player.GetComponent<Player_Health>().health += (100 - _player.GetComponent<Player_Health>().health) * (pourcentageHealth/100);
             enabled = false;
             
             if (JingleWin) // pour le sons c'est un OS, jingle de win

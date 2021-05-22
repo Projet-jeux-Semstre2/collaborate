@@ -15,20 +15,13 @@ public class Balise_ActiveChase : MonoBehaviour
         }
     }
     
-    private void OnTriggerExit(Collider other)
-    {
-        /*if (other.CompareTag("core") && chaseActiv.Contains(other.gameObject))
-        {
-            other.GetComponent<Core_Comportement>().canChase = false;
-            chaseActiv.Remove(other.gameObject);
-        }*/
-    }
+    
 
     private void Update()
     {
         for (int i = chaseActiv.Count - 1; i > -1 ; i--)
         {
-            if (chaseActiv[i] == null)
+            if (!chaseActiv[i])
             {
                 chaseActiv.RemoveAt(i);
                 

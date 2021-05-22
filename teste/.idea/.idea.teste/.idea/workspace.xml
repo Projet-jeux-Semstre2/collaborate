@@ -28,6 +28,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Menu_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/Balise_ActiveChase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DestroyTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -74,8 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Player_Health.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerFootstep.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Collecible/Health_Collectible.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Arme/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Arme/WeaponManager.cs" />
@@ -106,7 +105,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_renderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
         <option value="$PROJECT_DIR$/Assets/ButtonRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Grenade_Explosion.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/FeedbackContactEntites.cs" />
@@ -118,13 +116,16 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_AttackCaC_Detector.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/DashController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
+        <option value="$PROJECT_DIR$/Assets/DestroyTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_ActiveChase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
       </list>
     </option>
   </component>
@@ -237,7 +238,7 @@
       <workItem from="1621598198370" duration="2106000" />
       <workItem from="1621601330857" duration="3791000" />
       <workItem from="1621626011214" duration="2874000" />
-      <workItem from="1621668711173" duration="2079000" />
+      <workItem from="1621668711173" duration="4362000" />
     </task>
     <servers />
   </component>
