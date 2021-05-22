@@ -429,7 +429,6 @@
               <e p="scheduledDestroy.cs" t="Include" />
             </e>
             <e p="ShotGun_Manager.cs" t="Include" />
-            <e p="Surchauffe_Manager.cs" t="Include" />
             <e p="Types d'Arme" t="Include">
               <e p="ArmeBasics.cs" t="Include" />
               <e p="weaponGlock.cs" t="Include" />

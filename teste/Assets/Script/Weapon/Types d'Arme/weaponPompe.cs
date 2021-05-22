@@ -95,7 +95,7 @@ public class weaponPompe : Weapon
 
     public override void Engage() // c'est override pour pouvoir réecrire la méthode du script dont elle hérite.
     {
-        if (_shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe && !Reloading)
+        if (_shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe && !Reloading && !_shotgunManager.isSurchauffeMax)
         {
             tromblonsDirection = new List<Quaternion>(tromblonNombre);
             for (int i = 0; i < tromblonNombre; i++)
@@ -206,20 +206,20 @@ public class weaponPompe : Weapon
         Debug.DrawLine(mainCamera.transform.position, new Vector3(0, 0, maxRange) + new Vector3(Combo.x, Combo.y, 0));
         Debug.DrawRay(mainCamera.transform.position, mainCamera.transform.forward, Color.blue, 0.5f);
 
-        if (Input.GetButton("Reload"))
+        if (Input.GetButton("Reload") && !_shotgunManager.isSurchauffeMax)
         {
             Reload();
         }
         else if(Reloading)
         {
             Reloading = false;
-            _animator.SetBool("Reloading", false);
+            //_animator.SetBool("Reloading", false);
         }
     }
     
     public override void Engage2nd()
     {
-        if ( !Reloading&& _shotgunManager.lanceGrenadeUnlock && _shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe)
+        if ( !Reloading&& _shotgunManager.lanceGrenadeUnlock && _shotgunManager.niveauSurchauffe < _shotgunManager.surchauffe && !_shotgunManager.isSurchauffeMax)
         {
             if (Time.time >= _nextFireTimeGrenade)
             {
@@ -252,9 +252,9 @@ public class weaponPompe : Weapon
 
     void Reload()
     {
-        if (_shotgunManager.niveauSurchauffe > 0)
+        if (_shotgunManager.niveauSurchauffe > 0 )
         {
-            _animator.SetBool("Reloading", true);
+            //_animator.SetBool("Reloading", true);
             Reloading = true;
             _shotgunManager.niveauSurchauffe -= reloadSpeed * Time.deltaTime;
         }

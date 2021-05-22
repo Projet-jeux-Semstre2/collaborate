@@ -45,7 +45,7 @@ public class ShotGun_Manager : MonoBehaviour
     public string FmodCooling;
 
     private float t;
-    private bool isSurchauffeMax = false;
+    public bool isSurchauffeMax = false;
     
     
     public string typeArmeActive;
@@ -81,7 +81,7 @@ public class ShotGun_Manager : MonoBehaviour
     
     
     
-    void SurchauffeMax() // quand on atteint la surchauffe max
+    void SurchauffeSoundMax() // quand on atteint la surchauffe max
     {
         FMODUnity.RuntimeManager.PlayOneShot(FmodSurchauffe, transform.position);
         isSurchauffeMax = true;
@@ -90,23 +90,44 @@ public class ShotGun_Manager : MonoBehaviour
 
     void SurchauffeManager()
     {
+        niveauSurchauffe = Mathf.Clamp(niveauSurchauffe, 0, 100);
         float add = 1115 / surchauffe;
-        surchauffeImage.sizeDelta = Vector2.Lerp(surchauffeImage.sizeDelta, new Vector2(add * niveauSurchauffe, surchauffeImage.sizeDelta.y), Time.time);
+        if (niveauSurchauffe > 0)
+        {
+            surchauffeImage.sizeDelta = Vector2.Lerp(surchauffeImage.sizeDelta, new Vector2(add * niveauSurchauffe, surchauffeImage.sizeDelta.y), Time.time);
+        }
         
         
         t += Time.deltaTime;
-        if (niveauSurchauffe > 0 && t >= t_forLooseSurchauffe && !weaponPompe.Reloading)
+        if (niveauSurchauffe >= 1 && t >= t_forLooseSurchauffe)
         {
-            FMODUnity.RuntimeManager.PlayOneShot(FmodCooling, transform.position);
+            FMODUnity.RuntimeManager.PlayOneShot(FmodCooling, GetComponent<Transform>().position);
             niveauSurchauffe--;
             t = 0;
         }
+        
+        
 
         if (niveauSurchauffe >= surchauffe) // lance le sons de surchauffe max une seule foix
         {
+            
             if (!isSurchauffeMax)
             {
-                SurchauffeMax();
+                SurchauffeSoundMax();
+            }
+            isSurchauffeMax = true;
+        }
+        
+        if(isSurchauffeMax)
+        {
+            t = 0;
+            niveauSurchauffe -= 1.15f * Time.deltaTime;
+
+            if (niveauSurchauffe <= 0)
+            {
+                niveauSurchauffe = 0;
+                isSurchauffeMax = false;
+                
             }
         }
     }
