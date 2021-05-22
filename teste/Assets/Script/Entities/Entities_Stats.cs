@@ -12,6 +12,11 @@ public class Entities_Stats : MonoBehaviour
     public float damage; 
     public float speed;
     
+    [Header("Initial Stats")]
+    public float InitHealth; 
+    public float InitDamage; 
+    public float InitSpeed;
+    
     // SONS
     public string FmodHurt;
     public string FmodDie;
@@ -52,6 +57,10 @@ public class Entities_Stats : MonoBehaviour
         _shotGunManager = GameObject.FindWithTag("Player").GetComponent<ShotGun_Manager>();
 
         horlogeInterne = Random.Range(minTime, maxTime);
+
+        InitDamage = damage;
+        InitHealth = health;
+        InitSpeed = speed;
 
     }
 

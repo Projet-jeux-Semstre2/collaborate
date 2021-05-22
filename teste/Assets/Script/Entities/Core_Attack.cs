@@ -20,6 +20,8 @@ public class Core_Attack : MonoBehaviour
 
     public float cacDamage = 2f;
 
+    public float MaxCacDamage = 30f;
+
 
 
 
@@ -32,6 +34,10 @@ public class Core_Attack : MonoBehaviour
 
     private void Update()
     {
+        if (cacDamage >= MaxCacDamage)
+        {
+            cacDamage = MaxCacDamage;
+        }
         distance = Vector3.Distance(transform.position, _player.transform.position);
         
         if (distance <= distanceAttack && !isCaCAttack)

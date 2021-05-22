@@ -42,7 +42,7 @@ public class Core_Stats : MonoBehaviour
 
         foreach (GameObject entities in _coreManager.myEntities)
         {
-            if (entities != obj)
+            if(entities != obj)
             {
                 entities.GetComponent<Entities_Stats>().speed += buffstats_Speed;
                 entities.GetComponent<Entities_Stats>().damage += buffstats_Damage;
@@ -60,10 +60,25 @@ public class Core_Stats : MonoBehaviour
         foreach (GameObject entities in _coreManager.myEntities)
         {
             if (entities != obj)
-            {
-                entities.GetComponent<Entities_Stats>().speed -= buffstatsSupp_Speed;
-                entities.GetComponent<Entities_Stats>().damage -= buffstatsSupp_Damage;
-                entities.GetComponent<Entities_Stats>().health -= buffstatsSupp_Health;
+            {    
+                if (entities.GetComponent<Entities_Stats>().health - buffstatsSupp_Health >=
+                    entities.GetComponent<Entities_Stats>().InitHealth)
+                {
+                    entities.GetComponent<Entities_Stats>().health -= buffstatsSupp_Health;
+                }
+                if (entities.GetComponent<Entities_Stats>().speed - buffstatsSupp_Speed >=
+                    entities.GetComponent<Entities_Stats>().InitSpeed)
+                {
+                    entities.GetComponent<Entities_Stats>().speed -= buffstatsSupp_Speed;
+                }
+                if (entities.GetComponent<Entities_Stats>().damage - buffstatsSupp_Damage >=
+                    entities.GetComponent<Entities_Stats>().InitDamage)
+                {
+                    entities.GetComponent<Entities_Stats>().damage -= buffstatsSupp_Damage;
+                }
+                
+                
+                
             }
         }
     }

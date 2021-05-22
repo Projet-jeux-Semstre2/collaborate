@@ -115,16 +115,16 @@
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_AttackCaC_Detector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/DashController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
       </list>
     </option>
   </component>
@@ -236,7 +236,8 @@
       <workItem from="1621593067374" duration="864000" />
       <workItem from="1621598198370" duration="2106000" />
       <workItem from="1621601330857" duration="3791000" />
-      <workItem from="1621626011214" duration="2757000" />
+      <workItem from="1621626011214" duration="2874000" />
+      <workItem from="1621668711173" duration="2079000" />
     </task>
     <servers />
   </component>
