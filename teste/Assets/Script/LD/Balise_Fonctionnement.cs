@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class Balise_Fonctionnement : MonoBehaviour
 {
-
     public Material[] materials;
 
     public bool isOn;
@@ -32,11 +31,7 @@ public class Balise_Fonctionnement : MonoBehaviour
 
     public float pourcentageHealth;
 
-    [Header("Explosion")] 
-    public float radius;
-    public LayerMask ExplosionLayer;
-
-
+    private SpawningBaliseIsOn _openSpawnOnBalise;
 
     //SONS
     public string fmodMusicCapture;
@@ -46,11 +41,11 @@ public class Balise_Fonctionnement : MonoBehaviour
     public string fmodIsShutdown;
     private bool JingleWin;
     [SerializeField] private GameObject _AmeliorationManager;
-    public GameObject upgradeCollectible;
     
     // Start is called before the first frame update
     void OnEnable()
     {
+        _openSpawnOnBalise = GetComponent<SpawningBaliseIsOn>();
         _AmeliorationManager = GameObject.Find("AmeliorationManager");
         JingleWin = true;
         _meshRenderer = GetComponent<MeshRenderer>();
@@ -70,6 +65,8 @@ public class Balise_Fonctionnement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _openSpawnOnBalise.baliseOn = isOn; // savoir si les spawneur vont s'activer.
+        _openSpawnOnBalise.isCpatureOn = isCapture;
         if (isOn)
         {
             
@@ -123,9 +120,11 @@ public class Balise_Fonctionnement : MonoBehaviour
                 t = timeObjectif;
                 onCapture = false;
                 isCapture = true;
-                GameObject inst = Instantiate(upgradeCollectible, new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), Quaternion.identity);
-                inst.GetComponent<UpgradeCollectible>()._ameliorationManager = _AmeliorationManager;
-                
+                _AmeliorationManager.SetActive(true);
+                StartCoroutine(_AmeliorationManager.GetComponent<AmeliorationManager>().chooseUpgradeRandom());
+                PauseMenu.cursorLock = false;
+                PauseMenu.canLock = false;
+                PauseMenu.pauseTime = true;
 
             }
         }
@@ -153,7 +152,6 @@ public class Balise_Fonctionnement : MonoBehaviour
             }
 
             _player.GetComponent<Player_Health>().health += (100 - _player.GetComponent<Player_Health>().health) * (pourcentageHealth/100);
-            ExploseAtEnd();
             enabled = false;
             
             if (JingleWin) // pour le sons c'est un OS, jingle de win
@@ -163,8 +161,6 @@ public class Balise_Fonctionnement : MonoBehaviour
                 JingleWin = false;
             }
         }
-
-        
     }
 
     
@@ -179,7 +175,6 @@ public class Balise_Fonctionnement : MonoBehaviour
             
             onCapture = true;
         }
-        
     }
 
     
@@ -215,23 +210,5 @@ public class Balise_Fonctionnement : MonoBehaviour
         {
             shutDownZone();
         }
-    }
-
-    void ExploseAtEnd()
-    {
-        Collider[] destroys = Physics.OverlapSphere(transform.position, radius, ExplosionLayer);
-        foreach (Collider destroyed in destroys)
-        {
-            if (destroyed.gameObject.CompareTag("ennemis"))
-            {
-                destroyed.GetComponent<Entities_Stats>().TakeDamage(Mathf.Infinity);
-            }
-        }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }

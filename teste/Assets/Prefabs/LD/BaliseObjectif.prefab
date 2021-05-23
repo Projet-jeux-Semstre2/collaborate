@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 1565741573}
   - component: {fileID: 1565741568}
   - component: {fileID: 2353422915713141657}
+  - component: {fileID: 861543185005943489}
   m_Layer: 11
   m_Name: BaliseObjectif
   m_TagString: Balise
@@ -214,6 +215,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 449949eb8b07b154e8c81ebb81ad225f, type: 3}
   image: {fileID: 0}
+--- !u!114 &861543185005943489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495912312506109516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6fbc0ee5bb5a64794c6e010bd80021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Entities: {fileID: 4448553007369930569, guid: b843d729670f6614697caa7805640299, type: 3}
+  spawnerBalise: []
+  baliseOn: 0
+  isCpatureOn: 0
+  canSpawnRate: 0
+  waitTime: 0.4
+  stopIspawn: 0
+  "nrbDifficult\xE9": 40
 --- !u!1 &8921881755626832987
 GameObject:
   m_ObjectHideFlags: 0
