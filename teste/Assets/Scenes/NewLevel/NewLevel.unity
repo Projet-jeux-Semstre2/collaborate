@@ -7359,7 +7359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1352209718599942710, guid: c47c30e755ff76d4ca074828181e8bc3, type: 3}
       propertyPath: timeObjectif
-      value: 2
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1352209718599942710, guid: c47c30e755ff76d4ca074828181e8bc3, type: 3}
       propertyPath: ExplosionLayer.m_Bits
