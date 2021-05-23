@@ -32,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UpgradeCollectible.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/ObjectifExtermination.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,7 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Arme/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Arme/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Bounce.cs" />
         <option value="$PROJECT_DIR$/Assets/Grenade_Explosion.cs" />
@@ -107,25 +107,26 @@
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Grenade_Explosion.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/FeedbackContactEntites.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_AttackCaC_Detector.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/DashController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
         <option value="$PROJECT_DIR$/Assets/DestroyTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_ActiveChase.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Surchauffe_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnArea.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/UpgradeCollectible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/DashController.cs" />
       </list>
     </option>
   </component>
@@ -239,6 +240,7 @@
       <workItem from="1621601330857" duration="3791000" />
       <workItem from="1621626011214" duration="2874000" />
       <workItem from="1621668711173" duration="10193000" />
+      <workItem from="1621787906581" duration="4248000" />
     </task>
     <servers />
   </component>

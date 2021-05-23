@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class ShotGun_Manager : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class ShotGun_Manager : MonoBehaviour
     public float surchauffe;
     public float niveauSurchauffe;
     public float t_forLooseSurchauffe;
-    public RectTransform surchauffeImage;
+    public Image overloadActive;
+    public GameObject[] overloadColor;
 
 
     [Header("Amélioration")] 
@@ -65,6 +67,7 @@ public class ShotGun_Manager : MonoBehaviour
         Palier0();
         
         UpgradeManager = GameObject.Find("AmeliorationManager");
+        overloadActive = overloadColor[0].GetComponent<Image>();
     }
 
     private void Update()
@@ -91,11 +94,8 @@ public class ShotGun_Manager : MonoBehaviour
     void SurchauffeManager()
     {
         niveauSurchauffe = Mathf.Clamp(niveauSurchauffe, 0, 100);
-        float add = 1115 / surchauffe;
-        if (niveauSurchauffe > 0)
-        {
-            surchauffeImage.sizeDelta = Vector2.Lerp(surchauffeImage.sizeDelta, new Vector2(add * niveauSurchauffe, surchauffeImage.sizeDelta.y), Time.time);
-        }
+        
+        overloadActive.fillAmount = niveauSurchauffe/ surchauffe;
         
         
         t += Time.deltaTime;
@@ -166,6 +166,9 @@ public class ShotGun_Manager : MonoBehaviour
                     weaponPompe.viseur[1].SetActive(true);
                     weaponPompe.viseur[2].SetActive(false);
                     weaponPompe.viseur[3].SetActive(false);
+                    overloadActive.gameObject.SetActive(false);
+                    overloadActive = overloadColor[3].GetComponent<Image>();
+                    overloadActive.gameObject.SetActive(true);
                     weaponPompe.viseurActive = weaponPompe.viseur[1];
                     break;
                             
@@ -174,6 +177,9 @@ public class ShotGun_Manager : MonoBehaviour
                     weaponPompe.viseur[1].SetActive(false);
                     weaponPompe.viseur[2].SetActive(false);
                     weaponPompe.viseur[3].SetActive(false);
+                    overloadActive.gameObject.SetActive(false);
+                    overloadActive = overloadColor[0].GetComponent<Image>();
+                    overloadActive.gameObject.SetActive(true);
                     weaponPompe.viseurActive = weaponPompe.viseur[0];
                     break;
                             
@@ -182,6 +188,9 @@ public class ShotGun_Manager : MonoBehaviour
                     weaponPompe.viseur[1].SetActive(false);
                     weaponPompe.viseur[2].SetActive(false);
                     weaponPompe.viseur[3].SetActive(true);   
+                    overloadActive.gameObject.SetActive(false);
+                    overloadActive = overloadColor[1].GetComponent<Image>();
+                    overloadActive.gameObject.SetActive(true);
                     weaponPompe.viseurActive = weaponPompe.viseur[3];
                     break;
                             
@@ -190,6 +199,9 @@ public class ShotGun_Manager : MonoBehaviour
                     weaponPompe.viseur[1].SetActive(false);
                     weaponPompe.viseur[2].SetActive(true);
                     weaponPompe.viseur[3].SetActive(false);
+                    overloadActive.gameObject.SetActive(false);
+                    overloadActive = overloadColor[2].GetComponent<Image>();
+                    overloadActive.gameObject.SetActive(true);
                     weaponPompe.viseurActive = weaponPompe.viseur[2];
                     break;
             }

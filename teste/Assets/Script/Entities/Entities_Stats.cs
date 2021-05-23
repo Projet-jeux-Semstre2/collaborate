@@ -106,7 +106,7 @@ public class Entities_Stats : MonoBehaviour
 
     private void Update()
     {
-        if (health <= 0f)
+        if (health <= 0f || health == null)
         {
             Die();
         }

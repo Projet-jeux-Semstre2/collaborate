@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class Player_Health : MonoBehaviour
 {
@@ -26,10 +27,9 @@ public class Player_Health : MonoBehaviour
 
     private bool debugSunnyLinvincible;
 
-    public Text healthText;
+    public Image healthUi;
     private void Start()
     {
-        healthText = GameObject.FindWithTag("HealthUi").GetComponent<Text>();
         health = maxHealth;
     }
 
@@ -44,7 +44,7 @@ public class Player_Health : MonoBehaviour
 
     private void Update()
     {
-        healthText.text = "Health : " + health;
+        healthUi.fillAmount = health / 100;
         
         if (health <= 0)
         {

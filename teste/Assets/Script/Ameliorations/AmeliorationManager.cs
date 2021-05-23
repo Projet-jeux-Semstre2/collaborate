@@ -44,10 +44,7 @@ public class AmeliorationManager : MonoBehaviour
         }
         
     }
-
-    private void Update()
-    {
-    }
+    
 
     public void close()
     {

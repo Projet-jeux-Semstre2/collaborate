@@ -189,12 +189,17 @@ MonoBehaviour:
   _player: {fileID: 0}
   distanceActive: 5
   pourcentageHealth: 35
+  radius: 25
+  ExplosionLayer:
+    serializedVersion: 2
+    m_Bits: 512
   fmodMusicCapture: event:/MusiqueAmbiance/Balise/MusicCapture
   fmodTshutdown: event:/MusiqueAmbiance/Balise/TShutDown
   fmodRenterthezone: event:/MusiqueAmbiance/Balise/RenterTheZone
   fmodisCature: event:/MusiqueAmbiance/Balise/IsCapture
   fmodIsShutdown: event:/MusiqueAmbiance/Balise/IsShutDown
   _AmeliorationManager: {fileID: 0}
+  upgradeCollectible: {fileID: 4316396839757565776, guid: 58d565045336da544979b60b32333b0a, type: 3}
 --- !u!114 &2353422915713141657
 MonoBehaviour:
   m_ObjectHideFlags: 0

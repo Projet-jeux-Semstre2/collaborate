@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -30,8 +31,12 @@ public class Balise_Fonctionnement : MonoBehaviour
     public float distanceActive = 5f;
 
     public float pourcentageHealth;
-    
-    
+
+    [Header("Explosion")] 
+    public float radius;
+    public LayerMask ExplosionLayer;
+
+
 
     //SONS
     public string fmodMusicCapture;
@@ -41,6 +46,7 @@ public class Balise_Fonctionnement : MonoBehaviour
     public string fmodIsShutdown;
     private bool JingleWin;
     [SerializeField] private GameObject _AmeliorationManager;
+    public GameObject upgradeCollectible;
     
     // Start is called before the first frame update
     void OnEnable()
@@ -117,11 +123,9 @@ public class Balise_Fonctionnement : MonoBehaviour
                 t = timeObjectif;
                 onCapture = false;
                 isCapture = true;
-                _AmeliorationManager.SetActive(true);
-                StartCoroutine(_AmeliorationManager.GetComponent<AmeliorationManager>().chooseUpgradeRandom());
-                PauseMenu.cursorLock = false;
-                PauseMenu.canLock = false;
-                PauseMenu.pauseTime = true;
+                GameObject inst = Instantiate(upgradeCollectible, new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), Quaternion.identity);
+                inst.GetComponent<UpgradeCollectible>()._ameliorationManager = _AmeliorationManager;
+                
 
             }
         }
@@ -149,6 +153,7 @@ public class Balise_Fonctionnement : MonoBehaviour
             }
 
             _player.GetComponent<Player_Health>().health += (100 - _player.GetComponent<Player_Health>().health) * (pourcentageHealth/100);
+            ExploseAtEnd();
             enabled = false;
             
             if (JingleWin) // pour le sons c'est un OS, jingle de win
@@ -210,5 +215,23 @@ public class Balise_Fonctionnement : MonoBehaviour
         {
             shutDownZone();
         }
+    }
+
+    void ExploseAtEnd()
+    {
+        Collider[] destroys = Physics.OverlapSphere(transform.position, radius, ExplosionLayer);
+        foreach (Collider destroyed in destroys)
+        {
+            if (destroyed.gameObject.CompareTag("ennemis"))
+            {
+                destroyed.GetComponent<Entities_Stats>().TakeDamage(Mathf.Infinity);
+            }
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }

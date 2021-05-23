@@ -7353,6 +7353,18 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 1785198376}
+    - target: {fileID: 1352209718599942710, guid: c47c30e755ff76d4ca074828181e8bc3, type: 3}
+      propertyPath: radius
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352209718599942710, guid: c47c30e755ff76d4ca074828181e8bc3, type: 3}
+      propertyPath: timeObjectif
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352209718599942710, guid: c47c30e755ff76d4ca074828181e8bc3, type: 3}
+      propertyPath: ExplosionLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 1352209718604277543, guid: c47c30e755ff76d4ca074828181e8bc3, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1

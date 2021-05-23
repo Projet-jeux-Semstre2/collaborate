@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMOD;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DashController : MonoBehaviour
 {
@@ -17,6 +19,9 @@ public class DashController : MonoBehaviour
 
     
     public float dashSpeed = 30f;
+    public Image dashUi;
+    private float movePerSecond;
+    private float time;
 
     private Player _playerController;
     private CharacterController _characterController;
@@ -36,6 +41,23 @@ public class DashController : MonoBehaviour
     private void Update()
     {
         HandleDash();
+
+        if (dashUi.fillAmount != 1)
+        {
+             time += Time.deltaTime;
+
+             float flow = time / coolDown;
+
+             if (flow < 1)
+             {
+                 dashUi.fillAmount = 0 + (1 - 0) * flow;
+             }
+             else
+             {
+                 dashUi.fillAmount = 1;
+             }
+        }
+        
     }
 
     void HandleDash()
@@ -76,7 +98,10 @@ public class DashController : MonoBehaviour
     {
         // sons
         FMODUnity.RuntimeManager.PlayOneShot(FmodDash);
-        
+
+        dashUi.fillAmount = 0;
+        time = 0;
+        movePerSecond = (1 - 0) / coolDown;
         isDashing = true;
         dashStartTime = Time.time;
         dashAttempts += 1;
