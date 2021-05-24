@@ -21,7 +21,14 @@ public class Core_Attack : MonoBehaviour
     public float cacDamage = 2f;
 
     public float MaxCacDamage = 30f;
-
+    
+     private float buffDistAttack;
+     public float temporairBase;
+// les variables qui gère l'évolution de la distance attack
+     public float minEvolution;
+     public float coefTailleDistanceAttack;
+     
+     
 
 
 
@@ -34,19 +41,36 @@ public class Core_Attack : MonoBehaviour
 
     private void Update()
     {
+        Debug.DrawLine(transform.position,  new Vector3(transform.position.x + temporairBase, transform.position.y, transform.position.z),Color.green);
+        
         if (cacDamage >= MaxCacDamage)
         {
             cacDamage = MaxCacDamage;
         }
+// valeur de qui va prendre le Nrb d'entité et s'ajouter a distance Attack 
+        int nrbEntite = _coreManager.myEntities.Count;
+       
+        if (nrbEntite>minEvolution)
+        { 
+            buffDistAttack = nrbEntite/coefTailleDistanceAttack;
+        }
+        else
+        {
+            buffDistAttack = 0;
+        }
+
+       
+        temporairBase = distanceAttack + buffDistAttack;
+
         distance = Vector3.Distance(transform.position, _player.transform.position);
         
-        if (distance <= distanceAttack && !isCaCAttack)
+        if (distance <= temporairBase && !isCaCAttack)
         {
             StartCoroutine(CaCAttack());
         }
     }
 
-   
+    
 
     public IEnumerator CaCAttack()
     {
