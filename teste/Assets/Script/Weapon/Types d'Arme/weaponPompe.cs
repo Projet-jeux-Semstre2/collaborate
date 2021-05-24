@@ -175,7 +175,11 @@ public class weaponPompe : Weapon
     {
        
         // sons & FX 
-        _animator.SetTrigger("Shoot");
+        if (!_shotgunManager.shotGunAnimator.GetBool("OverLoadPlaying"))
+        {
+            _animator.SetTrigger("Shoot");
+        }
+        
         FMODUnity.RuntimeManager.PlayOneShot(fmodShoot);
         muzzleFlash.Play();
         

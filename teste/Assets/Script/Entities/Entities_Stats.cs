@@ -25,7 +25,8 @@ public class Entities_Stats : MonoBehaviour
     public Material hitMaterial;
     public Material fullLifeMaterial;
 
-    private ShotGun_Manager _shotGunManager;
+    
+    
     private Glock_Manager _glockManager;
     
     
@@ -54,13 +55,15 @@ public class Entities_Stats : MonoBehaviour
     {
         _entitiesManager = GetComponent<Entities_Manager>();
         _meshRenderer = GetComponent<MeshRenderer>();
-        _shotGunManager = GameObject.FindWithTag("Player").GetComponent<ShotGun_Manager>();
+        
 
         horlogeInterne = Random.Range(minTime, maxTime);
 
         InitDamage = damage;
         InitHealth = health;
         InitSpeed = speed;
+
+        
 
     }
 

@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BigShotGun
+      name: BigShotGunMetal
     second: {fileID: 2100000, guid: 388cd0c7398cd864581c867c5788a365, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BigShotGunSecondaire
+    second: {fileID: 2100000, guid: 2eb2d8341c34e66409808c70b4db6d8a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

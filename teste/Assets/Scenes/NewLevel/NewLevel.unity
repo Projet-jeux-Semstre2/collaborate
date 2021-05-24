@@ -7351,6 +7351,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 1785198376}
+    - target: {fileID: 1352209718089741649, guid: c47c30e755ff76d4ca074828181e8bc3, type: 3}
+      propertyPath: timeObjectif
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1352209718094123689, guid: c47c30e755ff76d4ca074828181e8bc3, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -7451,6 +7455,10 @@ PrefabInstance:
       propertyPath: timeObjectif
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 1352209718599942710, guid: c47c30e755ff76d4ca074828181e8bc3, type: 3}
+      propertyPath: UpgradeCollectible
+      value: 
+      objectReference: {fileID: 4316396839757565776, guid: 58d565045336da544979b60b32333b0a, type: 3}
     - target: {fileID: 1352209718599942710, guid: c47c30e755ff76d4ca074828181e8bc3, type: 3}
       propertyPath: ExplosionLayer.m_Bits
       value: 512

@@ -41,6 +41,7 @@ public class Balise_Fonctionnement : MonoBehaviour
     public string fmodIsShutdown;
     private bool JingleWin;
     [SerializeField] private GameObject _AmeliorationManager;
+    public GameObject UpgradeCollectible;
     
     // Start is called before the first frame update
     void OnEnable()
@@ -120,11 +121,9 @@ public class Balise_Fonctionnement : MonoBehaviour
                 t = timeObjectif;
                 onCapture = false;
                 isCapture = true;
-                _AmeliorationManager.SetActive(true);
-                StartCoroutine(_AmeliorationManager.GetComponent<AmeliorationManager>().chooseUpgradeRandom());
-                PauseMenu.cursorLock = false;
-                PauseMenu.canLock = false;
-                PauseMenu.pauseTime = true;
+                GameObject inst = Instantiate(UpgradeCollectible, new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), Quaternion.identity);
+                inst.GetComponent<UpgradeCollectible>()._ameliorationManager = _AmeliorationManager;
+                
 
             }
         }

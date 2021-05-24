@@ -40,6 +40,10 @@ public class Entities_Manager : MonoBehaviour
 
     public string type;
     
+    private string _typeArmeActive;
+    
+    
+    
 
 
 
@@ -49,6 +53,7 @@ public class Entities_Manager : MonoBehaviour
 
     private void OnEnable()
     {
+        _typeArmeActive = GameObject.FindWithTag("Player").GetComponent<ShotGun_Manager>().typeArmeActive;
         pullRadius = Random.Range(1, 7);
         pullForce = Random.Range(pullForceMin, pullForceMax);
         renderer = GetComponent<MeshRenderer>();
@@ -60,6 +65,27 @@ public class Entities_Manager : MonoBehaviour
         float rdscale = Random.Range(transform.localScale.x - 1f, transform.localScale.x + 1f);
         
         transform.localScale = new Vector3(rdscale,rdscale,rdscale);
+
+
+        if (_typeArmeActive == "ArmeForTank" && type == "Tank")
+        {
+            renderer.material = ChangeMaterials[1];
+        }
+        
+        if (_typeArmeActive == "ArmeForCreateur" && type == "Createur")
+        {
+            renderer.material = ChangeMaterials[1];
+        }
+        if (_typeArmeActive == "ArmeForVif" && type == "Vif")
+        {
+            renderer.material = ChangeMaterials[1];
+        }
+        if (_typeArmeActive == "ArmeForAgressif" && type == "Agressif")
+        {
+            renderer.material = ChangeMaterials[1];
+        }
+        
+        
 
     }
     
