@@ -27,10 +27,6 @@ public class WeaponManager : MonoBehaviour
     {
         if (!Cursor.visible)
         {
-            if (Input.mouseScrollDelta.y > 0  && _canChangeWeapon ||Input.mouseScrollDelta.y < 0  && _canChangeWeapon)
-            {
-                StartCoroutine(ChangingWeapon());
-            }
             if (Input.GetButtonDown("Fire1"))
             {
                 weapons[activeWeaponsID].Engage();

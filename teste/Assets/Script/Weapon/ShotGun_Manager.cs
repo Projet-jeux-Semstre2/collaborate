@@ -45,11 +45,9 @@ public class ShotGun_Manager : MonoBehaviour
     
     public string typeArmeActive;
 
-    private GameObject UpgradeManager;
-
+    public Animator shotGunAnimator;
+    public float surchauffeForAnim;
     
-    
-
 
     
         
@@ -61,7 +59,6 @@ public class ShotGun_Manager : MonoBehaviour
         
         Palier0();
         
-        UpgradeManager = GameObject.Find("AmeliorationManager");
         overloadActive = overloadColor[0].GetComponent<Image>();
     }
 
@@ -103,7 +100,6 @@ public class ShotGun_Manager : MonoBehaviour
 
         if (niveauSurchauffe >= surchauffe) // lance le sons de surchauffe max une seule foix
         {
-            
             if (!isSurchauffeMax)
             {
                 SurchauffeSoundMax();
@@ -115,15 +111,25 @@ public class ShotGun_Manager : MonoBehaviour
         {
             t = 0;
             niveauSurchauffe -= 1.15f * Time.deltaTime;
+            shotGunAnimator.SetBool("OverLoad", true);
 
             if (niveauSurchauffe <= 0)
             {
                 niveauSurchauffe = 0;
+                shotGunAnimator.SetBool("OverLoad", false);
                 isSurchauffeMax = false;
-                
             }
         }
+        
+        if (niveauSurchauffe <= 0)
+        {
+            shotGunAnimator.SetBool("OverLoad", false);
+        }
     }
+    
+    
+
+    
 
 
     void Palier0()

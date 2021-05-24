@@ -99,7 +99,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Option.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponGlock.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/UI_Menu_Manager.cs" />
@@ -124,7 +123,6 @@
         <option value="$PROJECT_DIR$/Assets/DestroyTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_ActiveChase.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Surchauffe_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnArea.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
@@ -133,9 +131,11 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/DashController.cs" />
         <option value="$PROJECT_DIR$/Assets/SpawningBaliseIsOn.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
       </list>
     </option>
   </component>
@@ -251,7 +251,7 @@
       <workItem from="1621668711173" duration="10193000" />
       <workItem from="1621787906581" duration="4704000" />
       <workItem from="1621802218317" duration="1483000" />
-      <workItem from="1621846164835" duration="4554000" />
+      <workItem from="1621846164835" duration="14277000" />
     </task>
     <servers />
   </component>
@@ -290,9 +290,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619371112188" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1621548992527">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1621861129882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1621548992527" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1621861129882" />
   </component>
 </project>

@@ -86,6 +86,7 @@ public class weaponPompe : Weapon
 
     }
     
+        
     
 
     private void OnDisable()
@@ -177,6 +178,7 @@ public class weaponPompe : Weapon
         _animator.SetTrigger("Shoot");
         FMODUnity.RuntimeManager.PlayOneShot(fmodShoot);
         muzzleFlash.Play();
+        
 
         if (viseurCanGrow)
         {
@@ -208,12 +210,15 @@ public class weaponPompe : Weapon
 
         if (Input.GetButton("Reload") && !_shotgunManager.isSurchauffeMax)
         {
+            _shotgunManager.shotGunAnimator.SetBool("OverLoad", true);
             Reload();
         }
         else if(Reloading)
         {
+            _shotgunManager.shotGunAnimator.SetBool("OverLoad", false);
             Reloading = false;
-            //_animator.SetBool("Reloading", false);
+            
+            
         }
     }
     
@@ -254,7 +259,7 @@ public class weaponPompe : Weapon
     {
         if (_shotgunManager.niveauSurchauffe > 0 )
         {
-            //_animator.SetBool("Reloading", true);
+            
             Reloading = true;
             _shotgunManager.niveauSurchauffe -= reloadSpeed * Time.deltaTime;
         }
