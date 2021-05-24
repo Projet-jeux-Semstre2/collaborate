@@ -19,14 +19,7 @@ public class ShotGun_Manager : MonoBehaviour
     public Image overloadActive;
     public GameObject[] overloadColor;
 
-
-    [Header("Amélioration")] 
-    public float niveauJauge;
-    [Tooltip("Palier actuel")]
-    public int palierJauge;
-    [Tooltip("Chaque float correspond à l'espacement en niveau entre les paliers (0 = niveau avant palier 1, etc)")]
-    public float[] niveauBetweenPalier;
-    public RectTransform barreNiveau;
+    
 
     private bool _palier0Finish, _palier1Finish,_palier2Finish,_palier3Finish,_palier4Finish,_palier5Finish,_palier6Finish;
 
@@ -53,6 +46,8 @@ public class ShotGun_Manager : MonoBehaviour
     public string typeArmeActive;
 
     private GameObject UpgradeManager;
+
+    
     
 
 
@@ -75,8 +70,6 @@ public class ShotGun_Manager : MonoBehaviour
 
         SurchauffeManager();
         ChangeViseur();
-
-        
         
     }
     
@@ -202,6 +195,7 @@ public class ShotGun_Manager : MonoBehaviour
                     overloadActive.gameObject.SetActive(false);
                     overloadActive = overloadColor[2].GetComponent<Image>();
                     overloadActive.gameObject.SetActive(true);
+                    
                     weaponPompe.viseurActive = weaponPompe.viseur[2];
                     break;
             }
@@ -234,6 +228,8 @@ public class ShotGun_Manager : MonoBehaviour
         
         objectText.gameObject.SetActive(false);
     }
+
+    
     
     
     

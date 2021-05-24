@@ -106,7 +106,7 @@ public class Entities_Stats : MonoBehaviour
 
     private void Update()
     {
-        if (health <= 0f || health == null)
+        if (health <= 0f || health == Single.NaN)
         {
             Die();
         }
@@ -128,13 +128,6 @@ public class Entities_Stats : MonoBehaviour
         Instantiate(dieExplosion, transform.position, Quaternion.identity);
         
         
-        if (_shotGunManager.weaponPompe.gameObject.activeInHierarchy)
-        {
-            if (_shotGunManager.palierJauge < _shotGunManager.niveauBetweenPalier.Length)
-            {
-                _shotGunManager.niveauJauge++;
-            }
-        }
         
         
         Destroy(gameObject);

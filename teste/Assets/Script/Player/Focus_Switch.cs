@@ -34,12 +34,44 @@ public class Focus_Switch : MonoBehaviour
     public bool lerp;
     
     
+    [Header("Sur le ShotGun")]
+    public Color[] emissiveShotGun;
+    public MeshRenderer[] shotGunMeshRenderer;
+    public MeshRenderer[] OverLoadRenderers;
+    
+    
     
     private void Start()
     {
         typeArmeActive = typeArmeTank;
         volume.profile.TryGetSettings(out _colorGrading);
         armeID = 0;
+        foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
+        {
+            Entities_Manager entitiesManager = entities.GetComponent<Entities_Manager>();
+            if (entitiesManager.type == "Tank")
+            {
+                entitiesManager.renderer.material = entitiesManager.ChangeMaterials[1];
+            }
+            else
+            {
+                entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
+            }
+        }
+
+        foreach (var renderer in shotGunMeshRenderer)
+        {
+            renderer.materials[1].SetColor("_EmissionColor", emissiveShotGun[0]);
+            renderer.materials[1].color = emissiveShotGun[0];
+        }
+
+        foreach (var renderer in OverLoadRenderers)
+        {
+            renderer.material.SetColor("_EmissionColor", emissiveShotGun[0]);
+            renderer.material.color = emissiveShotGun[0];
+        }
+        
+        
     }
 
     private void Update()
@@ -156,7 +188,10 @@ public class Focus_Switch : MonoBehaviour
                     break;
             }
 
+            t_switch = 0;
+
             StartCoroutine(SwitchFilter());
+            changeShotGunColor();
         }
 
         if (t_switch >= switchTime)
@@ -280,6 +315,57 @@ public class Focus_Switch : MonoBehaviour
 
         yield return null;
 
+    }
+    
+    void changeShotGunColor()
+    {
+        foreach (var renderer in shotGunMeshRenderer)
+        {
+            switch (armeID)
+            {
+                case 0:
+                    renderer.materials[1].SetColor("_EmissionColor", emissiveShotGun[0]);
+                    renderer.materials[1].color = emissiveShotGun[0];
+                    break;
+                case 1:
+                    renderer.materials[1].SetColor("_EmissionColor", emissiveShotGun[1]);
+                    renderer.materials[1].color = emissiveShotGun[1];
+                    break;
+                case 2:
+                    renderer.materials[1].SetColor("_EmissionColor", emissiveShotGun[2]);
+                    renderer.materials[1].color = emissiveShotGun[2];
+                    break;
+                case 3:
+                    renderer.materials[1].SetColor("_EmissionColor", emissiveShotGun[3]);
+                    renderer.materials[1].color = emissiveShotGun[3];
+                    break;
+            }
+            
+        }
+        
+        foreach (var renderer in OverLoadRenderers)
+        {
+            switch (armeID)
+            {
+                case 0:
+                    renderer.material.SetColor("_EmissionColor", emissiveShotGun[0]);
+                    renderer.material.color = emissiveShotGun[0];
+                    break;
+                case 1:
+                    renderer.material.SetColor("_EmissionColor", emissiveShotGun[1]);
+                    renderer.material.color = emissiveShotGun[1];
+                    break;
+                case 2:
+                    renderer.material.SetColor("_EmissionColor", emissiveShotGun[2]);
+                    renderer.material.color = emissiveShotGun[2];
+                    break;
+                case 3:
+                    renderer.material.SetColor("_EmissionColor", emissiveShotGun[3]);
+                    renderer.material.color = emissiveShotGun[3];
+                    break;
+            }
+            
+        }
     }
 
 }
