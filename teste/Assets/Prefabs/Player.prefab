@@ -1311,7 +1311,7 @@ MonoBehaviour:
   health: 0
   Damage_Fb: {fileID: 9144429071798263444}
   fb_time: 0.2
-  FmodHurt: event:/Player/Player_Body/Hurt
+  FmodHurt: event:/Character/Player_Body/Hurt
   coreRecup: {fileID: 2794573410027793705, guid: 263f0483d7503a94a9f1c427a7187aec, type: 3}
   _gameManager: {fileID: 7680463249597192846, guid: a903f2d8ce7e71c4b9d1a17e0dfd6157, type: 3}
   healthUi: {fileID: 1905085392}
@@ -1388,8 +1388,7 @@ MonoBehaviour:
   nbBulletStats: 080000000a0000000c0000000e000000
   lanceGrenadeUnlock: 0
   unlockText: {fileID: 1932112145144527020}
-  FmodSurchauffe: event:/Weapons/Shotgun/BasicsStuff/SG_Overheat
-  FmodCooling: event:/Weapons/Shotgun/BasicsStuff/SG_Cooling
+  FmodSurchauffe: event:/Weapons/Shotgun/SG_Cooling
   isSurchauffeMax: 0
   typeArmeActive: 
   shotGunAnimator: {fileID: 5655588328944071153}
@@ -1409,7 +1408,7 @@ MonoBehaviour:
   isDashing: 0
   dashAttempts: 0
   coolDown: 2
-  FmodDash: event:/Player/Player_Actions/Dash
+  FmodDash: event:/Character/Player_Body/Dash
   dashSpeed: 90
   dashUi: {fileID: 2114163442}
   forwardDashParticleSystem: {fileID: 2574667034393160503}
@@ -1428,7 +1427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde8c22ea8e1e6243834404b1b071ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FmodFootStep: event:/Player/Player_Body/Walk
+  FmodFootStep: event:/Character/Player_Body/Walk
   distanceStepSound: 6
 --- !u!114 &8246251174559205307
 MonoBehaviour:
@@ -22228,7 +22227,7 @@ PrefabInstance:
       objectReference: {fileID: 789146722155084778}
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: fmodShoot
-      value: event:/Weapons/Shotgun/BasicsStuff/SG_Shoot
+      value: event:/Weapons/Shotgun/SG_Shoot
       objectReference: {fileID: 0}
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: hitMarker
@@ -22241,6 +22240,10 @@ PrefabInstance:
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: shootForce
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
+      propertyPath: FmodCooling
+      value: event:/Weapons/Shotgun/SG_Cooling
       objectReference: {fileID: 0}
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: overloadSon

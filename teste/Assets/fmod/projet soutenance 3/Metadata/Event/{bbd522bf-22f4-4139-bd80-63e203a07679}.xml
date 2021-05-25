@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{bbd522bf-22f4-4139-bd80-63e203a07679}">
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
-			<value>Hurt_Chara</value>
+			<value>Hurt</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

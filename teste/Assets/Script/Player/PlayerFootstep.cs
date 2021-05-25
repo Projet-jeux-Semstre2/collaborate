@@ -29,7 +29,6 @@ public class PlayerFootstep : MonoBehaviour
                 lastPos = transform.position;
                 if (distMoved > distanceStepSound)
                 {
-
                     FMODUnity.RuntimeManager.PlayOneShot(FmodFootStep);
                     distMoved = 0.0f;
                 }

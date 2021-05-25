@@ -83,9 +83,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{d11d406b-0bc6-4a44-ac09-131313a206f1}">
-		<property name="volume">
-			<value>-22.5</value>
-		</property>
 		<relationship name="effectChain">
 			<destination>{898469c9-13e9-4a77-84c8-9616688ff906}</destination>
 		</relationship>
@@ -131,7 +128,7 @@
 	<object class="MixerBusPanner" id="{0e7683ad-8020-404b-94b2-50a5634a1dcd}" />
 	<object class="MultiSound" id="{309da6a8-4d4b-45b3-a46b-6e9ef71dbb3f}">
 		<property name="volume">
-			<value>4.5</value>
+			<value>10</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{bb6fd98d-87c2-4738-ac26-3113bf62bfff}</destination>
@@ -155,12 +152,12 @@
 	<object class="MixerBusFader" id="{1956ea9e-f11c-4a7e-9e4e-4c28a178486c}" />
 	<object class="GainEffect" id="{99f7e4f3-2453-42f2-8ee6-d879ab6542e8}">
 		<property name="gain">
-			<value>1</value>
+			<value>5</value>
 		</property>
 	</object>
 	<object class="DistortionEffect" id="{4b90fba1-840b-4815-8522-2b7ffb29304f}">
 		<property name="level">
-			<value>0.394999981</value>
+			<value>0.539999962</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{bb6fd98d-87c2-4738-ac26-3113bf62bfff}">

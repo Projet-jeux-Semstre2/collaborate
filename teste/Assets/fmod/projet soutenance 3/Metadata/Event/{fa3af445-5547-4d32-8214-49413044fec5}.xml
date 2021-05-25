@@ -14,7 +14,7 @@
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{189468a6-f961-4737-ae3d-a0df0d761612}</destination>
+			<destination>{40b9ff96-7f64-4846-9e0a-c1e80d20b40c}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{3ccc9e15-cd63-4a09-9013-92aaa6efd8a4}</destination>

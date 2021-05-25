@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Sprites;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -35,6 +36,10 @@ public class weaponPompe : Weapon
     // sons
     public string fmodShoot; 
     public string fmodLaunchGrenade;
+    public string FmodCooling;
+    private FMOD.Studio.EventInstance event_fmod_Cooling;
+     private bool soundOs = true;
+     
     
     [Header("Vitesse du joueur")]
     public int vitessWalk = 3;
@@ -64,7 +69,7 @@ public class weaponPompe : Weapon
     public float _yAddHit;
     private float _distance;
     public float surchauffeAddLanceGrenade;
-    public string overloadSon;
+    
 
 
 
@@ -86,7 +91,11 @@ public class weaponPompe : Weapon
 
     }
     
-        
+    void Start ()
+    {
+        event_fmod_Cooling = FMODUnity.RuntimeManager.CreateInstance(FmodCooling);
+    }
+
     
 
     private void OnDisable()
@@ -212,6 +221,15 @@ public class weaponPompe : Weapon
         Debug.DrawLine(mainCamera.transform.position, new Vector3(0, 0, maxRange) + new Vector3(Combo.x, Combo.y, 0));
         Debug.DrawRay(mainCamera.transform.position, mainCamera.transform.forward, Color.blue, 0.5f);
 
+        if (Input.GetButtonDown("Reload")) /// son quand appyer déclenche
+        {
+            if (soundOs)
+            {
+                event_fmod_Cooling = FMODUnity.RuntimeManager.CreateInstance(FmodCooling);
+                soundOs = false;
+            }
+        }
+        
         if (Input.GetButton("Reload") && !_shotgunManager.isSurchauffeMax)
         {
             _shotgunManager.shotGunAnimator.SetBool("OverLoad", true);
@@ -222,7 +240,12 @@ public class weaponPompe : Weapon
             _shotgunManager.shotGunAnimator.SetBool("OverLoad", false);
             Reloading = false;
             
-            
+        }
+
+        if (Input.GetButtonUp("Reload")) // quand laiser tomber reduit
+        {
+            soundOs = true;
+            event_fmod_Cooling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);;
         }
     }
     
@@ -263,7 +286,6 @@ public class weaponPompe : Weapon
     {
         if (_shotgunManager.niveauSurchauffe > 0 )
         {
-            
             Reloading = true;
             _shotgunManager.niveauSurchauffe -= reloadSpeed * Time.deltaTime;
 

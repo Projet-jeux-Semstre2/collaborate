@@ -190,11 +190,11 @@ MonoBehaviour:
   _player: {fileID: 0}
   distanceActive: 5
   pourcentageHealth: 35
-  fmodMusicCapture: event:/MusiqueAmbiance/Balise/MusicCapture
-  fmodTshutdown: event:/MusiqueAmbiance/Balise/TShutDown
-  fmodRenterthezone: event:/MusiqueAmbiance/Balise/RenterTheZone
-  fmodisCature: event:/MusiqueAmbiance/Balise/IsCapture
-  fmodIsShutdown: event:/MusiqueAmbiance/Balise/IsShutDown
+  fmodMusicCapture: event:/Musique/Balise/MusicCapture
+  fmodTshutdown: event:/Musique/Balise/TShutDown
+  fmodRenterthezone: event:/Musique/Balise/RenterTheZone
+  fmodisCature: event:/Musique/Balise/IsCapture
+  fmodIsShutdown: event:/Musique/Balise/IsShutDown
   _AmeliorationManager: {fileID: 0}
   UpgradeCollectible: {fileID: 4316396839757565776, guid: 58d565045336da544979b60b32333b0a, type: 3}
 --- !u!114 &2353422915713141657

@@ -37,7 +37,7 @@ public class ShotGun_Manager : MonoBehaviour
     [Header("Sons")]
     // LE SONS
     public string FmodSurchauffe;
-    public string FmodCooling;
+    //public string FmodCooling;
 
     private float t;
     public bool isSurchauffeMax = false;
@@ -70,10 +70,6 @@ public class ShotGun_Manager : MonoBehaviour
         
     }
     
-    
-    
-    
-    
     void SurchauffeSoundMax() // quand on atteint la surchauffe max
     {
         FMODUnity.RuntimeManager.PlayOneShot(FmodSurchauffe, transform.position);
@@ -91,13 +87,10 @@ public class ShotGun_Manager : MonoBehaviour
         t += Time.deltaTime;
         if (niveauSurchauffe >= 1 && t >= t_forLooseSurchauffe)
         {
-            FMODUnity.RuntimeManager.PlayOneShot(FmodCooling, GetComponent<Transform>().position);
             niveauSurchauffe--;
             t = 0;
         }
         
-        
-
         if (niveauSurchauffe >= surchauffe) // lance le sons de surchauffe max une seule foix
         {
             if (!isSurchauffeMax)
@@ -127,11 +120,6 @@ public class ShotGun_Manager : MonoBehaviour
         }
     }
     
-    
-
-    
-
-
     void Palier0()
     {
         //tout lvl 0 (stats de base)
@@ -213,10 +201,7 @@ public class ShotGun_Manager : MonoBehaviour
             weaponPompe.viseur[2].SetActive(false);
             weaponPompe.viseur[3].SetActive(false);
         }
-        
     }
-
-
     public IEnumerator UnlockCompétenceTxt(Text objectText, string phrase)
     {
         objectText.gameObject.SetActive(true);
@@ -234,19 +219,4 @@ public class ShotGun_Manager : MonoBehaviour
         
         objectText.gameObject.SetActive(false);
     }
-
-    
-    
-    
-    
-
-
-
-    
-    
-    
-    
-    
-
-    
 }
