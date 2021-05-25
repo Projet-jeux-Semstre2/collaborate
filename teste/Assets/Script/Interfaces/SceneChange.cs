@@ -8,7 +8,11 @@ public class SceneChange : MonoBehaviour
 {
     public string nameSceneToLoad; //lui donner le nom de la scène à charger
 
-  
+    //son
+    public void playMusic(string zik)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(zik);
+    }
     // called via button
     public void changeScene(float waitTime)
     {
