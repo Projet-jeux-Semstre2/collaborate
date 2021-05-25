@@ -64,7 +64,7 @@ public class weaponPompe : Weapon
     public float _yAddHit;
     private float _distance;
     public float surchauffeAddLanceGrenade;
-
+    public string overloadSon;
 
 
 
@@ -266,7 +266,11 @@ public class weaponPompe : Weapon
             
             Reloading = true;
             _shotgunManager.niveauSurchauffe -= reloadSpeed * Time.deltaTime;
+
+            
         }
+        
+        
         
     }
     

@@ -1388,8 +1388,8 @@ MonoBehaviour:
   nbBulletStats: 080000000a0000000c0000000e000000
   lanceGrenadeUnlock: 0
   unlockText: {fileID: 1932112145144527020}
-  FmodSurchauffe: event:/Weapons/FusilPompe/BasicsStuff/Recharge
-  FmodCooling: event:/Weapons/FusilPompe/BasicsStuff/Surchauffe
+  FmodSurchauffe: event:/Weapons/Shotgun/BasicsStuff/SG_Overheat
+  FmodCooling: event:/Weapons/Shotgun/BasicsStuff/SG_Cooling
   isSurchauffeMax: 0
   typeArmeActive: 
   shotGunAnimator: {fileID: 5655588328944071153}
@@ -22227,6 +22227,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 789146722155084778}
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
+      propertyPath: fmodShoot
+      value: event:/Weapons/Shotgun/BasicsStuff/SG_Shoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: hitMarker
       value: 
       objectReference: {fileID: 7624873385338250556}
@@ -22237,6 +22241,14 @@ PrefabInstance:
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: shootForce
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
+      propertyPath: overloadSon
+      value: event:/Weapons/Shotgun/BasicsStuff/SG_Overheat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
+      propertyPath: fmodLaunchGrenade
+      value: event:/Weapons/Weapon_Up/LaunchGrenade
       objectReference: {fileID: 0}
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: viseur.Array.size
