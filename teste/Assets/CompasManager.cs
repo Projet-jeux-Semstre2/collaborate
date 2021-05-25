@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class CompasManager : MonoBehaviour
 {
     public GameObject pointIcon;
-    List<PointMarker> pointMarkers = new List<PointMarker>();
+    public List<PointMarker> pointMarkers = new List<PointMarker>();
     public List<GameObject> balises = new List<GameObject>();
     public Transform player;
     public RawImage compas;
@@ -24,10 +24,14 @@ public class CompasManager : MonoBehaviour
         compasUnit = compas.rectTransform.rect.width / 360f;
         
         balises.AddRange(GameObject.FindGameObjectsWithTag("Balise"));
-        foreach (GameObject balise in balises)
+        /*foreach (GameObject balise in balises)
         {
-            AddPointMarker(balise.GetComponent<PointMarker>());
-        }
+            if (balise.GetComponent<Balise_Fonctionnement>().canBeActive)
+            {
+                AddPointMarker(balise.GetComponent<PointMarker>());
+            }
+            
+        }*/
         
         
     }

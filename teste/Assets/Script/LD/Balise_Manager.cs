@@ -11,6 +11,7 @@ public class Balise_Manager : MonoBehaviour
     public float nbBaliseFinish;
 
     public bool allBaliseFinish;
+    
    
     void Start()
     {
@@ -22,10 +23,11 @@ public class Balise_Manager : MonoBehaviour
     {
         foreach (var baliseEnd in balises)
         {
-            if (baliseEnd.GetComponent<Balise_Fonctionnement>().isCapture && !baliseEnd.GetComponent<Balise_Fonctionnement>().isCount)
+            Balise_Fonctionnement baliseFonctionnement = baliseEnd.GetComponent<Balise_Fonctionnement>();
+            if (baliseFonctionnement.isCapture && !baliseFonctionnement.isCount)
             {
-                baliseEnd.GetComponent<Balise_Fonctionnement>().isCount = true;
-                nbBaliseFinish += 1;
+                baliseFonctionnement.isCount = true;
+                nbBaliseFinish++;
             }
         }
 
@@ -38,5 +40,18 @@ public class Balise_Manager : MonoBehaviour
         {
             SceneManager.LoadScene("Win");
         }
+
+        
+        
+        
     }
+    
+    
+    
+
+
+    
+    
+    
+    
 }

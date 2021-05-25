@@ -13,6 +13,7 @@
             </e>
           </e>
         </e>
+        <e p="BaliseCloseDoor.cs" t="Include" />
         <e p="ButtonRotation.cs" t="Include" />
         <e p="Camera_Shake.cs" t="Include" />
         <e p="CompasManager.cs" t="Include" />
@@ -445,6 +446,7 @@
             <e p="Balise_ActiveChase.cs" t="Include" />
             <e p="Balise_Fonctionnement.cs" t="Include" />
             <e p="Balise_Manager.cs" t="Include" />
+            <e p="BaliseSequence.cs" t="Include" />
             <e p="Particule_ZoneCapture.cs" t="Include" />
             <e p="SpawnArea.cs" t="Include" />
             <e p="SpawnPlayer.cs" t="Include" />

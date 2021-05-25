@@ -58,7 +58,6 @@ GameObject:
   - component: {fileID: 7946599287225773240}
   - component: {fileID: 4416429792902140812}
   - component: {fileID: 2393176117475241619}
-  - component: {fileID: 4109274665781328320}
   - component: {fileID: -4050632262616935286}
   - component: {fileID: 8093928320968083074}
   - component: {fileID: 8014900507629044771}
@@ -180,29 +179,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4109274665781328320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2794573410027793705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Ennemies/5To10/5To10_Movements
-  PlayEvent: 11
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 50
 --- !u!114 &-4050632262616935286
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1402,7 +1402,7 @@ MonoBehaviour:
   - 4
   speedManiementStats: 000000000300000006000000
   nbBulletStats: 080000000a0000000c0000000e000000
-  lanceGrenadeUnlock: 1
+  lanceGrenadeUnlock: 0
   unlockText: {fileID: 1932112145144527020}
   FmodSurchauffe: event:/Weapons/Shotgun/SG_Cooling
   isSurchauffeMax: 0

@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     
     
     
+    
     // ici c'est le sound
     public string fmodjumpPlayer;
 

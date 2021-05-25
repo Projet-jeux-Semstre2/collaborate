@@ -20,6 +20,8 @@ public class Balise_Fonctionnement : MonoBehaviour
 
     public bool onCapture;
     public bool isCapture;
+    public bool canBeActive;
+    public bool closeDoor;
 
     public Text timer;
 
@@ -30,6 +32,12 @@ public class Balise_Fonctionnement : MonoBehaviour
     public float distanceActive = 5f;
 
     public float pourcentageHealth;
+
+    public float yPosUpgrade;
+
+    public CompasManager CompasManager;
+    public PointMarker PointMarker;
+    public bool havePointMarker;
 
     private SpawningBaliseIsOn _openSpawnOnBalise;
 
@@ -42,6 +50,11 @@ public class Balise_Fonctionnement : MonoBehaviour
     private bool JingleWin;
     [SerializeField] private GameObject _AmeliorationManager;
     public GameObject UpgradeCollectible;
+
+    public Material[] canCapture;
+    public MeshRenderer coeur;
+    public Animator Animator;
+    
     
     // Start is called before the first frame update
     void OnEnable()
@@ -55,12 +68,16 @@ public class Balise_Fonctionnement : MonoBehaviour
         t = timeObjectif;
         timer.enabled = false;
         zone.SetActive(false);
+
+        
     }
 
     private void Start()
     {
         _player = GameObject.FindWithTag("Player");
         _playerCs = _player.GetComponent<Player>();
+        
+        CompasManager = _player.GetComponentInChildren<CompasManager>();
     }
 
     // Update is called once per frame
@@ -85,7 +102,7 @@ public class Balise_Fonctionnement : MonoBehaviour
             _meshRenderer.material = materials[0];
             zone.SetActive(false);
             
-            if (Vector3.Distance(transform.position, _player.transform.position) <= distanceActive)
+            if (Vector3.Distance(transform.position, _player.transform.position) <= distanceActive && canBeActive)
             {
                 _playerCs.useButtonOn = true;
                 if (Input.GetButtonDown("Use"))
@@ -96,10 +113,26 @@ public class Balise_Fonctionnement : MonoBehaviour
                     _playerCs.useButtonOn = false;
                 }
             }
-            if(_playerCs.useButtonOn && Vector3.Distance(transform.position, _player.transform.position) > distanceActive && Vector3.Distance(transform.position, _player.transform.position) <= distanceActive * 2)
+            if(_playerCs.useButtonOn && Vector3.Distance(transform.position, _player.transform.position) > distanceActive && Vector3.Distance(transform.position, _player.transform.position) <= distanceActive * 2 && canBeActive)
             {
                 _playerCs.useButtonOn = false;
                 
+            }
+
+
+            if (canBeActive && !havePointMarker)
+            {
+                CompasManager.AddPointMarker(GetComponent<PointMarker>());
+                havePointMarker = true;
+            }
+
+            if (!canBeActive)
+            {
+                coeur.material = canCapture[0];
+            }
+            else
+            {
+                coeur.material = canCapture[1];
             }
         }
 
@@ -121,7 +154,7 @@ public class Balise_Fonctionnement : MonoBehaviour
                 t = timeObjectif;
                 onCapture = false;
                 isCapture = true;
-                GameObject inst = Instantiate(UpgradeCollectible, new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), Quaternion.identity);
+                GameObject inst = Instantiate(UpgradeCollectible, new Vector3(transform.position.x, transform.position.y + yPosUpgrade, transform.position.z), Quaternion.identity);
                 inst.GetComponent<UpgradeCollectible>()._ameliorationManager = _AmeliorationManager;
                 
 
@@ -141,6 +174,8 @@ public class Balise_Fonctionnement : MonoBehaviour
             timer.enabled = false;
             isOn = true;
             onCapture = false;
+            Animator.SetTrigger("isCapture");
+            
             
             zone.SetActive(false);
             print("objectif capturé");
@@ -149,6 +184,8 @@ public class Balise_Fonctionnement : MonoBehaviour
             {
                 Entities.GetComponent<Entities_Stats>().horlogeFinish = true;
             }
+            
+            
 
             _player.GetComponent<Player_Health>().health += (100 - _player.GetComponent<Player_Health>().health) * (pourcentageHealth/100);
             enabled = false;
@@ -210,4 +247,5 @@ public class Balise_Fonctionnement : MonoBehaviour
             shutDownZone();
         }
     }
+    
 }

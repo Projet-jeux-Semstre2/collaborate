@@ -14,7 +14,7 @@ public class Option : MonoBehaviour
     
     void Start ()
     {
-        event_fmod = FMODUnity.RuntimeManager.CreateInstance(fmodMuteSystem);
+        //event_fmod = FMODUnity.RuntimeManager.CreateInstance(fmodMuteSystem);
     }
 
     private void Update()

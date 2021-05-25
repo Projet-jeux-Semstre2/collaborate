@@ -31,6 +31,7 @@ public class Player_Health : MonoBehaviour
     public GlitchEffect glitchEffect;
     private void Start()
     {
+        glitchEffect.enabled = false;
         health = maxHealth;
     }
 
