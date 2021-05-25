@@ -1018,18 +1018,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &242351298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1514,18 +1502,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Speed/Speed_Lvl1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &403527405
@@ -2134,18 +2110,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &635250507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2585,18 +2549,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Range/Range_Lvl1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &711136945
@@ -3707,18 +3659,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Overheat/Overheat_Lvl1
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1110339769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3861,18 +3801,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Speed/Speed_Lvl2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1119794963
@@ -4578,18 +4506,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1359248810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4986,18 +4902,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Overheat/Overheat_Lvl3
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1395674581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5297,18 +5201,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Range/Range_Lvl2
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1485920178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5581,18 +5473,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Explosion/Explosion_Lvl1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1526902160
@@ -6043,18 +5923,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Explosion/Explosion_Lvl3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1719638041
@@ -6897,18 +6765,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Speed/Speed_Lvl3
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1960127199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7128,18 +6984,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Range/Range_Lvl3
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1966606750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7325,18 +7169,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Explosion/Explosion_Lvl2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1993895963
@@ -9231,18 +9063,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1954859382}
-        m_TargetAssemblyTypeName: AmeliorationManager, Assembly-CSharp
-        m_MethodName: playMusic
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: event:/Upgrade/Overheat/Overheat_Lvl2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2085397612

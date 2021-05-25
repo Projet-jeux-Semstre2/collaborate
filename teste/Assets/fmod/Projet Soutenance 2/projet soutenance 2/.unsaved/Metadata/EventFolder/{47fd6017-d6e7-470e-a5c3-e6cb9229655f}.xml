@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EventFolder" id="{47fd6017-d6e7-470e-a5c3-e6cb9229655f}">
+		<property name="note">
+			<value>Ces sons sont ranger dans le prefab de la balise ; script balise manager</value>
+		</property>
+		<property name="color">
+			<value>Purple Light 1</value>
+		</property>
+		<property name="name">
+			<value>Balise</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c3dc25a2-883d-4f28-a67d-a87eb706ac8d}</destination>
+		</relationship>
+	</object>
+</objects>

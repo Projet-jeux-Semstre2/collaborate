@@ -1,51 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9174738985446591835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musique/Balise/RenterTheZone
-  m_EditorClassIdentifier: 
-  Path: event:/Musique/Balise/RenterTheZone
-  guid: f1922ea0e9b19e4a8ecb1eac1a68a1ab
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-8851812707526868439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Weapons/Shotgun/BasicsStuff/SG_Overheat
-  m_EditorClassIdentifier: 
-  Path: event:/Weapons/Shotgun/BasicsStuff/SG_Overheat
-  guid: 23f0b54d063a1c4eae4b4300d916994f
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 625
 --- !u!114 &-8402802974986281449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,75 +23,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-8270028953176004454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Range/Range_Lvl1
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Range/Range_Lvl1
-  guid: 370a2629e6ce0e4abe3b7f63801cc207
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
---- !u!114 &-8207034747055774316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Heap/Heap_Movements
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Heap/Heap_Movements
-  guid: c770e1bb3c53e84ab0f35492fc02d196
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-7903167328086760389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Overheat/Overheat_Lvl2
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Overheat/Overheat_Lvl2
-  guid: f975dfd4b70c4d4ba159ec411a0c93d2
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
 --- !u!114 &-7595411524484791683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,120 +37,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Player/Player_Body/Hurt
   guid: 70d78647c0f19641a577e695a6597b03
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-7508885518464072142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musique/Balise/MusicCapture
-  m_EditorClassIdentifier: 
-  Path: event:/Musique/Balise/MusicCapture
-  guid: 45d6e56e1d9fcc4dab9069251174061a
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 14078
---- !u!114 &-7133564503145160086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: 
-  guid: d67e01cf5478444fb41ff37bb8e26abc
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 18000
---- !u!114 &-7091804024794905729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interface/Menu/Past_On_Button
-  m_EditorClassIdentifier: 
-  Path: event:/Interface/Menu/Past_On_Button
-  guid: c401dec113a40c40943cb44fb85a95ec
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 260
---- !u!114 &-6382510202673227630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/tqtsun
-  m_EditorClassIdentifier: 
-  Path: event:/Player/tqtsun
-  guid: e6dd52c921bc7c49ba3018229c66fe3c
-  Banks: []
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 20000
---- !u!114 &-6315066182192012740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musique/Balise/IsCapture
-  m_EditorClassIdentifier: 
-  Path: event:/Musique/Balise/IsCapture
-  guid: 1eb7a31bd6b935449118e79a972ef327
   Banks:
   - {fileID: 4556140406364642610}
   IsStream: 0
@@ -298,75 +69,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 625
---- !u!114 &-5821041652083962339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musique/Ambiance/MusicInGame
-  m_EditorClassIdentifier: 
-  Path: event:/Musique/Ambiance/MusicInGame
-  guid: 2695b36a019ed145b72654932eb79700
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 186000
---- !u!114 &-5696372673946344104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musique/Balise/TShutDown
-  m_EditorClassIdentifier: 
-  Path: event:/Musique/Balise/TShutDown
-  guid: 7920496fabae914197ba37be4a555c2f
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-5650268448941304688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Select_Improve/ImproveRandom
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Select_Improve/ImproveRandom
-  guid: eb96fd2163e6104cb1f6dd8c67d80218
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
 --- !u!114 &-5548749794991864089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,29 +161,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &-4911542259772904916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Overheat/Overheat_Lvl1
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Overheat/Overheat_Lvl1
-  guid: be57fd5e171b6e459cc330627a228cec
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
 --- !u!114 &-4862942784200189692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,29 +230,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &-3050150156790360998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Explosion/Explosion_Lvl2
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Explosion/Explosion_Lvl2
-  guid: da27a3f553b4914d93570236592bd3bb
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
 --- !u!114 &-1929283353007655846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,52 +250,6 @@ MonoBehaviour:
     data1: 2589385084
     data2: 3348358899
   Exists: 1
---- !u!114 &-1839774727787495114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Weapons/Weapon_Up/ExploGrenade
-  m_EditorClassIdentifier: 
-  Path: event:/Weapons/Weapon_Up/ExploGrenade
-  guid: e19ba3158a26f24cb8ee2219889e6d68
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 800
-  Length: 0
---- !u!114 &-1813689487248895546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Speed/Speed_Lvl1
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Speed/Speed_Lvl1
-  guid: e15399ca8fb8b74295e50f82e75cb4c6
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
 --- !u!114 &-1472397449992093959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,75 +273,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-1255806888707765006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Speed/Speed_Lvl2
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Speed/Speed_Lvl2
-  guid: 6ef906f5c640f94a9ca94c0592cbe69f
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
---- !u!114 &-1235627685386109530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Weapons/Shotgun/BasicsStuff/SG_Shoot
-  m_EditorClassIdentifier: 
-  Path: event:/Weapons/Shotgun/BasicsStuff/SG_Shoot
-  guid: 0fbc56c82c633e41b6585f0736ec7ba9
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 424
---- !u!114 &-1213064371010848244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Explosion/Explosion_Lvl3
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Explosion/Explosion_Lvl3
-  guid: 6be97e0a0de6134b8e673bd780a900de
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
 --- !u!114 &-1144412628344326473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,29 +293,6 @@ MonoBehaviour:
     data1: 1268769261
     data2: 3309854418
   Exists: 1
---- !u!114 &-980161926332028818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Heap/Heap_AttackMelee
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Heap/Heap_AttackMelee
-  guid: 0ca8daa9e11885419ea9f536dd50b065
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6874
 --- !u!114 &-611301085151698347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,7 +308,7 @@ MonoBehaviour:
   Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Game .bank
   Name: 'Game '
   StudioPath: 'bank:/Game '
-  lastModified: 637575348132126580
+  lastModified: 637566353541683400
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -816,7 +334,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 440
+  Length: 437
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,54 +353,31 @@ MonoBehaviour:
   - {fileID: 4556140406364642610}
   EditorEvents:
   - {fileID: -4722117170402175729}
+  - {fileID: -3933243107151881779}
+  - {fileID: 8658741515767477822}
+  - {fileID: 2697543910028375152}
   - {fileID: -1472397449992093959}
   - {fileID: -48144491140414760}
+  - {fileID: 1983984462244168226}
+  - {fileID: 8270987131719277559}
+  - {fileID: -5077842199484197617}
+  - {fileID: 1338469826099900391}
   - {fileID: 6283999733447970587}
   - {fileID: 6668868094665250521}
   - {fileID: -5548749794991864089}
   - {fileID: -7595411524484791683}
   - {fileID: -5125585964757010265}
+  - {fileID: -6186823337698578918}
+  - {fileID: -5396778591688516379}
+  - {fileID: 5395709407340994140}
   - {fileID: 4271171591220785064}
   - {fileID: 6194449108660689687}
+  - {fileID: 8147995089583427523}
+  - {fileID: 1818775060881375708}
   - {fileID: -4862942784200189692}
   - {fileID: 9162430101754117551}
   - {fileID: -8402802974986281449}
   - {fileID: 6841809179020858257}
-  - {fileID: 4226231690175474336}
-  - {fileID: 6930373690424194782}
-  - {fileID: -7133564503145160086}
-  - {fileID: 288256261752559112}
-  - {fileID: 8163899564410414564}
-  - {fileID: -980161926332028818}
-  - {fileID: -1235627685386109530}
-  - {fileID: -6315066182192012740}
-  - {fileID: 2900134804498838949}
-  - {fileID: -8851812707526868439}
-  - {fileID: -5821041652083962339}
-  - {fileID: -8270028953176004454}
-  - {fileID: -7508885518464072142}
-  - {fileID: 5889558909831302324}
-  - {fileID: 3026757238898431973}
-  - {fileID: -1213064371010848244}
-  - {fileID: -1255806888707765006}
-  - {fileID: -5696372673946344104}
-  - {fileID: 143004799786212602}
-  - {fileID: 8225620266950254095}
-  - {fileID: 5598997665803930657}
-  - {fileID: -4911542259772904916}
-  - {fileID: -7091804024794905729}
-  - {fileID: 3979187158333490538}
-  - {fileID: -8207034747055774316}
-  - {fileID: -3050150156790360998}
-  - {fileID: 5609156077114441408}
-  - {fileID: 7723199247653224705}
-  - {fileID: -1813689487248895546}
-  - {fileID: -1839774727787495114}
-  - {fileID: -5650268448941304688}
-  - {fileID: 4007424428308936197}
-  - {fileID: -9174738985446591835}
-  - {fileID: -7903167328086760389}
-  - {fileID: 3652511728458264449}
   EditorParameters:
   - {fileID: -1144412628344326473}
   - {fileID: -1929283353007655846}
@@ -890,54 +385,8 @@ MonoBehaviour:
   - {fileID: 4556140406364642610}
   StringsBanks:
   - {fileID: 1832275434077071591}
-  stringsBankWriteTime: 637575348133812064
+  stringsBankWriteTime: 637571159741481669
   cacheVersion: 6
---- !u!114 &143004799786212602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Weapons/Weapon_Up/LaunchGrenade
-  m_EditorClassIdentifier: 
-  Path: event:/Weapons/Weapon_Up/LaunchGrenade
-  guid: 8774ec9e865d7f4e9942b9da86700085
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &288256261752559112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ennemies/Entitities/Death
-  m_EditorClassIdentifier: 
-  Path: event:/Ennemies/Entitities/Death
-  guid: ac3b58f233393845800b79a1fc3fa4c6
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 950
-  Length: 1000
 --- !u!114 &1338469826099900391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,7 +424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Ennemies/Solo/Death
   guid: ac3b58f233393845800b79a1fc3fa4c6
-  Banks: []
+  Banks:
+  - {fileID: 4556140406364642610}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -998,11 +448,11 @@ MonoBehaviour:
   Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637575348133812064
+  lastModified: 637571159741481669
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3584
+    Value: 2542
   Exists: 1
 --- !u!114 &1983984462244168226
 MonoBehaviour:
@@ -1050,145 +500,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 500
   Length: 0
---- !u!114 &2900134804498838949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Overheat/Overheat_Lvl3
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Overheat/Overheat_Lvl3
-  guid: 20cdbb0b716fa64eaf0d2ccf4079567a
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
---- !u!114 &3026757238898431973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interface/Menu/Selected
-  m_EditorClassIdentifier: 
-  Path: event:/Interface/Menu/Selected
-  guid: 4f49f50a708ae94eaf2bc219cadcba67
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2374
---- !u!114 &3652511728458264449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Player_Actions/Glass_Switch
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Player_Actions/Glass_Switch
-  guid: ffec4815467d4f4db91183a0cdd4058a
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 240
---- !u!114 &3979187158333490538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Range/Range_Lvl3
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Range/Range_Lvl3
-  guid: c60abe04718f934ba45a7d2b11604a04
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6454
---- !u!114 &4007424428308936197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interface/Menu/menu_Open
-  m_EditorClassIdentifier: 
-  Path: event:/Interface/Menu/menu_Open
-  guid: ecfa7f78f6cc6849b5bf157d5a998e72
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &4226231690175474336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interface/Menu/menu_Voice_Pamela
-  m_EditorClassIdentifier: 
-  Path: event:/Interface/Menu/menu_Voice_Pamela
-  guid: bc13c453d82d2f41817f7c83c3af718d
-  Banks:
-  - {fileID: -611301085151698347}
-  - {fileID: 4556140406364642610}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 20000
 --- !u!114 &4271171591220785064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,7 +538,7 @@ MonoBehaviour:
   Path: Assets/fmod/Projet Soutenance 2/projet soutenance 2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637575348133762200
+  lastModified: 637571159738975448
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1254,75 +565,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2500
---- !u!114 &5598997665803930657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Interface/Menu/Son_Ambiance
-  m_EditorClassIdentifier: 
-  Path: event:/Interface/Menu/Son_Ambiance
-  guid: bd7ee6a7c6ca4f47b3171b9ef8ce780e
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 92724
---- !u!114 &5609156077114441408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Range/Range_Lvl2
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Range/Range_Lvl2
-  guid: da9e93a1342e714db9ee1450b868a41b
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
---- !u!114 &5889558909831302324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Explosion/Explosion_Lvl1
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Explosion/Explosion_Lvl1
-  guid: 4b9a4f33e22d284e9c045a4b47ea1db0
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
 --- !u!114 &6194449108660689687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1415,52 +657,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &6930373690424194782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Player_Body/Dash
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Player_Body/Dash
-  guid: 41ae26e9f4cdb04eb9cf01b7fd3b777e
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
---- !u!114 &7723199247653224705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Upgrade/Speed/Speed_Lvl3
-  m_EditorClassIdentifier: 
-  Path: event:/Upgrade/Speed/Speed_Lvl3
-  guid: e05b296357482a4e9bd2e4fd79c10503
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6047
 --- !u!114 &8147995089583427523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1484,52 +680,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1158
---- !u!114 &8163899564410414564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musique/Balise/IsShutDown
-  m_EditorClassIdentifier: 
-  Path: event:/Musique/Balise/IsShutDown
-  guid: 06a1f10e4d1f7c4f874e4ddfcab3b5eb
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &8225620266950254095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Weapons/Shotgun/BasicsStuff/SG_Cooling
-  m_EditorClassIdentifier: 
-  Path: event:/Weapons/Shotgun/BasicsStuff/SG_Cooling
-  guid: abfda84f563c034798e7f8be9c0273cf
-  Banks:
-  - {fileID: 4556140406364642610}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2675
 --- !u!114 &8270987131719277559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1544,7 +694,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Ennemies/5To10/5To10_Movements
   guid: 2cb965cc2867d8408966260066322409
-  Banks: []
+  Banks:
+  - {fileID: 4556140406364642610}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -1588,7 +739,7 @@ MonoBehaviour:
   m_Name: event:/MusiqueAmbiance/Balise/MusicCapture
   m_EditorClassIdentifier: 
   Path: event:/MusiqueAmbiance/Balise/MusicCapture
-  guid: a9dad17577d22c42aa9a07097a609710
+  guid: d67e01cf5478444fb41ff37bb8e26abc
   Banks:
   - {fileID: 4556140406364642610}
   IsStream: 1
@@ -1597,4 +748,4 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 14000
+  Length: 18000
