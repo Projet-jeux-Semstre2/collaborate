@@ -21,12 +21,31 @@ public class Grenade_Explosion : MonoBehaviour
     
     // sons
     public string fmodExploG;
+    public Material[] emissivMaterial;
+    public MeshRenderer emissivGrenade;
 
    
 
     private void Start()
     {
-        
+        switch (typeArmeActive)
+        {
+            case "ArmeForAgressif":
+                emissivGrenade.material = emissivMaterial[3];
+                break;
+                    
+            case "ArmeForTank":
+                emissivGrenade.material = emissivMaterial[0];
+                break;
+                    
+            case "ArmeForCreateur":
+                emissivGrenade.material = emissivMaterial[1];
+                break;
+                    
+            case "ArmeForVif":
+                emissivGrenade.material = emissivMaterial[2];
+                break;
+        }
         
         StartCoroutine(ExplosionWithTime());
     }
@@ -69,28 +88,28 @@ public class Grenade_Explosion : MonoBehaviour
                     case "ArmeForAgressif":
                         if (destroyed.GetComponent<Entities_Manager>().type == "Agressif")
                         {
-                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *Mathf.Infinity); //OneShot
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *1000); //OneShot
                         }
                         break;
                     
                     case "ArmeForTank":
                         if (destroyed.GetComponent<Entities_Manager>().type == "Tank")
                         {
-                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *Mathf.Infinity);
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *1000);
                         }
                         break;
                     
                     case "ArmeForCreateur":
                         if (destroyed.GetComponent<Entities_Manager>().type == "Createur")
                         {
-                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *Mathf.Infinity);
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *1000);
                         }
                         break;
                     
                     case "ArmeForVif":
                         if (destroyed.GetComponent<Entities_Manager>().type == "Vif")
                         {
-                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage *Mathf.Infinity);
+                            destroyed.GetComponent<Entities_Stats>().TakeDamage(damage * 1000);
                         }
                         break;
                 }

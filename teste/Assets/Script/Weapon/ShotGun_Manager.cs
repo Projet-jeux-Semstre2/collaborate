@@ -47,11 +47,13 @@ public class ShotGun_Manager : MonoBehaviour
 
     public Animator shotGunAnimator;
     public float surchauffeForAnim;
-    
 
-    
-        
-        
+    public GameObject grenadeLauncher, railDown;
+
+
+
+
+
     private void Start()
     {
         weaponPompe = GetComponentInChildren<weaponPompe>();
@@ -67,6 +69,12 @@ public class ShotGun_Manager : MonoBehaviour
 
         SurchauffeManager();
         ChangeViseur();
+
+        if (lanceGrenadeUnlock && !grenadeLauncher.activeInHierarchy)
+        {
+            railDown.SetActive(false);
+            grenadeLauncher.SetActive(true);
+        }
         
     }
     

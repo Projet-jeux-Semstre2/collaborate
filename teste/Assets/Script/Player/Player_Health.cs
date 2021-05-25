@@ -28,6 +28,7 @@ public class Player_Health : MonoBehaviour
     private bool debugSunnyLinvincible;
 
     public Image healthUi;
+    public GlitchEffect glitchEffect;
     private void Start()
     {
         health = maxHealth;
@@ -74,12 +75,14 @@ public class Player_Health : MonoBehaviour
     public IEnumerator HurtFb()
     {
         Damage_Fb.SetActive(true);
+        glitchEffect.enabled = true;
         
         //sons de hurt
         FMODUnity.RuntimeManager.PlayOneShot(FmodHurt, GetComponent<Transform>().position);
         
         yield return new WaitForSeconds(fb_time);
-        
+
+        glitchEffect.enabled = false;
         Damage_Fb.SetActive(false);
        
     }

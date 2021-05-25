@@ -720,7 +720,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637575586142684323
+  lastModified: 637575603130698546
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1900,7 +1900,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637575586142529139
+  lastModified: 637575603130678615
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1966,7 +1966,6 @@ MonoBehaviour:
   - {fileID: -6106140946337050025}
   - {fileID: -440628038177154842}
   - {fileID: 7807080764349432333}
-  - {fileID: -6022894873258632987}
   - {fileID: -6400155363681342832}
   - {fileID: -609933988745553656}
   - {fileID: -7625064198867275503}
@@ -1991,7 +1990,7 @@ MonoBehaviour:
   - {fileID: -58006880975490902}
   StringsBanks:
   - {fileID: -5797711374232112098}
-  stringsBankWriteTime: 637575586142684323
+  stringsBankWriteTime: 637575603130698546
   cacheVersion: 6
 --- !u!114 &11157943480557124
 MonoBehaviour:
@@ -2664,7 +2663,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Game .bank
   Name: 'Game '
   StudioPath: 'bank:/Game '
-  lastModified: 637575586035025591
+  lastModified: 637575513052357496
   LoadResult: 0
   FileSizes: []
   Exists: 1
