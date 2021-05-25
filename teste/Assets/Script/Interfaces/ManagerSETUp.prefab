@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "NombreEntit\xE9s": 2
-  numberEntitiesAtStart: 2
+  numberEntitiesAtStart: 200
 --- !u!114 &4114822841788001844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/MusiqueAmbiance/MusiqueEnJeu
+  Event: event:/Musique/Ambiance/MusicInGame
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
