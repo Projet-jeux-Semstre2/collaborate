@@ -68,6 +68,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Option.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/1ERLVL.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BaliseDestroyennemis.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ExplosionJumpPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
@@ -81,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/PointMarker.cs" />
         <option value="$PROJECT_DIR$/Assets/ExplosionJumpPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Menu_Manager.cs" />
@@ -128,10 +128,11 @@
         <option value="$PROJECT_DIR$/Assets/Script/Option.cs" />
         <option value="$PROJECT_DIR$/Assets/CompasManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/BaliseSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/BaliseCloseDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/BaliseDestroyennemis.cs" />
       </list>
     </option>
   </component>
@@ -253,6 +254,7 @@
       <workItem from="1621956808125" duration="1537000" />
       <workItem from="1621972558182" duration="31000" />
       <workItem from="1621973199547" duration="12510000" />
+      <workItem from="1622009899279" duration="4047000" />
     </task>
     <servers />
   </component>

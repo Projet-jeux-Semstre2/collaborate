@@ -14,6 +14,7 @@
           </e>
         </e>
         <e p="BaliseCloseDoor.cs" t="Include" />
+        <e p="BaliseDestroyennemis.cs" t="Include" />
         <e p="ButtonRotation.cs" t="Include" />
         <e p="Camera_Shake.cs" t="Include" />
         <e p="CompasManager.cs" t="Include" />

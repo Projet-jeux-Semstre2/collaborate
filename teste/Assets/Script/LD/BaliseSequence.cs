@@ -8,14 +8,40 @@ public class BaliseSequence : MonoBehaviour
     
     public Animator[] myDoors;
     public bool leaderSequence;
+    static public int sequencePlay; 
+    public Balise_Fonctionnement[] baliseFonctionnement;
+    public bool sequenceFinish;
+    
+    [Header("Sequence 1")]
+    public Balise_Fonctionnement[] baliseSequence1;
 
-    public Balise_Fonctionnement[] _baliseFonctionnement;
+    [Header("Sequence 1")]
+    public Balise_Fonctionnement[] baliseSequence2;
+
+    [Header("Sequence 1")]
+    public Balise_Fonctionnement[] baliseSequence3;
+
 
     private void Start()
     {
+        switch (sequencePlay)
+        {
+            case 1:
+                ChooseSequence(baliseSequence1);
+                break;
+            case 2:
+                ChooseSequence(baliseSequence2);
+                break;
+            case 3:
+                ChooseSequence(baliseSequence3);
+                break;
+        }
+        
+        
+        
         if (leaderSequence)
         {
-            _baliseFonctionnement[0].canBeActive = true;
+            baliseFonctionnement[0].canBeActive = true;
         }
     }
 
@@ -24,23 +50,27 @@ public class BaliseSequence : MonoBehaviour
     {
         if(leaderSequence)
         {
-            for (int i = 0; i < _baliseFonctionnement.Length -1 ; i++)
+            for (int i = 0; i < baliseFonctionnement.Length -1 ; i++)
             {
-                if(_baliseFonctionnement[i].isCapture && !_baliseFonctionnement[i+1].canBeActive)
+                if(baliseFonctionnement[i].isCapture && !baliseFonctionnement[i+1].canBeActive)
                 {
-                    _baliseFonctionnement[i+1].canBeActive = true;
-                    print(_baliseFonctionnement[i+1].name+ "canBeActive");
+                    baliseFonctionnement[i+1].canBeActive = true;
+                    print(baliseFonctionnement[i+1].name+ "canBeActive");
                 }
             }
         }
 
-        if (_baliseFonctionnement[0].isCapture && _baliseFonctionnement[0].closeDoor)
+        if (GetComponent<Balise_Fonctionnement>().isCapture && GetComponent<Balise_Fonctionnement>().closeDoor)
         {
-            myDoors[0].SetBool("Open", false);
-            myDoors[1].SetBool("Open", false);
-            myDoors[2].SetBool("Open", false);
+            foreach (var doors in myDoors)
+            {
+                doors.SetBool("Open", false);
+            }
         }
-        
-        
+    }
+
+    void ChooseSequence(Balise_Fonctionnement[] baliseChange)
+    {
+        baliseFonctionnement = baliseChange;
     }
 }

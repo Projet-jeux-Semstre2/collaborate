@@ -13,7 +13,7 @@ public class BaliseCloseDoor : MonoBehaviour
         if (other.CompareTag("Player") && BaliseFonctionnement.isCapture)
         {
             BaliseFonctionnement.closeDoor = true;
-            //destroy all entities in
         }
     }
+    
 }
