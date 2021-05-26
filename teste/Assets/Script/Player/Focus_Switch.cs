@@ -33,6 +33,8 @@ public class Focus_Switch : MonoBehaviour
     public float lerpSpeed;
     public bool lerp;
     
+    // sons
+    public string FmodSwitch;
     
     [Header("Sur le ShotGun")]
     public Color[] emissiveShotGun;
@@ -302,12 +304,20 @@ public class Focus_Switch : MonoBehaviour
                 _colorGrading.colorFilter.value = agressif_Color; 
                 break;
         }
+        //sons
+        bool canOneShot = true;
+        if (canOneShot)
+        {
+                        FMODUnity.RuntimeManager.PlayOneShot(FmodSwitch);
+        }
         
         yield return new WaitForSeconds(timeEffect);
+        canOneShot = false;
 
         lerp = true;
         while (_colorGrading.colorFilter.value != Color.white && lerp)
         {
+            
             _colorGrading.colorFilter.value = Color.Lerp(_colorGrading.colorFilter.value, Color.white, Time.deltaTime * lerpSpeed);
             
             yield return null;
