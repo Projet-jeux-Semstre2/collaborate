@@ -18,7 +18,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Emissiv
-    second: {fileID: 2100000, guid: fc5fb9099a6ff9e49b1db160820e4950, type: 2}
+    second: {fileID: 2100000, guid: cd59a2dc1883dc9499cbb8e77732f65f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

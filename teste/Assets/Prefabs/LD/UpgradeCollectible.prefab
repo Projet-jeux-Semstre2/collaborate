@@ -4863,7 +4863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ameliorationManager: {fileID: 0}
-  distanceUse: 7
+  distanceUse: 12
 --- !u!1 &4656549565083801829
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,6 +32,9 @@ public class Focus_Switch : MonoBehaviour
     public float timeEffect;
     public float lerpSpeed;
     public bool lerp;
+    public GameObject[] focusUi;
+    public GameObject focusUiParent;
+    public float rotateUi;
     
     // sons
     public string FmodSwitch;
@@ -40,9 +43,9 @@ public class Focus_Switch : MonoBehaviour
     public Color[] emissiveShotGun;
     public MeshRenderer[] shotGunMeshRenderer;
     public MeshRenderer[] OverLoadRenderers;
-    
-    
-    
+
+
+
     private void Start()
     {
         typeArmeActive = typeArmeTank;
@@ -80,6 +83,9 @@ public class Focus_Switch : MonoBehaviour
     {
         changeFocus();
         _shotGunManager.typeArmeActive = typeArmeActive;
+        
+        
+        focusUiParent.transform.Rotate(0,0, rotateUi * Time.deltaTime);
 
         
     }
@@ -135,6 +141,13 @@ public class Focus_Switch : MonoBehaviour
                             entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
                         }
                     }
+
+                    foreach (var image in focusUi)
+                    {
+                        image.SetActive(false);
+                    }
+                    
+                    focusUi[0].SetActive(true);
                     
                     break;
                 case 1:
@@ -153,6 +166,13 @@ public class Focus_Switch : MonoBehaviour
                         }
                     }
                     
+                    foreach (var image in focusUi)
+                    {
+                        image.SetActive(false);
+                    }
+                    
+                    focusUi[1].SetActive(true);
+                    
                     break;
                 case 2:
                     typeArmeActive = typeArmeVif;
@@ -170,6 +190,13 @@ public class Focus_Switch : MonoBehaviour
                         }
                     }
                     
+                    foreach (var image in focusUi)
+                    {
+                        image.SetActive(false);
+                    }
+                    
+                    focusUi[2].SetActive(true);
+                    
                     break;
                 case 3:
                     typeArmeActive = typeArmeAgressif;
@@ -186,6 +213,13 @@ public class Focus_Switch : MonoBehaviour
                             entitiesManager.renderer.material = entitiesManager.ChangeMaterials[0];
                         }
                     }
+                    
+                    foreach (var image in focusUi)
+                    {
+                        image.SetActive(false);
+                    }
+                    
+                    focusUi[3].SetActive(true);
                     
                     break;
             }
