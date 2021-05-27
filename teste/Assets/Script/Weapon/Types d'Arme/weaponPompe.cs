@@ -68,6 +68,9 @@ public class weaponPompe : Weapon
     public float _yAddHit;
     private float _distance;
     public float surchauffeAddLanceGrenade;
+
+
+    public ShakeFeedback shakeFeedback;
     
 
 
@@ -187,6 +190,8 @@ public class weaponPompe : Weapon
         {
             _animator.SetTrigger("Shoot");
         }
+        
+        shakeFeedback.PlayShake();
         
         FMODUnity.RuntimeManager.PlayOneShot(fmodShoot);
         muzzleFlash.Play();
