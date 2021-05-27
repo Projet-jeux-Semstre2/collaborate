@@ -342,6 +342,7 @@ public class Focus_Switch : MonoBehaviour
         bool canOneShot = true;
         if (canOneShot)
         {
+            Debug.Log("switch sound");
                         FMODUnity.RuntimeManager.PlayOneShot(FmodSwitch);
         }
         

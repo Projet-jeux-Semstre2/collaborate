@@ -95,7 +95,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   typeArmeActive: 
-  fmodExploG: event:/Weapons/FusilPompe/Weapon_Up/ExploGrenade
+  fmodExploG: event:/Weapons/Weapon_Up/ExploGrenade
   emissivMaterial:
   - {fileID: 2100000, guid: cd59a2dc1883dc9499cbb8e77732f65f, type: 2}
   - {fileID: 2100000, guid: 335ae7a53072a1849b24678a7bd71959, type: 2}

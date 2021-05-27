@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{87945f42-dce7-4413-9d18-296062edc1a2}">
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
 			<value>Glass_Switch</value>
 		</property>
@@ -53,7 +56,7 @@
 			<destination>{b1a752f6-109e-4362-8174-d7387c457564}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{b3db2fa9-3cde-4372-afa2-87a16906dfd2}</destination>
+			<destination>{8951d4bc-55f6-41e8-aa06-9f899ccf46f5}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{a2d5c3af-1e7c-4aea-8191-d7b452f63c8c}" />
@@ -72,6 +75,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{07aa46a6-a4f5-479d-9af1-39774d1da503}">
+		<property name="volume">
+			<value>7.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{87d96ea4-e3ae-4aae-8e4a-462d9c8c4562}</destination>
 		</relationship>
@@ -110,7 +116,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{db546194-d89c-411a-9541-f6e1fe8b9e61}">
 		<property name="volume">
-			<value>-6.5</value>
+			<value>10</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>

@@ -673,8 +673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Ennemies/Heap/Heap_AttackMelee
   guid: a8b149467a0d104c81aed614c02402df
-  Banks:
-  - {fileID: -58006880975490902}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -720,11 +719,11 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637575603130698546
+  lastModified: 637576785498982989
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3074
+    Value: 3152
   Exists: 1
 --- !u!114 &-5557715990741852107
 MonoBehaviour:
@@ -1193,6 +1192,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 440
+--- !u!114 &-3952987630993977302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Scenery/Props/DoorClose
+  m_EditorClassIdentifier: 
+  Path: event:/Scenery/Props/DoorClose
+  guid: ad74c36fe50f2f46bf56798db9d25839
+  Banks:
+  - {fileID: -58006880975490902}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 25
+  Length: 0
 --- !u!114 &-3933243107151881779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1664,6 +1686,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 6047
+--- !u!114 &-924156436169647179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musique/Balise/MusicCapture
+  m_EditorClassIdentifier: 
+  Path: event:/Musique/Balise/MusicCapture
+  guid: 82509b4c28f6e34c8a1c1f16637d3765
+  Banks:
+  - {fileID: -58006880975490902}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 19280
 --- !u!114 &-908021561985319450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1900,7 +1945,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637575603130678615
+  lastModified: 637576785498932965
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1956,14 +2001,12 @@ MonoBehaviour:
   - {fileID: -8572677831996214954}
   - {fileID: 4796579256816484385}
   - {fileID: 3903608088165619472}
-  - {fileID: 6254595771573499949}
   - {fileID: 3636989371309191803}
   - {fileID: -4833654216266078204}
   - {fileID: -6404694539218954627}
   - {fileID: 3454102196110828168}
   - {fileID: -3912906750022050486}
   - {fileID: 5463904826831537544}
-  - {fileID: -6106140946337050025}
   - {fileID: -440628038177154842}
   - {fileID: 7807080764349432333}
   - {fileID: -6400155363681342832}
@@ -1983,6 +2026,8 @@ MonoBehaviour:
   - {fileID: 4183472423372637649}
   - {fileID: -7920846499270909483}
   - {fileID: 115399324769177824}
+  - {fileID: -3952987630993977302}
+  - {fileID: -924156436169647179}
   EditorParameters:
   - {fileID: -8283775130088713381}
   - {fileID: -4911378675586394604}
@@ -1990,7 +2035,7 @@ MonoBehaviour:
   - {fileID: -58006880975490902}
   StringsBanks:
   - {fileID: -5797711374232112098}
-  stringsBankWriteTime: 637575603130698546
+  stringsBankWriteTime: 637576785498982989
   cacheVersion: 6
 --- !u!114 &11157943480557124
 MonoBehaviour:
@@ -2663,7 +2708,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Game .bank
   Name: 'Game '
   StudioPath: 'bank:/Game '
-  lastModified: 637575513052357496
+  lastModified: 637576785439596981
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -3202,8 +3247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Musique/Balise/MusicCapture
   guid: 71476f34ba62ef40b54fe16cb7968592
-  Banks:
-  - {fileID: -58006880975490902}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0

@@ -6,6 +6,9 @@
 
 </value>
 		</property>
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
 			<value>IsShutDown</value>
 		</property>
@@ -64,7 +67,7 @@
 			<destination>{6b7da724-2601-4ae6-a8cd-43d1a3b68e3d}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{b3db2fa9-3cde-4372-afa2-87a16906dfd2}</destination>
+			<destination>{5267bd9c-bc48-4672-afbe-c67bf0020713}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{0c9dedb3-295c-43cc-ac30-86cc404a6817}" />

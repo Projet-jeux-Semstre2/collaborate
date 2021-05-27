@@ -6,6 +6,9 @@
 
 </value>
 		</property>
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
 			<value>IsCapture</value>
 		</property>
@@ -64,7 +67,7 @@
 			<destination>{0c758d5b-769b-4d4f-9233-94461391b809}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{b3db2fa9-3cde-4372-afa2-87a16906dfd2}</destination>
+			<destination>{5267bd9c-bc48-4672-afbe-c67bf0020713}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{96990e9e-3b55-48ba-9dee-0593bbe3b3ab}" />

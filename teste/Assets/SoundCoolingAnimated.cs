@@ -21,4 +21,9 @@ public class SoundCoolingAnimated : MonoBehaviour
     {
         event_fmod.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
+
+    void PlaysSoundOS()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(FmodCoolingBoucle, GetComponent<Transform>().position);
+    }
 }

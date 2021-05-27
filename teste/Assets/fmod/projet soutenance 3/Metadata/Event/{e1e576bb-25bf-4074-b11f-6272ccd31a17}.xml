@@ -5,6 +5,9 @@
 			<value>event pour le sons quand le player sort de la capture quand la balise est encore en capture, cele lance le temps pour le shut down.
 </value>
 		</property>
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
 			<value>TShutDown</value>
 		</property>
@@ -63,7 +66,7 @@
 			<destination>{3183ce3a-7687-46b8-b163-cd32882b6ff1}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{b3db2fa9-3cde-4372-afa2-87a16906dfd2}</destination>
+			<destination>{5267bd9c-bc48-4672-afbe-c67bf0020713}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{6762ca45-e59b-48fa-a88a-b14ad300da07}" />

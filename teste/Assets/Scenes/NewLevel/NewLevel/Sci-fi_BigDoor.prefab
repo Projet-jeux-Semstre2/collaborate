@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 4935726218521616050}
   - component: {fileID: 4787472088229960902}
   - component: {fileID: 2818519889226215978}
+  - component: {fileID: 2793555467586890371}
   m_Layer: 0
   m_Name: Sci-fi_BigDoor
   m_TagString: Untagged
@@ -241,6 +242,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.10915347, y: 1.0000002, z: 0.367203}
   m_Center: {x: 0, y: 6.085216e-16, z: 0.23220533}
+--- !u!114 &2793555467586890371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747356025430235109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5990e8f105bc7374b91352713d784cf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FmodCoolingBoucle: event:/Scenery/Props/DoorClose
 --- !u!1 &7422347554416292623
 GameObject:
   m_ObjectHideFlags: 0
