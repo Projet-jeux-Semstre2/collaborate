@@ -498,7 +498,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 440
+  Length: 560
 --- !u!114 &-6487378549166047448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -719,11 +719,11 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637577172015635876
+  lastModified: 637577622197073890
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3294
+    Value: 3522
   Exists: 1
 --- !u!114 &-5557715990741852107
 MonoBehaviour:
@@ -1237,7 +1237,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 300
-  Length: 0
+  Length: 6550
 --- !u!114 &-3933243107151881779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1397,6 +1397,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 950
   Length: 1000
+--- !u!114 &-3343969818737526972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CoolingStop
+  m_EditorClassIdentifier: 
+  Name: CoolingStop
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 499752136
+    data2: 1323762409
+  Exists: 1
 --- !u!114 &-3180406941522234325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1488,7 +1508,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1000
+  Length: 1090
 --- !u!114 &-2202303853034757519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1511,7 +1531,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 240
+  Length: 700
 --- !u!114 &-2049107484822418743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1968,7 +1988,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637577172015585803
+  lastModified: 637577622196993891
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2057,11 +2077,12 @@ MonoBehaviour:
   EditorParameters:
   - {fileID: -8283775130088713381}
   - {fileID: -4911378675586394604}
+  - {fileID: -3343969818737526972}
   MasterBanks:
   - {fileID: -58006880975490902}
   StringsBanks:
   - {fileID: -5797711374232112098}
-  stringsBankWriteTime: 637577172015635876
+  stringsBankWriteTime: 637577622197073890
   cacheVersion: 6
 --- !u!114 &11157943480557124
 MonoBehaviour:
@@ -2669,11 +2690,11 @@ MonoBehaviour:
   - {fileID: -58006880975490902}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2675
+  Length: 5677
 --- !u!114 &3327728445976693180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2757,7 +2778,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Game .bank
   Name: 'Game '
   StudioPath: 'bank:/Game '
-  lastModified: 637577172012092729
+  lastModified: 637577622080310440
   LoadResult: 0
   FileSizes: []
   Exists: 1

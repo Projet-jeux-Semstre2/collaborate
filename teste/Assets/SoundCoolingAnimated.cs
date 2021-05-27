@@ -26,4 +26,15 @@ public class SoundCoolingAnimated : MonoBehaviour
     {
         FMODUnity.RuntimeManager.PlayOneShot(FmodCoolingBoucle, GetComponent<Transform>().position);
     }
+
+    void PlaysSoundOsVar3D(string var)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(var, GetComponent<Transform>().position);
+    }
+    
+    void PlaysSoundOsVar2D(string var)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(var);
+    }
+    
 }

@@ -15603,10 +15603,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86cb339323adbd640a4705cf24f34f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedClamp: {x: 1, y: 1}
-  force: 2
+  speedClamp: {x: 160, y: 160}
+  force: 300
   shakeDuringTime: 1
-  time: 0.2
+  time: 5
 --- !u!1 &1561207565032351329
 GameObject:
   m_ObjectHideFlags: 0
@@ -20481,7 +20481,7 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 90
   Groupe: {fileID: 1110691814879946601, guid: f4ea61b8a80e67f40be66807f35c9c3b, type: 3}
-  fmodjumpPlayer: event:/Player/Player_Body/Jump
+  fmodjumpPlayer: event:/Character/Player_Body/Jump
   moveDirection: {x: 0, y: 0, z: 0}
   inputVector: {x: 0, y: 0, z: 0}
   canMove: 1
@@ -20689,7 +20689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FmodFootStep: event:/Character/Player_Body/Walk
-  distanceStepSound: 6
+  distanceStepSound: 10
 --- !u!114 &8246251174559205307
 MonoBehaviour:
   m_ObjectHideFlags: 0

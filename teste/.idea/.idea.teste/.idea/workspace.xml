@@ -3,76 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="370cb4ce-1be2-4ab7-8340-8b963387c282" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Door/CloseDoor.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Door/CloseDoor.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Door/OpenDoor.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Door/OpenDoor.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ShotGun/OverLoadAll.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ShotGun/OverLoadAll.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Projectile/Grenade_ShotGun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapon/Projectile/Grenade_ShotGun.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NewLevel/NewLevel/Sci-fi_BigDoor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NewLevel/NewLevel/Sci-fi_BigDoor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SoundCoolingAnimated.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SoundCoolingAnimated.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/fsbcache/Desktop/FFB92325.fobj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/fsbcache/Desktop/FFB92325.fobj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{064b4a75-a12a-46b4-82ca-f2a6631caed4}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{064b4a75-a12a-46b4-82ca-f2a6631caed4}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{1c5857e9-88fb-4e46-b5e7-b9caa44d79cc}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{1c5857e9-88fb-4e46-b5e7-b9caa44d79cc}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{243f1a34-e32d-4b60-8cde-fc29dab69bea}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{243f1a34-e32d-4b60-8cde-fc29dab69bea}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{34507c4c-7d4f-4282-8290-5c428faffc08}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{34507c4c-7d4f-4282-8290-5c428faffc08}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{3669f769-434a-4a83-9938-8e430354dc32}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{3669f769-434a-4a83-9938-8e430354dc32}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{37f19ba2-328d-4841-afc8-f969a389dca6}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{37f19ba2-328d-4841-afc8-f969a389dca6}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{410a5f38-fb06-4256-9d2e-7ef02fab568f}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{410a5f38-fb06-4256-9d2e-7ef02fab568f}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{4d12385f-a965-47ef-b1f0-0668cecc3a28}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{4d12385f-a965-47ef-b1f0-0668cecc3a28}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{4f64b6cd-6449-44d0-864f-4e078a5abd8e}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{4f64b6cd-6449-44d0-864f-4e078a5abd8e}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{50cef58c-6091-4e4c-a02b-7281c472ed1a}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{50cef58c-6091-4e4c-a02b-7281c472ed1a}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{6345ae65-dbf7-48f5-983f-cbb5d2f4868e}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{6345ae65-dbf7-48f5-983f-cbb5d2f4868e}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{63a89af6-16e3-4e8e-9afb-794ccc2f327c}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{63a89af6-16e3-4e8e-9afb-794ccc2f327c}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{6deb4769-32db-478f-bda5-0d7f3ae8df8c}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{6deb4769-32db-478f-bda5-0d7f3ae8df8c}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{701d7c07-5a44-45c9-824d-bb32c4f27502}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{701d7c07-5a44-45c9-824d-bb32c4f27502}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{752b58e0-f4d2-4cfd-aea1-30dd51dbc106}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{752b58e0-f4d2-4cfd-aea1-30dd51dbc106}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{992a7bd6-8324-41c0-9ac2-c746f9cf1bf8}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{992a7bd6-8324-41c0-9ac2-c746f9cf1bf8}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{b70eee41-f623-402a-bff9-434250876e7b}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{b70eee41-f623-402a-bff9-434250876e7b}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{cc231d89-1aaf-4356-a6a1-75d7d45d6611}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{cc231d89-1aaf-4356-a6a1-75d7d45d6611}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{d14aa255-d98e-4d9b-afc3-abe570c7377b}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{d14aa255-d98e-4d9b-afc3-abe570c7377b}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{f2d43b3e-f25e-4c99-884a-cb317218980e}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{f2d43b3e-f25e-4c99-884a-cb317218980e}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{f952ab32-50f6-45d3-a5ed-4dd79e9e602e}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{f952ab32-50f6-45d3-a5ed-4dd79e9e602e}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{fe05fd3a-befa-4cc0-aade-315eec107c15}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{fe05fd3a-befa-4cc0-aade-315eec107c15}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{fc81adbb-fd00-4088-b058-b8513d65586b}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.cache/{fc81adbb-fd00-4088-b058-b8513d65586b}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/.unsaved/Metadata/AudioFile/{f94cc825-a945-445d-8a65-6f739a8b058c}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Assets/V4/SHOOT_GROS_ENERVE.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Assets/V4/SHOOT_GROS_ENERVE.wav.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{0680d869-6c24-498c-9490-a63d750915d1}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{0680d869-6c24-498c-9490-a63d750915d1}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{0b3d1773-9fd4-4691-81f9-ebb07baaa613}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{0b3d1773-9fd4-4691-81f9-ebb07baaa613}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/AudioFile/{be37fc8b-d028-443b-bfa5-1587025315fa}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/AudioFile/{be37fc8b-d028-443b-bfa5-1587025315fa}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{0d2ebe27-9753-497c-a9d4-793a119a3740}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{0d2ebe27-9753-497c-a9d4-793a119a3740}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{1563724e-2398-4591-b730-f0ef89eda13d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{1563724e-2398-4591-b730-f0ef89eda13d}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{16c64f8c-f744-4aa6-a252-43dbc41fc4fb}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{16c64f8c-f744-4aa6-a252-43dbc41fc4fb}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{1cab5446-f596-4244-b64a-ef62c9d32544}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{1cab5446-f596-4244-b64a-ef62c9d32544}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{2cfad0ec-7b44-4c58-978c-db6df29718f0}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{2cfad0ec-7b44-4c58-978c-db6df29718f0}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{2d54c9aa-a303-4773-a34f-a337b2516e0c}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{2d54c9aa-a303-4773-a34f-a337b2516e0c}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{346f4771-62ba-40ef-b54f-e16cb7968592}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{346f4771-62ba-40ef-b54f-e16cb7968592}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{3923b424-c287-4bf6-8e0b-505024220dd6}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{3923b424-c287-4bf6-8e0b-505024220dd6}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{4649b1a8-0d7a-4c10-81ae-d614c02402df}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{4649b1a8-0d7a-4c10-81ae-d614c02402df}.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{668cdf8e-29f4-4a06-aa7e-30182e7b2228}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{668cdf8e-29f4-4a06-aa7e-30182e7b2228}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{66cd8815-1590-4c45-92bb-dc1cb60334c1}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{66cd8815-1590-4c45-92bb-dc1cb60334c1}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{771a3614-94f9-4e3e-af7c-41263d9a971f}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{771a3614-94f9-4e3e-af7c-41263d9a971f}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{7b150acb-7be1-44bd-8c44-73e612db64e8}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{7b150acb-7be1-44bd-8c44-73e612db64e8}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{7d0bb099-5179-4b0b-a4ca-b1e405d0a2a2}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{7d0bb099-5179-4b0b-a4ca-b1e405d0a2a2}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{85178411-54b8-46d9-8e4f-a49ea960db1a}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{85178411-54b8-46d9-8e4f-a49ea960db1a}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{293733ae-1996-47e3-a08b-7e189ba3f02a}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{293733ae-1996-47e3-a08b-7e189ba3f02a}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{6fc374ad-0fe5-462f-bf56-798db9d25839}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{6fc374ad-0fe5-462f-bf56-798db9d25839}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{87945f42-dce7-4413-9d18-296062edc1a2}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{87945f42-dce7-4413-9d18-296062edc1a2}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{8c560e07-c3ad-40c3-8ae0-bfd2bc545844}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{8c560e07-c3ad-40c3-8ae0-bfd2bc545844}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{939e1463-81c8-4cad-8506-3776faa6de25}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{939e1463-81c8-4cad-8506-3776faa6de25}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{9b99534e-f7dc-4cee-bbc9-10cff3993f66}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{9b99534e-f7dc-4cee-bbc9-10cff3993f66}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{a6665ef9-2488-4da7-a53f-d3f6124a360b}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{a6665ef9-2488-4da7-a53f-d3f6124a360b}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{b0718809-24ff-4352-ada2-c1eb87adf3b9}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{b0718809-24ff-4352-ada2-c1eb87adf3b9}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{b1f904d7-c876-4be9-a500-92ceaf348fe1}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{b1f904d7-c876-4be9-a500-92ceaf348fe1}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{b390aa40-ad5f-426d-a969-445bf1888de3}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{b390aa40-ad5f-426d-a969-445bf1888de3}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{b4942abb-af2c-4f34-a996-9ab1be9a79d6}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{b4942abb-af2c-4f34-a996-9ab1be9a79d6}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{bbd522bf-22f4-4139-bd80-63e203a07679}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{bbd522bf-22f4-4139-bd80-63e203a07679}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{be7176cd-daea-4dda-9eae-d7d86c032b59}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{be7176cd-daea-4dda-9eae-d7d86c032b59}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{cc034577-0936-43c0-b64e-19446ed4a947}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{cc034577-0936-43c0-b64e-19446ed4a947}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{e1e576bb-25bf-4074-b11f-6272ccd31a17}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{e1e576bb-25bf-4074-b11f-6272ccd31a17}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{f5b20622-3316-41b9-8dc5-f477fdb27aba}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{f5b20622-3316-41b9-8dc5-f477fdb27aba}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{bbcf50d1-6c4d-4adc-bd37-a5a7d8c22e7e}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{bbcf50d1-6c4d-4adc-bd37-a5a7d8c22e7e}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{c92d44f7-19f1-4042-8cfa-54ff7e9182a0}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{c92d44f7-19f1-4042-8cfa-54ff7e9182a0}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{d0558ccc-c45d-43f8-be77-0112a708562d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{d0558ccc-c45d-43f8-be77-0112a708562d}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{e926ae41-cdf4-4eb0-b9cf-01b7fd3b777e}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{e926ae41-cdf4-4eb0-b9cf-01b7fd3b777e}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{fa3af445-5547-4d32-8214-49413044fec5}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{fa3af445-5547-4d32-8214-49413044fec5}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{ff43ce01-82d9-4c0a-be13-dcc709396aaf}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{ff43ce01-82d9-4c0a-be13-dcc709396aaf}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/EventFolder/{11ad2823-f536-4d9b-9972-889eade11a37}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/EventFolder/{11ad2823-f536-4d9b-9972-889eade11a37}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/EventFolder/{c773e8a3-bf99-45cc-b150-949b39719d10}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/EventFolder/{c773e8a3-bf99-45cc-b150-949b39719d10}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{36d2ffe5-0bcc-47ba-9052-e8ddd8bbb9d3}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{36d2ffe5-0bcc-47ba-9052-e8ddd8bbb9d3}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{5267bd9c-bc48-4672-afbe-c67bf0020713}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{5267bd9c-bc48-4672-afbe-c67bf0020713}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{75d6e54e-b4e0-46d6-bfd1-441ab05a878c}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{75d6e54e-b4e0-46d6-bfd1-441ab05a878c}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{805afe5a-608e-45cd-b810-3173f0df187c}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{805afe5a-608e-45cd-b810-3173f0df187c}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{8367da70-a55a-4fdb-94ab-033671609515}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{8367da70-a55a-4fdb-94ab-033671609515}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{8951d4bc-55f6-41e8-aa06-9f899ccf46f5}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{8951d4bc-55f6-41e8-aa06-9f899ccf46f5}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{eba99660-0098-4860-a545-9f565e106fb0}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Group/{eba99660-0098-4860-a545-9f565e106fb0}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,79 +49,76 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawningBaliseIsOn.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/Balise_Manager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnArea.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/FPSCounter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/ShakeFeedback.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Menu_Manager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DestroyTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/Balise_ActiveChase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/BaliseSequence.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/UpgradeCollectible.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/ObjectifExtermination.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Animation/Glitch/unityglitch-master/GlitchEffect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SceneInitialize.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/Balise_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SetUPScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Collecible/Collectible_Movement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/FeedbackContactEntites.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Movement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/BaliseCloseDoor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.2.4f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_renderer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Collecible/Health_Collectible.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScaleDistanceFeedback.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Core/Core.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerFootstep.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PointMarker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CompasManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/AudioManager.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/DashController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_AttackCaC_Detector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/CoreDetection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Collecible/Health_Collectible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerFootstep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/LD/BaliseObjectif.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/FPSCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/AudioManager.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/ObjectifExtermination.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ButtonRotation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Option.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/BaliseDestroyennemis.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SoundCoolingAnimated.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ExplosionJumpPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DistanceSoundCore.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/ExplosiveDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/SceneInitialize.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.2.4f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SoundCoolingAnimated.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Menu_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DestroyTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/Balise_ActiveChase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_renderer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Option.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CompasManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PointMarker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_AttackCaC_Detector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Bounce.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponGlock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/DashController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Grenade_Explosion.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponGlock.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Bounce.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ExplosionJumpPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/FeedbackContactEntites.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/CoreDetection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/ExplosiveDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Core/Core.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DistanceSoundCore.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/ExplosionJumpPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/CompasManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Menu_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Option.cs" />
@@ -169,6 +130,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Focus_Switch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_renderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
@@ -176,39 +138,35 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/FeedbackContactEntites.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_AttackCaC_Detector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/DestroyTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_ActiveChase.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Surchauffe_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/SpawnArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/UpgradeCollectible.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/DashController.cs" />
         <option value="$PROJECT_DIR$/Assets/SpawningBaliseIsOn.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
+        <option value="$PROJECT_DIR$/Assets/ScaleDistanceFeedback.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerFootstep.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Grenade_Explosion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Animation/Glitch/unityglitch-master/GlitchEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/EntitésSoundContact.cs" />
         <option value="$PROJECT_DIR$/Assets/SoundAnimatedCooling.cs" />
         <option value="$PROJECT_DIR$/Assets/DistanceSoundCore.cs" />
-        <option value="$PROJECT_DIR$/Assets/SoundCoolingAnimated.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/AmeliorationManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/LD/BaliseSequence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Animation/Glitch/unityglitch-master/GlitchEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/CompasManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/ScaleDistanceFeedback.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
+        <option value="$PROJECT_DIR$/Assets/SoundCoolingAnimated.cs" />
       </list>
     </option>
   </component>
@@ -331,8 +289,9 @@
       <workItem from="1621973280803" duration="7717000" />
       <workItem from="1622023345607" duration="870000" />
       <workItem from="1622050393067" duration="790000" />
-      <workItem from="1622074594485" duration="825000" />
-      <workItem from="1622101784520" duration="15623000" />
+      <workItem from="1622074594485" duration="1545000" />
+      <workItem from="1622124500281" duration="2316000" />
+      <workItem from="1622158150267" duration="212000" />
     </task>
     <servers />
   </component>
@@ -372,9 +331,9 @@
     </state>
     <state x="614" y="299" key="run.anything.popup/0.0.1920.1040/-1920.-62.1920.1040@0.0.1920.1040" timestamp="1621951701620" />
     <state x="616" y="240" key="run.anything.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1619371112188" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1622114369256">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1621861129882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1622114369256" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-127.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1621861129882" />
   </component>
 </project>
