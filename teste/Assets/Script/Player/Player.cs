@@ -39,6 +39,8 @@ public class Player : MonoBehaviour
     public GameObject useButton;
     public bool useButtonOn;
 
+    public GameObject compas;
+
 
     void Start()
     {
@@ -52,6 +54,14 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (PauseMenu.GameIsPaused && compas.activeSelf)
+        {
+            compas.SetActive(false);
+        }
+        if(!PauseMenu.GameIsPaused && !compas.activeSelf)
+        {
+            compas.SetActive(true);
+        }
 
         if (useButtonOn)
         {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,7 +24,9 @@ public class Balise_Fonctionnement : MonoBehaviour
     public bool canBeActive;
     public bool closeDoor;
 
-    public Text timer;
+    public TextMeshProUGUI timer;
+    public GameObject timeUi;
+    public Image timeCircle;
 
     public float t_beforeshutDown = 5;
     private float t_exit;
@@ -56,6 +59,7 @@ public class Balise_Fonctionnement : MonoBehaviour
     public Animator Animator;
     
     
+    
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -67,9 +71,8 @@ public class Balise_Fonctionnement : MonoBehaviour
         
         t = timeObjectif;
         timer.enabled = false;
+        timeUi.SetActive(false);
         zone.SetActive(false);
-
-        
     }
 
     private void Start()
@@ -91,8 +94,10 @@ public class Balise_Fonctionnement : MonoBehaviour
             _meshRenderer.material = materials[1];
             if (!isCapture)
             {
-                timer.text = "Temps de capture : " + t;
+                timer.text = ""+ (int)t;
                 timer.enabled = true;
+                timeCircle.fillAmount = 1 - (t/timeObjectif);
+                timeUi.SetActive(true);
                 zone.SetActive(true);
             }
             
@@ -142,9 +147,10 @@ public class Balise_Fonctionnement : MonoBehaviour
         if (onCapture && isOn)
         {
             t -= Time.deltaTime;
-            timer.text = "Temps de capture : " + t;
-            
+            timer.text = ""+(int)t;
+            timeCircle.fillAmount = 1 - (t/timeObjectif);
             timer.enabled = true;
+            timeUi.SetActive(true);
             
             
 
@@ -172,6 +178,7 @@ public class Balise_Fonctionnement : MonoBehaviour
         {
             t = timeObjectif;
             timer.enabled = false;
+            timeUi.SetActive(false);
             isOn = true;
             onCapture = false;
             Animator.SetTrigger("isCapture");
@@ -234,6 +241,7 @@ public class Balise_Fonctionnement : MonoBehaviour
         
         t = timeObjectif;
         timer.enabled = false;
+        timeUi.SetActive(false);
         onCapture = false;
         isOn = false;
         t_exit = 0;

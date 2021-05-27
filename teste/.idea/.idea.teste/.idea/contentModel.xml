@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\poule\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\poule\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_teste.-1792669913.00" t="ExcludeRecursive" />
-    <e p="D:\COURS\2GDA Ican 2020-2021\Projet semestriel\sem 2jeux\ProtoTest\collaborate\teste" t="IncludeRecursive">
+    <e p="C:\GitHub\collaborate\teste" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -15,10 +13,7 @@
             </e>
           </e>
         </e>
-        <e p="BaliseCloseDoor.cs" t="Include" />
-        <e p="BaliseDestroyennemis.cs" t="Include" />
         <e p="ButtonRotation.cs" t="Include" />
-        <e p="Camera_Shake.cs" t="Include" />
         <e p="CompasManager.cs" t="Include" />
         <e p="DestroyTrigger.cs" t="Include" />
         <e p="DistanceSoundCore.cs" t="Include" />
@@ -62,6 +57,7 @@
                 <e p="{4d12385f-a965-47ef-b1f0-0668cecc3a28}.xml" t="Include" />
                 <e p="{4f64b6cd-6449-44d0-864f-4e078a5abd8e}.xml" t="Include" />
                 <e p="{50cef58c-6091-4e4c-a02b-7281c472ed1a}.xml" t="Include" />
+                <e p="{554d219d-c1d8-4cc2-ad27-92fb49f8c177}.xml" t="Include" />
                 <e p="{57d740d1-ea13-46e2-888a-cd6dd37bf61a}.xml" t="Include" />
                 <e p="{5b6d36b1-dd61-4323-a4e3-99b1927302cc}.xml" t="Include" />
                 <e p="{6345ae65-dbf7-48f5-983f-cbb5d2f4868e}.xml" t="Include" />
@@ -76,6 +72,7 @@
                 <e p="{83ada15d-1709-4849-bb03-b2bea5efa93a}.xml" t="Include" />
                 <e p="{8a9e5ce7-ad2d-49b2-b474-e43d64c8049e}.xml" t="Include" />
                 <e p="{8bb165c4-da33-4c24-9d7e-7f28e7446b1b}.xml" t="Include" />
+                <e p="{8bc026d3-52fc-419d-8a57-1d7bf6872364}.xml" t="Include" />
                 <e p="{8df7b590-239d-4210-9319-9f0dabfda70f}.xml" t="Include" />
                 <e p="{92411859-8a48-4789-b444-b1eef7241294}.xml" t="Include" />
                 <e p="{992a7bd6-8324-41c0-9ac2-c746f9cf1bf8}.xml" t="Include" />
@@ -84,6 +81,7 @@
                 <e p="{a64c325c-7436-4340-8e33-91ba794b1fb9}.xml" t="Include" />
                 <e p="{aa9a1011-a74a-4a44-8baa-3afd7e8eb223}.xml" t="Include" />
                 <e p="{aaae7141-1683-4ad1-afe5-7eb010e47b6d}.xml" t="Include" />
+                <e p="{b01aa8c8-4e5c-4bb3-a679-1ffc0e94b582}.xml" t="Include" />
                 <e p="{b70eee41-f623-402a-bff9-434250876e7b}.xml" t="Include" />
                 <e p="{b7f144de-5f41-484a-835b-7abfb4f32d54}.xml" t="Include" />
                 <e p="{b909c54f-a515-45da-aac7-fd6b6eb5b4f4}.xml" t="Include" />
@@ -91,6 +89,7 @@
                 <e p="{bb9dcff1-a0e7-4017-8efe-472d0b470d5c}.xml" t="Include" />
                 <e p="{bd4cc67d-fb78-434d-b306-7522fbae51af}.xml" t="Include" />
                 <e p="{cc231d89-1aaf-4356-a6a1-75d7d45d6611}.xml" t="Include" />
+                <e p="{d0f3e8a0-4ae3-49a1-8c9f-0ceff34afbb9}.xml" t="Include" />
                 <e p="{d14aa255-d98e-4d9b-afc3-abe570c7377b}.xml" t="Include" />
                 <e p="{da6f32ef-30b9-49e1-aae4-126e1c4422b7}.xml" t="Include" />
                 <e p="{e1b736cf-b8df-404b-94c6-1f5cd9b4ccab}.xml" t="Include" />
@@ -127,6 +126,7 @@
                 <e p="{1563724e-2398-4591-b730-f0ef89eda13d}.xml" t="Include" />
                 <e p="{16c64f8c-f744-4aa6-a252-43dbc41fc4fb}.xml" t="Include" />
                 <e p="{1cab5446-f596-4244-b64a-ef62c9d32544}.xml" t="Include" />
+                <e p="{293733ae-1996-47e3-a08b-7e189ba3f02a}.xml" t="Include" />
                 <e p="{2cfad0ec-7b44-4c58-978c-db6df29718f0}.xml" t="Include" />
                 <e p="{2d54c9aa-a303-4773-a34f-a337b2516e0c}.xml" t="Include" />
                 <e p="{3923b424-c287-4bf6-8e0b-505024220dd6}.xml" t="Include" />
@@ -148,10 +148,12 @@
                 <e p="{b1f904d7-c876-4be9-a500-92ceaf348fe1}.xml" t="Include" />
                 <e p="{b390aa40-ad5f-426d-a969-445bf1888de3}.xml" t="Include" />
                 <e p="{b4942abb-af2c-4f34-a996-9ab1be9a79d6}.xml" t="Include" />
+                <e p="{bbcf50d1-6c4d-4adc-bd37-a5a7d8c22e7e}.xml" t="Include" />
                 <e p="{bbd522bf-22f4-4139-bd80-63e203a07679}.xml" t="Include" />
                 <e p="{be7176cd-daea-4dda-9eae-d7d86c032b59}.xml" t="Include" />
                 <e p="{c92d44f7-19f1-4042-8cfa-54ff7e9182a0}.xml" t="Include" />
                 <e p="{cc034577-0936-43c0-b64e-19446ed4a947}.xml" t="Include" />
+                <e p="{d0558ccc-c45d-43f8-be77-0112a708562d}.xml" t="Include" />
                 <e p="{e1e576bb-25bf-4074-b11f-6272ccd31a17}.xml" t="Include" />
                 <e p="{e926ae41-cdf4-4eb0-b9cf-01b7fd3b777e}.xml" t="Include" />
                 <e p="{f2583bac-3933-4538-800b-79a1fc3fa4c6}.xml" t="Include" />
@@ -161,6 +163,7 @@
               </e>
               <e p="EventFolder" t="Include">
                 <e p="{0a372de3-236e-465c-9326-82edbd2db40a}.xml" t="Include" />
+                <e p="{0e98e16d-34ce-4d1d-ab5b-8b007d0a7e19}.xml" t="Include" />
                 <e p="{10b2c780-fba8-4233-a153-75d2954890be}.xml" t="Include" />
                 <e p="{11ad2823-f536-4d9b-9972-889eade11a37}.xml" t="Include" />
                 <e p="{16484320-482e-4562-8aa7-a581f53dedfd}.xml" t="Include" />
@@ -453,10 +456,14 @@
             <e p="Balise_ActiveChase.cs" t="Include" />
             <e p="Balise_Fonctionnement.cs" t="Include" />
             <e p="Balise_Manager.cs" t="Include" />
+            <e p="BaliseCloseDoor.cs" t="Include" />
+            <e p="BaliseDestroyennemis.cs" t="Include" />
             <e p="BaliseSequence.cs" t="Include" />
             <e p="Particule_ZoneCapture.cs" t="Include" />
             <e p="SpawnArea.cs" t="Include" />
+            <e p="SpawningBaliseIsOn.cs" t="Include" />
             <e p="SpawnPlayer.cs" t="Include" />
+            <e p="UpgradeCollectible.cs" t="Include" />
           </e>
           <e p="Movement.cs" t="Include" />
           <e p="Option.cs" t="Include" />
@@ -490,7 +497,6 @@
           </e>
         </e>
         <e p="SoundCoolingAnimated.cs" t="Include" />
-        <e p="SpawningBaliseIsOn.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
@@ -522,7 +528,6 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
-        <e p="UpgradeCollectible.cs" t="Include" />
       </e>
       <e p="FMODUnity.csproj" t="IncludeRecursive" />
       <e p="FMODUnityEditor.csproj" t="IncludeRecursive" />
@@ -533,5 +538,7 @@
       <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="teste.sln" t="IncludeFlat" />
     </e>
+    <e p="C:\Users\Paul\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Paul\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_teste.325905264.00" t="ExcludeRecursive" />
   </component>
 </project>

@@ -18,6 +18,7 @@ public class CompasManager : MonoBehaviour
     
     private float compasUnit;
     
+    
 
     private void Start()
     {
@@ -62,7 +63,6 @@ public class CompasManager : MonoBehaviour
                 pointMarkers.Remove(marker);
             }
         }
-        
         
         
     }

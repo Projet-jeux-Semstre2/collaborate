@@ -96,11 +96,6 @@ public class Entities_Manager : MonoBehaviour
 
         if (!hasCore) 
         {
-            
-            
-            
-            colliderAttirance.enabled = true;
-
             foreach (Collider collider in Physics.OverlapSphere(transform.position, pullRadius) )
             {
                 
@@ -114,10 +109,7 @@ public class Entities_Manager : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            colliderAttirance.enabled = false;
-        }
+        
         
 
 

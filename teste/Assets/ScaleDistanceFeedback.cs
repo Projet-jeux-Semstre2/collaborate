@@ -8,7 +8,10 @@ public class ScaleDistanceFeedback : MonoBehaviour
     public float coefProportionnel;
     public float scaleInit;
     private float distAttackInit;
-   
+    private RaycastHit hit;
+    public LayerMask normalCheck;
+    private GameObject normal;
+
 
     void Start()
     {
@@ -17,12 +20,10 @@ public class ScaleDistanceFeedback : MonoBehaviour
         coefProportionnel = scaleInit / distAttackInit;
     }
 
-    
+
     void Update()
     {
-
         float finalscale = _coreAttack.temporairBase * coefProportionnel;
-        transform.localScale = new Vector3(finalscale,finalscale,finalscale);
-
+        transform.localScale = new Vector3(finalscale, finalscale, finalscale);
     }
 }

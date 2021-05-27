@@ -1,4 +1,7 @@
+using System;
 using UnityEngine;
+using UnityEngine.WSA;
+using Random = UnityEngine.Random;
 
 [ExecuteInEditMode]
 [AddComponentMenu("Image Effects/GlitchEffect")]
@@ -25,6 +28,8 @@ public class GlitchEffect : MonoBehaviour
 	private float _glitchdownTime = 0.05f;
 	private float _flickerTime = 0.5f;
 	private Material _material;
+
+	private float t;
 
 	void Start()
 	{
@@ -89,5 +94,19 @@ public class GlitchEffect : MonoBehaviour
 			_material.SetFloat("displace", 0);
 
 		Graphics.Blit(source, destination, _material);
+	}
+
+	private void Update()
+	{
+		if (enabled)
+		{
+			t += Time.deltaTime;
+
+			if(t >= 3)
+			{
+				enabled = false;
+				t = 0;
+			}
+		}
 	}
 }

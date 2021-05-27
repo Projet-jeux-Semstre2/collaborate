@@ -17,25 +17,28 @@ public class Balise_Manager : MonoBehaviour
     {
         balises = GameObject.FindGameObjectsWithTag("Balise");
 
-        BaliseSequence.sequencePlay = 1;
-        balises[2].GetComponent<BaliseSequence>().leaderSequence = true;
-        balises[5].GetComponent<BaliseSequence>().leaderSequence = true;
-        balises[9].GetComponent<BaliseSequence>().leaderSequence = true;
-        /*int rdSequence = Random.Range(0, 15);
+        
+        
+        int rdSequence = Random.Range(0, 10);
         if (rdSequence < 5)
         {
             BaliseSequence.sequencePlay = 1;
+            print("sequence Play 1");
+            balises[0].GetComponent<BaliseSequence>().leaderSequence = true;
+            balises[1].GetComponent<BaliseSequence>().leaderSequence = true;
+            balises[9].GetComponent<BaliseSequence>().leaderSequence = true;
+            
         }
 
         if (rdSequence >= 5 && rdSequence < 10)
         {
             BaliseSequence.sequencePlay = 2;
+            print("sequence Play 2");
+            balises[0].GetComponent<BaliseSequence>().leaderSequence = true;
+            balises[9].GetComponent<BaliseSequence>().leaderSequence = true;
+            balises[2].GetComponent<BaliseSequence>().leaderSequence = true;
         }
         
-        if (rdSequence >= 10)
-        {
-            BaliseSequence.sequencePlay = 3;
-        }*/
 
     }
 

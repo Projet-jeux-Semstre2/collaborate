@@ -178,7 +178,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 64
   m_CollisionDetection: 0
 --- !u!114 &-4050632262616935286
 MonoBehaviour:
@@ -362,13 +362,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7970422883328339180}
-  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 4973448103378094044}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!135 &5927741293326618276
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -397,6 +397,9 @@ MonoBehaviour:
   _coreAttack: {fileID: 8093928320968083074}
   coefProportionnel: 0
   scaleInit: 0
+  normalCheck:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!212 &4785334476287445106
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -15,11 +15,10 @@ public class BaliseSequence : MonoBehaviour
     [Header("Sequence 1")]
     public Balise_Fonctionnement[] baliseSequence1;
 
-    [Header("Sequence 1")]
+    [Header("Sequence 2")]
     public Balise_Fonctionnement[] baliseSequence2;
 
-    [Header("Sequence 1")]
-    public Balise_Fonctionnement[] baliseSequence3;
+    
 
 
     private void Start()
@@ -31,9 +30,6 @@ public class BaliseSequence : MonoBehaviour
                 break;
             case 2:
                 ChooseSequence(baliseSequence2);
-                break;
-            case 3:
-                ChooseSequence(baliseSequence3);
                 break;
         }
         

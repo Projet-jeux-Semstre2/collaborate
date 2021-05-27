@@ -91,15 +91,11 @@ public class AmeliorationManager : MonoBehaviour
 
     public IEnumerator chooseUpgradeRandom()
     {
-        List<GameObject> temp = new List<GameObject>();
-        temp.AddRange(upgradeButtons);
-        print(temp);
-        
         for (int i = 0; i < buttonsChoose.Length; i++)
         {
             int rd = Random.Range(0, upgradeButtons.Length);
 
-            if (!buttonsChoose.Contains(upgradeButtons[rd]))
+            if (!buttonsChoose.Contains(upgradeButtons[rd]) && upgradeButtons[rd].GetComponent<CheckUpgrade>().upgradeAlreadyHave < 3)
             {
                 buttonsChoose[i] = upgradeButtons[rd];
                 buttonsChoose[i].transform.position = placementButton[i].position;

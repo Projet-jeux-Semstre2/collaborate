@@ -719,11 +719,11 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637576785498982989
+  lastModified: 637577172015635876
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3152
+    Value: 3294
   Exists: 1
 --- !u!114 &-5557715990741852107
 MonoBehaviour:
@@ -1192,6 +1192,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 440
+--- !u!114 &-4027634448876202518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Upgrade/GrenadeLauncher/GrenadeLauncher_Lvl3
+  m_EditorClassIdentifier: 
+  Path: event:/Upgrade/GrenadeLauncher/GrenadeLauncher_Lvl3
+  guid: cc8c55d05dc4f843be770112a708562d
+  Banks:
+  - {fileID: -58006880975490902}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6047
 --- !u!114 &-3952987630993977302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,7 +1236,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 25
+  MaxDistance: 300
   Length: 0
 --- !u!114 &-3933243107151881779
 MonoBehaviour:
@@ -1945,7 +1968,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637576785498932965
+  lastModified: 637577172015585803
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2028,6 +2051,9 @@ MonoBehaviour:
   - {fileID: 115399324769177824}
   - {fileID: -3952987630993977302}
   - {fileID: -924156436169647179}
+  - {fileID: 2623862634819816195}
+  - {fileID: -4027634448876202518}
+  - {fileID: 9207135516889325643}
   EditorParameters:
   - {fileID: -8283775130088713381}
   - {fileID: -4911378675586394604}
@@ -2035,7 +2061,7 @@ MonoBehaviour:
   - {fileID: -58006880975490902}
   StringsBanks:
   - {fileID: -5797711374232112098}
-  stringsBankWriteTime: 637576785498982989
+  stringsBankWriteTime: 637577172015635876
   cacheVersion: 6
 --- !u!114 &11157943480557124
 MonoBehaviour:
@@ -2579,6 +2605,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14078
+--- !u!114 &2623862634819816195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Upgrade/GrenadeLauncher/GrenadeLauncher_Lvl2
+  m_EditorClassIdentifier: 
+  Path: event:/Upgrade/GrenadeLauncher/GrenadeLauncher_Lvl2
+  guid: ae3337299619e347a08b7e189ba3f02a
+  Banks:
+  - {fileID: -58006880975490902}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6047
 --- !u!114 &2697543910028375152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2708,7 +2757,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Game .bank
   Name: 'Game '
   StudioPath: 'bank:/Game '
-  lastModified: 637576785439596981
+  lastModified: 637577172012092729
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -3778,3 +3827,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 18000
+--- !u!114 &9207135516889325643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Upgrade/GrenadeLauncher/GrenadeLauncher_Lvl1
+  m_EditorClassIdentifier: 
+  Path: event:/Upgrade/GrenadeLauncher/GrenadeLauncher_Lvl1
+  guid: d150cfbb4d6cdc4abd37a5a7d8c22e7e
+  Banks:
+  - {fileID: -58006880975490902}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6047

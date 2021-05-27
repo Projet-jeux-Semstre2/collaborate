@@ -38,6 +38,7 @@ public class Focus_Switch : MonoBehaviour
     
     // sons
     public string FmodSwitch;
+    private bool canOneShot;
     
     [Header("Sur le ShotGun")]
     public Color[] emissiveShotGun;
@@ -339,11 +340,11 @@ public class Focus_Switch : MonoBehaviour
                 break;
         }
         //sons
-        bool canOneShot = true;
+        canOneShot = true;
         if (canOneShot)
         {
             Debug.Log("switch sound");
-                        FMODUnity.RuntimeManager.PlayOneShot(FmodSwitch);
+            FMODUnity.RuntimeManager.PlayOneShot(FmodSwitch);
         }
         
         yield return new WaitForSeconds(timeEffect);

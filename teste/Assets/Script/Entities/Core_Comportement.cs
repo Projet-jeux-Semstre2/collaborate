@@ -99,9 +99,13 @@ public class Core_Comportement : MonoBehaviour
 
     void Patrol()
     {
-        if ( _coreManager.agent.enabled && _coreManager.agent.remainingDistance <= 1.2f && !canDoTarget )
+        if ( _coreManager.agent.enabled &&  !canDoTarget )
         {
-            canDoTarget = true;
+            if (_coreManager.agent.remainingDistance <= 1.2f && _coreManager.agent.isActiveAndEnabled)
+            {
+                canDoTarget = true;
+            }
+            
         }
         
         
