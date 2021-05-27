@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{b01aa8c8-4e5c-4bb3-a679-1ffc0e94b582}">
 		<property name="assetPath">
-			<value>Level_1_grenade_improve.wav</value>
+			<value>V3/Level_1_grenade_improve.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

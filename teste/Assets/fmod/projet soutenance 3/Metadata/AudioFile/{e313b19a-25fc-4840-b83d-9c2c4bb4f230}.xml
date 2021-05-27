@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{e313b19a-25fc-4840-b83d-9c2c4bb4f230}">
+		<property name="assetPath">
+			<value>V4/glitch_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.3812244897959185</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6ec572c6-f630-4a91-b2a8-c7ebe101729a}</destination>
+		</relationship>
+	</object>
+</objects>

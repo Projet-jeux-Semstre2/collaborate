@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{6e0bdf8a-b521-477b-a8ff-f39c755fdecd}">
 		<property name="assetPath">
-			<value>level 2 overheated.wav</value>
+			<value>V3/level 2 overheated.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

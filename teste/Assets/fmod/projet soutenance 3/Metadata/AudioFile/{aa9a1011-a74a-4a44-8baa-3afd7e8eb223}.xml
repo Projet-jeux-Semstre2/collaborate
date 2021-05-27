@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{aa9a1011-a74a-4a44-8baa-3afd7e8eb223}">
 		<property name="assetPath">
-			<value>glitch 2.wav</value>
+			<value>V3/glitch 2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

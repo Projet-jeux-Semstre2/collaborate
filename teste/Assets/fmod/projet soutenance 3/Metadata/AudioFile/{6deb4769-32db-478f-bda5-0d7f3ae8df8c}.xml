@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{6deb4769-32db-478f-bda5-0d7f3ae8df8c}">
 		<property name="assetPath">
-			<value>Entities/amas_10_.wav</value>
+			<value>V3/amas_10_.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

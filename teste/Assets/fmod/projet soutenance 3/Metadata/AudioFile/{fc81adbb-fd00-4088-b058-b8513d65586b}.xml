@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{fc81adbb-fd00-4088-b058-b8513d65586b}">
 		<property name="assetPath">
-			<value>creepydark-space-ambience-sound-effect-free.mp3</value>
+			<value>V3/creepydark-space-ambience-sound-effect-free.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

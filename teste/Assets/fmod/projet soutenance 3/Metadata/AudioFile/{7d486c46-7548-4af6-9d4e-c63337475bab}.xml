@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{7d486c46-7548-4af6-9d4e-c63337475bab}">
 		<property name="assetPath">
-			<value>Voix Pamela menu.wav</value>
+			<value>V3/Voix Pamela menu.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{8a9e5ce7-ad2d-49b2-b474-e43d64c8049e}">
 		<property name="assetPath">
-			<value>level 3 speedmaniement.wav</value>
+			<value>V3/level 3 speedmaniement.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

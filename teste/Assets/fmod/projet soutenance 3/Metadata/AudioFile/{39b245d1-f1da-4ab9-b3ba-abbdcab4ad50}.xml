@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{39b245d1-f1da-4ab9-b3ba-abbdcab4ad50}">
+		<property name="assetPath">
+			<value>V4/Switch/lunettes_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.48</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6ec572c6-f630-4a91-b2a8-c7ebe101729a}</destination>
+		</relationship>
+	</object>
+</objects>
