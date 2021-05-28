@@ -270,8 +270,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 900
+  MinDistance: 0
+  MaxDistance: 200
   Length: 6874
 --- !u!114 &-7625064198867275503
 MonoBehaviour:
@@ -719,7 +719,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637577928004628340
+  lastModified: 637577964171780840
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -2011,7 +2011,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637577928004578338
+  lastModified: 637577964171690862
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2106,7 +2106,7 @@ MonoBehaviour:
   - {fileID: -58006880975490902}
   StringsBanks:
   - {fileID: -5797711374232112098}
-  stringsBankWriteTime: 637577928004628340
+  stringsBankWriteTime: 637577964171780840
   cacheVersion: 6
 --- !u!114 &11157943480557124
 MonoBehaviour:
@@ -2802,7 +2802,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Game .bank
   Name: 'Game '
   StudioPath: 'bank:/Game '
-  lastModified: 637577927981170886
+  lastModified: 637577964168470596
   LoadResult: 0
   FileSizes: []
   Exists: 1
