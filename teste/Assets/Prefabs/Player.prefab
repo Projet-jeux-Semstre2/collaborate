@@ -15603,10 +15603,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86cb339323adbd640a4705cf24f34f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedClamp: {x: 160, y: 160}
-  force: 300
+  speedClamp: {x: 20, y: 20}
+  force: 30
   shakeDuringTime: 1
-  time: 5
+  time: 0.2
 --- !u!1 &1561207565032351329
 GameObject:
   m_ObjectHideFlags: 0
@@ -81519,7 +81519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: FmodCooling
-      value: event:/Weapons/Shotgun/SG_Cooling
+      value: event:/Weapons/Shotgun/SG_CoolingTech
       objectReference: {fileID: 0}
     - target: {fileID: 2446189285027039703, guid: 646092ae7142db84ab5aab709653c7e5, type: 3}
       propertyPath: overloadSon

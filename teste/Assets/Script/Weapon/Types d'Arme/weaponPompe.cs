@@ -225,14 +225,14 @@ public class weaponPompe : Weapon
         Debug.DrawLine(mainCamera.transform.position, new Vector3(0, 0, maxRange) + new Vector3(Combo.x, Combo.y, 0));
         Debug.DrawRay(mainCamera.transform.position, mainCamera.transform.forward, Color.blue, 0.5f);
 
-        if (Input.GetButtonDown("Reload")) /// son quand appyer déclenche
+       /* if (Input.GetButtonDown("Reload")) /// son quand appyer déclenche
         {
             if (soundOs)
             {
                 event_fmod_Cooling = FMODUnity.RuntimeManager.CreateInstance(FmodCooling);
                 soundOs = false;
             }
-        }
+        }**/
         
         if (Input.GetButton("Reload") && !_shotgunManager.isSurchauffeMax)
         {
@@ -248,8 +248,8 @@ public class weaponPompe : Weapon
 
         if (Input.GetButtonUp("Reload")) // quand laiser tomber reduit
         {
-            soundOs = true;
-            event_fmod_Cooling.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);;
+           
+            FMODUnity.RuntimeManager.PlayOneShot(FmodCooling);
         }
     }
     

@@ -4,9 +4,6 @@
 		<property name="name">
 			<value>Externe</value>
 		</property>
-		<property name="maxInstances">
-			<value>6</value>
-		</property>
 		<property name="instanceStealing">
 			<value>3</value>
 		</property>
@@ -31,7 +28,7 @@
 	<object class="MixerBusFader" id="{e0115171-e4c2-433f-ba42-458b97b920cd}" />
 	<object class="CompressorEffect" id="{912999fd-0032-436f-afe8-01aa295633c1}">
 		<property name="threshold">
-			<value>-19.5</value>
+			<value>-14</value>
 		</property>
 		<property name="ratio">
 			<value>50</value>

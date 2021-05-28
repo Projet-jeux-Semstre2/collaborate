@@ -719,11 +719,11 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637577622197073890
+  lastModified: 637577928004628340
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3522
+    Value: 3568
   Exists: 1
 --- !u!114 &-5557715990741852107
 MonoBehaviour:
@@ -1664,6 +1664,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
+--- !u!114 &-1268950464396307818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Shotgun/SG_CoolingTech
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Shotgun/SG_CoolingTech
+  guid: 7b62524706b04a44b28509c78df5884d
+  Banks:
+  - {fileID: -58006880975490902}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1144412628344326473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1751,7 +1774,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 19280
+  Length: 18000
 --- !u!114 &-908021561985319450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1988,7 +2011,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637577622196993891
+  lastModified: 637577928004578338
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2074,6 +2097,7 @@ MonoBehaviour:
   - {fileID: 2623862634819816195}
   - {fileID: -4027634448876202518}
   - {fileID: 9207135516889325643}
+  - {fileID: -1268950464396307818}
   EditorParameters:
   - {fileID: -8283775130088713381}
   - {fileID: -4911378675586394604}
@@ -2082,7 +2106,7 @@ MonoBehaviour:
   - {fileID: -58006880975490902}
   StringsBanks:
   - {fileID: -5797711374232112098}
-  stringsBankWriteTime: 637577622197073890
+  stringsBankWriteTime: 637577928004628340
   cacheVersion: 6
 --- !u!114 &11157943480557124
 MonoBehaviour:
@@ -2778,7 +2802,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Game .bank
   Name: 'Game '
   StudioPath: 'bank:/Game '
-  lastModified: 637577622080310440
+  lastModified: 637577927981170886
   LoadResult: 0
   FileSizes: []
   Exists: 1

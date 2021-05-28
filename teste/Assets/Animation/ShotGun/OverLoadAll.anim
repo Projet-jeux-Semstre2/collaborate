@@ -3253,16 +3253,16 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.33333334
-    functionName: PlaySound
-    data: 
+  - time: 0.016666668
+    functionName: PlaysSoundOsVar2D
+    data: event:/Weapons/Shotgun/SG_CoolingTech
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.5166667
-    functionName: StopSound
-    data: 
+  - time: 0.1
+    functionName: PlaysSoundOsVar2D
+    data: event:/Weapons/Shotgun/SG_Cooling
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
