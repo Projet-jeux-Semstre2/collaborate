@@ -2,11 +2,14 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="MixerGroup" id="{0eb2418d-ed0b-4ea2-96be-def23f903a2e}">
 		<property name="volume">
-			<value>-10</value>
+			<value>-15.5</value>
 		</property>
 		<property name="name">
 			<value>Musique</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{b844c217-976d-430c-b12d-82d411053e8d}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{eb9bf67e-1ba1-44f6-a95d-5b683d327eda}</destination>
 		</relationship>
@@ -15,6 +18,26 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{b3db2fa9-3cde-4372-afa2-87a16906dfd2}</destination>
+		</relationship>
+	</object>
+	<object class="SidechainModulator" id="{b844c217-976d-430c-b12d-82d411053e8d}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>12.5</value>
+		</property>
+		<property name="releaseTime">
+			<value>100</value>
+		</property>
+		<property name="minimumThreshold">
+			<value>-32</value>
+		</property>
+		<property name="maximumThreshold">
+			<value>-11.1000004</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{596ef52d-cd67-4d4a-8de2-ade6b01b5865}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{eb9bf67e-1ba1-44f6-a95d-5b683d327eda}">

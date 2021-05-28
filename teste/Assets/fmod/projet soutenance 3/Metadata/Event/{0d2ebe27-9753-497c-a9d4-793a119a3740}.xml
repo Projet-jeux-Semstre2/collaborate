@@ -95,6 +95,12 @@
 		<property name="length">
 			<value>0.56000000000000005</value>
 		</property>
+		<property name="volume">
+			<value>-2</value>
+		</property>
+		<property name="pitch">
+			<value>7</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{76f3247e-270e-4b81-8b6a-3951df907922}</destination>
 			<destination>{c619dac5-b3f3-40bf-9a09-f3f019a64e7c}</destination>
@@ -104,6 +110,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{8d056ace-830b-426c-b8e6-9839efa806f4}">
+		<property name="volume">
+			<value>-9.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -121,6 +130,7 @@
 		<relationship name="effects">
 			<destination>{d9f11d18-5561-4656-8337-cd8304b9d592}</destination>
 			<destination>{1cb7e5ed-24b5-4425-8dfb-1fb821952bce}</destination>
+			<destination>{ee47d836-3591-4ae5-b268-dd88e8fbf03c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{22969f58-d518-4bc0-87df-d9c9b1be3454}" />
@@ -162,7 +172,12 @@
 	<object class="MixerBusFader" id="{d9f11d18-5561-4656-8337-cd8304b9d592}" />
 	<object class="GainEffect" id="{1cb7e5ed-24b5-4425-8dfb-1fb821952bce}">
 		<property name="gain">
-			<value>6.5</value>
+			<value>10</value>
+		</property>
+	</object>
+	<object class="LimiterEffect" id="{ee47d836-3591-4ae5-b268-dd88e8fbf03c}">
+		<property name="ceiling">
+			<value>-2.5</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{e5056ddc-7ae5-4e92-b63e-5ba7e3daaf3e}" />

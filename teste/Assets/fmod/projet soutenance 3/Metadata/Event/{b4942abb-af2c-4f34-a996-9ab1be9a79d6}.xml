@@ -92,6 +92,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{ae31b171-29e7-4d4d-8316-dbc7b9391920}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{acd7891f-7c2d-4237-bfac-1bae7f34f9c9}</destination>
 		</relationship>
@@ -137,13 +140,19 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{acd7891f-7c2d-4237-bfac-1bae7f34f9c9}">
 		<relationship name="effects">
-			<destination>{eab19d88-d4c3-4a90-bb4b-97a180db88e8}</destination>
 			<destination>{f81d376c-3bce-487b-9407-12bbe9defe9d}</destination>
+			<destination>{eab19d88-d4c3-4a90-bb4b-97a180db88e8}</destination>
 			<destination>{86b9f6bf-37e3-4c87-b253-2f0cffa0f9dd}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{0897a359-3459-41c8-b580-eb84e9ded0a9}" />
 	<object class="SingleSound" id="{35deea0e-b40a-4017-8dc3-219f1cfa63a9}">
+		<property name="volume">
+			<value>10</value>
+		</property>
+		<property name="pitch">
+			<value>7.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{0cac31df-1a6a-4857-8f09-feacc49e2ae6}</destination>
 		</relationship>
@@ -163,18 +172,18 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{93ffdac8-0213-43bc-b38b-fca0e8b2f675}" />
+	<object class="MixerBusFader" id="{f81d376c-3bce-487b-9407-12bbe9defe9d}" />
 	<object class="LimiterEffect" id="{eab19d88-d4c3-4a90-bb4b-97a180db88e8}">
 		<property name="boost">
-			<value>2.29999995</value>
+			<value>3.10000014</value>
 		</property>
 		<property name="ceiling">
-			<value>-9.90000057</value>
+			<value>-5.9000001</value>
 		</property>
 		<property name="release">
-			<value>6.20000029</value>
+			<value>9.60000038</value>
 		</property>
 	</object>
-	<object class="MixerBusFader" id="{f81d376c-3bce-487b-9407-12bbe9defe9d}" />
 	<object class="SpatialiserEffect" id="{86b9f6bf-37e3-4c87-b253-2f0cffa0f9dd}">
 		<property name="maximumDistance">
 			<value>800</value>

@@ -4,6 +4,9 @@
 		<property name="name">
 			<value>Gameplay-action</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{c7b01de5-4098-41ea-8211-a1ecc066928e}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{a71754bc-a346-4471-8b6c-5f52430f2990}</destination>
 		</relationship>
@@ -12,6 +15,26 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{b3db2fa9-3cde-4372-afa2-87a16906dfd2}</destination>
+		</relationship>
+	</object>
+	<object class="SidechainModulator" id="{c7b01de5-4098-41ea-8211-a1ecc066928e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>17.5</value>
+		</property>
+		<property name="releaseTime">
+			<value>96</value>
+		</property>
+		<property name="minimumThreshold">
+			<value>-29</value>
+		</property>
+		<property name="maximumThreshold">
+			<value>-16.1000004</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{596ef52d-cd67-4d4a-8de2-ade6b01b5865}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{a71754bc-a346-4471-8b6c-5f52430f2990}">

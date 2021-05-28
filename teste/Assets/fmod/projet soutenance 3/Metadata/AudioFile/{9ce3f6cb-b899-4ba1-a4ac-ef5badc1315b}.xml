@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{9ce3f6cb-b899-4ba1-a4ac-ef5badc1315b}">
 		<property name="assetPath">
-			<value>Weapon/LanceGrenade/WeaponV1.2_LanceGrenadeV1.2.wav</value>
+			<value>V4/ShootLCG/WeaponV1.2_LanceGrenadeV1.2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
