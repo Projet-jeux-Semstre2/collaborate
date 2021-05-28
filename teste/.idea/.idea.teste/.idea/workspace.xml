@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="370cb4ce-1be2-4ab7-8340-8b963387c282" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.teste/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ShotGun/OverLoadAll.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ShotGun/OverLoadAll.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{4752627b-b006-444a-b285-09c78df5884d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{4752627b-b006-444a-b285-09c78df5884d}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{fa3af445-5547-4d32-8214-49413044fec5}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/fmod/projet soutenance 3/Metadata/Event/{fa3af445-5547-4d32-8214-49413044fec5}.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
-    </list>
+    <list default="true" id="370cb4ce-1be2-4ab7-8340-8b963387c282" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,9 +127,9 @@
         <option value="$PROJECT_DIR$/Assets/EntitésSoundContact.cs" />
         <option value="$PROJECT_DIR$/Assets/SoundAnimatedCooling.cs" />
         <option value="$PROJECT_DIR$/Assets/DistanceSoundCore.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
         <option value="$PROJECT_DIR$/Assets/SoundCoolingAnimated.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
       </list>
     </option>
   </component>
@@ -266,7 +255,7 @@
       <workItem from="1622074594485" duration="1545000" />
       <workItem from="1622124500281" duration="2316000" />
       <workItem from="1622158150267" duration="791000" />
-      <workItem from="1622186903903" duration="353000" />
+      <workItem from="1622186903903" duration="1133000" />
     </task>
     <servers />
   </component>
