@@ -57,6 +57,11 @@ public class Player_Health : MonoBehaviour
         {
             health = maxHealth;
         }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            SceneManager.LoadScene("Win");
+        }
         
         
         //Debug sunny
@@ -90,6 +95,7 @@ public class Player_Health : MonoBehaviour
 
     void Die()
     {
+        _gameManager.nameSceneToLoad = "GameOver";
         _gameManager.GetComponent<GameManager>().GameOver();
     }
 

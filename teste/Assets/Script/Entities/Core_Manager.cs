@@ -146,7 +146,7 @@ public class Core_Manager : MonoBehaviour
             agent.destination = target;
         }
 
-        if(Physics.Raycast(transform.position,Vector3.down*10, 10, layerMask))
+        if(Physics.Raycast(transform.position,Vector3.down*10, 2, layerMask))
         {
             
             _isOnGround = true;

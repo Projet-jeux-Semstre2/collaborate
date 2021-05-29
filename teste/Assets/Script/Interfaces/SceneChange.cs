@@ -29,4 +29,9 @@ public class SceneChange : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         SceneManager.LoadScene(nameSceneToLoad);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

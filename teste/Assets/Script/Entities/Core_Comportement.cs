@@ -101,7 +101,7 @@ public class Core_Comportement : MonoBehaviour
     {
         if ( _coreManager.agent.enabled &&  !canDoTarget )
         {
-            if (_coreManager.agent.remainingDistance <= 1.2f && _coreManager.agent.isActiveAndEnabled)
+            if (Vector3.Distance(_coreManager.target, transform.position) <= 1.2f && _coreManager.agent.isActiveAndEnabled)
             {
                 canDoTarget = true;
             }

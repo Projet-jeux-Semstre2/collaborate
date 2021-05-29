@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\poule\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\poule\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_teste.-1792669913.00" t="ExcludeRecursive" />
-    <e p="D:\COURS\2GDA Ican 2020-2021\Projet semestriel\sem 2jeux\ProtoTest\collaborate\teste" t="IncludeRecursive">
+    <e p="C:\GitHub\collaborate\teste" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -17,6 +15,7 @@
         </e>
         <e p="ButtonRotation.cs" t="Include" />
         <e p="CompasManager.cs" t="Include" />
+        <e p="CursorUnlock.cs" t="Include" />
         <e p="DestroyTrigger.cs" t="Include" />
         <e p="DistanceSoundCore.cs" t="Include" />
         <e p="ExplosionJumpPlayer.cs" t="Include" />
@@ -25,6 +24,7 @@
             <e p="Metadata" t="Include">
               <e p="Asset" t="Include">
                 <e p="{11b3f468-4dee-40a2-a17d-28ebcc462757}.xml" t="Include" />
+                <e p="{22168d31-731a-43e2-be24-b26270a68b35}.xml" t="Include" />
                 <e p="{324d1ce5-da1a-4e5e-9436-fb9d678adc76}.xml" t="Include" />
                 <e p="{5380ed65-0030-4b44-9524-6e62d3f42494}.xml" t="Include" />
                 <e p="{66a3d0ad-8be8-4c6b-b28e-da4abdc11975}.xml" t="Include" />
@@ -123,6 +123,7 @@
                 <e p="{d14aa255-d98e-4d9b-afc3-abe570c7377b}.xml" t="Include" />
                 <e p="{d7873f89-9944-477d-9873-9f8ce252c9b2}.xml" t="Include" />
                 <e p="{d99a82bf-eafc-4478-ba2d-f317c8e79ebf}.xml" t="Include" />
+                <e p="{d9be29e6-5611-4933-b3e1-d3c763f27d82}.xml" t="Include" />
                 <e p="{da6f32ef-30b9-49e1-aae4-126e1c4422b7}.xml" t="Include" />
                 <e p="{daed3665-c8d1-45fa-a44c-5e75f3ea23df}.xml" t="Include" />
                 <e p="{de5d3339-ca9f-4db0-a84a-ebf3b2584017}.xml" t="Include" />
@@ -131,6 +132,7 @@
                 <e p="{e73401af-d171-4433-8d10-c2d31a799393}.xml" t="Include" />
                 <e p="{e9dcaa6d-2da7-4cd7-a173-eb9f227d944f}.xml" t="Include" />
                 <e p="{ed24ab11-78ba-45a3-860f-4115d48812ac}.xml" t="Include" />
+                <e p="{f1fde99b-9eec-42a0-87dd-d0c8e1b0db79}.xml" t="Include" />
                 <e p="{f273b6b7-c7f0-4587-9922-0afb61057a98}.xml" t="Include" />
                 <e p="{f2d43b3e-f25e-4c99-884a-cb317218980e}.xml" t="Include" />
                 <e p="{f36586bb-feff-424a-8109-6ab07a67d159}.xml" t="Include" />
@@ -140,6 +142,7 @@
                 <e p="{fa2f7a91-0aca-4f9d-9c12-6e03b5ce1024}.xml" t="Include" />
                 <e p="{fb1ca4cd-6718-4b65-abe1-356346219914}.xml" t="Include" />
                 <e p="{fc81adbb-fd00-4088-b058-b8513d65586b}.xml" t="Include" />
+                <e p="{fde23407-987e-4183-8693-87e77756d393}.xml" t="Include" />
                 <e p="{fe05fd3a-befa-4cc0-aade-315eec107c15}.xml" t="Include" />
                 <e p="{ff120593-0c08-4f26-852d-59dc2b419913}.xml" t="Include" />
               </e>
@@ -457,7 +460,6 @@
           </e>
         </e>
         <e p="PointMarker.cs" t="Include" />
-        <e p="ReturnMenu.cs" t="Include" />
         <e p="ScaleDistanceFeedback.cs" t="Include" />
         <e p="Script" t="Include">
           <e p="Ameliorations" t="Include">
@@ -586,5 +588,7 @@
       <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="teste.sln" t="IncludeFlat" />
     </e>
+    <e p="C:\Users\Paul\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Paul\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_teste.325905264.00" t="ExcludeRecursive" />
   </component>
 </project>

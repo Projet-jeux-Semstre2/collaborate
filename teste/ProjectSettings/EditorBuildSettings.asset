@@ -15,25 +15,25 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu_Test.unity
     guid: 2055e711d89cb934582b819266444c11
   - enabled: 0
-    path: Assets/Scenes/Level1.unity
-    guid: 313fe499bde1d2a458400d0640faf21a
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Level2.unity
-    guid: 8c31a764ed4f26e4483960eefa56a6a7
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Level 3.unity
-    guid: d29430721c51cb34395834f517b33990
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Level4.unity
-    guid: b23dd65948c7a6c4385c30b34d5670af
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Level5.unity
-    guid: 6fb9ce5b51fa12b4997cff03640c883c
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Level6.unity
-    guid: ae8f0fbb65348f34ea0a6a9cfced7bfc
-  - enabled: 1
-    path: Assets/Scenes/Win.unity
+    path: Assets/Scenes/GameOver.unity
     guid: 77ac65cc0a299a146b2c4ddbecd4455e
   - enabled: 0
     path: Assets/Scenes/TesteDistanceScene.unity
@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewLevel/NewLevel.unity
     guid: a7be0e93eeed5b94b8a78b486d16b089
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 128b014e9bab7aa4baf3bc210910e239
   m_configObjects: {}

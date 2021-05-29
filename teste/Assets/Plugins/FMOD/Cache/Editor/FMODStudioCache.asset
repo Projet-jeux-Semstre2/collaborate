@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9093908102023810300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CoolingStop
+  m_EditorClassIdentifier: 
+  Name: CoolingStop
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 499752136
+    data2: 1323762409
+  Exists: 1
 --- !u!114 &-8825624702529562525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +223,7 @@ MonoBehaviour:
   ID:
     data1: 1268769261
     data2: 3309854418
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7923395120811165288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,8 +290,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 900
+  MinDistance: 0
+  MaxDistance: 200
   Length: 6874
 --- !u!114 &-7625064198867275503
 MonoBehaviour:
@@ -719,11 +739,11 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637577928004628340
+  lastModified: 637578093107775983
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3568
+    Value: 3556
   Exists: 1
 --- !u!114 &-5557715990741852107
 MonoBehaviour:
@@ -1033,7 +1053,7 @@ MonoBehaviour:
   ID:
     data1: 2589385084
     data2: 3348358899
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4909785006328625606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1397,6 +1417,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 950
   Length: 1000
+--- !u!114 &-3358501389708872503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/IsShutDown
+  m_EditorClassIdentifier: 
+  Name: IsShutDown
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1268769261
+    data2: 3309854418
+  Exists: 1
 --- !u!114 &-3343969818737526972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,7 +1456,7 @@ MonoBehaviour:
   ID:
     data1: 499752136
     data2: 1323762409
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3180406941522234325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2011,7 +2051,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637577928004578338
+  lastModified: 637578093107726124
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2099,14 +2139,14 @@ MonoBehaviour:
   - {fileID: 9207135516889325643}
   - {fileID: -1268950464396307818}
   EditorParameters:
-  - {fileID: -8283775130088713381}
-  - {fileID: -4911378675586394604}
-  - {fileID: -3343969818737526972}
+  - {fileID: -3358501389708872503}
+  - {fileID: 2069787740379623674}
+  - {fileID: -9093908102023810300}
   MasterBanks:
   - {fileID: -58006880975490902}
   StringsBanks:
   - {fileID: -5797711374232112098}
-  stringsBankWriteTime: 637577928004628340
+  stringsBankWriteTime: 637578093107775983
   cacheVersion: 6
 --- !u!114 &11157943480557124
 MonoBehaviour:
@@ -2628,6 +2668,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14078
+--- !u!114 &2069787740379623674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TShutDown
+  m_EditorClassIdentifier: 
+  Name: TShutDown
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2589385084
+    data2: 3348358899
+  Exists: 1
 --- !u!114 &2377899863512003324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2802,7 +2862,7 @@ MonoBehaviour:
   Path: Assets/fmod/projet soutenance 3/Build/Desktop/Game .bank
   Name: 'Game '
   StudioPath: 'bank:/Game '
-  lastModified: 637577927981170886
+  lastModified: 637578093075421077
   LoadResult: 0
   FileSizes: []
   Exists: 1

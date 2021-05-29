@@ -15,10 +15,7 @@ public class Balise_Manager : MonoBehaviour
    
     void OnEnable()
     {
-        balises = GameObject.FindGameObjectsWithTag("Balise");
 
-        
-        
         int rdSequence = Random.Range(0, 10);
         if (rdSequence < 5)
         {

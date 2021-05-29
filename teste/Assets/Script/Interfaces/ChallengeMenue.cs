@@ -16,9 +16,5 @@ public class ChallengeMenue : MonoBehaviour
         sliderDificulté.minValue = minDificulties;
         sliderDificulté.maxValue = maxDificulties;
     }
-
-    private void Update()
-    {
-        slideTextDficulté.text = "nombre = " + sliderDificulté.value;
-    }
+    
 }

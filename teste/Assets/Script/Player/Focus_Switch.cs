@@ -236,6 +236,7 @@ public class Focus_Switch : MonoBehaviour
             if (Input.GetKeyDown("1") && typeArmeActive != typeArmeTank)
             {
                 typeArmeActive = typeArmeTank;
+                armeID = 0;
 
                 foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
                 {
@@ -250,12 +251,14 @@ public class Focus_Switch : MonoBehaviour
                     }
                 }
                 StartCoroutine(SwitchFilter());
+                changeShotGunColor();
                 t_switch = 0;
             }
             
             if (Input.GetKeyDown("2") && typeArmeActive != typeArmeCreateur)
             {
                 typeArmeActive = typeArmeCreateur;
+                armeID = 1;
 
                 foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
                 {
@@ -270,12 +273,14 @@ public class Focus_Switch : MonoBehaviour
                     }
                 }
                 StartCoroutine(SwitchFilter());
+                changeShotGunColor();
                 t_switch = 0;
             }
             
             if (Input.GetKeyDown("3") && typeArmeActive != typeArmeVif)
             {
                 typeArmeActive = typeArmeVif;
+                armeID = 2;
 
                 foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
                 {
@@ -290,12 +295,14 @@ public class Focus_Switch : MonoBehaviour
                     }
                 }
                 StartCoroutine(SwitchFilter());
+                changeShotGunColor();
                 t_switch = 0;
             }
             
             if (Input.GetKeyDown("4") && typeArmeActive != typeArmeAgressif)
             {
                 typeArmeActive = typeArmeAgressif;
+                armeID = 3;
                 
                     
                 foreach (GameObject entities in GameObject.FindGameObjectsWithTag("ennemis"))
@@ -311,6 +318,7 @@ public class Focus_Switch : MonoBehaviour
                     }
                 }
                 StartCoroutine(SwitchFilter());
+                changeShotGunColor();
                 t_switch = 0;
             }
         }
