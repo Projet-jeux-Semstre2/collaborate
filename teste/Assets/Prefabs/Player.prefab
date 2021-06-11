@@ -20571,7 +20571,7 @@ MonoBehaviour:
   fb_time: 0.2
   FmodHurt: event:/Character/Player_Body/Hurt
   coreRecup: {fileID: 2794573410027793705, guid: 263f0483d7503a94a9f1c427a7187aec, type: 3}
-  _gameManager: {fileID: 7680463249597192846, guid: a903f2d8ce7e71c4b9d1a17e0dfd6157, type: 3}
+  levelLoader: {fileID: 0}
   healthUi: {fileID: 1905085392}
   glitchEffect: {fileID: 7002255845515180113}
 --- !u!114 &7618754462737962441
@@ -20603,9 +20603,9 @@ MonoBehaviour:
   - 60
   - 80
   damageStats:
-  - 1
-  - 1.5
-  - 3
+  - 0.1
+  - 0.15
+  - 0.3
   surchauffeStats:
   - 8
   - 15
@@ -79870,7 +79870,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a988c9ecdf9c1664fa9d8cc580cf11f0, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

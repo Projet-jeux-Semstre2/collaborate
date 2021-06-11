@@ -54,6 +54,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerFootstep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PointMarker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/overloadCollectible.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CompasManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/AudioManager.asset" root0="FORCE_HIGHLIGHTING" />
@@ -84,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/UI_Menu_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Createur.cs" />
@@ -114,12 +114,10 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerFootstep.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Projectiles/Grenade_Explosion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/EntitésSoundContact.cs" />
         <option value="$PROJECT_DIR$/Assets/SoundAnimatedCooling.cs" />
         <option value="$PROJECT_DIR$/Assets/DistanceSoundCore.cs" />
         <option value="$PROJECT_DIR$/Assets/SoundCoolingAnimated.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" />
         <option value="$PROJECT_DIR$/Assets/Animation/Glitch/unityglitch-master/GlitchEffect.cs" />
@@ -135,6 +133,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/overloadCollectible.cs" />
       </list>
     </option>
   </component>
@@ -266,6 +267,7 @@
       <workItem from="1622294387047" duration="2646000" />
       <workItem from="1622642234544" duration="1397000" />
       <workItem from="1622825750218" duration="1991000" />
+      <workItem from="1623413915269" duration="2101000" />
     </task>
     <servers />
   </component>

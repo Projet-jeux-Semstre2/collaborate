@@ -25,7 +25,7 @@ public class Entities_Stats : MonoBehaviour
     public Material hitMaterial;
     public Material fullLifeMaterial;
 
-    
+    public ShotGun_Manager shotGunManager;
     
     private Glock_Manager _glockManager;
     
@@ -49,12 +49,15 @@ public class Entities_Stats : MonoBehaviour
     private float saveStatSpeed, saveStatDamage;
 
     public bool horlogeFinish;
+
+    public GameObject overloadCollectible;
     
 
     private void Start()
     {
         _entitiesManager = GetComponent<Entities_Manager>();
         _meshRenderer = GetComponent<MeshRenderer>();
+        shotGunManager = GameObject.FindWithTag("Player").GetComponent<ShotGun_Manager>();
         
 
         horlogeInterne = Random.Range(minTime, maxTime);
@@ -129,8 +132,24 @@ public class Entities_Stats : MonoBehaviour
         //FMODUnity.RuntimeManager.PlayOneShot(FmodDie, transform.position);
         
         Instantiate(dieExplosion, transform.position, Quaternion.identity);
+
+        if(shotGunManager.typeArmeActive == "ArmeForTank" && _entitiesManager.type == "Tank")
+        {
+            shotGunManager.niveauSurchauffe -= .5f;
+        }
         
-        
+        if(shotGunManager.typeArmeActive == "ArmeForCreateur" && _entitiesManager.type == "Createur")
+        {
+            shotGunManager.niveauSurchauffe -= .5f;
+        }
+        if(shotGunManager.typeArmeActive == "ArmeForVif" && _entitiesManager.type == "Vif")
+        {
+            shotGunManager.niveauSurchauffe -= .5f;
+        }
+        if(shotGunManager.typeArmeActive == "ArmeForAgressif" && _entitiesManager.type == "Agressif")
+        {
+            shotGunManager.niveauSurchauffe -= .5f;
+        }
         
         
         Destroy(gameObject);

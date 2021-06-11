@@ -232,7 +232,7 @@ public class weaponPompe : Weapon
                 event_fmod_Cooling = FMODUnity.RuntimeManager.CreateInstance(FmodCooling);
                 soundOs = false;
             }
-        }**/
+        }*/
         
         if (Input.GetButton("Reload") && !_shotgunManager.isSurchauffeMax)
         {
@@ -268,7 +268,7 @@ public class weaponPompe : Weapon
     void fireGrenade()
     {
         muzzleFlash.Play();
-// sons
+        // sons
         FMODUnity.RuntimeManager.PlayOneShot(fmodLaunchGrenade);
         if (viseurCanGrow)
         {

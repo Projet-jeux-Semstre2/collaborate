@@ -194,11 +194,15 @@ MonoBehaviour:
   health: 1
   damage: 1
   speed: 2
+  InitHealth: 0
+  InitDamage: 0
+  InitSpeed: 0
   FmodHurt: event:/Ennemies/Solo/Death
   FmodDie: event:/Ennemies/Solo/Death
   dieExplosion: {fileID: 401982039532589781, guid: bdc4123fbc835ba44907d6a334e98fc9, type: 3}
   hitMaterial: {fileID: 2100000, guid: 9d8d24075fda5844f9d23b8149c61a98, type: 2}
   fullLifeMaterial: {fileID: 2100000, guid: 0638a21d89b8119479e87394d5e2f588, type: 2}
+  shotGunManager: {fileID: 0}
   horlogeInterne: 0
   horlogeTime: 0
   maxTime: 45
@@ -207,6 +211,7 @@ MonoBehaviour:
   damage_augmented: 0.5
   speed_augmented: 0.5
   horlogeFinish: 0
+  overloadCollectible: {fileID: 6861046082898761363, guid: 359ebf51db16a7c43ba3a7e991606f69, type: 3}
 --- !u!135 &3905321256222153193
 SphereCollider:
   m_ObjectHideFlags: 0
