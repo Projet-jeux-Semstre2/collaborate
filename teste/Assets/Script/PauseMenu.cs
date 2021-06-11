@@ -15,9 +15,11 @@ public class PauseMenu : MonoBehaviour
     public static bool canLock;
     public static bool pauseTime;
     public Animator pauseAnimator;
+    public LevelLoader levelLoader;
 
     private void Start()
     {
+        levelLoader = GameObject.FindWithTag("LevelLoader").GetComponent<LevelLoader>();
         camera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
         pauseMenuUI.SetActive(false);
     }
@@ -96,6 +98,17 @@ public class PauseMenu : MonoBehaviour
         pauseAnimator.SetTrigger("Open");
         pauseTime = true;
         GameIsPaused = true;
+    }
+
+    public void Restart()
+    {
+        Resume();
+        levelLoader.LoadNextLevel(SceneManager.GetActiveScene().name);
+    }
+
+    public void ExitToMenu()
+    {
+        levelLoader.LoadNextLevel("MenuBuild");
     }
     
 

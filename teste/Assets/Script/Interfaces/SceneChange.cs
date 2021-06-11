@@ -22,12 +22,13 @@ public class SceneChange : MonoBehaviour
     public void LoadLevel(string levelName)
     {
         nameSceneToLoad = levelName;
+        print("gotoscene " + nameSceneToLoad );
     }
 
     IEnumerator goToScene(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        SceneManager.LoadScene(nameSceneToLoad);
+        SceneManager.LoadScene("NewLevel");
     }
 
     public void Quit()

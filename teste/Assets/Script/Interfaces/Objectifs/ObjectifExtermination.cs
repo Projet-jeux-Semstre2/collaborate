@@ -12,14 +12,5 @@ public class ObjectifExtermination : MonoBehaviour
     public GameManager _gameManager;
 
    
-
-    // Update is called once per frame
-    void Update()
-    {
-        textExtermination.text = "Nombre Entités = " + nrbEntités.Count;
-        if (nrbEntités.Count <= 0)
-        {
-            _gameManager.GameWin();
-        }
-    }
+    
 }

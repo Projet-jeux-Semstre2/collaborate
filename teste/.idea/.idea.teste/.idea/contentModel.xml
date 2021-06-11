@@ -341,6 +341,7 @@
             </e>
           </e>
         </e>
+        <e p="LevelLoader.cs" t="Include" />
         <e p="Menu_Manager.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Fmod" t="Include">

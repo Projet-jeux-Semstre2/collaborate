@@ -23,7 +23,7 @@ public class Player_Health : MonoBehaviour
 
     public GameObject coreRecup;
 
-    public GameManager _gameManager;
+    public LevelLoader levelLoader;
 
     private bool debugSunnyLinvincible;
 
@@ -31,6 +31,7 @@ public class Player_Health : MonoBehaviour
     public GlitchEffect glitchEffect;
     private void Start()
     {
+        levelLoader = GameObject.FindWithTag("LevelLoader").GetComponent<LevelLoader>();
         glitchEffect.enabled = false;
         health = maxHealth;
     }
@@ -60,12 +61,12 @@ public class Player_Health : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.M))
         {
-            SceneManager.LoadScene("Win");
+            //levelLoader.LoadNextLevel("Win");
         }
         
         
         //Debug sunny
-        if (Input.GetKeyDown(KeyCode.I) && !debugSunnyLinvincible)
+        /*if (Input.GetKeyDown(KeyCode.I) && !debugSunnyLinvincible)
         {
             health = 100000000f;
             debugSunnyLinvincible = true;
@@ -74,7 +75,7 @@ public class Player_Health : MonoBehaviour
         {
             health = maxHealth;
             debugSunnyLinvincible = false;
-        }
+        }*/
 
     }
 
@@ -95,8 +96,7 @@ public class Player_Health : MonoBehaviour
 
     void Die()
     {
-        _gameManager.nameSceneToLoad = "GameOver";
-        _gameManager.GetComponent<GameManager>().GameOver();
+        levelLoader.LoadNextLevel("GameOver");
     }
 
     private void OnDestroy()

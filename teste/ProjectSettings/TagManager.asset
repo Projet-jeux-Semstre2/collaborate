@@ -18,6 +18,7 @@ TagManager:
   - Balise
   - Ground
   - feedbackZone
+  - LevelLoader
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawnPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LD/SpawningBaliseIsOn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
@@ -27,6 +28,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Menu_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DestroyTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/Balise_ActiveChase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LevelLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LD/BaliseSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/TimerPlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,8 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponGlock.cs" />
-        <option value="$PROJECT_DIR$/Assets/AmeliorationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/CheckUpgrade.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/UI_Menu_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/CursorManager.cs" />
@@ -95,7 +95,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Glock_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/ButtonRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/FeedbackContactEntites.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Ameliorations/UpgradeAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_AttackCaC_Detector.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player.cs" />
@@ -111,7 +110,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Attack.cs" />
         <option value="$PROJECT_DIR$/Assets/ScaleDistanceFeedback.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Fonctionnement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerFootstep.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/ShotGun_Manager.cs" />
@@ -124,14 +122,18 @@
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/Types d'Arme/weaponPompe.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interfaces/ChallengeMenue.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Comportement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Animation/Glitch/unityglitch-master/GlitchEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LD/Balise_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entities/Core_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Focus_Switch.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/ReturnMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/cursorUnlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/SceneChange.cs" />
+        <option value="$PROJECT_DIR$/Assets/LevelLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interfaces/Objectifs/ObjectifExtermination.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entities/Entities_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/Player_Health.cs" />
       </list>
     </option>
@@ -262,6 +264,8 @@
       <workItem from="1622193440796" duration="4950000" />
       <workItem from="1622209659260" duration="218000" />
       <workItem from="1622294387047" duration="2646000" />
+      <workItem from="1622642234544" duration="1397000" />
+      <workItem from="1622825750218" duration="1991000" />
     </task>
     <servers />
   </component>
